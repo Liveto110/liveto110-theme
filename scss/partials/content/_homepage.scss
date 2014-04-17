@@ -1,9 +1,11 @@
 /* --- Homepage Content --- */
 #intro {
+	background: $intro-section-bg;
 	.flexslider {
 		@include box-shadow(none);
 		@include border-radius(0);
 		border: 0;
+		margin-bottom: 0;
 	}
 	.slide {
 		@include clearfix;
@@ -42,12 +44,16 @@
 }
 
 #about-liveto110 {
+	background: $about-section-bg;
+	padding-top: 48px;
+	padding-bottom: 48px;
 	.section-title {
 		text-transform: uppercase;
 		font-size: 30px;
 	}
 	.section-subtitle {
-		font-size: 14px;
+		font-weight: 400;
+		font-size: 17px;
 		line-height: 18px;
 		margin-top: 0;
 		color: $gray-light;
@@ -108,13 +114,14 @@
 			padding: 0 0 $padding-large-horizontal 0;
 			margin: 0 0 $grid-gutter-width 0;
 			@include box-shadow(rgba(black, .1) 1px 1px 2px);
+			background: #fff;
 		}
 		.blurb-header {
 			position: relative;
 			height: 110px;
 			.blurb-title {
 				position: absolute;
-				font-size: 30px;
+				font-size: 27px;
 				line-height: 20px;
 				text-transform: uppercase;
 				text-align: center;
@@ -151,11 +158,10 @@
 		.blurb-entry {
 			text-align: center;
 			color: #828386;
-			background: #fff;
 			padding: $padding-large-vertical $padding-large-horizontal;
 			font-family: $font-family-serif;
 			p {
-				font-size: 18px;
+				font-size: 16px;
 				line-height: 24px;
 			}
 		}
@@ -165,7 +171,7 @@
 				text-align: center;
 				margin-left: $padding-large-horizontal;
 				margin-right: $padding-large-horizontal;
-				font-size: 16px;
+				font-size: 13px;
 				line-height: 24px;
 				text-transform: uppercase;
 				color: #fff;
@@ -227,7 +233,7 @@
 #latest-articles {
 	padding-top: 48px;
 	padding-bottom: 48px;
-	background: #f8faf4;
+	background: $recentposts-section-bg;
 	.section-title {
 		text-transform: uppercase;
 		font-size: 30px;
@@ -244,7 +250,7 @@
 			margin-bottom: 0;
 		}
 		.post-header {
-			height: 76px;
+			min-height: 76px;
 			margin-bottom: 12px;
 			padding-left: $padding-large-horizontal;
 			padding-right: $padding-large-horizontal;
@@ -260,7 +266,7 @@
 				margin-top: 12px;
 				text-transform: uppercase;
 				@media screen and (min-width: $screen-tablet) {
-					font-size: 16px;
+					font-size: 18px;
 				}
 			}
 		}
@@ -281,9 +287,16 @@
 			padding-left: $padding-large-horizontal;
 			padding-right: $padding-large-horizontal;
 			color: #3c5c56;
+			p {
+				font-family: $font-family-serif;
+				font-size: 18px;
+			}
 			.read-more-link {
 				display: inline;
 				text-transform: uppercase;
+				font-family: $font-family-base;
+				margin-left: 5px;
+				font-size: smaller;
 			}
 		}
 		.post-footer {
@@ -325,11 +338,10 @@
 	}
 	.section-subtitle {
 		text-transform: uppercase;
-		font-size: 20px;
+		font-size: 24px;
 		margin-top: 0;
 		color: #3b5d57;
-		font-weight: 300;
-		font-family: $lato;
+		font-weight: 400;
 		font-style: italic;
 		border-bottom: 2px solid #77c0a4;
 		padding-bottom: 6px;
@@ -342,13 +354,13 @@
 		.form-header {}
 		.form-title {
 			text-transform: uppercase;
-			font-size: 18px;
+			font-size: 20px;
 			margin-bottom: 6px;
 			color: #0c4740;
 		}
 		.form-subtitle {
-			font-size: 20px;
-			line-height: 30px;
+			font-size: 25px;
+			line-height: 36px;
 			font-family: $font-family-serif;
 			font-weight: 400;
 			margin-top: 0;

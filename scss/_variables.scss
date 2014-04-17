@@ -1,17 +1,20 @@
 @import "bootstrap/variables";
 
 // Fonts
-$lato: 'Lato', sans-serif;
-$nunito: 'Nunito', sans-serif;
-$quicksand: 'Quicksand', sans-serif;
+$lato: 			'Lato', sans-serif;
+$nunito: 		'Nunito', sans-serif;
+$quicksand: 	'Quicksand', sans-serif;
 
 // Override Bootstrap variables here
 //== Colors
-$searchform-drawer-bg: #1C904A;
-$primary-nav-bg: #84BDA0;
-$secondary-nav-bg: #702454;
+$searchform-drawer-bg: 		#1C904A;
+$primary-nav-bg: 			#84BDA0;
+$secondary-nav-bg: 			#702454;
+$intro-section-bg: 			#F8FAF3;
+$about-section-bg: 			#F8FAF3;
+$recentposts-section-bg: 	#F8FAF3;
 
-$brand-primary: #6db799;
+$brand-primary: 			#6db799;
 
 //== Scaffolding
 //
@@ -24,8 +27,8 @@ $link-hover-color:      darken($link-color, 15%);
 //== Typography
 $font-family-base:        $lato;
 
-$headings-font-family:    $nunito;
-$headings-font-weight:    400;
+$headings-font-family:    $quicksand;
+$headings-font-weight:    700;
 
 //== Iconography
 //** Load fonts from this directory.

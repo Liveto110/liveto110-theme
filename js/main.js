@@ -7,7 +7,8 @@ jQuery( window ).load(function() {
 		slideshowSpeed: 10000,
 		animationSpeed: 1200,
 		initDelay: 0,
-		directionNav: false
+		directionNav: false,
+		controlNav: false
 	});
 });
 
