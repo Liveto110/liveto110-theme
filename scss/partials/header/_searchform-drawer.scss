@@ -1,0 +1,39 @@
+/* --- Searchform Drawer --- */
+#searchform-drawer {
+	background: $searchform-drawer-bg;
+	height: 50px;
+	// @include transition(height .3s ease-in-out);
+	display: none;
+	form {
+		position: relative;
+		top: 13px;
+		height: 24px;
+		margin: 0;
+		padding: 0;
+		.form-control {
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 1;
+			margin: 0;
+			height: 24px;
+			font-family: $quicksand;
+			font-weight: 400;
+			text-align: center;
+			@include border-radius(0);
+			border: 0;
+		}
+		.btn {
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 2;
+			margin: 0;
+			padding: 0;
+			height: 24px;
+			width: 24px;
+			display: block;
+			line-height: 20px;
+		}
+	}
+}

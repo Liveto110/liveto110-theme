@@ -1,0 +1,78 @@
+@import "bootstrap/variables";
+
+// Fonts
+$lato: 'Lato', sans-serif;
+$nunito: 'Nunito', sans-serif;
+$quicksand: 'Quicksand', sans-serif;
+
+// Override Bootstrap variables here
+//== Colors
+$searchform-drawer-bg: #1C904A;
+$primary-nav-bg: #84BDA0;
+$secondary-nav-bg: #702454;
+
+$brand-primary: #6db799;
+
+//== Scaffolding
+//
+$body-bg:               #fff;
+$text-color:            $gray-dark;
+
+$link-color:            $brand-primary;
+$link-hover-color:      darken($link-color, 15%);
+
+//== Typography
+$font-family-base:        $lato;
+
+$headings-font-family:    $nunito;
+$headings-font-weight:    400;
+
+//== Iconography
+//** Load fonts from this directory.
+$icon-font-path: "../fonts/bootstrap/";
+
+//== Navbar
+//
+// Basics of a navbar
+$navbar-height:                    40px;
+$navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2);
+$navbar-margin-bottom:             0px;
+$navbar-border-radius:             0px;
+
+$navbar-default-bg:                $primary-nav-bg;
+$navbar-default-border:            darken($navbar-default-bg, 0%);
+
+// Navbar links
+$navbar-default-link-color:                #18433C;
+$navbar-default-link-hover-color:          darken($navbar-default-link-color, 20%);
+$navbar-default-link-hover-bg:             darken($navbar-default-bg, 6.5%); // transparent;
+$navbar-default-link-active-color:         #fff; //darken($navbar-default-link-color, 40%);
+$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%);
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg:           transparent;
+$navbar-default-toggle-icon-bar-bg:        $navbar-default-link-color; // #83bea0;
+$navbar-default-toggle-border-color:       transparent;
+
+// Inverted navbar
+// Reset inverted navbar basics
+$navbar-inverse-bg:                         $secondary-nav-bg; // #83bea0;
+$navbar-inverse-border:                     darken($navbar-inverse-bg, 0%);
+
+// Inverted navbar links
+$navbar-inverse-link-color:                #fff;
+$navbar-inverse-link-hover-color:          $navbar-inverse-link-color;
+$navbar-inverse-link-hover-bg:             darken($navbar-inverse-bg, 6.5%);
+$navbar-inverse-link-active-color:         $navbar-inverse-link-color;
+$navbar-inverse-link-active-bg:            darken($navbar-inverse-bg, 6.5%);
+
+// Inverted navbar toggle
+$navbar-inverse-toggle-hover-bg:            transparent;
+$navbar-inverse-toggle-icon-bar-bg:         $navbar-inverse-link-color;
+$navbar-inverse-toggle-border-color:        transparent;
+
+//== Buttons
+//
+
+$btn-primary-bg:                 $brand-primary;
+$btn-primary-border:             darken($btn-primary-bg, 5%);
