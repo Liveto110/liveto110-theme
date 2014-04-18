@@ -116,19 +116,29 @@
 
 				<div class="navbar-collapse collapse secondary-links-container">
 					<!-- Social Links START -->
-					<?php wp_nav_menu( array( 
-						'theme_location' => 'social-links',
-						'container' => false,
-						'menu_class' => 'menu nav navbar-nav navbar-left social-links'
-					 ) ); ?>
+					<?php
+						wp_nav_menu( array(
+							'theme_location'    => 'social-links',
+							'depth'             => 2,
+							'container'         => false,
+							'menu_class'        => 'nav navbar-nav navbar-left social-links',
+							'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+							'walker'            => new wp_bootstrap_navwalker()
+						) );
+					?>
 					 <!-- Social Links END -->
 
 					 <!-- Secondary Navigation START -->
-					<?php wp_nav_menu( array( 
-						'theme_location' => 'secondary',
-						'container' => false,
-						'menu_class' => 'menu nav navbar-nav navbar-right secondary-links'
-					 ) ); ?>
+					 <?php
+					 	wp_nav_menu( array(
+					 		'theme_location'    => 'secondary',
+					 		'depth'             => 2,
+					 		'container'         => false,
+					 		'menu_class'        => 'nav navbar-nav navbar-right secondary-links',
+					 		'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+					 		'walker'            => new wp_bootstrap_navwalker()
+					 	) );
+					 ?>
 					 <!-- Secondary Navigation END -->
 				</div><!--/.navbar-collapse -->
 			</div><!-- /.container -->
