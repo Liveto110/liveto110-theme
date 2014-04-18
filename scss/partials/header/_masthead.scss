@@ -3,32 +3,37 @@
 	background: transparent url(../img/green-leaves.png) center top no-repeat;
 	@include background-size(cover);
 	#site-branding {
+		// min-height: 165px;
+		padding-top: 24px;
+		padding-bottom: 24px;
+		display: table;
+		width: 100%;
 		@media screen and (min-width: $screen-tablet) {
-			// display: table;
-			// width: 100%;
-			height: 165px;
-			// padding-top: 24px;
-			// padding-bottom: 24px;
+			@include clearfix;
 		}
 		.site-title {
 			text-align: center;
+			margin-top: 0;
+			margin-bottom: 0;
 			@media screen and (min-width: $screen-tablet) {
-				// display: table-cell;
-				// vertical-align: middle;
 				text-align: left;
+				float: left;
 			}
 			a {
 				display: block;
-				max-width: 229px;
-				max-height: 122px;
-				margin-left: auto;
-				margin-right: auto;
-				background: transparent url(../img/site-logo.png) left top no-repeat;
-				@include background-size(cover);
-				@include hide-text;
-				@media screen and (min-width: $screen-tablet) {
-					margin-left: 0;
-					margin-right: 0;
+				position: relative;
+				@media screen and (min-width: $screen-tablet) {}
+				.title-text {
+					display: none;
+				}
+				.logo-image {
+					max-width: 200px;
+					margin-left: auto;
+					margin-right: auto;
+					@media screen and (min-width: $screen-tablet) {
+						margin-left: 0;
+						margin-right: 0;
+					}
 				}
 			}
 		}
@@ -39,10 +44,12 @@
 			font-weight: 300;
 			font-style: italic;
 			color: #8b4a74;
+			display: none;
 			@media screen and (min-width: $screen-tablet) {
-				// display: table-cell;
-				// vertical-align: middle;
+				display: table-cell;
+				vertical-align: middle;
 				text-align: right;
+				margin: 0;
 			}
 		}
 	}

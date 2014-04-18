@@ -8473,6 +8473,10 @@ button.close {
   content: "\f07a";
   padding-right: 5px;
 }
+/* line 75, ../scss/partials/header/_primary-navigation.scss */
+#primary-navigation .sub-menu {
+  display: none;
+}
 
 /* --- Masthead --- */
 /* line 2, ../scss/partials/header/_masthead.scss */
@@ -8483,46 +8487,56 @@ button.close {
   -o-background-size: cover;
   background-size: cover;
 }
+/* line 5, ../scss/partials/header/_masthead.scss */
+#masthead #site-branding {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: table;
+  width: 100%;
+}
 @media screen and (min-width: 768px) {
   /* line 5, ../scss/partials/header/_masthead.scss */
   #masthead #site-branding {
-    height: 165px;
+    overflow: hidden;
+    *zoom: 1;
   }
 }
-/* line 13, ../scss/partials/header/_masthead.scss */
+/* line 14, ../scss/partials/header/_masthead.scss */
 #masthead #site-branding .site-title {
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
-  /* line 13, ../scss/partials/header/_masthead.scss */
+  /* line 14, ../scss/partials/header/_masthead.scss */
   #masthead #site-branding .site-title {
     text-align: left;
+    float: left;
   }
 }
-/* line 20, ../scss/partials/header/_masthead.scss */
+/* line 22, ../scss/partials/header/_masthead.scss */
 #masthead #site-branding .site-title a {
   display: block;
-  max-width: 229px;
-  max-height: 122px;
+  position: relative;
+}
+/* line 26, ../scss/partials/header/_masthead.scss */
+#masthead #site-branding .site-title a .title-text {
+  display: none;
+}
+/* line 29, ../scss/partials/header/_masthead.scss */
+#masthead #site-branding .site-title a .logo-image {
+  max-width: 200px;
   margin-left: auto;
   margin-right: auto;
-  background: transparent url(../img/site-logo.png) left top no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
 }
 @media screen and (min-width: 768px) {
-  /* line 20, ../scss/partials/header/_masthead.scss */
-  #masthead #site-branding .site-title a {
+  /* line 29, ../scss/partials/header/_masthead.scss */
+  #masthead #site-branding .site-title a .logo-image {
     margin-left: 0;
     margin-right: 0;
   }
 }
-/* line 35, ../scss/partials/header/_masthead.scss */
+/* line 40, ../scss/partials/header/_masthead.scss */
 #masthead #site-branding .site-description {
   text-align: center;
   text-transform: uppercase;
@@ -8530,11 +8544,15 @@ button.close {
   font-weight: 300;
   font-style: italic;
   color: #8b4a74;
+  display: none;
 }
 @media screen and (min-width: 768px) {
-  /* line 35, ../scss/partials/header/_masthead.scss */
+  /* line 40, ../scss/partials/header/_masthead.scss */
   #masthead #site-branding .site-description {
+    display: table-cell;
+    vertical-align: middle;
     text-align: right;
+    margin: 0;
   }
 }
 
@@ -8620,6 +8638,10 @@ button.close {
 #secondary-navigation .secondary-links .current-menu-parent > a {
   color: white;
   background-color: #571c41;
+}
+/* line 53, ../scss/partials/header/_secondary-navigation.scss */
+#secondary-navigation .secondary-links .sub-menu {
+  display: none;
 }
 
 /* --- Homepage Content --- */
