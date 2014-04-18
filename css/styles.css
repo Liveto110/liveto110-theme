@@ -9175,6 +9175,84 @@ button.close {
   background: #00443d;
 }
 
+/* --- Youtube Videos Content --- */
+/* line 3, ../scss/partials/content/_youtube-videos.scss */
+#youtubevideo-carousel .flexslider {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 13, ../scss/partials/content/_youtube-videos.scss */
+#youtubevideo-carousel .slides li .hentry .entry-content {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+/* line 21, ../scss/partials/content/_youtube-videos.scss */
+#youtubevideo-carousel .slides li .hentry .entry-content iframe,
+#youtubevideo-carousel .slides li .hentry .entry-content object,
+#youtubevideo-carousel .slides li .hentry .entry-content embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 34, ../scss/partials/content/_youtube-videos.scss */
+#youtubevideo-sidebar {
+  padding-top: 24px;
+}
+/* line 37, ../scss/partials/content/_youtube-videos.scss */
+#youtubevideo-sidebar ul li {
+  margin-bottom: 12px;
+  border-bottom: 1px dashed #6db799;
+  padding-bottom: 12px;
+}
+/* line 41, ../scss/partials/content/_youtube-videos.scss */
+#youtubevideo-sidebar ul li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+/* line 48, ../scss/partials/content/_youtube-videos.scss */
+#youtubevideo-sidebar p {
+  margin: 0;
+  padding: 0;
+}
+/* line 52, ../scss/partials/content/_youtube-videos.scss */
+#youtubevideo-sidebar .video-title {
+  text-transform: uppercase;
+}
+/* line 55, ../scss/partials/content/_youtube-videos.scss */
+#youtubevideo-sidebar .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+/* line 63, ../scss/partials/content/_youtube-videos.scss */
+#youtubevideo-sidebar .video-container iframe,
+#youtubevideo-sidebar .video-container object,
+#youtubevideo-sidebar .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
 /* --- Megafooter --- */
 /* line 2, ../scss/partials/footer/_megafooter.scss */
 #megafooter {

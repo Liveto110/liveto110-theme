@@ -1,5 +1,38 @@
 <?php
 #-----------------------------------------------------------------#
+# YT Videos
+#-----------------------------------------------------------------#
+function liveto110_youtubevideo_register() {
+	$youtubevideo_labels = array(
+		'name' => _x('YT Videos', 'taxonomy general name', 'liveto110'),
+		'singular_name' => __('YT Video', 'liveto110'),
+		'search_items' => __('Search YT Videos', 'liveto110'),
+		'all_items' => __('YT Videos', 'liveto110'),
+		'parent_item' => __('Parent YT Video', 'liveto110'),
+		'edit_item' => __('Edit YT Video', 'liveto110'),
+		'update_item' => __('Update YT Video', 'liveto110'),
+		'add_new_item' => __('Add New YT Video', 'liveto110')
+	);
+
+	$args = array(
+		'labels' 			=> $youtubevideo_labels,
+		'rewrite' 			=> array(
+			'slug' 			=> 'youtubevideo',
+			'with_front' 	=> false
+		),
+		'singular_label' 	=> __('YT Video', 'liveto110'),
+		'public' => true,
+		'publicly_queryable' => true,
+		'show_ui' => true,
+		'hierarchical' => false,
+		'menu_icon' => get_template_directory_uri() . '/img/icons/icon-youtubevideos.png',
+		'supports' => array('title', 'editor', 'thumbnail')
+	);
+
+	register_post_type( 'youtubevideo-post', $args );
+}
+add_action( 'init', 'liveto110_youtubevideo_register' );
+#-----------------------------------------------------------------#
 # Testimonials
 #-----------------------------------------------------------------#
 function liveto110_testimonial_register() {

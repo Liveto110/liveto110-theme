@@ -1,0 +1,71 @@
+/* --- Youtube Videos Content --- */
+#youtubevideo-carousel {
+	.flexslider {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		@include border-radius(0);
+		@include box-shadow(none);
+	}
+	.slides {
+		li {
+			.hentry {
+				.entry-content {
+					position: relative;
+				    padding-bottom: 56.25%;
+				    padding-top: 30px;
+				    height: 0;
+				    overflow: hidden;
+				    iframe,
+				    object,
+				    embed {
+				    	position: absolute;
+				    	top: 0;
+				    	left: 0;
+				    	height: 100%;
+				    	width: 100%;
+				    }
+				}
+			}
+		}
+	}
+}
+
+#youtubevideo-sidebar {
+	padding-top: 24px;
+	ul {
+		li {
+			margin-bottom: 12px;
+			border-bottom: 1px dashed $brand-primary;
+			padding-bottom: 12px;
+			&:last-child {
+				margin-bottom: 0;
+				padding-bottom: 0;
+				border-bottom: 0;
+			}
+		}
+	}
+	p {
+		margin: 0;
+		padding: 0;
+	}
+	.video-title {
+		text-transform: uppercase;
+	}
+	.video-container {
+		position: relative;
+		padding-bottom: 56.25%;
+		padding-top: 30px;
+		height: 0;
+		overflow: hidden;
+		iframe,
+		object,
+		embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
