@@ -55,20 +55,30 @@
 
 				<div class="navbar-collapse collapse primary-links-container">
 					<!-- Primary Navigation START -->
-					<?php wp_nav_menu( array( 
-						'theme_location' => 'primary',
-						'container' => false,
-						'menu_class' => 'menu nav navbar-nav primary-links'
-					 ) ); ?>
-					 <!-- Primary Navigation END -->
+					<?php
+						wp_nav_menu( array(
+							'theme_location'    => 'primary',
+							'depth'             => 2,
+							'container'         => false,
+							'menu_class'        => 'nav navbar-nav primary-links',
+							'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+							'walker'            => new wp_bootstrap_navwalker()
+						) );
+					?>
+					<!-- Primary Navigation END -->
 
-					 <!-- Search & Shop Navigation START -->
-					 <?php wp_nav_menu( array( 
-					 	'theme_location' => 'search-and-shop',
-					 	'container' => false,
-					 	'menu_class' => 'menu nav navbar-nav navbar-right search-and-shop'
-					  ) ); ?>
-					  <!-- Search & Shop Navigation END -->
+					<!-- Search & Shop Navigation START -->
+					<?php
+						wp_nav_menu( array(
+							'theme_location'    => 'search-and-shop',
+							'depth'             => 2,
+							'container'         => false,
+							'menu_class'        => 'nav navbar-nav navbar-right search-and-shop',
+							'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+							'walker'            => new wp_bootstrap_navwalker()
+						) );
+					?>
+					<!-- Search & Shop Navigation END -->
 				</div><!--/.navbar-collapse -->
 			</div><!-- /.container -->
 		</div><!-- /#primary-navigation .navbar -->

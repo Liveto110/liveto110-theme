@@ -192,3 +192,6 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load Custom Post Types.
  */
 require get_template_directory() . '/inc/custom-post-types.php';
+
+// Register Custom Navigation Walker
+require_once get_template_directory() . '/inc/wp_bootstrap_navwalker.php';

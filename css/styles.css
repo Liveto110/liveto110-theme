@@ -8410,73 +8410,6 @@ button.close {
   background-color: #6eb18f;
   text-shadow: rgba(0, 0, 0, 0.3) 0 1px 0;
 }
-/* line 20, ../scss/partials/header/_primary-navigation.scss */
-#primary-navigation a[title="search"] {
-  text-indent: -9999px;
-  position: relative;
-  padding-right: 16px;
-  padding-left: 24px;
-}
-/* line 25, ../scss/partials/header/_primary-navigation.scss */
-#primary-navigation a[title="search"]:before {
-  text-indent: 0;
-  position: absolute;
-  left: 0;
-  top: 12px;
-  display: inline-block;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-shadow: rgba(0, 0, 0, 0.3) 0 1px 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  content: "\f002";
-  width: 100%;
-  padding-left: 12px;
-}
-/* line 46, ../scss/partials/header/_primary-navigation.scss */
-#primary-navigation a[title="shop"]:before {
-  display: inline-block;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-shadow: rgba(0, 0, 0, 0.3) 0 1px 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  content: "\f02c";
-  padding-right: 5px;
-}
-/* line 61, ../scss/partials/header/_primary-navigation.scss */
-#primary-navigation a[title="cart"]:before {
-  display: inline-block;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-shadow: rgba(0, 0, 0, 0.3) 0 1px 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  content: "\f07a";
-  padding-right: 5px;
-}
-/* line 75, ../scss/partials/header/_primary-navigation.scss */
-#primary-navigation .sub-menu {
-  display: none;
-}
 
 /* --- Masthead --- */
 /* line 2, ../scss/partials/header/_masthead.scss */
@@ -8638,10 +8571,6 @@ button.close {
 #secondary-navigation .secondary-links .current-menu-parent > a {
   color: white;
   background-color: #571c41;
-}
-/* line 53, ../scss/partials/header/_secondary-navigation.scss */
-#secondary-navigation .secondary-links .sub-menu {
-  display: none;
 }
 
 /* --- Homepage Content --- */
