@@ -12,29 +12,15 @@
 			font-size: 20px;
 			color: #fff;
 			background: transparent;
-			&:before {
+			.fa {
 				text-indent: 0;
 				position: absolute;
 				left: 0;
 				top: 12px;
-				display: inline-block;
-				font-family: FontAwesome;
-				font-style: normal;
-				font-weight: normal;
-				line-height: 1;
-				-webkit-font-smoothing: antialiased;
-				-moz-osx-font-smoothing: grayscale;
 				@include text-shadow(rgba(black, .3) 0 1px 0);
 				@include transition(all .3s ease-in-out);
 			}
 		}
-		a[title="facebook"]:before { content: '\f082'; }
-		a[title="twitter"]:before { content: '\f081'; }
-		a[title="pinterest"]:before { content: '\f0d3'; }
-		a[title="instagram"]:before { content: '\f16d'; }
-		a[title="googleplus"]:before { content: '\f0d4'; }
-		a[title="youtube"]:before { content: '\f166'; }
-		a[title="rss"]:before { content: '\f143'; }
 	}
 	.secondary-links {
 		a {

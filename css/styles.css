@@ -8513,60 +8513,25 @@ button.close {
   background: transparent;
 }
 /* line 15, ../scss/partials/header/_secondary-navigation.scss */
-#secondary-navigation .social-links a:before {
+#secondary-navigation .social-links a .fa {
   text-indent: 0;
   position: absolute;
   left: 0;
   top: 12px;
-  display: inline-block;
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-shadow: rgba(0, 0, 0, 0.3) 0 1px 0;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 31, ../scss/partials/header/_secondary-navigation.scss */
-#secondary-navigation .social-links a[title="facebook"]:before {
-  content: '\f082';
-}
-/* line 32, ../scss/partials/header/_secondary-navigation.scss */
-#secondary-navigation .social-links a[title="twitter"]:before {
-  content: '\f081';
-}
-/* line 33, ../scss/partials/header/_secondary-navigation.scss */
-#secondary-navigation .social-links a[title="pinterest"]:before {
-  content: '\f0d3';
-}
-/* line 34, ../scss/partials/header/_secondary-navigation.scss */
-#secondary-navigation .social-links a[title="instagram"]:before {
-  content: '\f16d';
-}
-/* line 35, ../scss/partials/header/_secondary-navigation.scss */
-#secondary-navigation .social-links a[title="googleplus"]:before {
-  content: '\f0d4';
-}
-/* line 36, ../scss/partials/header/_secondary-navigation.scss */
-#secondary-navigation .social-links a[title="youtube"]:before {
-  content: '\f166';
-}
-/* line 37, ../scss/partials/header/_secondary-navigation.scss */
-#secondary-navigation .social-links a[title="rss"]:before {
-  content: '\f143';
-}
-/* line 40, ../scss/partials/header/_secondary-navigation.scss */
+/* line 26, ../scss/partials/header/_secondary-navigation.scss */
 #secondary-navigation .secondary-links a {
   text-transform: uppercase;
   font-size: 12px;
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
 }
-/* line 48, ../scss/partials/header/_secondary-navigation.scss */
+/* line 34, ../scss/partials/header/_secondary-navigation.scss */
 #secondary-navigation .secondary-links .current-menu-item > a,
 #secondary-navigation .secondary-links .current-menu-parent > a {
   color: white;
