@@ -6,37 +6,7 @@
 get_header(); ?>
 
 <div id="intro" class="clearfix">
-	<div class="flexslider">
-		<ul class="slides">
-			<li>
-				<article class="slide">
-					<div class="image-wrap" style="background-image: url(<?php echo get_template_directory_uri() . '/img/slide-images/slide-1.png'; ?>);"></div>
-				</article><!-- /.slide -->
-			</li>
-
-			<li>
-				<article class="slide">
-					<div class="image-wrap" style="background-image: url(../img/slide-images/slide-2.png);"></div>
-
-					<div class="content-wrap">
-						<div class="container">
-							<header class="slide-header">
-								<h1 class="slide-title">
-									<a href="#">This is another slide.</a>
-								</h1><!-- /.slide-title -->
-
-								<h2 class="slide-subtitle">A subtitle for the slide&hellip;</h2><!-- /.slide-subtitle -->
-							</header><!-- /.slide-header -->
-
-							<div class="slide-entry">
-								<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-							</div><!-- /.slide-entry -->
-						</div><!-- /.container -->
-					</div><!-- /.content-wrap -->
-				</article><!-- /.slide -->
-			</li>
-		</ul><!-- /.slides -->
-	</div><!-- /.fllexslider -->
+	<?php putRevSlider( "homepage-slider" ) ?>
 </div><!-- /#intro -->
 
 <div id="about-liveto110" class="clearfix">
@@ -122,7 +92,7 @@ get_header(); ?>
 					<article class="post article-post">
 						<?php
 							$args = array(
-								'category_name' => 'articles',
+								'category_name' => 'blog-and-podcast',
 								'post_type' => 'post',
 								'posts_per_page' => 1
 							);
@@ -168,7 +138,7 @@ get_header(); ?>
 					<article class="post podcast-post">
 						<?php
 							$args2 = array(
-								'category_name' => 'podcasts',
+								'category_name' => 'podcast',
 								'post_type' => 'post',
 								'posts_per_page' => 1
 							);
