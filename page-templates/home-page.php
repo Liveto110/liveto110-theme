@@ -6,7 +6,7 @@
 get_header(); ?>
 
 <div id="intro" class="clearfix">
-	<?php putRevSlider( "homepage-slider" ) ?>
+	<?php putRevSlider( "HomePageSlider" ) ?>
 </div><!-- /#intro -->
 
 <div id="about-liveto110" class="clearfix">
