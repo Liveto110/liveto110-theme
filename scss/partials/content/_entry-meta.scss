@@ -1,0 +1,44 @@
+/* --- Entry Meta --- */
+.entry-meta {
+	clear: both;
+	color: $text-color;
+	font-size: 12px;
+	font-weight: 400;
+	a {
+		color: $text-color;
+		@include transition(all .3s ease-in-out);
+		&:hover,
+		&:focus,
+		&:active {
+			color: $link-color;
+		}
+	}
+}
+
+.sticky .entry-date {
+	display: none;
+}
+
+.cat-links {
+	font-weight: 700;
+	text-transform: uppercase;
+	a {
+		color: $text-color;
+		@include transition(color .3s ease-in-out);
+		// text-decoration: none;
+		&:hover,
+		&:focus,
+		&:active {
+			color: $link-color;
+		}
+	}
+}
+
+.byline {
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}

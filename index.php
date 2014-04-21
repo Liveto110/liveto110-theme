@@ -24,13 +24,47 @@ get_header(); ?>
 							<?php /* Start the Loop */ ?>
 							<?php while ( have_posts() ) : the_post(); ?>
 
-								<?php
-									/* Include the Post-Format-specific template for the content.
-									* If you want to override this in a child theme, then include a file
-									* called content-___.php (where ___ is the Post Format name) and that will be used instead.
-									*/
-									get_template_part( 'content', get_post_format() );
-								?>
+								<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+									<?php if ('' == has_post_thumbnail()) { ?>
+
+										<?php $wrapper_class = 'unfloated'; ?>
+
+									<?php } else { ?>
+
+										<div class="image-wrap">
+											<?php 
+												the_post_thumbnail();
+												$wrapper_class = 'floated';
+											?>
+										</div><!-- /.image-wrap -->
+
+									<?php } ?>
+
+									<div class="content-wrap <?php echo $wrapper_class; ?>">
+										<header class="entry-header">
+											<?php
+												if ( is_single() ) :
+													the_title( '<h1 class="entry-title">', '</h1>' );
+												else :
+													the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
+												endif;
+											?>
+
+											<div class="entry-meta">
+												<?php
+													if ( 'post' == get_post_type() )
+														liveto110_posted_on();
+
+													edit_post_link( __( 'Edit', 'liveto110' ), '<span class="edit-link">', '</span>' );
+												?>
+											</div><!-- .entry-meta -->
+										</header><!-- .entry-header -->
+
+										<div class="entry-summary">
+											<?php the_excerpt(); ?>
+										</div><!-- .entry-summary -->
+									</div><!-- /.content-wrap -->
+								</article><!-- #post-## -->
 
 							<?php endwhile; ?>
 

@@ -90,7 +90,7 @@ add_action( 'wp', 'liveto110_setup_author' );
 
 // Custom Read More Link
 function new_excerpt_more( $more ) {
-	return ' <a class="read-more-link" href="'. get_permalink( get_the_ID() ) . '"><i class="fa fa-angle-right"></i> ' . __('CustomReadMore', 'liveto110') . '</a>';
+	return ' <a class="read-more-link" href="'. get_permalink( get_the_ID() ) . '"><i class="fa fa-angle-right"></i> ' . __('Read More', 'liveto110') . '</a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
@@ -98,3 +98,24 @@ function custom_excerpt_length( $length ) {
 	return 20;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+// Brought Back
+// add_filter( 'add_to_cart_text', 'woo_custom_cart_button_text' );
+// add_filter( 'woocommerce_product_single_add_to_cart_text', 'woo_custom_cart_button_text' );
+// add_filter( 'woocommerce_product_add_to_cart_text', 'woo_custom_cart_button_text' );
+// function woo_custom_cart_button_text() {
+// 	       return __( 'Buy Now', 'woocommerce' );
+// }
+
+// add_filter('woocommerce_variable_price_html', 'custom_variation_price', 10, 2);
+// function custom_variation_price( $price, $product ) {
+//      $price = '';
+//      if ( !$product->min_variation_price || $product->min_variation_price !== $product->max_variation_price ) $price .= '<span class="from">' . _x('', 'min_price', 'woocommerce') . ' </span>';
+//      $price .= woocommerce_price($product->get_price());
+//      return $price;
+// }
+
+// function woocommerce_output_related_products() {
+// 	woocommerce_related_products(4,4);
+// }
+

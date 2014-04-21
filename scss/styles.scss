@@ -4,12 +4,11 @@
 
 @import "compass";
 
-@import "partials/header/searchform-drawer";
-@import "partials/header/primary-navigation";
-@import "partials/header/masthead";
-@import "partials/header/secondary-navigation";
-
-@import "partials/content/homepage";
-@import "partials/content/youtube-videos";
+@import "repeatable-patterns";
+@import "basic-structure";
+@import "header";
+@import "content";
 
 @import "partials/footer/megafooter";
+
+@import "partials/sidebar/sidebar-default";

@@ -1,0 +1,20 @@
+/* --- Post Thumbnail --- */
+.post-thumbnail {
+	background-color: #b2b2b2;
+	background-image: url(images/pattern-light.svg);
+	background-repeat: repeat;
+	background-attachment: fixed;
+	display: block;
+	position: relative;
+	width: 100%;
+	z-index: 0;
+}
+
+a.post-thumbnail:hover {
+	background-color: #999;
+}
+
+.full-width .post-thumbnail img {
+	display: block;
+	margin: 0 auto;
+}

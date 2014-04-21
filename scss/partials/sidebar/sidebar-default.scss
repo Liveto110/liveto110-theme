@@ -1,0 +1,37 @@
+/* --- Sidebar - Default --- */
+#secondary.widget-area {
+	background: none;
+	@include clearfix;
+	margin-top: 24px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	.widget {
+		background: #fff;
+		@include box-shadow(rgba(black, .15) 1px 1px 5px);
+		@include clearfix;
+		margin-bottom: 24px;
+		padding: $padding-large-vertical $padding-large-horizontal;
+		margin-left: $padding-small-horizontal;
+		margin-right: $padding-small-horizontal;
+		border: 1px solid rgba(black, .1);
+		.widget-header {}
+		.widget-title {
+			text-transform: uppercase;
+			font-weight: 400;
+			font-size: 20px;
+			margin: 12px 0;
+			padding: 0;
+		}
+		.widget-content {
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				li {
+					margin: 0 0 6px 0;
+					padding: 0;
+				}
+			}
+		}
+	}
+}

@@ -8341,6 +8341,185 @@ button.close {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
+/* --- Repeatable Patterns ---*/
+/* Responsive images. Fluid images for posts, comments, and widgets */
+/* line 7, ../scss/_repeatable-patterns.scss */
+.comment-content img,
+.entry-content img,
+.entry-summary img,
+.widget img,
+.wp-caption {
+  max-width: 100%;
+}
+
+/**
+ * Make sure images with WordPress-added height and width attributes are
+ * scaled correctly.
+ */
+/* line 20, ../scss/_repeatable-patterns.scss */
+.comment-content img[height],
+.entry-content img,
+.entry-summary img,
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"] {
+  height: auto;
+}
+
+/* line 27, ../scss/_repeatable-patterns.scss */
+img.size-full,
+img.size-large,
+.wp-post-image,
+.post-thumbnail img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Make sure embeds and iframes fit their containers */
+/* line 36, ../scss/_repeatable-patterns.scss */
+embed,
+iframe,
+object,
+video {
+  margin-bottom: 24px;
+  max-width: 100%;
+}
+
+/* line 46, ../scss/_repeatable-patterns.scss */
+p > embed,
+p > iframe,
+p > object,
+span > embed,
+span > iframe,
+span > object {
+  margin-bottom: 0;
+}
+
+/* Alignment */
+/* line 51, ../scss/_repeatable-patterns.scss */
+.alignleft {
+  float: left;
+}
+
+/* line 54, ../scss/_repeatable-patterns.scss */
+.alignright {
+  float: right;
+}
+
+/* line 57, ../scss/_repeatable-patterns.scss */
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 64, ../scss/_repeatable-patterns.scss */
+blockquote.alignleft,
+img.alignleft {
+  margin: 7px 24px 7px 0;
+}
+
+/* line 67, ../scss/_repeatable-patterns.scss */
+.wp-caption.alignleft {
+  margin: 7px 14px 7px 0;
+}
+
+/* line 72, ../scss/_repeatable-patterns.scss */
+blockquote.alignright,
+img.alignright {
+  margin: 7px 0 7px 24px;
+}
+
+/* line 75, ../scss/_repeatable-patterns.scss */
+.wp-caption.alignright {
+  margin: 7px 0 7px 14px;
+}
+
+/* line 81, ../scss/_repeatable-patterns.scss */
+blockquote.aligncenter,
+img.aligncenter,
+.wp-caption.aligncenter {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+/* line 87, ../scss/_repeatable-patterns.scss */
+.site-content blockquote.alignleft,
+.site-content blockquote.alignright {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 17px;
+  width: 50%;
+}
+
+/* line 95, ../scss/_repeatable-patterns.scss */
+.site-content blockquote.alignleft p,
+.site-content blockquote.alignright p {
+  margin-bottom: 17px;
+}
+
+/* line 99, ../scss/_repeatable-patterns.scss */
+.wp-caption {
+  margin-bottom: 24px;
+}
+
+/* line 103, ../scss/_repeatable-patterns.scss */
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin: 0;
+}
+
+/* line 108, ../scss/_repeatable-patterns.scss */
+.wp-caption {
+  color: #767676;
+}
+
+/* line 112, ../scss/_repeatable-patterns.scss */
+.wp-caption-text {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.5;
+  margin: 9px 0;
+  padding-right: 10px;
+}
+
+/* line 123, ../scss/_repeatable-patterns.scss */
+.wp-smiley {
+  border: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Separators */
+/* line 138, ../scss/_repeatable-patterns.scss */
+.site-content span + .entry-date:before,
+.full-size-link:before,
+.parent-post-link:before,
+span + .byline:before,
+span + .comments-link:before,
+span + .edit-link:before,
+.widget_twentyfourteen_ephemera .entry-title:after {
+  content: "\0020\007c\0020";
+}
+
+/* --- Basic Structure --- */
+/* line 2, ../scss/_basic-structure.scss */
+.main-content {
+  width: 100%;
+}
+
+/* --- Site Header --- */
+/* Ensure that there is no gap between the header and
+   the admin bar for WordPress versions before 3.8. */
+/* line 5, ../scss/partials/header/_general.scss */
+#wpadminbar {
+  min-height: 32px;
+}
+
 /* --- Searchform Drawer --- */
 /* line 2, ../scss/partials/header/_searchform-drawer.scss */
 #searchform-drawer {
@@ -8536,6 +8715,210 @@ button.close {
 #secondary-navigation .secondary-links .current-menu-parent > a {
   color: white;
   background-color: #571c41;
+}
+
+/* --- Content --- */
+/* line 2, ../scss/partials/content/_general.scss */
+.content-area {
+  padding-top: 24px;
+}
+@media screen and (min-width: 768px) {
+  /* line 2, ../scss/partials/content/_general.scss */
+  .content-area {
+    padding-top: 48px;
+  }
+}
+
+/* line 9, ../scss/partials/content/_general.scss */
+.hentry {
+  margin: 0 auto 24px;
+}
+@media screen and (min-width: 768px) {
+  /* line 9, ../scss/partials/content/_general.scss */
+  .hentry {
+    margin: 0 auto 48px;
+  }
+}
+
+/* line 20, ../scss/partials/content/_general.scss */
+.site-content .entry-header,
+.site-content .entry-content,
+.site-content .entry-summary,
+.site-content .entry-meta,
+.page-content {
+  margin: 0 auto;
+}
+
+/* line 24, ../scss/partials/content/_general.scss */
+.page-content {
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  /* line 24, ../scss/partials/content/_general.scss */
+  .page-content {
+    margin-bottom: 48px;
+  }
+}
+
+/* line 31, ../scss/partials/content/_general.scss */
+.blog #primary .hentry {
+  overflow: hidden;
+  *zoom: 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 24px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  /* line 31, ../scss/partials/content/_general.scss */
+  .blog #primary .hentry {
+    padding-bottom: 48px;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 31, ../scss/partials/content/_general.scss */
+  .blog #primary .hentry {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+}
+/* line 43, ../scss/partials/content/_general.scss */
+.blog #primary .hentry .image-wrap {
+  max-width: 25%;
+  float: left;
+  margin-right: 4%;
+}
+/* line 50, ../scss/partials/content/_general.scss */
+.blog #primary .hentry .content-wrap .entry-summary {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  /* line 50, ../scss/partials/content/_general.scss */
+  .blog #primary .hentry .content-wrap .entry-summary {
+    overflow: hidden;
+    *zoom: 1;
+    display: block;
+    margin-top: 12px;
+  }
+}
+/* line 57, ../scss/partials/content/_general.scss */
+.blog #primary .hentry .content-wrap .entry-summary .read-more-link {
+  display: block;
+  float: right;
+  margin-top: 12px;
+  background: #6db799;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 6px 12px;
+}
+/* line 70, ../scss/partials/content/_general.scss */
+.blog #primary .hentry .floated {
+  max-width: 70%;
+  float: left;
+}
+/* line 74, ../scss/partials/content/_general.scss */
+.blog #primary .hentry .unfloated {
+  max-width: 100%;
+  float: none;
+}
+
+/* --- Entry Header --- */
+/* line 7, ../scss/partials/content/_entry-header.scss */
+.entry-title {
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 0 12px 0;
+  font-size: 20px;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  /* line 7, ../scss/partials/content/_entry-header.scss */
+  .entry-title {
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 7, ../scss/partials/content/_entry-header.scss */
+  .entry-title {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+}
+/* line 22, ../scss/partials/content/_entry-header.scss */
+.entry-title a {
+  color: #333333;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+}
+/* line 28, ../scss/partials/content/_entry-header.scss */
+.entry-title a:hover, .entry-title a:focus, .entry-title a:active {
+  color: #6db799;
+}
+
+/* line 34, ../scss/partials/content/_entry-header.scss */
+.site-content .entry-header {
+  background-color: #fff;
+}
+
+/* --- Entry Meta --- */
+/* line 2, ../scss/partials/content/_entry-meta.scss */
+.entry-meta {
+  clear: both;
+  color: #333333;
+  font-size: 12px;
+  font-weight: 400;
+}
+/* line 7, ../scss/partials/content/_entry-meta.scss */
+.entry-meta a {
+  color: #333333;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 12, ../scss/partials/content/_entry-meta.scss */
+.entry-meta a:hover, .entry-meta a:focus, .entry-meta a:active {
+  color: #6db799;
+}
+
+/* line 18, ../scss/partials/content/_entry-meta.scss */
+.sticky .entry-date {
+  display: none;
+}
+
+/* line 22, ../scss/partials/content/_entry-meta.scss */
+.cat-links {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* line 25, ../scss/partials/content/_entry-meta.scss */
+.cat-links a {
+  color: #333333;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+/* line 31, ../scss/partials/content/_entry-meta.scss */
+.cat-links a:hover, .cat-links a:focus, .cat-links a:active {
+  color: #6db799;
+}
+
+/* line 37, ../scss/partials/content/_entry-meta.scss */
+.byline {
+  display: none;
+}
+
+/* line 42, ../scss/partials/content/_entry-meta.scss */
+.single .byline,
+.group-blog .byline {
+  display: inline;
 }
 
 /* --- Homepage Content --- */
@@ -9240,4 +9623,48 @@ button.close {
   margin-bottom: 0;
   color: #487936;
   font-size: 12px;
+}
+
+/* --- Sidebar - Default --- */
+/* line 2, ../scss/partials/sidebar/sidebar-default.scss */
+#secondary.widget-area {
+  background: none;
+  overflow: hidden;
+  *zoom: 1;
+  margin-top: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+/* line 8, ../scss/partials/sidebar/sidebar-default.scss */
+#secondary.widget-area .widget {
+  background: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px;
+  overflow: hidden;
+  *zoom: 1;
+  margin-bottom: 24px;
+  padding: 10px 16px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* line 18, ../scss/partials/sidebar/sidebar-default.scss */
+#secondary.widget-area .widget .widget-title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 12px 0;
+  padding: 0;
+}
+/* line 26, ../scss/partials/sidebar/sidebar-default.scss */
+#secondary.widget-area .widget .widget-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 30, ../scss/partials/sidebar/sidebar-default.scss */
+#secondary.widget-area .widget .widget-content ul li {
+  margin: 0 0 6px 0;
+  padding: 0;
 }
