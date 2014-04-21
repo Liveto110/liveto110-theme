@@ -9217,29 +9217,30 @@ span + .edit-link:before,
   /* line 218, ../scss/partials/content/_homepage.scss */
   #special-offers .offers-wrap .offer {
     margin-bottom: 60px;
+    max-height: 320px;
+    overflow: hidden;
   }
 }
-/* line 224, ../scss/partials/content/_homepage.scss */
+/* line 226, ../scss/partials/content/_homepage.scss */
 #special-offers .offers-wrap .offer img {
-  max-height: 300px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 233, ../scss/partials/content/_homepage.scss */
+/* line 235, ../scss/partials/content/_homepage.scss */
 #latest-articles {
   padding-top: 48px;
   padding-bottom: 48px;
   background: #f8faf3;
 }
-/* line 237, ../scss/partials/content/_homepage.scss */
+/* line 239, ../scss/partials/content/_homepage.scss */
 #latest-articles .section-title {
   text-transform: uppercase;
   font-size: 30px;
   margin-bottom: 24px;
   color: #00443d;
 }
-/* line 243, ../scss/partials/content/_homepage.scss */
+/* line 245, ../scss/partials/content/_homepage.scss */
 #latest-articles .post {
   background: #fff;
   padding-top: 24px;
@@ -9250,25 +9251,25 @@ span + .edit-link:before,
   box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px;
 }
 @media screen and (min-width: 768px) {
-  /* line 243, ../scss/partials/content/_homepage.scss */
+  /* line 245, ../scss/partials/content/_homepage.scss */
   #latest-articles .post {
     margin-bottom: 0;
   }
 }
-/* line 252, ../scss/partials/content/_homepage.scss */
+/* line 254, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .post-header {
   min-height: 76px;
   margin-bottom: 12px;
   padding-left: 16px;
   padding-right: 16px;
 }
-/* line 257, ../scss/partials/content/_homepage.scss */
+/* line 259, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .post-header .icon-wrap {
   font-size: 24px;
   line-height: 24px;
   color: #d084ac;
 }
-/* line 262, ../scss/partials/content/_homepage.scss */
+/* line 264, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .post-header .post-title {
   font-size: 14px;
   line-height: 20px;
@@ -9277,43 +9278,43 @@ span + .edit-link:before,
   text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
-  /* line 262, ../scss/partials/content/_homepage.scss */
+  /* line 264, ../scss/partials/content/_homepage.scss */
   #latest-articles .post .post-header .post-title {
     font-size: 18px;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 273, ../scss/partials/content/_homepage.scss */
+  /* line 275, ../scss/partials/content/_homepage.scss */
   #latest-articles .post .image-wrap {
     max-height: 156px;
     overflow: hidden;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 273, ../scss/partials/content/_homepage.scss */
+  /* line 275, ../scss/partials/content/_homepage.scss */
   #latest-articles .post .image-wrap {
     max-height: 208px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 273, ../scss/partials/content/_homepage.scss */
+  /* line 275, ../scss/partials/content/_homepage.scss */
   #latest-articles .post .image-wrap {
     max-height: 216px;
   }
 }
-/* line 285, ../scss/partials/content/_homepage.scss */
+/* line 287, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .entry {
   margin-top: 24px;
   padding-left: 16px;
   padding-right: 16px;
   color: #3c5c56;
 }
-/* line 290, ../scss/partials/content/_homepage.scss */
+/* line 292, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .entry p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
 }
-/* line 294, ../scss/partials/content/_homepage.scss */
+/* line 296, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .entry .read-more-link {
   display: inline;
   text-transform: uppercase;
@@ -9321,13 +9322,13 @@ span + .edit-link:before,
   margin-left: 5px;
   font-size: smaller;
 }
-/* line 302, ../scss/partials/content/_homepage.scss */
+/* line 304, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .post-footer {
   margin-top: 12px;
   padding-left: 16px;
   padding-right: 16px;
 }
-/* line 306, ../scss/partials/content/_homepage.scss */
+/* line 308, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .post-footer .btn {
   width: 100%;
   color: #781e52;
@@ -9347,7 +9348,7 @@ span + .edit-link:before,
   text-transform: uppercase;
 }
 
-/* line 322, ../scss/partials/content/_homepage.scss */
+/* line 324, ../scss/partials/content/_homepage.scss */
 #signup-section {
   background-image: url(../img/purple-cabbage.jpg);
   background-position: center center;
@@ -9360,18 +9361,18 @@ span + .edit-link:before,
   padding-top: 48px;
   padding-bottom: 48px;
 }
-/* line 330, ../scss/partials/content/_homepage.scss */
+/* line 332, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-wrapper {
   background: rgba(255, 255, 255, 0.8);
 }
-/* line 333, ../scss/partials/content/_homepage.scss */
+/* line 335, ../scss/partials/content/_homepage.scss */
 #signup-section .section-title {
   text-transform: uppercase;
   font-size: 27px;
   margin-bottom: 12px;
   color: #ff2c40;
 }
-/* line 339, ../scss/partials/content/_homepage.scss */
+/* line 341, ../scss/partials/content/_homepage.scss */
 #signup-section .section-subtitle {
   text-transform: uppercase;
   font-size: 24px;
@@ -9382,21 +9383,21 @@ span + .edit-link:before,
   border-bottom: 2px solid #77c0a4;
   padding-bottom: 6px;
 }
-/* line 349, ../scss/partials/content/_homepage.scss */
+/* line 351, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form {
   background: #fff;
   padding-top: 24px;
   padding-bottom: 24px;
   margin-bottom: 48px;
 }
-/* line 355, ../scss/partials/content/_homepage.scss */
+/* line 357, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form .form-title {
   text-transform: uppercase;
   font-size: 20px;
   margin-bottom: 6px;
   color: #0c4740;
 }
-/* line 361, ../scss/partials/content/_homepage.scss */
+/* line 363, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form .form-subtitle {
   font-size: 25px;
   line-height: 36px;
@@ -9405,11 +9406,11 @@ span + .edit-link:before,
   margin-top: 0;
   color: #00443d;
 }
-/* line 369, ../scss/partials/content/_homepage.scss */
+/* line 371, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form .form-wrap {
   margin-top: 12px;
 }
-/* line 372, ../scss/partials/content/_homepage.scss */
+/* line 374, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form form {
   position: relative;
   z-index: 1;
@@ -9418,7 +9419,7 @@ span + .edit-link:before,
   padding: 0;
   max-width: 500px;
 }
-/* line 379, ../scss/partials/content/_homepage.scss */
+/* line 381, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form form .form-control {
   display: block;
   width: 100%;
@@ -9441,19 +9442,19 @@ span + .edit-link:before,
   background: #74bea2;
   color: #0f5046;
 }
-/* line 394, ../scss/partials/content/_homepage.scss */
+/* line 396, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form form .form-control::-moz-placeholder {
   color: #0f5046;
 }
-/* line 397, ../scss/partials/content/_homepage.scss */
+/* line 399, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form form .form-control:-ms-input-placeholder {
   color: #0f5046;
 }
-/* line 400, ../scss/partials/content/_homepage.scss */
+/* line 402, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form form .form-control::-webkit-input-placeholder {
   color: #0f5046;
 }
-/* line 404, ../scss/partials/content/_homepage.scss */
+/* line 406, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form form .btn {
   position: absolute;
   top: 50%;

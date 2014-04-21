@@ -220,9 +220,11 @@
 			margin-bottom: $grid-gutter-width;
 			@media screen and (min-width: $screen-tablet) {
 				margin-bottom: 60px;
+				max-height: 320px;
+				overflow: hidden;
 			}
 			img {
-				max-height: 300px;
+				// max-height: 300px;
 				margin-left: auto;
 				margin-right: auto;
 			}

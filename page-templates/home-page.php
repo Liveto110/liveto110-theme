@@ -66,17 +66,28 @@ get_header(); ?>
 	<div class="offers-wrap">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6">
-					<a href="#" class="offer">
-						<img src="<?php echo get_template_directory_uri() . '/img/special-offers/offer-1.jpg'; ?>" class="img-responsive">
-					</a><!-- /.offer -->
-				</div>
+				<?php
+					$args = array(
+						'category_name' => 'special-offer',
+						'post_type' => 'post',
+						'posts_per_page' => 2
+					);
+					$special_offers = new WP_Query( $args );
 
-				<div class="col-sm-6">
-					<a href="#" class="offer">
-						<img src="<?php echo get_template_directory_uri() . '/img/special-offers/offer-2.jpg'; ?>" class="img-responsive">
-					</a><!-- /.offer -->
-				</div>
+					while ( $special_offers->have_posts() ) : $special_offers->the_post(); ?>
+						<div class="col-sm-6">
+							<a href="<?php the_permalink(); ?>" class="offer" title="<?php the_title(); ?>">
+								<?php
+									$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'special-offer-homepage' );
+									$url = $thumb['0'];
+								?>
+								<img src="<?php echo $url; ?>" class="img-responsive">
+							</a><!-- /.offer -->
+						</div>
+					<?php
+					endwhile;
+					wp_reset_postdata();
+				?>
 			</div><!-- /.row -->
 		</div><!-- /.container -->
 	</div><!-- /.offers-wrap -->
