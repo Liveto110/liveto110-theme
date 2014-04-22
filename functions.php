@@ -173,6 +173,9 @@ function liveto110_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'liveto110_scripts' );
 
+/* Add SMOF */
+require_once('admin/index.php');
+
 /**
  * Implement the Custom Header feature.
  */

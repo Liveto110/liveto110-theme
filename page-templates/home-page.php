@@ -12,7 +12,7 @@ get_header(); ?>
 <div id="about-liveto110" class="clearfix">
 	<div class="container">
 		<h1 class="section-title text-center">About Live To 110</h1>
-		<h2 class="section-subtitle text-center">Wendy is dedicated to helping you live a long, healthy life. Let's Get Started!</h2>
+		<h2 class="section-subtitle text-center">Wendy is dedicated to helping you live a long, healthy life. <span>Let's Get Started!</span></h2>
 
 		<div class="blurbs-wrap">
 			<div class="row">
@@ -38,15 +38,15 @@ get_header(); ?>
 									<p>
 										<?php
 											$content = get_the_content();
-											$trimmed_content = wp_trim_words( $content, 10, '&hellip;' );
+											$trimmed_content = wp_trim_words( $content, 20, '&hellip;' );
 											echo $trimmed_content;
 										?>
 									</p>
 								</div><!-- /.blurb-entry -->
 
 								<footer class="blurb-footer">
-									<a href="<?php echo get_permalink(); ?>" class="read-more-link">
-										<span class="btn-text">Button Text</span><!-- /.btn-text -->
+									<a href="<?php echo the_field( "button_link_url", $post->ID ); ?>" class="read-more-link">
+										<span class="btn-text"><?php echo the_field( "button_text", $post->ID ); ?>Button Text</span><!-- /.btn-text -->
 										<span class="go-to-icon"><i class="fa fa-angle-right"></i></span><!-- /.goto-icon -->
 									</a><!-- /.read-more-link -->
 								</footer><!-- /.blurb-footer -->

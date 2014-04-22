@@ -89,7 +89,7 @@ function liveto110_service_register() {
 		'show_ui' => true,
 		'hierarchical' => false,
 		'menu_icon' => get_template_directory_uri() . '/img/icons/icon-services.png',
-		'supports' => array('title', 'editor', 'thumbnail')
+		'supports' => array('title', 'editor', 'thumbnail', 'custom-fields')
 	);
 	register_post_type('service-post', $args);
 }

@@ -8656,7 +8656,7 @@ span + .edit-link:before,
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-style: italic;
-  color: #8b4a74;
+  color: #BF76A4;
   display: none;
 }
 @media screen and (min-width: 768px) {
@@ -9012,67 +9012,72 @@ span + .edit-link:before,
   color: #999999;
   margin-bottom: 18px;
 }
-/* line 65, ../scss/partials/content/_homepage.scss */
+/* line 61, ../scss/partials/content/_homepage.scss */
+#about-liveto110 .section-subtitle span {
+  font-style: italic;
+  color: #1C904A;
+}
+/* line 69, ../scss/partials/content/_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(1) .blurb-header {
   background: #008fc8;
 }
-/* line 66, ../scss/partials/content/_homepage.scss */
+/* line 70, ../scss/partials/content/_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(1) .blurb-footer .read-more-link {
   background: #008fc8;
   border: 1px solid #008fc8;
 }
-/* line 69, ../scss/partials/content/_homepage.scss */
+/* line 73, ../scss/partials/content/_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(1) .blurb-footer .read-more-link:hover {
   background: #fff;
   color: #008fc8;
   letter-spacing: 1px;
 }
-/* line 77, ../scss/partials/content/_homepage.scss */
+/* line 81, ../scss/partials/content/_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(2) .blurb-header {
   background: #ff2c40;
 }
-/* line 78, ../scss/partials/content/_homepage.scss */
+/* line 82, ../scss/partials/content/_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(2) .blurb-footer .read-more-link {
   background: #ff2c40;
   border: 1px solid #ff2c40;
 }
-/* line 81, ../scss/partials/content/_homepage.scss */
+/* line 85, ../scss/partials/content/_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(2) .blurb-footer .read-more-link:hover {
   background: #fff;
   color: #ff2c40;
   letter-spacing: 1px;
 }
-/* line 89, ../scss/partials/content/_homepage.scss */
+/* line 93, ../scss/partials/content/_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(3) .blurb-header {
   background: #7bc46f;
 }
-/* line 90, ../scss/partials/content/_homepage.scss */
+/* line 94, ../scss/partials/content/_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(3) .blurb-footer .read-more-link {
   background: #7bc46f;
   border: 1px solid #7bc46f;
 }
-/* line 93, ../scss/partials/content/_homepage.scss */
+/* line 97, ../scss/partials/content/_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(3) .blurb-footer .read-more-link:hover {
   background: #fff;
   color: #7bc46f;
   letter-spacing: 1px;
 }
-/* line 101, ../scss/partials/content/_homepage.scss */
+/* line 105, ../scss/partials/content/_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(4) .blurb-header {
   background: #c873a0;
 }
-/* line 102, ../scss/partials/content/_homepage.scss */
+/* line 106, ../scss/partials/content/_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(4) .blurb-footer .read-more-link {
   background: #c873a0;
   border: 1px solid #c873a0;
 }
-/* line 105, ../scss/partials/content/_homepage.scss */
+/* line 109, ../scss/partials/content/_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(4) .blurb-footer .read-more-link:hover {
   background: #fff;
   color: #c873a0;
   letter-spacing: 1px;
 }
-/* line 113, ../scss/partials/content/_homepage.scss */
+/* line 117, ../scss/partials/content/_homepage.scss */
 #about-liveto110 .blurbs-wrap .blurb {
   padding: 0 0 16px 0;
   margin: 0 0 30px 0;
@@ -9081,12 +9086,12 @@ span + .edit-link:before,
   box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px;
   background: #fff;
 }
-/* line 119, ../scss/partials/content/_homepage.scss */
+/* line 123, ../scss/partials/content/_homepage.scss */
 #about-liveto110 .blurbs-wrap .blurb-header {
   position: relative;
   height: 110px;
 }
-/* line 122, ../scss/partials/content/_homepage.scss */
+/* line 126, ../scss/partials/content/_homepage.scss */
 #about-liveto110 .blurbs-wrap .blurb-header .blurb-title {
   position: absolute;
   font-size: 27px;
@@ -9105,7 +9110,7 @@ span + .edit-link:before,
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 137, ../scss/partials/content/_homepage.scss */
+/* line 141, ../scss/partials/content/_homepage.scss */
 #about-liveto110 .blurbs-wrap .blurb-header .icon-wrap {
   position: absolute;
   text-align: center;
@@ -9122,7 +9127,7 @@ span + .edit-link:before,
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 149, ../scss/partials/content/_homepage.scss */
+/* line 153, ../scss/partials/content/_homepage.scss */
 #about-liveto110 .blurbs-wrap .blurb-header .icon-wrap i {
   display: block;
   margin: 0;
@@ -9130,19 +9135,19 @@ span + .edit-link:before,
   text-align: center;
   line-height: 80px;
 }
-/* line 158, ../scss/partials/content/_homepage.scss */
+/* line 162, ../scss/partials/content/_homepage.scss */
 #about-liveto110 .blurbs-wrap .blurb-entry {
   text-align: center;
   color: #828386;
   padding: 10px 16px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-/* line 163, ../scss/partials/content/_homepage.scss */
+/* line 167, ../scss/partials/content/_homepage.scss */
 #about-liveto110 .blurbs-wrap .blurb-entry p {
   font-size: 16px;
   line-height: 24px;
 }
-/* line 169, ../scss/partials/content/_homepage.scss */
+/* line 173, ../scss/partials/content/_homepage.scss */
 #about-liveto110 .blurbs-wrap .blurb-footer .read-more-link {
   display: block;
   text-align: center;
@@ -9159,12 +9164,12 @@ span + .edit-link:before,
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 181, ../scss/partials/content/_homepage.scss */
+/* line 185, ../scss/partials/content/_homepage.scss */
 #about-liveto110 .blurbs-wrap .blurb-footer .read-more-link .go-to-icon {
   margin-left: 5px;
 }
 
-/* line 189, ../scss/partials/content/_homepage.scss */
+/* line 193, ../scss/partials/content/_homepage.scss */
 #special-offers {
   background-image: url(../img/grass-sky-bg.jpg);
   background-position: center bottom;
@@ -9179,24 +9184,24 @@ span + .edit-link:before,
   padding-bottom: 48px;
 }
 @media screen and (min-width: 768px) {
-  /* line 189, ../scss/partials/content/_homepage.scss */
+  /* line 193, ../scss/partials/content/_homepage.scss */
   #special-offers {
     min-height: 350px;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 189, ../scss/partials/content/_homepage.scss */
+  /* line 193, ../scss/partials/content/_homepage.scss */
   #special-offers {
     min-height: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 189, ../scss/partials/content/_homepage.scss */
+  /* line 193, ../scss/partials/content/_homepage.scss */
   #special-offers {
     min-height: 540px;
   }
 }
-/* line 207, ../scss/partials/content/_homepage.scss */
+/* line 211, ../scss/partials/content/_homepage.scss */
 #special-offers .section-title {
   text-transform: uppercase;
   font-size: 30px;
@@ -9206,43 +9211,43 @@ span + .edit-link:before,
   margin-bottom: 0;
   background: rgba(255, 255, 255, 0.6);
 }
-/* line 216, ../scss/partials/content/_homepage.scss */
+/* line 220, ../scss/partials/content/_homepage.scss */
 #special-offers .offers-wrap {
   background: rgba(255, 255, 255, 0.6);
 }
-/* line 218, ../scss/partials/content/_homepage.scss */
+/* line 222, ../scss/partials/content/_homepage.scss */
 #special-offers .offers-wrap .offer {
   display: block;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
-  /* line 218, ../scss/partials/content/_homepage.scss */
+  /* line 222, ../scss/partials/content/_homepage.scss */
   #special-offers .offers-wrap .offer {
     margin-bottom: 60px;
     max-height: 320px;
     overflow: hidden;
   }
 }
-/* line 226, ../scss/partials/content/_homepage.scss */
+/* line 230, ../scss/partials/content/_homepage.scss */
 #special-offers .offers-wrap .offer img {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 235, ../scss/partials/content/_homepage.scss */
+/* line 239, ../scss/partials/content/_homepage.scss */
 #latest-articles {
   padding-top: 48px;
   padding-bottom: 48px;
   background: #f8faf3;
 }
-/* line 239, ../scss/partials/content/_homepage.scss */
+/* line 243, ../scss/partials/content/_homepage.scss */
 #latest-articles .section-title {
   text-transform: uppercase;
   font-size: 30px;
   margin-bottom: 24px;
   color: #00443d;
 }
-/* line 245, ../scss/partials/content/_homepage.scss */
+/* line 249, ../scss/partials/content/_homepage.scss */
 #latest-articles .post {
   background: #fff;
   padding-top: 24px;
@@ -9253,25 +9258,25 @@ span + .edit-link:before,
   box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px;
 }
 @media screen and (min-width: 768px) {
-  /* line 245, ../scss/partials/content/_homepage.scss */
+  /* line 249, ../scss/partials/content/_homepage.scss */
   #latest-articles .post {
     margin-bottom: 0;
   }
 }
-/* line 254, ../scss/partials/content/_homepage.scss */
+/* line 258, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .post-header {
   min-height: 76px;
   margin-bottom: 12px;
   padding-left: 16px;
   padding-right: 16px;
 }
-/* line 259, ../scss/partials/content/_homepage.scss */
+/* line 263, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .post-header .icon-wrap {
   font-size: 24px;
   line-height: 24px;
   color: #d084ac;
 }
-/* line 264, ../scss/partials/content/_homepage.scss */
+/* line 268, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .post-header .post-title {
   font-size: 14px;
   line-height: 20px;
@@ -9280,43 +9285,43 @@ span + .edit-link:before,
   text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
-  /* line 264, ../scss/partials/content/_homepage.scss */
+  /* line 268, ../scss/partials/content/_homepage.scss */
   #latest-articles .post .post-header .post-title {
     font-size: 18px;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 275, ../scss/partials/content/_homepage.scss */
+  /* line 279, ../scss/partials/content/_homepage.scss */
   #latest-articles .post .image-wrap {
     max-height: 156px;
     overflow: hidden;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 275, ../scss/partials/content/_homepage.scss */
+  /* line 279, ../scss/partials/content/_homepage.scss */
   #latest-articles .post .image-wrap {
     max-height: 208px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 275, ../scss/partials/content/_homepage.scss */
+  /* line 279, ../scss/partials/content/_homepage.scss */
   #latest-articles .post .image-wrap {
     max-height: 216px;
   }
 }
-/* line 287, ../scss/partials/content/_homepage.scss */
+/* line 291, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .entry {
   margin-top: 24px;
   padding-left: 16px;
   padding-right: 16px;
   color: #3c5c56;
 }
-/* line 292, ../scss/partials/content/_homepage.scss */
+/* line 296, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .entry p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
 }
-/* line 296, ../scss/partials/content/_homepage.scss */
+/* line 300, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .entry .read-more-link {
   display: inline;
   text-transform: uppercase;
@@ -9324,13 +9329,13 @@ span + .edit-link:before,
   margin-left: 5px;
   font-size: smaller;
 }
-/* line 304, ../scss/partials/content/_homepage.scss */
+/* line 308, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .post-footer {
   margin-top: 12px;
   padding-left: 16px;
   padding-right: 16px;
 }
-/* line 308, ../scss/partials/content/_homepage.scss */
+/* line 312, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .post-footer .btn {
   width: 100%;
   color: #781e52;
@@ -9350,7 +9355,7 @@ span + .edit-link:before,
   text-transform: uppercase;
 }
 
-/* line 324, ../scss/partials/content/_homepage.scss */
+/* line 328, ../scss/partials/content/_homepage.scss */
 #signup-section {
   background-image: url(../img/purple-cabbage.jpg);
   background-position: center center;
@@ -9363,18 +9368,18 @@ span + .edit-link:before,
   padding-top: 48px;
   padding-bottom: 48px;
 }
-/* line 332, ../scss/partials/content/_homepage.scss */
+/* line 336, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-wrapper {
   background: rgba(255, 255, 255, 0.8);
 }
-/* line 335, ../scss/partials/content/_homepage.scss */
+/* line 339, ../scss/partials/content/_homepage.scss */
 #signup-section .section-title {
   text-transform: uppercase;
   font-size: 27px;
   margin-bottom: 12px;
   color: #ff2c40;
 }
-/* line 341, ../scss/partials/content/_homepage.scss */
+/* line 345, ../scss/partials/content/_homepage.scss */
 #signup-section .section-subtitle {
   text-transform: uppercase;
   font-size: 24px;
@@ -9385,21 +9390,21 @@ span + .edit-link:before,
   border-bottom: 2px solid #77c0a4;
   padding-bottom: 6px;
 }
-/* line 351, ../scss/partials/content/_homepage.scss */
+/* line 355, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form {
   background: #fff;
   padding-top: 24px;
   padding-bottom: 24px;
   margin-bottom: 48px;
 }
-/* line 357, ../scss/partials/content/_homepage.scss */
+/* line 361, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form .form-title {
   text-transform: uppercase;
   font-size: 20px;
   margin-bottom: 6px;
   color: #0c4740;
 }
-/* line 363, ../scss/partials/content/_homepage.scss */
+/* line 367, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form .form-subtitle {
   font-size: 25px;
   line-height: 36px;
@@ -9408,11 +9413,11 @@ span + .edit-link:before,
   margin-top: 0;
   color: #00443d;
 }
-/* line 371, ../scss/partials/content/_homepage.scss */
+/* line 375, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form .form-wrap {
   margin-top: 12px;
 }
-/* line 374, ../scss/partials/content/_homepage.scss */
+/* line 378, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form form {
   position: relative;
   z-index: 1;
@@ -9421,7 +9426,7 @@ span + .edit-link:before,
   padding: 0;
   max-width: 500px;
 }
-/* line 381, ../scss/partials/content/_homepage.scss */
+/* line 385, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form form .form-control {
   display: block;
   width: 100%;
@@ -9444,19 +9449,19 @@ span + .edit-link:before,
   background: #74bea2;
   color: #0f5046;
 }
-/* line 396, ../scss/partials/content/_homepage.scss */
+/* line 400, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form form .form-control::-moz-placeholder {
   color: #0f5046;
 }
-/* line 399, ../scss/partials/content/_homepage.scss */
+/* line 403, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form form .form-control:-ms-input-placeholder {
   color: #0f5046;
 }
-/* line 402, ../scss/partials/content/_homepage.scss */
+/* line 406, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form form .form-control::-webkit-input-placeholder {
   color: #0f5046;
 }
-/* line 406, ../scss/partials/content/_homepage.scss */
+/* line 410, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form form .btn {
   position: absolute;
   top: 50%;
