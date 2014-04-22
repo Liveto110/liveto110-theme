@@ -12,13 +12,54 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<?php global $smof_data;  save_smof_option();?>
+
+	<!-- ==SEO== -->
+    <?php if (is_front_page()) {
+    	if ($smof_data['site_keywords']) { ?>
+    		<meta name="description" content="<?php echo $smof_data['site_keywords']; ?>">
+    	<?php } ?>
+    	<?php if ($smof_data['site_desc']) { ?>
+    		<meta name="description" content="<?php echo $smof_data['site_desc']; ?>">
+    	<?php } ?>
+    	<?php if ($smof_data['site_title']) { ?>
+            <title><?php echo $smof_data['site_title']; ?></title>
+        <?php } else { ?>
+            <title><?php wp_title(' - ', true, 'right'); ?><?php bloginfo('name'); ?></title>
+        <?php }
+    } else { ?>
+        <title><?php wp_title(' - ', true, 'right'); ?><?php bloginfo('name'); ?></title>
+    <?php } ?>
+
+	<!-- ==Favicon== -->
+    <?php if ($smof_data['custom_favicon_ie']) { ?>
+        <link rel="shortcut icon" href="<?php echo $smof_data['custom_favicon_ie']; ?>" type="image/x-icon">
+    <?php } ?>    
+    <?php if ($smof_data['custom_favicon_mod']) { ?>
+        <link rel="icon" href="<?php echo $smof_data['custom_favicon_mod']; ?>" type="image/png">
+    <?php } ?>
+    <?php if ($smof_data['custom_favicon_iphone']) { ?>
+        <link rel="apple-touch-icon" type="image/x-icon" href="<?php echo $smof_data['custom_favicon_iphone']; ?>">
+    <?php } ?>
+    <?php if ($smof_data['custom_favicon_ipad']) { ?>
+        <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="<?php echo $smof_data['custom_favicon_ipad']; ?>">
+    <?php } ?>
+    <?php if ($smof_data['custom_favicon_retina']) { ?>
+        <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="<?php echo $smof_data['custom_favicon_retina']; ?>">
+    <?php } ?>
 
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-	<title><?php wp_title( '|', true, 'right' ); ?></title>
+	<?php if ( isset( $smof_data[ 'google_analytics' ] ) ) { ?>
+        <script type="text/javascript">
+            //<![CDATA[
+                <?php  echo preg_replace('(<.script>)','',preg_replace('(<script.*?>)','',$smof_data['google_analytics']));?>
+            //]]>
+        </script>
+    <?php } ?>	
 
 	<?php wp_head(); ?>
 </head>
@@ -88,13 +129,9 @@
 				<div id="site-branding">				
 					<h1 class="site-title">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-							<span class="title-text"><?php bloginfo( 'name' ); ?></span>
-
-							<?php if ( get_header_image() ) : ?>
-								<div class="logo-image">
-									<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" class="img-responsive">
-								</div><!-- /.logo-image -->
-							<?php endif; // End header image check. ?>
+							<div class="logo-image">
+								<img src="<?php echo $smof_data['logo']; ?>" alt="<?php bloginfo('name');?>" class="img-responsive">
+							</div><!-- /.logo-image -->
 						</a>
 					</h1><!-- /.site-title -->
 

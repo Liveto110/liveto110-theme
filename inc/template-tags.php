@@ -119,3 +119,25 @@ function liveto110_category_transient_flusher() {
 }
 add_action( 'edit_category', 'liveto110_category_transient_flusher' );
 add_action( 'save_post',     'liveto110_category_transient_flusher' );
+
+/**
+ * Save SMOF Option
+ */
+function save_smof_option() {
+	global $of_options, $options_machine, $smof_data, $smof_details;
+
+	if( !defined('ADMIN_PATH') )
+		define( 'ADMIN_PATH', get_template_directory() . '/admin/' );
+
+	if( !defined('ADMIN_DIR') )
+		define( 'ADMIN_DIR', get_template_directory_uri() . '/admin/' );
+
+	require_once ( ADMIN_PATH . 'functions/functions.load.php' );
+	require_once ( ADMIN_PATH . 'classes/class.options_machine.php' );
+
+	$options_machine = new Options_Machine($of_options);
+
+	$defaults = $options_machine->Defaults;
+
+	return $defaults;
+}
