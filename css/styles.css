@@ -8666,6 +8666,7 @@ span + .edit-link:before,
     vertical-align: middle;
     text-align: right;
     margin: 0;
+    width: 125px;
   }
 }
 
