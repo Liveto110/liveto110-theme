@@ -21,7 +21,8 @@
 			font-weight: 400;
 			text-align: center;
 			@include border-radius(0);
-			border: 0;
+			border-color: rgba(black, .1);
+			font-size: 12px;
 		}
 		.btn {
 			position: absolute;

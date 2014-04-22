@@ -8523,7 +8523,7 @@ span + .edit-link:before,
 /* --- Searchform Drawer --- */
 /* line 2, ../scss/partials/header/_searchform-drawer.scss */
 #searchform-drawer {
-  background: #1c904a;
+  background: rgba(0, 0, 0, 0.05);
   height: 50px;
   display: none;
 }
@@ -8551,9 +8551,10 @@ span + .edit-link:before,
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
-  border: 0;
+  border-color: rgba(0, 0, 0, 0.1);
+  font-size: 12px;
 }
-/* line 26, ../scss/partials/header/_searchform-drawer.scss */
+/* line 27, ../scss/partials/header/_searchform-drawer.scss */
 #searchform-drawer form .btn {
   position: absolute;
   right: 0;

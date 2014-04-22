@@ -33,7 +33,7 @@
 			<div class="row">
 				<div class="col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
 					<form role="form">
-						<input type="search" class="form-control">
+						<input type="search" class="form-control" placeholder="Search Live to 110">
 						<button class="btn btn-link" type="button"><i class="fa fa-search"></i></button>
 					</form>
 				</div>
