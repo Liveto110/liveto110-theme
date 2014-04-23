@@ -28,7 +28,6 @@ if (!function_exists('of_options')) {
 		    "section_about_liveto110" 		=> "About LiveTo110",
 		    "section_special_offers" 		=> "Special Offers",
 		    "section_latest_articles" 		=> "Recent Posts",
-		    "section_signup_section" 		=> "Signup Section",
 		    ),
 			);
 		$names = array();
@@ -779,18 +778,6 @@ $of_options[] = array("name" => "Tracking Code",
 	"std" => "",
 	"type" => "textarea"
 	);
-// $of_options[] = array("name" => "Code before &lt;/head&gt;",
-// 	"desc" => "Paste your code here. This will be added before </head> tag.",
-// 	"id" => "before_head",
-// 	"std" => "",
-// 	"type" => "textarea"
-// 	);
-// $of_options[] = array("name" => "Code before &lt;/body&gt;",
-// 	"desc" => "Paste your code here. This will be added before </body> tag.",
-// 	"id" => "before_body",
-// 	"std" => "",
-// 	"type" => "textarea"
-// 	);
 $of_options[] = array("name" => "SEO",
 	"desc" => "",
 	"id" => "introduction",
@@ -946,6 +933,49 @@ $of_options[] = array("name" => "Section Title",
 	"desc" => "",
 	"id" => "recentposts_title",
 	"std" => "Recent Posts",
+	"type" => "text"
+	);
+
+#=========================================#
+# SIGNUP SECTION SETTINGS #
+#=========================================#
+$of_options[] = array("name" => "Signup Section",
+	"type" => "heading"
+	);
+$of_options[] = array("name" => "Section Title",
+	"desc" => "",
+	"id" => "signupsection_title",
+	"std" => "Join The Live To 110 Community",
+	"type" => "text"
+	);
+$of_options[] = array("name" => "Section Sub-Title",
+	"desc" => "",
+	"id" => "signupsection_subtitle",
+	"std" => "Sign up to receive email updates and these 3 free gifts",
+	"type" => "text"
+	);
+$of_options[] = array("name" => "Section BG Image",
+	"desc" => "",
+	"id" => "signupsection_bg_img",
+	"std" => get_template_directory_uri() . "/img/purple-cabbage.jpg",
+	"type" => "upload"
+	);
+$of_options[] = array("name" => "Section Graphics",
+	"desc" => "",
+	"id" => "signupsection_graphics",
+	"std" => get_template_directory_uri() . "/img/books.png",
+	"type" => "upload"
+	);
+$of_options[] = array("name" => "Button Text",
+	"desc" => "",
+	"id" => "signupsection_btn_text",
+	"std" => "Start Changing Your Life Today",
+	"type" => "text"
+	);
+$of_options[] = array("name" => "Button Link-To URL",
+	"desc" => "",
+	"id" => "signupsection_btn_linkto_url",
+	"std" => "",
 	"type" => "text"
 	);
 

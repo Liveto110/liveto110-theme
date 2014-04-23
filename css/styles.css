@@ -9358,133 +9358,6 @@ span + .edit-link:before,
   text-transform: uppercase;
 }
 
-/* line 332, ../scss/partials/content/_homepage.scss */
-#signup-section {
-  background-image: url(../img/purple-cabbage.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-/* line 340, ../scss/partials/content/_homepage.scss */
-#signup-section .signup-wrapper {
-  background: rgba(255, 255, 255, 0.8);
-}
-/* line 343, ../scss/partials/content/_homepage.scss */
-#signup-section .section-title {
-  text-transform: uppercase;
-  font-size: 27px;
-  margin-bottom: 12px;
-  color: #ff2c40;
-}
-/* line 349, ../scss/partials/content/_homepage.scss */
-#signup-section .section-subtitle {
-  text-transform: uppercase;
-  font-size: 24px;
-  margin-top: 0;
-  color: #3b5d57;
-  font-weight: 400;
-  font-style: italic;
-  border-bottom: 2px solid #77c0a4;
-  padding-bottom: 6px;
-}
-/* line 359, ../scss/partials/content/_homepage.scss */
-#signup-section .signup-form {
-  background: #fff;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-bottom: 48px;
-}
-/* line 365, ../scss/partials/content/_homepage.scss */
-#signup-section .signup-form .form-title {
-  text-transform: uppercase;
-  font-size: 20px;
-  margin-bottom: 6px;
-  color: #0c4740;
-}
-/* line 371, ../scss/partials/content/_homepage.scss */
-#signup-section .signup-form .form-subtitle {
-  font-size: 25px;
-  line-height: 36px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 400;
-  margin-top: 0;
-  color: #00443d;
-}
-/* line 379, ../scss/partials/content/_homepage.scss */
-#signup-section .signup-form .form-wrap {
-  margin-top: 12px;
-}
-/* line 382, ../scss/partials/content/_homepage.scss */
-#signup-section .signup-form form {
-  position: relative;
-  z-index: 1;
-  background: transparent;
-  margin: 0 auto 24px auto;
-  padding: 0;
-  max-width: 500px;
-}
-/* line 389, ../scss/partials/content/_homepage.scss */
-#signup-section .signup-form form .form-control {
-  display: block;
-  width: 100%;
-  margin: 0;
-  padding: 0 12px;
-  height: 50px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  border: 0;
-  position: relative;
-  z-index: -1;
-  text-align: center;
-  padding-right: 66px;
-  background: #74bea2;
-  color: #0f5046;
-}
-/* line 404, ../scss/partials/content/_homepage.scss */
-#signup-section .signup-form form .form-control::-moz-placeholder {
-  color: #0f5046;
-}
-/* line 407, ../scss/partials/content/_homepage.scss */
-#signup-section .signup-form form .form-control:-ms-input-placeholder {
-  color: #0f5046;
-}
-/* line 410, ../scss/partials/content/_homepage.scss */
-#signup-section .signup-form form .form-control::-webkit-input-placeholder {
-  color: #0f5046;
-}
-/* line 414, ../scss/partials/content/_homepage.scss */
-#signup-section .signup-form form .btn {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  height: 30px;
-  margin-top: -15px;
-  text-transform: uppercase;
-  letter-spacing: .5px;
-  padding-left: 16px;
-  padding-right: 16px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-  text-shadow: none;
-  border: 0;
-  background: #00443d;
-}
-
 /* --- Youtube Videos Content --- */
 /* line 3, ../scss/partials/content/_youtube-videos.scss */
 #youtubevideo-carousel .flexslider {
@@ -9563,6 +9436,133 @@ span + .edit-link:before,
   width: 100%;
 }
 
+/* --- Signup Section --- */
+/* line 2, ../scss/partials/footer/_signup-section.scss */
+#signup-section {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+/* line 10, ../scss/partials/footer/_signup-section.scss */
+#signup-section .signup-wrapper {
+  background: rgba(255, 255, 255, 0.8);
+}
+/* line 13, ../scss/partials/footer/_signup-section.scss */
+#signup-section .section-title {
+  text-transform: uppercase;
+  font-size: 27px;
+  margin-bottom: 12px;
+  color: #ff2c40;
+}
+/* line 19, ../scss/partials/footer/_signup-section.scss */
+#signup-section .section-subtitle {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-top: 0;
+  color: #3b5d57;
+  font-weight: 400;
+  font-style: italic;
+  border-bottom: 2px solid #77c0a4;
+  padding-bottom: 6px;
+}
+/* line 29, ../scss/partials/footer/_signup-section.scss */
+#signup-section .signup-form {
+  background: #fff;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 48px;
+}
+/* line 35, ../scss/partials/footer/_signup-section.scss */
+#signup-section .signup-form .form-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #0c4740;
+}
+/* line 41, ../scss/partials/footer/_signup-section.scss */
+#signup-section .signup-form .form-subtitle {
+  font-size: 25px;
+  line-height: 36px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  margin-top: 0;
+  color: #00443d;
+}
+/* line 49, ../scss/partials/footer/_signup-section.scss */
+#signup-section .signup-form .form-wrap {
+  margin-top: 12px;
+}
+/* line 52, ../scss/partials/footer/_signup-section.scss */
+#signup-section .signup-form form {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  margin: 0 auto 24px auto;
+  padding: 0;
+  max-width: 500px;
+}
+/* line 59, ../scss/partials/footer/_signup-section.scss */
+#signup-section .signup-form form .form-control {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0 12px;
+  height: 50px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+  position: relative;
+  z-index: -1;
+  text-align: center;
+  padding-right: 66px;
+  background: #74bea2;
+  color: #0f5046;
+}
+/* line 74, ../scss/partials/footer/_signup-section.scss */
+#signup-section .signup-form form .form-control::-moz-placeholder {
+  color: #0f5046;
+}
+/* line 77, ../scss/partials/footer/_signup-section.scss */
+#signup-section .signup-form form .form-control:-ms-input-placeholder {
+  color: #0f5046;
+}
+/* line 80, ../scss/partials/footer/_signup-section.scss */
+#signup-section .signup-form form .form-control::-webkit-input-placeholder {
+  color: #0f5046;
+}
+/* line 84, ../scss/partials/footer/_signup-section.scss */
+#signup-section .signup-form form .btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  height: 30px;
+  margin-top: -15px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  padding-left: 16px;
+  padding-right: 16px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  text-shadow: none;
+  border: 0;
+  background: #00443d;
+}
+
 /* --- Megafooter --- */
 /* line 2, ../scss/partials/footer/_megafooter.scss */
 #megafooter {
@@ -9622,20 +9622,28 @@ span + .edit-link:before,
 #megafooter .links-widget a:hover, #megafooter .links-widget a:focus, #megafooter .links-widget a:active {
   color: #6db799;
 }
+/* line 49, ../scss/partials/footer/_megafooter.scss */
+#megafooter .row > div .widget {
+  background: yellow;
+}
 
-/* line 47, ../scss/partials/footer/_megafooter.scss */
+/* line 56, ../scss/partials/footer/_megafooter.scss */
 #footer {
-  background: #eef6eb;
+  background: #84bda0;
   padding-top: 24px;
   padding-bottom: 24px;
 }
-/* line 51, ../scss/partials/footer/_megafooter.scss */
+/* line 60, ../scss/partials/footer/_megafooter.scss */
 #footer p {
   margin-bottom: 0;
-  color: #487936;
+  color: #fff;
   font-size: 12px;
 }
-/* line 55, ../scss/partials/footer/_megafooter.scss */
+/* line 64, ../scss/partials/footer/_megafooter.scss */
+#footer p a {
+  color: #fff;
+}
+/* line 67, ../scss/partials/footer/_megafooter.scss */
 #footer p a[rel="home"] {
   margin-left: 3px;
   margin-right: 3px;

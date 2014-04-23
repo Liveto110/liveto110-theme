@@ -269,42 +269,6 @@ foreach ($smof_data['homepage_blocks']['enabled'] as $block) {
 				</div><!-- /.container -->
 			</div><!-- /#latest-articles -->
 			<?php break;
-		case 'Signup Section' :
-			?>
-			<!-- ========== SIGNUP SECTION SECTION ========== -->
-			<div id="signup-section" class="clearfix">
-				<div class="signup-wrapper">
-					<div class="container">
-						<h1 class="section-title text-center">Join the Live to 110 community</h1>	
-
-						<article class="signup-form">
-							<h2 class="section-subtitle text-center">Start changing your life today!</h2>
-							<header class="form-header">
-								<h1 class="form-title text-center">Sign up to receive:</h1>
-								<h2 class="form-subtitle text-center">
-									Live to 110 by Weighing Less eGuide
-									<br>
-									+ The Modern Paleo Diet email series
-									<br>
-									+ Modern Paleo Survival Guides
-									<br>
-									+ email updates
-								</h2><!-- /.form-subtitle -->
-							</header><!-- /.form-header -->
-
-							<div class="form-wrap">
-								<form role="form">
-										<label class="sr-only">Email</label>
-										<input type="email" class="form-control" placeholder="Your Email">
-
-									<button class="btn btn-primary">Join</button>
-								</form>
-							</div><!-- /.form-wrap -->
-						</article><!-- /.signup-form -->
-					</div><!-- /.container -->
-				</div><!-- /.signup-wrapper -->
-			</div><!-- /#signup-section -->
-			<?php break;
 		default :
 			break;
 	}

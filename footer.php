@@ -8,6 +8,41 @@
  */
 ?>
 <?php global $smof_data;  save_smof_option();?>
+
+<div id="signup-section" class="clearfix" style="background-image: url('<?php echo $smof_data[ 'signupsection_bg_img' ]; ?>');">
+	<div class="signup-wrapper">
+		<div class="container">
+			<h1 class="section-title text-center"><?php echo $smof_data[ 'signupsection_title' ]; ?></h1>	
+
+			<article class="signup-form">
+				<header class="form-header">
+					<h2 class="section-subtitle text-center"><?php echo $smof_data[ 'signupsection_subtitle' ]; ?></h2>
+				</header><!-- /.form-header -->
+
+				<div class="form-wrap">
+					<div class="row">
+						<div class="col-md-7">
+							<div class="image-wrap">
+								<?php if ($smof_data['signupsection_graphics']) { ?>
+									<img src="<?php echo $smof_data['signupsection_graphics']; ?>" class="img-responsive">
+								<?php } ?>
+							</div><!-- /.image-wrap -->
+						</div>
+
+						<div class="col-md-5">
+							<?php if ($smof_data['signupsection_btn_linkto_url']) { ?>
+								<div class="button-wrap">
+									<a href="<?php echo $smof_data[ 'signupsection_btn_linkto_url' ]; ?>" class="btn btn-primary"><?php echo $smof_data['signupsection_btn_text']; ?></a>
+								</div><!-- /.button-wrap -->
+							<?php } ?>
+						</div>
+					</div><!-- /.row -->
+				</div><!-- /.form-wrap -->
+			</article><!-- /.signup-form -->
+		</div><!-- /.container -->
+	</div><!-- /.signup-wrapper -->
+</div><!-- /#signup-section -->
+
 <div id="megafooter" class="clearfix">
 	<div class="container">
 		<div class="row">

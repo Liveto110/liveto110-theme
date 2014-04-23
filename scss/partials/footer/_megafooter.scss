@@ -42,16 +42,28 @@
 			}
 		}
 	}
+	.row {
+		// background: red;
+		> div {
+			// background: fuchsia;
+			.widget {
+				background: yellow;
+			}
+		}
+	}
 }
 
 #footer {
-	background: #eef6eb;
+	background: $footer-bg;
 	padding-top: 24px;
 	padding-bottom: 24px;
 	p {
 		margin-bottom: 0;
-		color: darken(#eef6eb, 60%);
+		color: #fff;
 		font-size: 12px;
+		a {
+			color: #fff;
+		}
 		a[rel="home"] {
 			margin-left: 3px;
 			margin-right: 3px;
