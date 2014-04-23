@@ -69,7 +69,7 @@ foreach ($smof_data['homepage_blocks']['enabled'] as $block) {
 
 											<footer class="blurb-footer">
 												<a href="<?php echo the_field( "button_link_url", $post->ID ); ?>" class="read-more-link">
-													<span class="btn-text"><?php echo the_field( "button_text", $post->ID ); ?>Button Text</span><!-- /.btn-text -->
+													<span class="btn-text"><?php echo the_field( "button_text", $post->ID ); ?></span><!-- /.btn-text -->
 													<span class="go-to-icon"><i class="fa fa-angle-right"></i></span><!-- /.goto-icon -->
 												</a><!-- /.read-more-link -->
 											</footer><!-- /.blurb-footer -->
