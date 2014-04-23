@@ -107,12 +107,6 @@ function liveto110_fonts_url() {
 	$fonts_url = '';
 
 	/* Translators: If there are characters in your language that are not
-	 * supported by Nunito, translate this to 'off'. Do not translate
-	 * into your own language.
-	 */
-	$nunito = _x( 'on', 'Nunito font: on or off', 'liveto110' );
-
-	/* Translators: If there are characters in your language that are not
 	 * supported by Lato, translate this to 'off'. Do not translate into your
 	 * own language.
 	 */
@@ -124,11 +118,8 @@ function liveto110_fonts_url() {
 	 */
 	$quicksand = _x( 'on', 'Quicksand font: on or off', 'liveto110' );
 
-	if ( 'off' !== $nunito || 'off' !== $lato || 'off' !== $quicksand ) {
+	if ( 'off' !== $lato || 'off' !== $quicksand ) {
 		$font_families = array();
-
-		if ( 'off' !== $nunito )
-			$font_families[] = 'Nunito:400,700';
 
 		if ( 'off' !== $lato )
 			$font_families[] = 'Lato:400,700,300italic,400italic,700italic';
