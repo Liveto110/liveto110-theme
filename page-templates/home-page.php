@@ -47,13 +47,7 @@ foreach ($smof_data['homepage_blocks']['enabled'] as $block) {
 												<h1 class="blurb-title"><?php the_title(); ?></h1><!-- /.blurb-title -->
 
 												<div class="icon-wrap">
-													<?php if ($smof_data['aboutliveto110_box1_icon']) { ?>
-														<?php
-															$boxname = 'box' . $count;
-															$req_id = 'aboutliveto110_' . $boxname . '_icon';
-														?>
-														<i class="fa <?php echo $smof_data[$req_id]; ?>"></i>
-													<?php } ?>
+													<i class="fa <?php echo the_field( "icon_code", $post->ID ); ?>"></i>
 												</div><!-- /.icon-wrap -->
 											</header><!-- /.blurb-header -->
 

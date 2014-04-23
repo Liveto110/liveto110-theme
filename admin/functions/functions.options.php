@@ -875,30 +875,6 @@ $of_options[] = array("name" => "Section SubTitle",
 	"std" => "Wendy is dedicated to helping you live a long, healthy life. <span>Let's Get Started!</span>",
 	"type" => "text"
 	);
-$of_options[] = array("name" => "Box 1 Icon",
-	"desc" => "",
-	"id" => "aboutliveto110_box1_icon",
-	"std" => "fa-leaf",
-	"type" => "text"
-	);
-$of_options[] = array("name" => "Box 2 Icon",
-	"desc" => "",
-	"id" => "aboutliveto110_box2_icon",
-	"std" => "fa-puzzle-piece",
-	"type" => "text"
-	);
-$of_options[] = array("name" => "Box 3 Icon",
-	"desc" => "",
-	"id" => "aboutliveto110_box3_icon",
-	"std" => "fa-bug",
-	"type" => "text"
-	);
-$of_options[] = array("name" => "Box 4 Icon",
-	"desc" => "",
-	"id" => "aboutliveto110_box4_icon",
-	"std" => "fa-trophy",
-	"type" => "text"
-	);
 
 
 #=========================================#
