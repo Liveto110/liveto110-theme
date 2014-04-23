@@ -9635,6 +9635,11 @@ span + .edit-link:before,
   color: #487936;
   font-size: 12px;
 }
+/* line 55, ../scss/partials/footer/_megafooter.scss */
+#footer p a[rel="home"] {
+  margin-left: 3px;
+  margin-right: 3px;
+}
 
 /* --- Sidebar - Default --- */
 /* line 2, ../scss/partials/sidebar/sidebar-default.scss */

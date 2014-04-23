@@ -52,5 +52,9 @@
 		margin-bottom: 0;
 		color: darken(#eef6eb, 60%);
 		font-size: 12px;
+		a[rel="home"] {
+			margin-left: 3px;
+			margin-right: 3px;
+		}
 	}
 }

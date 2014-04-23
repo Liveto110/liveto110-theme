@@ -7,6 +7,7 @@
  * @package LiveTo110 Theme
  */
 ?>
+<?php global $smof_data;  save_smof_option();?>
 <div id="megafooter" class="clearfix">
 	<div class="container">
 		<div class="row">
@@ -86,9 +87,17 @@
 <div id="footer" class="clearfix">
 	<div class="container">
 		<footer id="colophon" role="contentinfo">
-			<p class="copyright-text text-center">
-				<?php printf( __( '&copy; 2014 Live to 110, LLC. Designed by %2$s.', 'liveto110' ), 'LiveTo110 Theme', '<a href="#" rel="designer">TheBrandingHospital.com</a>' ); ?>
-			</p><!-- /.copyright-text -->
+			<?php //if ( $smof_data['footer_copyright'] && $smof_data['footer_theme'] ) { ?>
+				<p class="copyright-text text-center">
+					<?php echo $smof_data['footer_copyright']; ?>
+
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<?php bloginfo('name');?>
+					</a>
+
+					All rights reserved. Designed by <?php echo $smof_data['footer_theme']; ?>
+				</p><!-- /.copyright-text -->
+			<?php //} ?>
 		</footer><!-- /#colophon -->
 	</div><!-- /container -->
 </div><!-- /#footer -->
