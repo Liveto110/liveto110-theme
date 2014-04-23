@@ -8602,8 +8602,8 @@ span + .edit-link:before,
 }
 /* line 5, ../scss/partials/header/_masthead.scss */
 #masthead #site-branding {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   display: table;
   width: 100%;
 }
@@ -8614,42 +8614,42 @@ span + .edit-link:before,
     *zoom: 1;
   }
 }
-/* line 14, ../scss/partials/header/_masthead.scss */
+/* line 16, ../scss/partials/header/_masthead.scss */
 #masthead #site-branding .site-title {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
-  /* line 14, ../scss/partials/header/_masthead.scss */
+  /* line 16, ../scss/partials/header/_masthead.scss */
   #masthead #site-branding .site-title {
     text-align: left;
     float: left;
   }
 }
-/* line 22, ../scss/partials/header/_masthead.scss */
+/* line 24, ../scss/partials/header/_masthead.scss */
 #masthead #site-branding .site-title a {
   display: block;
   position: relative;
 }
-/* line 26, ../scss/partials/header/_masthead.scss */
+/* line 28, ../scss/partials/header/_masthead.scss */
 #masthead #site-branding .site-title a .title-text {
   display: none;
 }
-/* line 29, ../scss/partials/header/_masthead.scss */
+/* line 31, ../scss/partials/header/_masthead.scss */
 #masthead #site-branding .site-title a .logo-image {
-  max-width: 200px;
+  max-width: 120px;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 768px) {
-  /* line 29, ../scss/partials/header/_masthead.scss */
+  /* line 31, ../scss/partials/header/_masthead.scss */
   #masthead #site-branding .site-title a .logo-image {
     margin-left: 0;
     margin-right: 0;
   }
 }
-/* line 40, ../scss/partials/header/_masthead.scss */
+/* line 42, ../scss/partials/header/_masthead.scss */
 #masthead #site-branding .site-description {
   text-align: center;
   text-transform: uppercase;
@@ -8660,7 +8660,7 @@ span + .edit-link:before,
   display: none;
 }
 @media screen and (min-width: 768px) {
-  /* line 40, ../scss/partials/header/_masthead.scss */
+  /* line 42, ../scss/partials/header/_masthead.scss */
   #masthead #site-branding .site-description {
     display: table-cell;
     vertical-align: middle;
@@ -9224,8 +9224,6 @@ span + .edit-link:before,
   /* line 222, ../scss/partials/content/_homepage.scss */
   #special-offers .offers-wrap .offer {
     margin-bottom: 60px;
-    max-height: 320px;
-    overflow: hidden;
   }
 }
 /* line 230, ../scss/partials/content/_homepage.scss */

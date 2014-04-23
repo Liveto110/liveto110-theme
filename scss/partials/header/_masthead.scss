@@ -4,12 +4,14 @@
 	@include background-size(cover);
 	#site-branding {
 		// min-height: 165px;
-		padding-top: 24px;
-		padding-bottom: 24px;
+		padding-top: 12px;
+		padding-bottom: 12px;
 		display: table;
 		width: 100%;
 		@media screen and (min-width: $screen-tablet) {
 			@include clearfix;
+			// padding-top: 24px;
+			// padding-bottom: 24px;
 		}
 		.site-title {
 			text-align: center;
@@ -27,7 +29,7 @@
 					display: none;
 				}
 				.logo-image {
-					max-width: 200px;
+					max-width: 120px;
 					margin-left: auto;
 					margin-right: auto;
 					@media screen and (min-width: $screen-tablet) {
