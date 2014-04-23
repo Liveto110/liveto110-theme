@@ -13,7 +13,9 @@
 			<div class="col-sm-6 col-md-3">
 				<aside class="widget logo-widget">
 					<div class="image-wrap">
-						<img src="<?php echo get_template_directory_uri() . '/img/footer-site-logo.png'; ?>" class="img-responsive" alt="">
+						<?php if ($smof_data['footer_logo']) { ?>
+							<img src="<?php echo $smof_data['footer_logo']; ?>" class="img-responsive" alt="">
+						<?php } ?>
 					</div><!-- /.image-wrap -->
 				</aside><!-- /.widget .logo-widget -->
 			</div>

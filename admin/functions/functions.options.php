@@ -1143,7 +1143,7 @@ $of_options[] = array("name" => "Footer",
 	);
 $of_options[] = array("name" => "Footer Logo",
 	"desc" => "Upload a Logo PNG/GIF image that will represent your website's footer.",
-	"id" => "flogo",
+	"id" => "footer_logo",
 	"std" => get_template_directory_uri() . "/img/footer-site-logo.png",
 	"type" => "upload"
 	);
@@ -1805,7 +1805,19 @@ if(function_exists('icl_get_languages') && !class_exists('WPML_String_Translatio
 		$of_options[] = field_template("recent_subtitle_".$languaqe['language_code'],__("Section SubTitle","liveto110"),"your latest posts");
 
 	}
-}       
+}
+#=========================================#
+# CUSTOM CSS #
+#=========================================#  
+$of_options[] = array("name" => "Custom CSS",
+	"type" => "heading"
+	);
+$of_options[] = array("name" => "Luigi Styles",
+	"desc" => "These styles will get loaded after the main stylesheet.",
+	"id" => "customcss_luigi",
+	"std" => "",
+	"type" => "textarea"
+	); 
 #=========================================#
 # BACKUP OPTIONS #
 #=========================================#
