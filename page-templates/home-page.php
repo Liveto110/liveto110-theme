@@ -161,13 +161,11 @@ foreach ($smof_data['homepage_blocks']['enabled'] as $block) {
 											</div><!-- /.image-wrap -->
 
 											<div class="entry">
-												<p>
-													<?php
-														$content = get_the_content();
-														$trimmed_content = wp_trim_words( $content, 10, '<a class="read-more-link" href="'. get_permalink() .'"><i class="fa fa-angle-right"></i> More</a>' );
-														echo $trimmed_content;
-													?>
-												</p>
+												<?php
+													global $more;
+													$more = 0;
+													the_content( '<a class="read-more-link" href="'. get_permalink() .'"><i class="fa fa-angle-right"></i> More</a>', true ); 
+												?>
 											</div><!-- /.entry -->
 
 											<footer class="post-footer">
@@ -207,13 +205,11 @@ foreach ($smof_data['homepage_blocks']['enabled'] as $block) {
 											</div><!-- /.image-wrap -->
 
 											<div class="entry">
-												<p>
-													<?php
-														$content = get_the_content();
-														$trimmed_content = wp_trim_words( $content, 10, '<a class="read-more-link" href="'. get_permalink() .'"><i class="fa fa-angle-right"></i> More</a>' );
-														echo $trimmed_content;
-													?>
-												</p>
+												<?php
+													global $more;
+													$more = 0;
+													the_content( '<a class="read-more-link" href="'. get_permalink() .'"><i class="fa fa-angle-right"></i> More</a>', true ); 
+												?>
 											</div><!-- /.entry -->
 
 											<footer class="post-footer">
@@ -253,13 +249,11 @@ foreach ($smof_data['homepage_blocks']['enabled'] as $block) {
 											</div><!-- /.image-wrap -->
 
 											<div class="entry">
-												<p>
-													<?php
-														$content = get_the_content();
-														$trimmed_content = wp_trim_words( $content, 10, '<a class="read-more-link" href="'. get_permalink() .'"><i class="fa fa-angle-right"></i> More</a>' );
-														echo $trimmed_content;
-													?>
-												</p>
+												<?php
+													global $more;
+													$more = 0;
+													the_content( '<a class="read-more-link" href="'. get_permalink() .'"><i class="fa fa-angle-right"></i> More</a>', true ); 
+												?>
 											</div><!-- /.entry -->
 
 											<footer class="post-footer">

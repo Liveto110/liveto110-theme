@@ -256,7 +256,7 @@
 			margin-bottom: 0;
 		}
 		.post-header {
-			min-height: 76px;
+			min-height: 100px;
 			margin-bottom: 12px;
 			padding-left: $padding-large-horizontal;
 			padding-right: $padding-large-horizontal;
@@ -303,6 +303,10 @@
 				font-family: $font-family-base;
 				margin-left: 5px;
 				font-size: smaller;
+				color: #83bea0;
+			}
+			img {
+				display: none;
 			}
 		}
 		.post-footer {

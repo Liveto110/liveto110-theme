@@ -9265,7 +9265,7 @@ span + .edit-link:before,
 }
 /* line 258, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .post-header {
-  min-height: 76px;
+  min-height: 100px;
   margin-bottom: 12px;
   padding-left: 16px;
   padding-right: 16px;
@@ -9328,14 +9328,19 @@ span + .edit-link:before,
   font-family: "Lato", sans-serif;
   margin-left: 5px;
   font-size: smaller;
+  color: #83bea0;
 }
 /* line 308, ../scss/partials/content/_homepage.scss */
+#latest-articles .post .entry img {
+  display: none;
+}
+/* line 312, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .post-footer {
   margin-top: 12px;
   padding-left: 16px;
   padding-right: 16px;
 }
-/* line 312, ../scss/partials/content/_homepage.scss */
+/* line 316, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .post-footer .btn {
   width: 100%;
   color: #781e52;
@@ -9355,7 +9360,7 @@ span + .edit-link:before,
   text-transform: uppercase;
 }
 
-/* line 328, ../scss/partials/content/_homepage.scss */
+/* line 332, ../scss/partials/content/_homepage.scss */
 #signup-section {
   background-image: url(../img/purple-cabbage.jpg);
   background-position: center center;
@@ -9368,18 +9373,18 @@ span + .edit-link:before,
   padding-top: 48px;
   padding-bottom: 48px;
 }
-/* line 336, ../scss/partials/content/_homepage.scss */
+/* line 340, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-wrapper {
   background: rgba(255, 255, 255, 0.8);
 }
-/* line 339, ../scss/partials/content/_homepage.scss */
+/* line 343, ../scss/partials/content/_homepage.scss */
 #signup-section .section-title {
   text-transform: uppercase;
   font-size: 27px;
   margin-bottom: 12px;
   color: #ff2c40;
 }
-/* line 345, ../scss/partials/content/_homepage.scss */
+/* line 349, ../scss/partials/content/_homepage.scss */
 #signup-section .section-subtitle {
   text-transform: uppercase;
   font-size: 24px;
@@ -9390,21 +9395,21 @@ span + .edit-link:before,
   border-bottom: 2px solid #77c0a4;
   padding-bottom: 6px;
 }
-/* line 355, ../scss/partials/content/_homepage.scss */
+/* line 359, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form {
   background: #fff;
   padding-top: 24px;
   padding-bottom: 24px;
   margin-bottom: 48px;
 }
-/* line 361, ../scss/partials/content/_homepage.scss */
+/* line 365, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form .form-title {
   text-transform: uppercase;
   font-size: 20px;
   margin-bottom: 6px;
   color: #0c4740;
 }
-/* line 367, ../scss/partials/content/_homepage.scss */
+/* line 371, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form .form-subtitle {
   font-size: 25px;
   line-height: 36px;
@@ -9413,11 +9418,11 @@ span + .edit-link:before,
   margin-top: 0;
   color: #00443d;
 }
-/* line 375, ../scss/partials/content/_homepage.scss */
+/* line 379, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form .form-wrap {
   margin-top: 12px;
 }
-/* line 378, ../scss/partials/content/_homepage.scss */
+/* line 382, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form form {
   position: relative;
   z-index: 1;
@@ -9426,7 +9431,7 @@ span + .edit-link:before,
   padding: 0;
   max-width: 500px;
 }
-/* line 385, ../scss/partials/content/_homepage.scss */
+/* line 389, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form form .form-control {
   display: block;
   width: 100%;
@@ -9449,19 +9454,19 @@ span + .edit-link:before,
   background: #74bea2;
   color: #0f5046;
 }
-/* line 400, ../scss/partials/content/_homepage.scss */
+/* line 404, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form form .form-control::-moz-placeholder {
   color: #0f5046;
 }
-/* line 403, ../scss/partials/content/_homepage.scss */
+/* line 407, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form form .form-control:-ms-input-placeholder {
   color: #0f5046;
 }
-/* line 406, ../scss/partials/content/_homepage.scss */
+/* line 410, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form form .form-control::-webkit-input-placeholder {
   color: #0f5046;
 }
-/* line 410, ../scss/partials/content/_homepage.scss */
+/* line 414, ../scss/partials/content/_homepage.scss */
 #signup-section .signup-form form .btn {
   position: absolute;
   top: 50%;
