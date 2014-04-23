@@ -1,31 +1,3 @@
-jQuery( window ).load(function() {
-	// Homepage Slideshow
-	jQuery('#intro .flexslider').flexslider({
-		selector: ".slides > li",
-		animation: "fade",
-		easing: "swing",
-		slideshow: true,
-		slideshowSpeed: 10000,
-		animationSpeed: 1200,
-		initDelay: 0,
-		directionNav: false,
-		controlNav: false
-	});
-
-	// YT Videos Slideshow
-	jQuery('#youtubevideo-carousel .flexslider').flexslider({
-		selector: ".slides > li",
-		animation: "fade",
-		easing: "swing",
-		slideshow: true,
-		slideshowSpeed: 10000,
-		animationSpeed: 1200,
-		initDelay: 0,
-		// directionNav: false,
-		// controlNav: false
-	});
-});
-
 jQuery( document ).ready( function($) {
 	// Searchform Drawer
 	var $drawer = $('#searchform-drawer');

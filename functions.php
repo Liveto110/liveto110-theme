@@ -154,8 +154,6 @@ function liveto110_scripts() {
 	wp_enqueue_style( 'liveto110-fonts', liveto110_fonts_url(), array(), null );
 	// Add FontAwesome font.
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/css/font-awesome/font-awesome.css', array(), '' );
-	// Add Flexslider styles.
-	wp_enqueue_style( 'flexslider', get_template_directory_uri() . '/flexslider/flexslider.css', array(), '' );
 	// The main stylesheet
 	wp_enqueue_style( 'liveto110-style', get_template_directory_uri() . '/css/styles.css', array(), '' );
 
