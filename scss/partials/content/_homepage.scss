@@ -254,9 +254,13 @@
 		@include box-shadow(rgba(black, .2) 1px 1px 2px);
 		@media screen and (min-width: $screen-tablet) {
 			margin-bottom: 0;
+			min-height: 712px;
+		}
+		@media screen and (min-width: $screen-desktop) {
+			min-height: 661px;
 		}
 		.post-header {
-			min-height: 100px;
+			min-height: 120px;
 			margin-bottom: 12px;
 			padding-left: $padding-large-horizontal;
 			padding-right: $padding-large-horizontal;

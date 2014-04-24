@@ -9259,22 +9259,29 @@ span + .edit-link:before,
   /* line 249, ../scss/partials/content/_homepage.scss */
   #latest-articles .post {
     margin-bottom: 0;
+    min-height: 712px;
   }
 }
-/* line 258, ../scss/partials/content/_homepage.scss */
+@media screen and (min-width: 992px) {
+  /* line 249, ../scss/partials/content/_homepage.scss */
+  #latest-articles .post {
+    min-height: 661px;
+  }
+}
+/* line 262, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .post-header {
-  min-height: 100px;
+  min-height: 120px;
   margin-bottom: 12px;
   padding-left: 16px;
   padding-right: 16px;
 }
-/* line 263, ../scss/partials/content/_homepage.scss */
+/* line 267, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .post-header .icon-wrap {
   font-size: 24px;
   line-height: 24px;
   color: #d084ac;
 }
-/* line 268, ../scss/partials/content/_homepage.scss */
+/* line 272, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .post-header .post-title {
   font-size: 14px;
   line-height: 20px;
@@ -9283,43 +9290,43 @@ span + .edit-link:before,
   text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
-  /* line 268, ../scss/partials/content/_homepage.scss */
+  /* line 272, ../scss/partials/content/_homepage.scss */
   #latest-articles .post .post-header .post-title {
     font-size: 18px;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 279, ../scss/partials/content/_homepage.scss */
+  /* line 283, ../scss/partials/content/_homepage.scss */
   #latest-articles .post .image-wrap {
     max-height: 156px;
     overflow: hidden;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 279, ../scss/partials/content/_homepage.scss */
+  /* line 283, ../scss/partials/content/_homepage.scss */
   #latest-articles .post .image-wrap {
     max-height: 208px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 279, ../scss/partials/content/_homepage.scss */
+  /* line 283, ../scss/partials/content/_homepage.scss */
   #latest-articles .post .image-wrap {
     max-height: 216px;
   }
 }
-/* line 291, ../scss/partials/content/_homepage.scss */
+/* line 295, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .entry {
   margin-top: 24px;
   padding-left: 16px;
   padding-right: 16px;
   color: #3c5c56;
 }
-/* line 296, ../scss/partials/content/_homepage.scss */
+/* line 300, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .entry p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
 }
-/* line 300, ../scss/partials/content/_homepage.scss */
+/* line 304, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .entry .read-more-link {
   display: inline;
   text-transform: uppercase;
@@ -9328,17 +9335,17 @@ span + .edit-link:before,
   font-size: smaller;
   color: #83bea0;
 }
-/* line 308, ../scss/partials/content/_homepage.scss */
+/* line 312, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .entry img {
   display: none;
 }
-/* line 312, ../scss/partials/content/_homepage.scss */
+/* line 316, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .post-footer {
   margin-top: 12px;
   padding-left: 16px;
   padding-right: 16px;
 }
-/* line 316, ../scss/partials/content/_homepage.scss */
+/* line 320, ../scss/partials/content/_homepage.scss */
 #latest-articles .post .post-footer .btn {
   width: 100%;
   color: #781e52;
