@@ -8579,7 +8579,7 @@ span + .edit-link:before,
 /* line 5, ../scss/partials/header/_primary-navigation.scss */
 #primary-navigation a {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
 }
@@ -8689,7 +8689,7 @@ span + .edit-link:before,
 #secondary-navigation .social-links a {
   text-indent: -9999px;
   position: relative;
-  font-size: 20px;
+  font-size: 24px;
   color: #fff;
   background: transparent;
 }
@@ -8708,7 +8708,7 @@ span + .edit-link:before,
 /* line 26, ../scss/partials/header/_secondary-navigation.scss */
 #secondary-navigation .secondary-links a {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
 }
