@@ -15,7 +15,9 @@ foreach ($smof_data['homepage_blocks']['enabled'] as $block) {
 			?>
 			<!-- ========== INTRO SECTION ========== -->
 			<div id="intro" class="clearfix">
-				<?php putRevSlider( $smof_data['hp_slider_id'] ); ?>
+				<?php if ( function_exists( 'putRevSlider' ) ) {
+					putRevSlider( $smof_data['hp_slider_id'] );
+				} ?>
 			</div><!-- /#intro -->
 			<?php break;
 		case 'About LiveTo110' :
