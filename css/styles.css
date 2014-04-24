@@ -9622,28 +9622,24 @@ span + .edit-link:before,
 #megafooter .links-widget a:hover, #megafooter .links-widget a:focus, #megafooter .links-widget a:active {
   color: #6db799;
 }
-/* line 49, ../scss/partials/footer/_megafooter.scss */
-#megafooter .row > div .widget {
-  background: yellow;
-}
 
-/* line 56, ../scss/partials/footer/_megafooter.scss */
+/* line 47, ../scss/partials/footer/_megafooter.scss */
 #footer {
   background: #84bda0;
   padding-top: 24px;
   padding-bottom: 24px;
 }
-/* line 60, ../scss/partials/footer/_megafooter.scss */
+/* line 51, ../scss/partials/footer/_megafooter.scss */
 #footer p {
   margin-bottom: 0;
   color: #fff;
   font-size: 12px;
 }
-/* line 64, ../scss/partials/footer/_megafooter.scss */
+/* line 55, ../scss/partials/footer/_megafooter.scss */
 #footer p a {
   color: #fff;
 }
-/* line 67, ../scss/partials/footer/_megafooter.scss */
+/* line 58, ../scss/partials/footer/_megafooter.scss */
 #footer p a[rel="home"] {
   margin-left: 3px;
   margin-right: 3px;
