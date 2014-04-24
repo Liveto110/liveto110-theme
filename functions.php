@@ -162,6 +162,9 @@ function liveto110_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'liveto110_scripts' );
 
+/* TGM Plugin Activation Settings */
+require_once get_template_directory() . '/inc/tgm-plugin-settings.php';
+
 /* Add SMOF */
 require_once('admin/index.php');
 
