@@ -86,7 +86,7 @@ function liveto110_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
-		register_sidebar( array(
+	register_sidebar( array(
 		'name'          => __( 'shop Sidebar', 'liveto110' ),
 		'id'            => 'sidebar-shop',
 		'description'   => '',
@@ -198,6 +198,9 @@ require get_template_directory() . '/inc/custom-post-types.php';
 // Register Custom Navigation Walker
 require_once get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
 
+/******************************************************************************/
+/* Hey! Please move these into 'inc/extras.php' to keep everything organised. */
+/******************************************************************************/
 function woocommerce_output_related_products() {
 woocommerce_related_products(4,4); // Display 3 products in rows of 3
 }
@@ -209,3 +212,6 @@ function woo_custom_cart_button_text() {
         return __( 'Buy now', 'woocommerce' );
  
 }
+/******************************************************************************/
+/* Hey! Please move these into 'inc/extras.php' to keep everything organised. */
+/******************************************************************************/
