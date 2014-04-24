@@ -197,3 +197,7 @@ require get_template_directory() . '/inc/custom-post-types.php';
 
 // Register Custom Navigation Walker
 require_once get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
+
+function woocommerce_output_related_products() {
+woocommerce_related_products(4,4); // Display 3 products in rows of 3
+}
