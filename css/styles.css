@@ -2242,7 +2242,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 
 #latest-articles { padding-top: 48px; padding-bottom: 48px; background: #f8faf3; }
 #latest-articles .section-title { text-transform: uppercase; font-size: 30px; margin-bottom: 24px; color: #00443d; }
-#latest-articles .post { background: #fff; padding-top: 24px; padding-bottom: 24px; margin-bottom: 30px; -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px; -moz-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px; box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px; }
+#latest-articles .post { background: #fff; padding-top: 24px; padding-bottom: 24px; margin-bottom: 30px; -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px; -moz-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px; box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px; position: relative; padding-bottom: 30px; }
 @media screen and (min-width: 768px) { #latest-articles .post { margin-bottom: 0; height: 712px; overflow: hidden; } }
 @media screen and (min-width: 992px) { #latest-articles .post { height: 661px; } }
 #latest-articles .post .post-header { height: 120px; margin-bottom: 12px; padding-left: 16px; padding-right: 16px; overflow: hidden; }
@@ -2256,7 +2256,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #latest-articles .post .entry p { font-family: Georgia, "Times New Roman", Times, serif; font-size: 18px; }
 #latest-articles .post .entry .read-more-link { display: inline; text-transform: uppercase; font-family: "Lato", sans-serif; margin-left: 5px; font-size: smaller; color: #83bea0; }
 #latest-articles .post .entry img { display: none; }
-#latest-articles .post .post-footer { margin-top: 12px; padding-left: 16px; padding-right: 16px; }
+#latest-articles .post .post-footer { margin-top: 12px; padding-left: 16px; padding-right: 16px; position: absolute; bottom: 16px; left: 0; width: 100%; }
 #latest-articles .post .post-footer .btn { width: 100%; color: #781e52; background: #e2a2bc; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border: 0; text-align: right; font-size: 12px; line-height: 18px; text-transform: uppercase; }
 
 /* --- Youtube Videos Content --- */

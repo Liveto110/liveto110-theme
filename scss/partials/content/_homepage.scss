@@ -252,6 +252,8 @@
 		padding-bottom: 24px;
 		margin-bottom: $grid-gutter-width;
 		@include box-shadow(rgba(black, .2) 1px 1px 2px);
+		position: relative;
+		padding-bottom: 30px;
 		@media screen and (min-width: $screen-tablet) {
 			margin-bottom: 0;
 			height: 712px;
@@ -319,6 +321,10 @@
 			margin-top: 12px;
 			padding-left: $padding-large-horizontal;
 			padding-right: $padding-large-horizontal;
+			position: absolute;
+			bottom: $padding-large-horizontal;
+			left: 0;
+			width: 100%;
 			.btn {
 				width: 100%;
 				color: #781e52;
