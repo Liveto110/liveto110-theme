@@ -40,6 +40,7 @@ function liveto110_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 	add_image_size( 'special-offer-homepage', 585, 9999);
+	add_image_size( 'single-post', 750, 9999);
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
