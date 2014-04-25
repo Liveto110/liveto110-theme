@@ -253,7 +253,7 @@
 		margin-bottom: $grid-gutter-width;
 		@include box-shadow(rgba(black, .2) 1px 1px 2px);
 		position: relative;
-		padding-bottom: 30px;
+		padding-bottom: 30px + $padding-large-horizontal;
 		@media screen and (min-width: $screen-tablet) {
 			margin-bottom: 0;
 			height: 712px;

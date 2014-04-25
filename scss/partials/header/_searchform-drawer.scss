@@ -6,8 +6,8 @@
 	display: none;
 	form {
 		position: relative;
-		top: 13px;
-		height: 24px;
+		top: 10px;
+		height: 30px;
 		margin: 0;
 		padding: 0;
 		.form-control {
@@ -16,13 +16,13 @@
 			top: 0;
 			z-index: 1;
 			margin: 0;
-			height: 24px;
+			height: 30px; // 24px;
 			font-family: $quicksand;
 			font-weight: 400;
 			text-align: center;
 			@include border-radius(0);
-			border-color: rgba(black, .1);
-			font-size: 12px;
+			border-color: rgba(black, .2);
+			font-size: 14px;
 		}
 		.btn {
 			position: absolute;
@@ -31,8 +31,8 @@
 			z-index: 2;
 			margin: 0;
 			padding: 0;
-			height: 24px;
-			width: 24px;
+			height: 30px;
+			width: 30px;
 			display: block;
 			line-height: 20px;
 		}

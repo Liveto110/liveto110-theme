@@ -2117,10 +2117,10 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #wpadminbar { min-height: 32px; }
 
 /* --- Searchform Drawer --- */
-#searchform-drawer { background: rgba(0, 0, 0, 0.05); height: 50px; display: none; }
-#searchform-drawer form { position: relative; top: 13px; height: 24px; margin: 0; padding: 0; }
-#searchform-drawer form .form-control { position: absolute; left: 0; top: 0; z-index: 1; margin: 0; height: 24px; font-family: "Quicksand", sans-serif; font-weight: 400; text-align: center; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; border-color: rgba(0, 0, 0, 0.1); font-size: 12px; }
-#searchform-drawer form .btn { position: absolute; right: 0; top: 0; z-index: 2; margin: 0; padding: 0; height: 24px; width: 24px; display: block; line-height: 20px; }
+#searchform-drawer { background: rgba(0, 0, 0, 0.15); height: 50px; display: none; }
+#searchform-drawer form { position: relative; top: 10px; height: 30px; margin: 0; padding: 0; }
+#searchform-drawer form .form-control { position: absolute; left: 0; top: 0; z-index: 1; margin: 0; height: 30px; font-family: "Quicksand", sans-serif; font-weight: 400; text-align: center; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; border-color: rgba(0, 0, 0, 0.2); font-size: 14px; }
+#searchform-drawer form .btn { position: absolute; right: 0; top: 0; z-index: 2; margin: 0; padding: 0; height: 30px; width: 30px; display: block; line-height: 20px; }
 
 /* --- Primary Navigation --- */
 #primary-navigation { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border: 0; }
@@ -2242,7 +2242,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 
 #latest-articles { padding-top: 48px; padding-bottom: 48px; background: #f8faf3; }
 #latest-articles .section-title { text-transform: uppercase; font-size: 30px; margin-bottom: 24px; color: #00443d; }
-#latest-articles .post { background: #fff; padding-top: 24px; padding-bottom: 24px; margin-bottom: 30px; -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px; -moz-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px; box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px; position: relative; padding-bottom: 30px; }
+#latest-articles .post { background: #fff; padding-top: 24px; padding-bottom: 24px; margin-bottom: 30px; -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px; -moz-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px; box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px; position: relative; padding-bottom: 46px; }
 @media screen and (min-width: 768px) { #latest-articles .post { margin-bottom: 0; height: 712px; overflow: hidden; } }
 @media screen and (min-width: 992px) { #latest-articles .post { height: 661px; } }
 #latest-articles .post .post-header { height: 120px; margin-bottom: 12px; padding-left: 16px; padding-right: 16px; overflow: hidden; }
