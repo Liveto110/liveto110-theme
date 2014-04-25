@@ -13,6 +13,12 @@
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
+	<?php if(has_post_thumbnail()) { ?>
+		<div class="image-wrap">
+			<?php the_post_thumbnail('single-post'); ?>
+		</div><!-- /.image-wrap -->
+	<?php } ?>
+
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php
