@@ -132,8 +132,10 @@ foreach ($smof_data['homepage_blocks']['enabled'] as $block) {
 							<div class="col-sm-4">
 								<article class="post article-post">
 									<?php
+										$podcasts_cat_id = get_cat_ID('podcasts');
+										$recipess_cat_id = get_cat_ID('recipes');
 										$args = array(
-											'category_name' => 'blog-and-podcast',
+											'category__not_in' => array($podcasts_cat_id, $recipess_cat_id),
 											'post_type' => 'post',
 											'posts_per_page' => 1
 										);
@@ -177,7 +179,7 @@ foreach ($smof_data['homepage_blocks']['enabled'] as $block) {
 								<article class="post podcast-post">
 									<?php
 										$args2 = array(
-											'category_name' => 'podcast',
+											'category_name' => 'podcasts',
 											'post_type' => 'post',
 											'posts_per_page' => 1
 										);

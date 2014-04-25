@@ -254,16 +254,18 @@
 		@include box-shadow(rgba(black, .2) 1px 1px 2px);
 		@media screen and (min-width: $screen-tablet) {
 			margin-bottom: 0;
-			min-height: 712px;
+			height: 712px;
+			overflow: hidden;
 		}
 		@media screen and (min-width: $screen-desktop) {
-			min-height: 661px;
+			height: 661px;
 		}
 		.post-header {
-			min-height: 120px;
+			height: 120px;
 			margin-bottom: 12px;
 			padding-left: $padding-large-horizontal;
 			padding-right: $padding-large-horizontal;
+			overflow: hidden;
 			.icon-wrap {
 				font-size: 24px;
 				line-height: 24px;
