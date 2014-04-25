@@ -2136,7 +2136,9 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #masthead #site-branding .site-title a { display: block; position: relative; }
 #masthead #site-branding .site-title a .title-text { display: none; }
 #masthead #site-branding .site-title a .logo-image { max-width: 120px; margin-left: auto; margin-right: auto; }
-@media screen and (min-width: 768px) { #masthead #site-branding .site-title a .logo-image { margin-left: 0; margin-right: 0; } }
+@media screen and (min-width: 768px) { #masthead #site-branding .site-title a .logo-image { margin-left: 0; margin-right: 0; max-width: 150px; } }
+@media screen and (min-width: 992px) { #masthead #site-branding .site-title a .logo-image { max-width: 180px; } }
+@media screen and (min-width: 1200px) { #masthead #site-branding .site-title a .logo-image { max-width: 100%; } }
 #masthead #site-branding .site-description { text-align: center; text-transform: uppercase; font-family: "Lato", sans-serif; font-weight: 300; font-style: italic; color: #BF76A4; display: none; }
 @media screen and (min-width: 768px) { #masthead #site-branding .site-description { display: table-cell; vertical-align: middle; text-align: right; margin: 0; width: 125px; } }
 

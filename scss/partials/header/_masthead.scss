@@ -35,6 +35,13 @@
 					@media screen and (min-width: $screen-tablet) {
 						margin-left: 0;
 						margin-right: 0;
+						max-width: 150px;
+					}
+					@media screen and (min-width: $screen-desktop) {
+						max-width: 180px;
+					}
+					@media screen and (min-width: $screen-lg-desktop) {
+						max-width: 100%;
 					}
 				}
 			}
