@@ -125,11 +125,7 @@
 				<p class="copyright-text text-center">
 					<?php echo $smof_data['footer_copyright']; ?>
 
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<?php bloginfo('name');?>
-					</a>
-
-					All rights reserved. Designed by <?php echo $smof_data['footer_theme']; ?>
+					Designed by <?php echo $smof_data['footer_theme']; ?>
 				</p><!-- /.copyright-text -->
 			<?php //} ?>
 		</footer><!-- /#colophon -->
