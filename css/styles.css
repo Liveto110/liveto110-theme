@@ -2128,7 +2128,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #primary-navigation .current-menu-item > a, #primary-navigation .current-menu-parent > a { color: white; background-color: #6eb18f; text-shadow: rgba(0, 0, 0, 0.3) 0 1px 0; }
 
 /* --- Masthead --- */
-#masthead { background: transparent url(../img/green-leaves.png) center top no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+#masthead { background-color: transparent; background-position: center top; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 #masthead #site-branding { padding-top: 12px; padding-bottom: 12px; display: table; width: 100%; }
 @media screen and (min-width: 768px) { #masthead #site-branding { overflow: hidden; *zoom: 1; } }
 #masthead #site-branding .site-title { text-align: center; margin-top: 0; margin-bottom: 0; }

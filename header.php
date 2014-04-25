@@ -127,7 +127,7 @@
 			</div><!-- /.container -->
 		</div><!-- /#primary-navigation .navbar -->
 
-		<header id="masthead" role="banner">
+		<header id="masthead" role="banner" <?php if ( get_header_image() ) { ?>style="background-image: url('<?php header_image(); ?>');" <?php } ?>>
 			<div class="container">
 				<div id="site-branding">				
 					<h1 class="site-title">

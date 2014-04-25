@@ -1,6 +1,9 @@
 /* --- Masthead --- */
 #masthead {
-	background: transparent url(../img/green-leaves.png) center top no-repeat;
+	// background-image: url(../img/green-leaves.png);
+	background-color: transparent;
+	background-position: center top;
+	background-repeat: no-repeat;
 	@include background-size(cover);
 	#site-branding {
 		// min-height: 165px;
