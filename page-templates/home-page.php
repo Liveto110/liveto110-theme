@@ -40,7 +40,6 @@ foreach ($smof_data['homepage_blocks']['enabled'] as $block) {
 									'posts_per_page' => 4
 								);
 								$service_posts = new WP_Query( $args );
-								$count = 1;
 
 								while ( $service_posts->have_posts() ) : $service_posts->the_post(); ?>
 									<div class="col-sm-6 col-md-3">
@@ -49,7 +48,7 @@ foreach ($smof_data['homepage_blocks']['enabled'] as $block) {
 												<h1 class="blurb-title"><?php the_title(); ?></h1><!-- /.blurb-title -->
 
 												<div class="icon-wrap">
-													<i class="fa <?php echo the_field( "icon_code", $post->ID ); ?>"></i>
+													<i class="fa <?php the_field('field_53580a1df276b', get_the_ID()); ?>"></i>
 												</div><!-- /.icon-wrap -->
 											</header><!-- /.blurb-header -->
 
@@ -64,14 +63,13 @@ foreach ($smof_data['homepage_blocks']['enabled'] as $block) {
 											</div><!-- /.blurb-entry -->
 
 											<footer class="blurb-footer">
-												<a href="<?php echo the_field( "button_link_url", $post->ID ); ?>" class="read-more-link">
-													<span class="btn-text"><?php echo the_field( "button_text", $post->ID ); ?></span><!-- /.btn-text -->
+												<a href="<?php the_permalink(); ?>" class="read-more-link">
+													<span class="btn-text"><?php the_field( "button_text" ); ?></span><!-- /.btn-text -->
 													<span class="go-to-icon"><i class="fa fa-angle-right"></i></span><!-- /.goto-icon -->
 												</a><!-- /.read-more-link -->
 											</footer><!-- /.blurb-footer -->
 										</article><!-- /.blurb -->
 									</div>
-									<?php $count++; ?>
 								<?php endwhile;
 								wp_reset_postdata();
 							?>

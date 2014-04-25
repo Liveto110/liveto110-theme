@@ -199,3 +199,69 @@ if (!function_exists('custom_taxonomy_post_class')) {
 		return $classes;
 	}
 }
+
+#-----------------------------------------------------------------#
+# ACF Custom Fields
+#-----------------------------------------------------------------#
+if ( function_exists( "register_field_group" ) ) {
+	register_field_group( array(
+		'id' => 'acf_service-post-meta',
+		'title' => 'Service Post Meta',
+		'fields' => array (
+			array (
+				'key' => 'field_53580a1df276b',
+				'label' => 'Icon Code',
+				'name' => 'icon_code',
+				'type' => 'text',
+				'instructions' => 'Please visit http://fortawesome.github.io/Font-Awesome/icons/ to get the icon code. Eg. fa-globe',
+				'required' => 0,
+				'default_value' => 'fa-globe',
+				'placeholder' => 'fa-globe',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_53569c497bf1d',
+				'label' => 'Button Text',
+				'name' => 'button_text',
+				'type' => 'text',
+				'instructions' => 'The text to show on the button.',
+				'required' => 0,
+				'default_value' => 'Button Text',
+				'placeholder' => 'Button Text',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'service-post',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+				0 => 'excerpt',
+				1 => 'discussion',
+				2 => 'comments',
+				3 => 'author',
+				4 => 'format',
+				5 => 'categories',
+				6 => 'tags',
+				7 => 'send-trackbacks',
+			),
+		),
+		'menu_order' => 0,
+	));
+}
