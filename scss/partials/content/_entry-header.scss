@@ -1,16 +1,15 @@
 /* --- Entry Header --- */
 .entry-header {
-	// position: relative;
-	// z-index: 1;
+	margin: 0;
+	padding: 0 $padding-large-horizontal 0 0;
 }
 
 .entry-title {
-	font-size: 30px;
+	font-size: 18px;
 	font-weight: 400;
 	text-transform: uppercase;
-	margin: 0 0 12px 0;
-	font-size: 20px;
-	margin: 0;
+	margin: $padding-large-vertical 0 0 0;
+	padding: 0;
 	@media screen and (min-width: $screen-tablet) {
 		font-size: 24px;
 		margin-bottom: 6px;
@@ -29,13 +28,4 @@
 			color: $link-color;
 		}
 	}
-}
-
-.site-content .entry-header {
-	background-color: #fff;
-	// padding: 0 10px 12px;
-}
-
-.site-content .has-post-thumbnail .entry-header {
-	// padding-top: 24px;
 }

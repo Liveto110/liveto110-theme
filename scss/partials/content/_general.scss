@@ -7,9 +7,9 @@
 }
 
 .hentry {
-	margin: 0 auto 24px;
+	margin: 0 0 24px 0;
 	@media screen and (min-width: $screen-tablet) {
-		margin: 0 auto 48px;
+		margin: 0 0 48px 0;
 	}
 }
 
@@ -28,25 +28,22 @@
 	}
 }
 
+.blog #content {
+	background: #eee;
+}
 .blog #primary .hentry {
 	@include clearfix;
-	border-bottom: 1px solid rgba(black, .1);
-	padding-bottom: 24px;
-	width: 100%;
-	@media screen and (min-width: $screen-tablet) {
-		padding-bottom: 48px;
-	}
+	background: #fff;
+	padding: 0;
+	@media screen and (min-width: $screen-tablet) {}
 	@media screen and (min-width: $screen-desktop) {
-		padding-bottom: 0;
-		border-bottom: 0;
+		border: 1px solid rgba(black, .1);
 	}
 	.image-wrap {
-		max-width: 25%;
-		float: left;
-		margin-right: 4%;
 		img {}
 	}
 	.content-wrap {
+		@include clearfix;
 		.entry-summary {
 			display: none;
 			@media screen and (min-width: $screen-desktop) {
@@ -66,13 +63,5 @@
 				padding: $padding-base-vertical $padding-base-horizontal;
 			}
 		}
-	}
-	.floated {
-		max-width: 70%;
-		float: left;
-	}
-	.unfloated {
-		max-width: 100%;
-		float: none;
 	}
 }
