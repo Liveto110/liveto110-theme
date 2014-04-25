@@ -1,19 +1,19 @@
 /* --- Sidebar - Default --- */
 #secondary.widget-area {
-	background: none;
+	background: #fff;
+	@include box-shadow(rgba(black, .15) 1px 1px 5px);
+	border: 1px solid rgba(black, .1);
 	@include clearfix;
 	margin-top: 24px;
 	padding-top: 24px;
 	padding-bottom: 24px;
 	.widget {
-		background: #fff;
-		@include box-shadow(rgba(black, .15) 1px 1px 5px);
+		background: none;		
 		@include clearfix;
-		margin-bottom: 24px;
 		padding: $padding-large-vertical $padding-large-horizontal;
 		margin-left: $padding-small-horizontal;
 		margin-right: $padding-small-horizontal;
-		border: 1px solid rgba(black, .1);
+		
 		.widget-header {}
 		.widget-title {
 			text-transform: uppercase;
@@ -31,6 +31,35 @@
 					margin: 0 0 6px 0;
 					padding: 0;
 				}
+			}
+		}
+		> ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			li {
+				margin: 0 0 6px 0;
+				padding: 0;
+			}
+		}
+	}
+	.widget_search {
+		form {
+			position: relative;
+			width: 100%;
+			label {
+				display: block;
+				margin: 0;
+				padding: 0;
+				input {
+					font-size: 12px;
+					width: 100%;
+				}
+			}
+			.btn {
+				position: absolute;
+				right: 0;
+				top: 0;
 			}
 		}
 	}

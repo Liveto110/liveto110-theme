@@ -2310,8 +2310,14 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #footer p a[rel="home"] { margin-left: 3px; margin-right: 3px; }
 
 /* --- Sidebar - Default --- */
-#secondary.widget-area { background: none; overflow: hidden; *zoom: 1; margin-top: 24px; padding-top: 24px; padding-bottom: 24px; }
-#secondary.widget-area .widget { background: #fff; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px; -moz-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px; box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px; overflow: hidden; *zoom: 1; margin-bottom: 24px; padding: 10px 16px; margin-left: 10px; margin-right: 10px; border: 1px solid rgba(0, 0, 0, 0.1); }
+#secondary.widget-area { background: #fff; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px; -moz-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px; box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px; border: 1px solid rgba(0, 0, 0, 0.1); overflow: hidden; *zoom: 1; margin-top: 24px; padding-top: 24px; padding-bottom: 24px; }
+#secondary.widget-area .widget { background: none; overflow: hidden; *zoom: 1; padding: 10px 16px; margin-left: 10px; margin-right: 10px; }
 #secondary.widget-area .widget .widget-title { text-transform: uppercase; font-weight: 400; font-size: 20px; margin: 12px 0; padding: 0; }
 #secondary.widget-area .widget .widget-content ul { margin: 0; padding: 0; list-style: none; }
 #secondary.widget-area .widget .widget-content ul li { margin: 0 0 6px 0; padding: 0; }
+#secondary.widget-area .widget > ul { list-style: none; margin: 0; padding: 0; }
+#secondary.widget-area .widget > ul li { margin: 0 0 6px 0; padding: 0; }
+#secondary.widget-area .widget_search form { position: relative; width: 100%; }
+#secondary.widget-area .widget_search form label { display: block; margin: 0; padding: 0; }
+#secondary.widget-area .widget_search form label input { font-size: 12px; width: 100%; }
+#secondary.widget-area .widget_search form .btn { position: absolute; right: 0; top: 0; }
