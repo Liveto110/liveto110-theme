@@ -18,17 +18,17 @@ function liveto110_paging_nav() {
 	}
 	?>
 	<nav class="navigation paging-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'liveto110' ); ?></h1>
+		<h1 class="screen-reader-text sr-only"><?php _e( 'Posts navigation', 'liveto110' ); ?></h1>
 		<div class="nav-links">
+			<ul class="pager">
+				<?php if ( get_next_posts_link() ) : ?>
+					<li class="previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'liveto110' ) ); ?></li>
+				<?php endif; ?>
 
-			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'liveto110' ) ); ?></div>
-			<?php endif; ?>
-
-			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'liveto110' ) ); ?></div>
-			<?php endif; ?>
-
+				<?php if ( get_previous_posts_link() ) : ?>
+					<li class="next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'liveto110' ) ); ?></li>
+				<?php endif; ?>
+			</ul><!-- /.pager -->
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
 	<?php
@@ -49,12 +49,14 @@ function liveto110_post_nav() {
 	}
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'liveto110' ); ?></h1>
+		<h1 class="screen-reader-text sr-only"><?php _e( 'Post navigation', 'liveto110' ); ?></h1>
 		<div class="nav-links">
-			<?php
-				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<span class="meta-nav">&larr;</span> %title', 'Previous post link', 'liveto110' ) );
-				next_post_link(     '<div class="nav-next">%link</div>',     _x( '%title <span class="meta-nav">&rarr;</span>', 'Next post link',     'liveto110' ) );
-			?>
+			<ul class="pager">
+				<?php
+					previous_post_link( '<li class="previous">%link</li>', _x( '<span class="meta-nav">&larr;</span> %title', 'Previous post link', 'liveto110' ) );
+					next_post_link(     '<li class="next">%link</li>',     _x( '%title <span class="meta-nav">&rarr;</span>', 'Next post link',     'liveto110' ) );
+				?>
+			</ul><!-- /.pager -->
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
 	<?php

@@ -2171,6 +2171,8 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 992px) { .blog #primary .hentry .content-wrap .entry-summary { overflow: hidden; *zoom: 1; display: block; margin-top: 12px; } }
 .blog #primary .hentry .content-wrap .entry-summary .read-more-link { display: block; float: right; margin-top: 12px; background: #6db799; font-size: 12px; line-height: 18px; text-transform: uppercase; color: #fff; padding: 6px 12px; }
 
+.single #primary .hentry .image-wrap { margin-bottom: 10px; }
+
 /* --- Entry Header --- */
 .entry-header { margin: 0; padding: 0 16px 0 0; }
 
@@ -2179,6 +2181,8 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 992px) { .entry-title { font-size: 30px; margin-bottom: 12px; } }
 .entry-title a { color: #333333; -webkit-transition: color 0.3s ease-in-out; -moz-transition: color 0.3s ease-in-out; -o-transition: color 0.3s ease-in-out; transition: color 0.3s ease-in-out; text-decoration: none; }
 .entry-title a:hover, .entry-title a:focus, .entry-title a:active { color: #6db799; }
+
+.single #primary .entry-header { margin-bottom: 16px; }
 
 /* --- Entry Meta --- */
 .entry-meta { color: #333333; font-size: 12px; font-weight: 400; }
