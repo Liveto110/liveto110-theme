@@ -924,12 +924,6 @@ $of_options[] = array("name" => "Section Title",
 	"std" => "Join The Live To 110 Community",
 	"type" => "text"
 	);
-$of_options[] = array("name" => "Section Sub-Title",
-	"desc" => "",
-	"id" => "signupsection_subtitle",
-	"std" => "Sign up to receive email updates and these 3 free gifts",
-	"type" => "text"
-	);
 $of_options[] = array("name" => "Section BG Image",
 	"desc" => "",
 	"id" => "signupsection_bg_img",
@@ -941,12 +935,6 @@ $of_options[] = array("name" => "Section Graphics",
 	"id" => "signupsection_graphics",
 	"std" => get_template_directory_uri() . "/img/books.png",
 	"type" => "upload"
-	);
-$of_options[] = array("name" => "Button Text",
-	"desc" => "",
-	"id" => "signupsection_btn_text",
-	"std" => "Start Changing Your Life Today",
-	"type" => "text"
 	);
 $of_options[] = array("name" => "Button Link-To URL",
 	"desc" => "",

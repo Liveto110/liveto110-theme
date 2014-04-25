@@ -14,30 +14,15 @@
 		<div class="container">
 			<h1 class="section-title text-center"><?php echo $smof_data[ 'signupsection_title' ]; ?></h1>	
 
-			<article class="signup-form">
-				<header class="form-header">
-					<h2 class="section-subtitle text-center"><?php echo $smof_data[ 'signupsection_subtitle' ]; ?></h2>
-				</header><!-- /.form-header -->
-
-				<div class="form-wrap">
-					<div class="image-wrap">
+			<?php if ($smof_data['signupsection_btn_linkto_url']) { ?>
+				<article class="signup-form">
+					<a href="<?php echo $smof_data[ 'signupsection_btn_linkto_url' ]; ?>">
 						<?php if ($smof_data['signupsection_graphics']) { ?>
 							<img src="<?php echo $smof_data['signupsection_graphics']; ?>" class="img-responsive">
 						<?php } ?>
-					</div><!-- /.image-wrap -->
-
-					<div class="button-wrap">
-						<?php if ($smof_data['signupsection_btn_linkto_url']) { ?>
-							<a href="<?php echo $smof_data[ 'signupsection_btn_linkto_url' ]; ?>" class="btn btn-primary">
-								<span class="btn-text">
-									<?php echo $smof_data['signupsection_btn_text']; ?>
-									<i class="fa fa-chevron-right"></i>
-								</span>
-							</a>
-						<?php } ?>
-					</div><!-- /.button-wrap -->					
-				</div><!-- /.form-wrap -->
-			</article><!-- /.signup-form -->
+					</a>
+				</article><!-- /.signup-form -->
+			<?php } ?>
 		</div><!-- /.container -->
 	</div><!-- /.signup-wrapper -->
 </div><!-- /#signup-section -->

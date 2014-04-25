@@ -1,6 +1,5 @@
 /* --- Signup Section --- */
 #signup-section {
-	// background-image: url(../img/purple-cabbage.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -17,20 +16,10 @@
 		color: #ff2c40;
 	}	
 	.signup-form {
-		background: #fff;
-		padding-top: 24px;
-		padding-bottom: 24px;
 		margin-bottom: 48px;
-		.form-header {
-			.section-subtitle {
-				text-transform: none;
-				font-size: 24px;
-				margin-top: 0;
-				color: #18433C;
-				font-family: $font-family-serif;
-				font-weight: 400;
-				font-style: italic;
-			}		
+		text-align: center;
+		a {
+			display: inline-block;
 		}
 		.form-wrap {
 			margin-top: 12px;
