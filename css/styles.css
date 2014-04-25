@@ -2253,7 +2253,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 992px) { #latest-articles .post .image-wrap { max-height: 208px; } }
 @media screen and (min-width: 1200px) { #latest-articles .post .image-wrap { max-height: 216px; } }
 #latest-articles .post .entry { margin-top: 24px; padding-left: 16px; padding-right: 16px; color: #3c5c56; }
-#latest-articles .post .entry p { font-family: Georgia, "Times New Roman", Times, serif; font-size: 18px; }
+#latest-articles .post .entry p { font-family: Georgia, "Times New Roman", Times, serif; font-size: 16px; }
 #latest-articles .post .entry .read-more-link { display: inline; text-transform: uppercase; font-family: "Lato", sans-serif; margin-left: 5px; font-size: smaller; color: #83bea0; }
 #latest-articles .post .entry img { display: none; }
 #latest-articles .post .post-footer { margin-top: 12px; padding-left: 16px; padding-right: 16px; position: absolute; bottom: 16px; left: 0; width: 100%; }
