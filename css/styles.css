@@ -9695,3 +9695,13 @@ span + .edit-link:before,
   margin: 0 0 6px 0;
   padding: 0;
 }
+/* woocommerce */
+.widget_product_categories{background:none}
+ul.product-categories{margin-left:-40px}
+ul.product-categories li, ul.product-categories li ul.children li{background:#80bc9e;padding:12px;list-style:none;font-size:110%;text-align:center;margin:4px;border-radius:5px;;text-shadow:0px 1px 0px #ccc;-webkit-transition:all 0.4s linear;-moz-transition:all 0.4s linear;-o-transition:all 0.4s linear;transition:all 0.4s linear;cursor:pointer}
+ul.product-categories li:hover, ul.product-categories li.current-cat{background:#8d2d69}
+ul.product-categories li a{color:#fff}
+ul.product-categories li a:hover{text-decoration:none}
+.products a.button{background:#8d2d69 !important; color:#fff;width:150px;text-align:center;text-transform:uppercase;border:none;box-shadow:none;-webkit-transition:all 0.4s linear;-moz-transition:all 0.4s linear;-o-transition:all 0.4s linear;transition:all 0.4s linear;cursor:pointer}
+.products a.button:hover{background:#80bc9e !important;color:#444}
+.products img{border:inset 4px #8d2d69}
