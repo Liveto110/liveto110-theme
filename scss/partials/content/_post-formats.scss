@@ -1,0 +1,41 @@
+/* --- Post Formats --- */
+
+.format-aside .entry-content,
+.format-aside .entry-summary,
+.format-quote .entry-content,
+.format-quote .entry-summary,
+.format-link .entry-content,
+.format-link .entry-summary {}
+
+.site-content .format-link .entry-title,
+.site-content .format-aside .entry-title,
+.site-content .format-quote .entry-title {}
+
+/* Post Format Icons */
+.format-aside .post-format-icon {
+	background-image: url(../img/icons/post-format-icons/aside.png);
+}
+.format-audio .post-format-icon {
+	background-image: url(../img/icons/post-format-icons/audio.png);
+}
+.format-gallery .post-format-icon {
+	background-image: url(../img/icons/post-format-icons/gallery.png);
+}
+.format-image .post-format-icon {
+	background-image: url(../img/icons/post-format-icons/image.png);
+}
+.format-link .post-format-icon {
+	background-image: url(../img/icons/post-format-icons/link.png);
+}
+.format-quote .post-format-icon {
+	background-image: url(../img/icons/post-format-icons/quote.png);
+}
+.format-status .post-format-icon {
+	background-image: url(../img/icons/post-format-icons/status.png);
+}
+.format-sticky .post-format-icon {
+	background-image: url(../img/icons/post-format-icons/sticky.png);
+}
+.format-video .post-format-icon {
+	background-image: url(../img/icons/post-format-icons/video.png);
+}

@@ -53,7 +53,16 @@ function liveto110_setup() {
 	) );
 
 	// Enable support for Post Formats.
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
+	add_theme_support( 'post-formats', array( 
+		'aside',
+		'audio',
+		'gallery',
+		'image',
+		'link',
+		'quote',
+		'status',
+		'video'
+	) );
 
 	// Setup the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'liveto110_custom_background_args', array(

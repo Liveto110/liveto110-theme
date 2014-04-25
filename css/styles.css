@@ -2154,7 +2154,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 .content-area { padding-top: 24px; }
 @media screen and (min-width: 768px) { .content-area { padding-top: 48px; } }
 
-.hentry { margin: 0 0 24px 0; }
+.hentry { margin: 0 0 24px 0; position: relative; }
 @media screen and (min-width: 768px) { .hentry { margin: 0 0 48px 0; } }
 
 .site-content .entry-header, .site-content .entry-content, .site-content .entry-summary, .site-content .entry-meta, .page-content { margin: 0 auto; }
@@ -2164,7 +2164,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 
 .blog #content { background: #eee; }
 
-.blog #primary .hentry { overflow: hidden; *zoom: 1; background: #fff; padding: 0; }
+.blog #primary .hentry { overflow: hidden; *zoom: 1; background: #fff; padding: 6px; }
 @media screen and (min-width: 992px) { .blog #primary .hentry { border: 1px solid rgba(0, 0, 0, 0.1); } }
 .blog #primary .hentry .content-wrap { overflow: hidden; *zoom: 1; }
 .blog #primary .hentry .content-wrap .entry-summary { display: none; }
@@ -2173,8 +2173,13 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 
 .single #primary .hentry .image-wrap { margin-bottom: 10px; }
 
+/* Post Format Icon */
+.post-format-icon { position: absolute; right: 7px; top: 50%; margin-top: -17px; content: ''; height: 34px; width: 34px; background-color: transparent; background-image: url(../img/icons/post-format-icons/standard.png); background-position: center center; background-repeat: no-repeat; -webkit-transform: scale(0.75, 0.75); -moz-transform: scale(0.75, 0.75); -ms-transform: scale(0.75, 0.75); -o-transform: scale(0.75, 0.75); transform: scale(0.75, 0.75); }
+@media screen and (min-width: 768px) { .post-format-icon { -webkit-transform: scale(1, 1); -moz-transform: scale(1, 1); -ms-transform: scale(1, 1); -o-transform: scale(1, 1); transform: scale(1, 1); } }
+@media screen and (min-width: 992px) { .post-format-icon { top: 7px; margin-top: 0; } }
+
 /* --- Entry Header --- */
-.entry-header { margin: 0; padding: 0 16px 0 0; }
+.entry-header { margin: 0; padding: 0 40px 0 0; }
 
 .entry-title { font-size: 18px; font-weight: 400; text-transform: uppercase; margin: 10px 0 0 0; padding: 0; }
 @media screen and (min-width: 768px) { .entry-title { font-size: 24px; margin-bottom: 6px; } }
@@ -2198,6 +2203,26 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 .byline { display: none; }
 
 .single .byline, .group-blog .byline { display: inline; }
+
+/* --- Post Formats --- */
+/* Post Format Icons */
+.format-aside .post-format-icon { background-image: url(../img/icons/post-format-icons/aside.png); }
+
+.format-audio .post-format-icon { background-image: url(../img/icons/post-format-icons/audio.png); }
+
+.format-gallery .post-format-icon { background-image: url(../img/icons/post-format-icons/gallery.png); }
+
+.format-image .post-format-icon { background-image: url(../img/icons/post-format-icons/image.png); }
+
+.format-link .post-format-icon { background-image: url(../img/icons/post-format-icons/link.png); }
+
+.format-quote .post-format-icon { background-image: url(../img/icons/post-format-icons/quote.png); }
+
+.format-status .post-format-icon { background-image: url(../img/icons/post-format-icons/status.png); }
+
+.format-sticky .post-format-icon { background-image: url(../img/icons/post-format-icons/sticky.png); }
+
+.format-video .post-format-icon { background-image: url(../img/icons/post-format-icons/video.png); }
 
 /* --- Homepage Content --- */
 #intro { background: #f8faf3; }
@@ -2310,13 +2335,15 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #footer p a[rel="home"] { margin-left: 3px; margin-right: 3px; }
 
 /* --- Sidebar - Default --- */
-#secondary.widget-area { background: #fff; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px; -moz-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px; box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px; border: 1px solid rgba(0, 0, 0, 0.1); overflow: hidden; *zoom: 1; margin-top: 24px; padding-top: 24px; padding-bottom: 24px; }
+#secondary.widget-area { background: #fff; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px; -moz-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px; box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px; border: 1px solid rgba(0, 0, 0, 0.1); overflow: hidden; *zoom: 1; margin-top: 24px; margin-bottom: 48px; padding-top: 24px; padding-bottom: 24px; }
 #secondary.widget-area .widget { background: none; overflow: hidden; *zoom: 1; padding: 10px 16px; margin-left: 10px; margin-right: 10px; }
 #secondary.widget-area .widget .widget-title { text-transform: uppercase; font-weight: 400; font-size: 20px; margin: 12px 0; padding: 0; }
 #secondary.widget-area .widget .widget-content ul { margin: 0; padding: 0; list-style: none; }
 #secondary.widget-area .widget .widget-content ul li { margin: 0 0 6px 0; padding: 0; }
 #secondary.widget-area .widget > ul { list-style: none; margin: 0; padding: 0; }
 #secondary.widget-area .widget > ul li { margin: 0 0 6px 0; padding: 0; }
+#secondary.widget-area .widget > ul li ul { margin: 0 0 6px 6px; padding: 0; }
+#secondary.widget-area .widget > ul li ul li { margin: 0 0 3px 0; padding: 0; }
 #secondary.widget-area .widget_search form { position: relative; width: 100%; }
 #secondary.widget-area .widget_search form label { display: block; margin: 0; padding: 0; }
 #secondary.widget-area .widget_search form label input { font-size: 12px; width: 100%; }

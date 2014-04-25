@@ -8,6 +8,7 @@
 
 .hentry {
 	margin: 0 0 24px 0;
+	position: relative;
 	@media screen and (min-width: $screen-tablet) {
 		margin: 0 0 48px 0;
 	}
@@ -34,7 +35,7 @@
 .blog #primary .hentry {
 	@include clearfix;
 	background: #fff;
-	padding: 0;
+	padding: $padding-base-vertical;
 	@media screen and (min-width: $screen-tablet) {}
 	@media screen and (min-width: $screen-desktop) {
 		border: 1px solid rgba(black, .1);
@@ -68,4 +69,27 @@
 
 .single #primary .hentry .image-wrap {
 	margin-bottom: $padding-large-vertical;
+}
+
+/* Post Format Icon */
+.post-format-icon {
+	position: absolute;
+	right: 7px;
+	top: 50%;
+	margin-top: -17px;
+	content: '';
+	height: 34px;
+	width: 34px;
+	background-color: transparent;
+	background-image: url(../img/icons/post-format-icons/standard.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	@include scale(.75);
+	@media screen and (min-width: $screen-tablet) {
+		@include scale(1);
+	}
+	@media screen and (min-width: $screen-desktop) {
+		top: 7px;
+		margin-top: 0;
+	}
 }

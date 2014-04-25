@@ -5,6 +5,7 @@
 	border: 1px solid rgba(black, .1);
 	@include clearfix;
 	margin-top: 24px;
+	margin-bottom: 48px;
 	padding-top: 24px;
 	padding-bottom: 24px;
 	.widget {
@@ -40,6 +41,14 @@
 			li {
 				margin: 0 0 6px 0;
 				padding: 0;
+				ul {
+					margin: 0 0 6px 6px;
+					padding: 0;
+					li {
+						margin: 0 0 3px 0;
+						padding: 0;
+					}
+				}
 			}
 		}
 	}
