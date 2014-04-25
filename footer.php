@@ -20,23 +20,22 @@
 				</header><!-- /.form-header -->
 
 				<div class="form-wrap">
-					<div class="row">
-						<div class="col-md-7">
-							<div class="image-wrap">
-								<?php if ($smof_data['signupsection_graphics']) { ?>
-									<img src="<?php echo $smof_data['signupsection_graphics']; ?>" class="img-responsive">
-								<?php } ?>
-							</div><!-- /.image-wrap -->
-						</div>
+					<div class="image-wrap">
+						<?php if ($smof_data['signupsection_graphics']) { ?>
+							<img src="<?php echo $smof_data['signupsection_graphics']; ?>" class="img-responsive">
+						<?php } ?>
+					</div><!-- /.image-wrap -->
 
-						<div class="col-md-5">
-							<?php if ($smof_data['signupsection_btn_linkto_url']) { ?>
-								<div class="button-wrap">
-									<a href="<?php echo $smof_data[ 'signupsection_btn_linkto_url' ]; ?>" class="btn btn-primary"><?php echo $smof_data['signupsection_btn_text']; ?></a>
-								</div><!-- /.button-wrap -->
-							<?php } ?>
-						</div>
-					</div><!-- /.row -->
+					<div class="button-wrap">
+						<?php if ($smof_data['signupsection_btn_linkto_url']) { ?>
+							<a href="<?php echo $smof_data[ 'signupsection_btn_linkto_url' ]; ?>" class="btn btn-primary">
+								<span class="btn-text">
+									<?php echo $smof_data['signupsection_btn_text']; ?>
+									<i class="fa fa-chevron-right"></i>
+								</span>
+							</a>
+						<?php } ?>
+					</div><!-- /.button-wrap -->					
 				</div><!-- /.form-wrap -->
 			</article><!-- /.signup-form -->
 		</div><!-- /.container -->
