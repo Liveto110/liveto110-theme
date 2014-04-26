@@ -118,7 +118,7 @@ function add_to_author_profile( $contactmethods ) {
 	return $contactmethods;
 }
 add_filter( 'user_contactmethods', 'add_to_author_profile', 10, 1);
-=======
+
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 
@@ -129,4 +129,3 @@ function custom_variation_price( $price, $product ) {
      $price .= woocommerce_price($product->get_price());
      return $price;
  }
->>>>>>> FETCH_HEAD
