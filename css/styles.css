@@ -2151,9 +2151,6 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #secondary-navigation .secondary-links .current-menu-item > a, #secondary-navigation .secondary-links .current-menu-parent > a { color: white; background-color: #571c41; }
 
 /* --- Content --- */
-.content-area { padding-top: 24px; }
-@media screen and (min-width: 768px) { .content-area { padding-top: 48px; } }
-
 .hentry { margin: 0 0 24px 0; position: relative; }
 @media screen and (min-width: 768px) { .hentry { margin: 0 0 48px 0; } }
 
@@ -2162,14 +2159,18 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 .page-content { margin-bottom: 24px; }
 @media screen and (min-width: 768px) { .page-content { margin-bottom: 48px; } }
 
-.blog #content { background: #eee; }
+.blog #content, .single #content { background: #eee; padding-top: 24px; padding-bottom: 24px; }
+@media screen and (min-width: 768px) { .blog #content, .single #content { padding-top: 36px; padding-bottom: 36px; } }
+@media screen and (min-width: 992px) { .blog #content, .single #content { padding-top: 48px; padding-bottom: 48px; } }
 
-.blog #primary .hentry { overflow: hidden; *zoom: 1; background: #fff; padding: 6px; }
-@media screen and (min-width: 992px) { .blog #primary .hentry { border: 1px solid rgba(0, 0, 0, 0.1); } }
-.blog #primary .hentry .content-wrap { overflow: hidden; *zoom: 1; }
-.blog #primary .hentry .content-wrap .entry-summary { display: none; }
-@media screen and (min-width: 992px) { .blog #primary .hentry .content-wrap .entry-summary { overflow: hidden; *zoom: 1; display: block; margin-top: 12px; } }
-.blog #primary .hentry .content-wrap .entry-summary .read-more-link { display: block; float: right; margin-top: 12px; background: #6db799; font-size: 12px; line-height: 18px; text-transform: uppercase; color: #fff; padding: 6px 12px; }
+.blog #primary .hentry, .single #primary .hentry { overflow: hidden; *zoom: 1; background: #fff; padding: 6px; }
+@media screen and (min-width: 992px) { .blog #primary .hentry, .single #primary .hentry { border: 1px solid rgba(0, 0, 0, 0.1); } }
+.blog #primary .hentry .content-wrap, .single #primary .hentry .content-wrap { overflow: hidden; *zoom: 1; }
+.blog #primary .hentry .content-wrap .entry, .single #primary .hentry .content-wrap .entry { display: none; }
+@media screen and (min-width: 992px) { .blog #primary .hentry .content-wrap .entry, .single #primary .hentry .content-wrap .entry { overflow: hidden; *zoom: 1; display: block; margin-top: 12px; } }
+.blog #primary .hentry .content-wrap .entry .read-more-link, .single #primary .hentry .content-wrap .entry .read-more-link { display: block; float: right; margin-top: 12px; background: #6db799; font-size: 12px; line-height: 18px; text-transform: uppercase; color: #fff; padding: 6px 12px; }
+
+.single #primary .hentry .content-wrap .entry { display: block; }
 
 .single #primary .hentry .image-wrap { margin-bottom: 10px; }
 
@@ -2335,7 +2336,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #footer p a[rel="home"] { margin-left: 3px; margin-right: 3px; }
 
 /* --- Sidebar - Default --- */
-#secondary.widget-area { background: #fff; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px; -moz-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px; box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px; border: 1px solid rgba(0, 0, 0, 0.1); overflow: hidden; *zoom: 1; margin-top: 24px; margin-bottom: 48px; padding-top: 24px; padding-bottom: 24px; }
+#secondary.widget-area { background: #fff; -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px; -moz-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px; box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 5px; border: 1px solid rgba(0, 0, 0, 0.1); overflow: hidden; *zoom: 1; margin-bottom: 48px; padding-top: 24px; padding-bottom: 24px; }
 #secondary.widget-area .widget { background: none; overflow: hidden; *zoom: 1; padding: 10px 16px; margin-left: 10px; margin-right: 10px; }
 #secondary.widget-area .widget .widget-title { text-transform: uppercase; font-weight: 400; font-size: 20px; margin: 12px 0; padding: 0; }
 #secondary.widget-area .widget .widget-content ul { margin: 0; padding: 0; list-style: none; }

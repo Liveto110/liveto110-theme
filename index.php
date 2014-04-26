@@ -33,11 +33,11 @@ get_header(); ?>
 
 										<?php } else { ?>
 
-											<div class="col-xs-4">
+											<div class="col-xs-4 col-sm-5 col-md-6">
 												<div class="image-wrap">
 													<?php
 														the_post_thumbnail('blog-index');
-														$wrapper_class = 'col-xs-8';
+														$wrapper_class = 'col-xs-8 col-sm-7 col-md-6';
 													?>
 												</div><!-- /.image-wrap -->
 											</div>
@@ -63,9 +63,13 @@ get_header(); ?>
 													</div><!-- .entry-meta -->
 												</header><!-- .entry-header -->
 
-												<div class="entry-summary">
-													<?php the_excerpt(); ?>
-												</div><!-- .entry-summary -->
+												<div class="entry">
+													<?php
+														global $more;
+														$more = 0;
+														the_content( '<a class="read-more-link" href="'. get_permalink() .'"><i class="fa fa-angle-right"></i> More</a>', true ); 
+													?>
+												</div><!-- /.entry -->
 											</div><!-- /.content-wrap -->
 										</div>
 									</div><!-- /.row -->

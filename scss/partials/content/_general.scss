@@ -1,8 +1,8 @@
 // General
 .content-area {
-	padding-top: 24px;
+	// padding-top: 24px;
 	@media screen and (min-width: $screen-tablet) {
-		padding-top: 48px;
+		// padding-top: 48px;
 	}
 }
 
@@ -29,10 +29,22 @@
 	}
 }
 
-.blog #content {
+.blog #content,
+.single #content {
 	background: #eee;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	@media screen and (min-width: $screen-tablet) {
+		padding-top: 36px;
+		padding-bottom: 36px;
+	}
+	@media screen and (min-width: $screen-desktop) {
+		padding-top: 48px;
+		padding-bottom: 48px;
+	}
 }
-.blog #primary .hentry {
+.blog #primary .hentry,
+.single #primary .hentry {
 	@include clearfix;
 	background: #fff;
 	padding: $padding-base-vertical;
@@ -45,7 +57,7 @@
 	}
 	.content-wrap {
 		@include clearfix;
-		.entry-summary {
+		.entry {
 			display: none;
 			@media screen and (min-width: $screen-desktop) {
 				@include clearfix;
@@ -66,7 +78,7 @@
 		}
 	}
 }
-
+.single #primary .hentry .content-wrap .entry { display: block; }
 .single #primary .hentry .image-wrap {
 	margin-bottom: $padding-large-vertical;
 }
