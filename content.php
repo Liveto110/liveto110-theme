@@ -23,10 +23,6 @@
 			<div class="content-wrap">
 				<header class="entry-header">
 					<?php
-						$post_format = get_post_format();
-						echo '<h1>' . $post_format . '</h1>';
-					?>
-					<?php
 						if ( is_single() ) :
 							the_title( '<h1 class="entry-title">', '</h1>' );
 						else :
