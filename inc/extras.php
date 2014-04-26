@@ -98,3 +98,13 @@ function custom_excerpt_length( $length ) {
 	return 20;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+
+add_filter('woocommerce_variable_price_html', 'custom_variation_price', 10, 2);
+function custom_variation_price( $price, $product ) {
+      $price = '';
+      if ( !$product->min_variation_price || $product->min_variation_price !== $product->max_variation_price ) $price .= '<span class="from">' . _x('', 'min_price', 'woocommerce') . ' </span>';
+     $price .= woocommerce_price($product->get_price());
+     return $price;
+ }
