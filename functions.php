@@ -210,21 +210,3 @@ require get_template_directory() . '/inc/custom-post-types.php';
 
 // Register Custom Navigation Walker
 require_once get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
-
-/******************************************************************************/
-/* Hey! Please move these into 'inc/extras.php' to keep everything organised. */
-/******************************************************************************/
-function woocommerce_output_related_products() {
-woocommerce_related_products(4,4); // Display 3 products in rows of 3
-}
-add_filter( 'add_to_cart_text', 'woo_custom_cart_button_text' );                        // < 2.1
-add_filter( 'woocommerce_product_add_to_cart_text', 'woo_custom_cart_button_text' );    // 2.1 +
- 
-function woo_custom_cart_button_text() {
- 
-        return __( 'Buy now', 'woocommerce' );
- 
-}
-/******************************************************************************/
-/* Hey! Please move these into 'inc/extras.php' to keep everything organised. */
-/******************************************************************************/

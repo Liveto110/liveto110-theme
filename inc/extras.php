@@ -118,3 +118,16 @@ function add_to_author_profile( $contactmethods ) {
 	return $contactmethods;
 }
 add_filter( 'user_contactmethods', 'add_to_author_profile', 10, 1);
+
+/*===================================================================================
+ * Woocommerce - Ariful
+ * =================================================================================*/
+function woocommerce_output_related_products() {
+	woocommerce_related_products(4,4); // Display 3 products in rows of 3
+}
+add_filter( 'add_to_cart_text', 'woo_custom_cart_button_text' );                        // < 2.1
+add_filter( 'woocommerce_product_add_to_cart_text', 'woo_custom_cart_button_text' );    // 2.1 +
+ 
+function woo_custom_cart_button_text() {
+	return __( 'Buy now', 'woocommerce' );
+}
