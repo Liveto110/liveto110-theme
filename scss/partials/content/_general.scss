@@ -57,7 +57,7 @@
 	}
 	.content-wrap {
 		@include clearfix;
-		.entry {
+		.entry-content {
 			display: none;
 			@media screen and (min-width: $screen-desktop) {
 				@include clearfix;
@@ -78,7 +78,7 @@
 		}
 	}
 }
-.single #primary .hentry .content-wrap .entry { display: block; }
+.single #primary .hentry .content-wrap .entry-content { display: block; }
 .single #primary .hentry .image-wrap {
 	margin-bottom: $padding-large-vertical;
 }

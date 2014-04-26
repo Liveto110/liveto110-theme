@@ -1,0 +1,52 @@
+/* --- Entry Content --- */
+.entry-content,
+.entry-summary,
+.page-content {
+	@include hyphens(auto);
+	word-wrap: break-word;
+}
+
+.site-content .entry-content,
+.site-content .entry-summary,
+.page-content {
+	background-color: #fff;
+	padding: 12px 10px 0;
+}
+
+/* Page links */
+
+.page-links {
+	clear: both;
+	font-size: 12px;
+	font-weight: 900;
+	line-height: 2;
+	margin: 24px 0;
+	text-transform: uppercase;
+}
+.page-links a,
+.page-links > span {
+	background: #fff;
+	border: 1px solid #fff;
+	display: inline-block;
+	height: 22px;
+	margin: 0 1px 2px 0;
+	text-align: center;
+	width: 22px;
+}
+.page-links a {
+	background: #000;
+	border: 1px solid #000;
+	color: #fff;
+	text-decoration: none;
+}
+.page-links a:hover {
+	background: #41a62a;
+	border: 1px solid #41a62a;
+	color: #fff;
+}
+.page-links > .page-links-title {
+	height: auto;
+	margin: 0;
+	padding-right: 7px;
+	width: auto;
+}

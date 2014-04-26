@@ -63,7 +63,7 @@ get_header(); ?>
 													</div><!-- .entry-meta -->
 												</header><!-- .entry-header -->
 
-												<div class="entry">
+												<div class="entry-content">
 													<?php
 														global $more;
 														$more = 0;

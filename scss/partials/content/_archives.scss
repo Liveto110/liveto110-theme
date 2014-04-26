@@ -1,0 +1,39 @@
+/* --- Archives --- */
+.archive-header,
+.page-header {
+	margin: 24px auto;
+	// max-width: 474px;
+}
+
+.archive-title,
+.page-title {
+	font-size: 16px;
+	margin: 0;
+}
+
+.taxonomy-description,
+.author-description {
+	color: #767676;
+	font-size: 14px;
+	line-height: 1.2857142857;
+	padding-top: 18px;
+}
+.taxonomy-description p,
+.author-description p {
+	margin-bottom: 18px;
+}
+
+.taxonomy-description p:last-child,
+.author-description p:last-child {
+	margin-bottom: 0;
+}
+
+.taxonomy-description a,
+.author-description a {
+	text-decoration: underline;
+}
+
+.taxonomy-description a:hover,
+.author-description a:hover {
+	text-decoration: none;
+}
