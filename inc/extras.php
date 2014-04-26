@@ -88,13 +88,33 @@ function liveto110_setup_author() {
 }
 add_action( 'wp', 'liveto110_setup_author' );
 
-// Custom Read More Link
+/*===================================================================================
+ * Custom Read More Link
+ * =================================================================================*/
 function new_excerpt_more( $more ) {
 	return ' <a class="read-more-link" href="'. get_permalink( get_the_ID() ) . '"><i class="fa fa-angle-right"></i> ' . __('Read More', 'liveto110') . '</a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
+/*===================================================================================
+ * Custom Excerpt Length
+ * =================================================================================*/
 function custom_excerpt_length( $length ) {
 	return 20;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+/*===================================================================================
+ * Add Author Links
+ * =================================================================================*/
+function add_to_author_profile( $contactmethods ) {
+	
+	$contactmethods['facebook_profile'] = 'Facebook Profile URL';
+	$contactmethods['twitter_profile'] = 'Twitter Profile URL';
+	$contactmethods['pinterest_profile'] = 'Pinterest Profile URL';
+	$contactmethods['youtube_profile'] = 'Youtube Profile URL';
+	$contactmethods['google_profile'] = 'Google Profile URL';
+	
+	return $contactmethods;
+}
+add_filter( 'user_contactmethods', 'add_to_author_profile', 10, 1);
