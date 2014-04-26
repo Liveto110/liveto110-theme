@@ -1191,11 +1191,11 @@ tbody.collapse.in { display: table-row-group; }
 .dropdown-menu { position: absolute; top: 100%; left: 0; z-index: 1000; display: none; float: left; min-width: 160px; padding: 5px 0; margin: 2px 0 0; list-style: none; font-size: 14px; text-align: left; background-color: white; border: 1px solid #cccccc; border: 1px solid rgba(0, 0, 0, 0.15); border-radius: 4px; -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); background-clip: padding-box; }
 .dropdown-menu.pull-right { right: 0; left: auto; }
 .dropdown-menu .divider { height: 1px; margin: 9px 0; overflow: hidden; background-color: #e5e5e5; }
-.dropdown-menu > li > a { display: block; padding: 3px 20px; clear: both; font-weight: normal; line-height: 1.42857; color: #333333; white-space: nowrap; }
+.dropdown-menu > li > a { display: block; padding: 3px 20px; clear: both; font-weight: normal; line-height: 1.42857; color: #6db799; white-space: nowrap; }
 
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus { text-decoration: none; color: #262626; background-color: whitesmoke; }
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus { text-decoration: none; color: #479073; background-color: whitesmoke; }
 
-.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus { color: white; text-decoration: none; outline: 0; background-color: #428bca; }
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus { color: white; text-decoration: none; outline: 0; background-color: #6db799; }
 
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus { color: #999999; }
 
@@ -2006,7 +2006,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus { background-image: -webkit-linear-gradient(top, whitesmoke 0%, #e8e8e8 100%); background-image: -o-linear-gradient(top, whitesmoke 0%, #e8e8e8 100%); background-image: linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF5F5F5', endColorstr='#FFE8E8E8', GradientType=0); background-color: #e8e8e8; }
 
-.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus { background-image: -webkit-linear-gradient(top, #428bca 0%, #357ebd 100%); background-image: -o-linear-gradient(top, #428bca 0%, #357ebd 100%); background-image: linear-gradient(to bottom, #428bca 0%, #357ebd 100%); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF428BCA', endColorstr='#FF357EBD', GradientType=0); background-color: #357ebd; }
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus { background-image: -webkit-linear-gradient(top, #6db799 0%, #5caf8d 100%); background-image: -o-linear-gradient(top, #6db799 0%, #5caf8d 100%); background-image: linear-gradient(to bottom, #6db799 0%, #5caf8d 100%); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF6DB799', endColorstr='#FF5CAF8D', GradientType=0); background-color: #5caf8d; }
 
 .navbar-default { background-image: -webkit-linear-gradient(top, #a5cfba 0%, #84bda0 100%); background-image: -o-linear-gradient(top, #a5cfba 0%, #84bda0 100%); background-image: linear-gradient(to bottom, #a5cfba 0%, #84bda0 100%); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFA5CFBA', endColorstr='#FF84BDA0', GradientType=0); filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); border-radius: 0px; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075); }
 .navbar-default .navbar-nav > .active > a { background-image: -webkit-linear-gradient(top, #73b493 0%, #7db99b 100%); background-image: -o-linear-gradient(top, #73b493 0%, #7db99b 100%); background-image: linear-gradient(to bottom, #73b493 0%, #7db99b 100%); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF73B493', endColorstr='#FF7DB99B', GradientType=0); -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.075); box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.075); }

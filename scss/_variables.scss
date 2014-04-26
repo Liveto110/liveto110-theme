@@ -35,6 +35,11 @@ $headings-font-weight:    700;
 //** Load fonts from this directory.
 $icon-font-path: "../fonts/bootstrap/";
 
+//== Dropdowns
+$dropdown-link-color:            $link-color;
+$dropdown-link-hover-color:      $link-hover-color;
+$dropdown-link-active-bg:        $brand-primary;
+
 //== Navbar
 //
 // Basics of a navbar
