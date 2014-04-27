@@ -3,7 +3,9 @@
  * Template Name: YouTube Videos Page
  *
  */
-get_header(); ?>
+if (!defined('ABSPATH')) exit;?>
+<?php global $smof_data; ?>
+<?php get_header(); ?>
 
 <div id="content" class="site-content">
 	<div class="container">
