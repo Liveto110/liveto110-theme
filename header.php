@@ -62,12 +62,6 @@
     <?php } ?>
 
 	<?php wp_head(); ?>
-
-    <?php if ($smof_data['customcss_luigi']) { ?>
-	    <style type="text/css">
-	    	<?php echo $smof_data['customcss_luigi']; ?>
-	    </style>
-	<?php } ?>	
 </head>
 
 <body <?php body_class(); ?>>

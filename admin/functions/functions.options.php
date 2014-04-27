@@ -1321,18 +1321,7 @@ if(function_exists('icl_get_languages') && !class_exists('WPML_String_Translatio
 
 	}
 }
-#=========================================#
-# CUSTOM CSS #
-#=========================================#  
-$of_options[] = array("name" => "Custom CSS",
-	"type" => "heading"
-	);
-$of_options[] = array("name" => "Luigi Styles",
-	"desc" => "These styles will get loaded after the main stylesheet.",
-	"id" => "customcss_luigi",
-	"std" => "",
-	"type" => "textarea"
-	); 
+
 #=========================================#
 # BACKUP OPTIONS #
 #=========================================#
