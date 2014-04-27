@@ -17,8 +17,31 @@
 			@include text-shadow(rgba(black, .3) 0 1px 0);
 		}
 	}
+	a[title="facebook"],
+	a[title="Facebook"],
+	a[title="twitter"],
+	a[title="Twitter"],
+	a[title="google-plus"], 
+	a[title="Google-plus"],
+	a[title="Google-Plus"],
 	a[title="search"],
-	a[title="Search"] {}
-	a[title="shop"] {}
-	a[title="cart"] {}
+	a[title="Search"] {
+		text-align: center;
+		width: 32px;
+		overflow: hidden;
+		position: relative;
+		background: transparent;
+		text-indent: -9999px;
+		.fa {
+			text-indent: 0;
+			position: absolute;
+			left: 10px;
+			top: 12px;
+			@include text-shadow(rgba(black, .3) 0 1px 0);
+			@include transition(all .3s ease-in-out);
+
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
 }

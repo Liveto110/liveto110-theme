@@ -2126,6 +2126,8 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #primary-navigation { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border: 0; }
 #primary-navigation a { text-transform: uppercase; font-size: 14px; font-family: "Quicksand", sans-serif; font-weight: 700; }
 #primary-navigation .current-menu-item > a, #primary-navigation .current-menu-parent > a { color: white; background-color: #6eb18f; text-shadow: rgba(0, 0, 0, 0.3) 0 1px 0; }
+#primary-navigation a[title="facebook"], #primary-navigation a[title="Facebook"], #primary-navigation a[title="twitter"], #primary-navigation a[title="Twitter"], #primary-navigation a[title="google-plus"], #primary-navigation a[title="Google-plus"], #primary-navigation a[title="Google-Plus"], #primary-navigation a[title="search"], #primary-navigation a[title="Search"] { text-align: center; width: 32px; overflow: hidden; position: relative; background: transparent; text-indent: -9999px; }
+#primary-navigation a[title="facebook"] .fa, #primary-navigation a[title="Facebook"] .fa, #primary-navigation a[title="twitter"] .fa, #primary-navigation a[title="Twitter"] .fa, #primary-navigation a[title="google-plus"] .fa, #primary-navigation a[title="Google-plus"] .fa, #primary-navigation a[title="Google-Plus"] .fa, #primary-navigation a[title="search"] .fa, #primary-navigation a[title="Search"] .fa { text-indent: 0; position: absolute; left: 10px; top: 12px; text-shadow: rgba(0, 0, 0, 0.3) 0 1px 0; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; display: table-cell; vertical-align: middle; }
 
 /* --- Masthead --- */
 #masthead { background-color: transparent; background-position: center top; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
@@ -2145,8 +2147,6 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 /* --- Secondary Navigation --- */
 #secondary-navigation { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
 #secondary-navigation a { text-shadow: none; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
-#secondary-navigation .social-links a { text-indent: -9999px; position: relative; font-size: 24px; color: #fff; background: transparent; }
-#secondary-navigation .social-links a .fa { text-indent: 0; position: absolute; left: 0; top: 12px; text-shadow: rgba(0, 0, 0, 0.3) 0 1px 0; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 #secondary-navigation .secondary-links a { text-transform: uppercase; font-size: 14px; font-family: "Quicksand", sans-serif; font-weight: 700; }
 #secondary-navigation .secondary-links .current-menu-item > a, #secondary-navigation .secondary-links .current-menu-parent > a { color: white; background-color: #571c41; }
 

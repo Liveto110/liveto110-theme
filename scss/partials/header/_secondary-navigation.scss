@@ -5,23 +5,6 @@
 		text-shadow: none;
 		@include transition(all .3s ease-in-out);
 	}
-	.social-links {
-		a {
-			text-indent: -9999px;
-			position: relative;
-			font-size: 24px;
-			color: #fff;
-			background: transparent;
-			.fa {
-				text-indent: 0;
-				position: absolute;
-				left: 0;
-				top: 12px;
-				@include text-shadow(rgba(black, .3) 0 1px 0);
-				@include transition(all .3s ease-in-out);
-			}
-		}
-	}
 	.secondary-links {
 		a {
 			text-transform: uppercase;

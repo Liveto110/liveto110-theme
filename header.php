@@ -149,20 +149,7 @@
 				</div><!-- /.navbar-header -->
 
 				<div class="navbar-collapse collapse secondary-links-container">
-					<!-- Social Links START -->
-					<?php
-						wp_nav_menu( array(
-							'theme_location'    => 'social-links',
-							'depth'             => 2,
-							'container'         => false,
-							'menu_class'        => 'nav navbar-nav navbar-left social-links',
-							'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-							'walker'            => new wp_bootstrap_navwalker()
-						) );
-					?>
-					 <!-- Social Links END -->
-
-					 <!-- Secondary Navigation START -->
+					<!-- Secondary Navigation START -->
 					 <?php
 					 	wp_nav_menu( array(
 					 		'theme_location'    => 'secondary',
