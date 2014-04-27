@@ -39,9 +39,6 @@
 			top: 12px;
 			@include text-shadow(rgba(black, .3) 0 1px 0);
 			@include transition(all .3s ease-in-out);
-
-			display: table-cell;
-			vertical-align: middle;
 		}
 	}
 }
