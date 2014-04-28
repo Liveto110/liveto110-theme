@@ -4,7 +4,6 @@
  *
  */
 global $smof_data;
-acf_form_head();
 get_header(); ?>
 
 <div id="signup-page-template" class="clearfix">

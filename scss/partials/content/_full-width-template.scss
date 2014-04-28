@@ -1,0 +1,28 @@
+/* --- Full Width Page Template --- */
+#full-width-template {
+	.page-masthead {
+		position: relative;
+		height: 300px;
+		@media screen and (min-width: $screen-tablet) {
+			height: 400px;
+		}
+		@media screen and (min-width: $screen-desktop) {
+			height: 500px;
+		}
+		@media screen and (min-width: $screen-lg-desktop) {
+			height: 600px;
+		}
+		.img-block {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			background-color: transparent;
+			background-position: center top;
+			background-repeat: no-repeat;
+			@include background-size(cover);
+			background-attachment: fixed;
+		}
+	}
+}

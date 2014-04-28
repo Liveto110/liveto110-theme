@@ -1,21 +1,31 @@
 /* --- Archives --- */
 .archive-header,
 .page-header {
-	margin: 24px auto;
+	// margin: 24px auto;
 	// max-width: 474px;
 }
 
 .archive-title,
 .page-title {
 	font-size: 16px;
-	margin: 0;
+	margin: 24px 0 6px 0;
+	@media screen and (min-width: $screen-tablet) {
+		font-size: 20px;
+		margin: 36px 0 12px 0;
+	}
+	@media screen and (min-width: $screen-desktop) {
+		font-size: 24px;
+		margin: 48px 0 12px 0;
+	}
+	@media screen and (min-width: $screen-desktop) {
+		font-size: 36px;
+	}
 }
 
 .taxonomy-description,
 .author-description {
-	color: #767676;
+	color: $text-color;
 	font-size: 14px;
-	line-height: 1.2857142857;
 	padding-top: 18px;
 }
 .taxonomy-description p,
