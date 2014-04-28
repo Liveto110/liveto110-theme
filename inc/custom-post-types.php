@@ -201,6 +201,60 @@ if (!function_exists('custom_taxonomy_post_class')) {
 }
 
 #-----------------------------------------------------------------#
+# Freebies
+#-----------------------------------------------------------------#
+function liveto110_freebies_register() {
+	$freebie_labels = array(
+		'name' => _x('Freebies', 'taxonomy general name', 'liveto110'),
+		'singular_name' => __('Freebie', 'liveto110'),
+		'search_items' => __('Search Freebies', 'liveto110'),
+		'all_items' => __('Freebies', 'liveto110'),
+		'parent_item' => __('Parent Freebie', 'liveto110'),
+		'edit_item' => __('Edit Freebie', 'liveto110'),
+		'update_item' => __('Update Freebie', 'liveto110'),
+		'add_new_item' => __('Add New Freebie', 'liveto110')
+	);
+
+	$args = array(
+		'labels' => $freebie_labels,
+		'rewrite' => array('slug' => 'freebies', 'with_front' => false),
+		'singular_label' => __('Freebie', 'liveto110'),
+		'public' => true,
+		'publicly_queryable' => true,
+		'show_ui' => true,
+		'hierarchical' => false,
+		'menu_icon' => get_template_directory_uri() . '/img/icons/icon-freebies.png',
+		'supports' => array('title', 'editor', 'thumbnail')
+	);
+	register_post_type('freebies', $args);
+}
+add_action('init', 'liveto110_freebies_register');
+#-----------------------------------------------------------------#
+# Taxonomies attached to Freebies CPT
+#-----------------------------------------------------------------#
+$category_labels = array(
+	'name' => _x('Freebie Types', 'taxonomy general name', 'liveto110'),
+	'singular_name' => __('Freebie Type', 'liveto110'),
+	'search_items' => __('Search Freebie Types', 'liveto110'),
+	'all_items' => __('All Freebie Types', 'liveto110'),
+	'parent_item' => __('Parent Freebie Type', 'liveto110'),
+	'edit_item' => __('Edit Freebie Type', 'liveto110'),
+	'update_item' => __('Update Freebie Type', 'liveto110'),
+	'add_new_item' => __('Add New Freebie Type', 'liveto110'),
+	'menu_name' => __('Freebie Types', 'liveto110')
+);
+register_taxonomy("freebie-type",
+	array("freebies"),
+	array(
+		"hierarchical" => true,
+		'labels' => $category_labels,
+		'show_ui' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => 'freebie-type')
+	)
+);
+
+#-----------------------------------------------------------------#
 # ACF Custom Fields
 #-----------------------------------------------------------------#
 if ( function_exists( "register_field_group" ) ) {

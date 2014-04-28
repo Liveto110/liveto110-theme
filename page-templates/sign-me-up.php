@@ -3,13 +3,19 @@
  * Template Name: SignMeUp Page
  *
  */
-if (!defined('ABSPATH')) exit;?>
-<?php global $smof_data; ?>
-<?php get_header(); ?>
+global $smof_data;
+acf_form_head();
+get_header(); ?>
 
 <div id="signup-page-template" class="clearfix">
 	<?php while( have_posts()) : the_post(); ?>
-		<section class="page-masthead clearfix"><?php the_post_thumbnail(); ?></section><!-- /.page-masthead -->
+		<section class="page-masthead clearfix">
+			<?php
+				$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'page-masthead' );
+				$url = $thumb['0'];
+			?>
+			<div class="img-block" style="background-image: url('<?php echo $url; ?>');"></div>
+		</section><!-- /.page-masthead -->
 
 		<section class="page-welcome clearfix">
 			<div class="container">
@@ -23,63 +29,60 @@ if (!defined('ABSPATH')) exit;?>
 	<div id="content" class="site-content">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6">
+				<div class="col-sm-6 col-md-7 col-lg-8">
 					<div id="primary" class="content-area">
 						<main id="main" class="site-main" role="main">
-							<div class="freebies-wrap">
-								<article class="freebie">
-									<div class="image-wrap">
-										<img src="" alt="Post-Thumbnail / Featured-image">
-									</div><!-- /.image-wrap -->
+							<?php
+								$args = array(
+									'post_type' => 'freebies',
+									'tax_query' => array(
+										array(
+											'taxonomy' => 'freebie-type',
+											'field' => 'slug',
+											'terms' => 'signup-freebie'
+										)
+									),
+									'posts_per_page' => 3
+								);
+								$freebies = new WP_Query( $args );
+							?>
+							<?php if ( $freebies->have_posts()) : ?>
+								<div class="freebies-wrap">
+									<?php while ( $freebies->have_posts()) : $freebies->the_post(); ?>
+										<article class="freebie">
+											<div class="row">
+												<div class="col-xs-3">
+													<div class="image-wrap">
+														<?php
+															$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'freebie-signup' );
+															$url = $thumb['0'];
+														?>
+														<img src="<?php echo $url; ?>" class="img-responsive" alt="Featured-image">
+													</div><!-- /.image-wrap -->
+												</div>
 
-									<div class="content-wrap">
-										<header class="entry-header">
-											<h4 class="entry-title">Live to 110 by Weighing Less eGuide</h4>
-										</header>
+												<div class="col-xs-9">
+													<div class="content-wrap">
+														<header class="entry-header">
+															<h4 class="entry-title"><?php the_title(); ?></h4>
+														</header>
 
-										<div class="entry-content">
-											<p></p>
-										</div><!-- /.entry-content -->
-									</div><!-- /.content-wrap -->
-								</article><!-- /.freebie -->
-
-								<article class="freebie">
-									<div class="image-wrap">
-										<img src="" alt="Post-Thumbnail / Featured-image">
-									</div><!-- /.image-wrap -->
-
-									<div class="content-wrap">
-										<header class="entry-header">
-											<h4 class="entry-title">Modern Paleo Diet Email Series</h4>
-										</header>
-
-										<div class="entry-content">
-											<p></p>
-										</div><!-- /.entry-content -->
-									</div><!-- /.content-wrap -->
-								</article><!-- /.freebie -->
-
-								<article class="freebie">
-									<div class="image-wrap">
-										<img src="" alt="Post-Thumbnail / Featured-image">
-									</div><!-- /.image-wrap -->
-
-									<div class="content-wrap">
-										<header class="entry-header">
-											<h4 class="entry-title">Survival Guides</h4>
-										</header>
-
-										<div class="entry-content">
-											<p></p>
-										</div><!-- /.entry-content -->
-									</div><!-- /.content-wrap -->
-								</article><!-- /.freebie -->
-							</div><!-- /.freebies-wrap -->
+														<div class="entry-content">
+															<?php the_content(); ?>
+														</div><!-- /.entry-content -->
+													</div><!-- /.content-wrap -->
+												</div>
+											</div><!-- /.row -->
+										</article><!-- /.freebie -->
+									<?php endwhile; ?>
+								</div><!-- /.freebies-wrap -->
+							<?php endif; ?>
+							<?php wp_reset_postdata(); ?>
 						</main><!-- #main -->
 					</div><!-- #primary -->
 				</div><!-- /.col-sm-6 -->
 
-				<div class="col-sm-6">
+				<div class="col-sm-6 col-md-5 col-lg-4">
 					<?php get_sidebar('signup'); ?>
 				</div><!-- /.col-sm-6 -->
 			</div><!-- /.row -->

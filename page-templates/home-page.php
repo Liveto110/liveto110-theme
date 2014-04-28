@@ -3,10 +3,8 @@
  * Template Name: Home Page
  *
  */
-// Exit if accessed directly
-if (!defined('ABSPATH')) exit;?>
-<?php global $smof_data; ?>
-<?php get_header(); ?>
+global $smof_data;
+get_header(); ?>
 
 <?php $smof_data['homepage_blocks'];
 foreach ($smof_data['homepage_blocks']['enabled'] as $block) {

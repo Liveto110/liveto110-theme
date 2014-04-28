@@ -1,0 +1,238 @@
+.page-template-page-templatessign-me-up-php {
+	#header,
+	#signup-section,
+	#megafooter,
+	#footer {
+		// display: none;
+	}
+}
+/* --- Singup Page --- */
+#signup-page-template {
+	.page-masthead {
+		position: relative;
+		height: 300px;
+		@media screen and (min-width: $screen-tablet) {
+			height: 400px;
+		}
+		@media screen and (min-width: $screen-desktop) {
+			height: 500px;
+		}
+		@media screen and (min-width: $screen-lg-desktop) {
+			height: 600px;
+		}
+		.img-block {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			background-color: transparent;
+			background-position: center top;
+			background-repeat: no-repeat;
+			@include background-size(cover);
+			background-attachment: fixed;
+		}
+	}
+	.page-welcome {
+		margin-top: 24px;
+		.entry-content {
+			background: #eaefdc;
+			padding: $padding-base-horizontal;
+			border: 10px solid #fff;
+			@include box-shadow(#84bda0 0 0 0 1px);
+			color: #18433c;
+			@media screen and (min-width: $screen-tablet) {
+				padding: $padding-large-horizontal;
+			}
+			@media screen and (min-width: $screen-desktop) {
+				padding: $padding-large-horizontal * 2;
+			}
+			@media screen and (min-width: $screen-lg-desktop) {
+				padding: $padding-large-horizontal * 3;
+			}
+			p {
+				margin: 0;
+				padding: 0;
+				text-transform: uppercase;
+				font-family: $lato;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 24px;
+				text-align: center;
+				max-width: 90%;
+				margin-left: auto;
+				margin-right: auto;
+				span {
+					color: #1c904a;
+				}
+				@media screen and (min-width: $screen-tablet) {
+					font-size: 18px;
+					line-height: 27px;
+				}
+				@media screen and (min-width: $screen-desktop) {
+					font-size: 21px;
+					line-height: 32px;
+				}
+				@media screen and (min-width: $screen-lg-desktop) {
+					font-size: 25px;
+					line-height: 38px;
+				}
+			}
+		}
+	}
+	#content {
+		margin-top: 24px;
+		@media screen and (min-width: $screen-tablet) {
+			margin-top: 36px;
+		}
+		@media screen and (min-width: $screen-desktop) {
+			margin-top: 48px;
+		}
+		#primary {
+			#main {
+				.freebies-wrap {
+					.freebie {
+						margin: 0 0 48px 0;
+						padding: 0;
+						.entry-header {
+							margin-left: 0;
+							margin-right: 0;
+							padding-left: 0;
+							padding-right: 0;
+							.entry-title {
+								margin: 0;
+								padding: 0;
+								text-transform: none;
+								font-size: 15px;
+								line-height: 20px;
+								font-family: $lato;
+								font-weight: 400;
+								color: #18433c;
+								@media screen and (min-width: $screen-tablet) {
+									font-size: 17px;
+									line-height: 24px;
+								}
+								@media screen and (min-width: $screen-desktop) {
+									font-size: 18px;
+									line-height: 27px;
+								}
+								@media screen and (min-width: $screen-lg-desktop) {
+									font-size: 24px;
+									line-height: 36px;
+								}
+							}
+						}
+						.entry-content {
+							margin-left: 0;
+							margin-right: 0;
+							padding-left: 0;
+							padding-right: 0;
+							padding-top: 6px;
+							font-family: $font-family-serif;
+							font-size: 14px;
+							line-height: 20px;
+							font-weight: 400;
+							color: #18433c;
+							@media screen and (min-width: $screen-tablet) {
+								font-size: 15px;
+								line-height: 20px;
+							}
+							@media screen and (min-width: $screen-desktop) {
+								font-size: 16px;
+								line-height: 24px;
+							}
+							@media screen and (min-width: $screen-lg-desktop) {
+								font-size: 22px;
+								line-height: 33px;
+							}
+						}
+					}
+				}
+			}
+		}
+		#signmeup-secondary {
+			background: #84bda0;
+			border: 0;
+			@include box-shadow(none);
+			.widget {
+				@include clearfix;
+				.widget-header {
+					.widget-title {
+						color: #fff;
+						margin: 48px 0;
+						padding: 0;
+						text-align: center;
+						font-family: $quicksand;
+						font-weight: 400;
+						font-size: 30px;
+						line-height: 45px;
+						@media screen and (min-width: $screen-desktop) {
+							font-size: 40px;
+							line-height: 60px;
+						}
+					}
+				}
+				.widget-content {
+					background: #e1ebe4;
+					@include clearfix;
+					padding: 36px $padding-large-horizontal;
+					margin: $padding-large-vertical $padding-large-horizontal;
+					form {
+						@include clearfix;
+						margin: 0;
+						padding: 0;
+						background: none;
+						.form-group {
+							background: #f5faf8;
+							.form-control {
+								@include border-radius(0);
+								border: 0;
+								background: transparent;
+								color: #18433c;
+							}
+							label {
+								padding-left: $padding-large-horizontal;
+								padding-top: $padding-large-horizontal;
+								color: #18433c;
+							}
+							.checkbox label {
+								padding-left: 20px;
+								padding-top: 0;
+							}
+							.checkbox {
+								margin-left: 40%;
+								margin-bottom: 0;
+								color: #18433c;
+								&:last-child {
+									margin-bottom: 10px;
+								}
+							}
+						}
+						#signmeup-submit {
+							@include clearfix;
+							@include border-radius(0);
+							border-color: transparent;
+							@include box-shadow(none);
+							text-transform: uppercase;
+							display: block;
+							width: 100%;
+							padding-top: 24px;
+							padding-bottom: 24px;
+							margin-top: 24px;
+							background: #ef413d;
+							@include transition(all .2s ease-in-out);
+							outline: 0;
+							&:focus,
+							&:hover,
+							&:active {
+								background: darken(#ef413d, 20%);
+								border-color: darken(#ef413d, 25%);
+								outline: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

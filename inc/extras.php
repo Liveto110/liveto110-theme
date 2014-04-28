@@ -120,6 +120,14 @@ function add_to_author_profile( $contactmethods ) {
 add_filter( 'user_contactmethods', 'add_to_author_profile', 10, 1);
 
 /*===================================================================================
+ * Deregisater WP-Admin Styles
+ * =================================================================================*/
+add_action( 'wp_print_styles', 'my_deregister_styles', 100 ); 
+function my_deregister_styles() {
+	wp_deregister_style( 'wp-admin' );
+}
+
+/*===================================================================================
  * Woocommerce - Ariful
  * =================================================================================*/
 function woocommerce_output_related_products() {

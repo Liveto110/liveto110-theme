@@ -41,6 +41,8 @@ function liveto110_setup() {
 	add_theme_support( 'post-thumbnails' );
 	add_image_size( 'special-offer-homepage', 585, 9999);
 	add_image_size( 'single-post', 750, 9999);
+	add_image_size( 'page-masthead', 1265, 9999);
+	add_image_size( 'freebie-signup', 125, 9999);
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -97,6 +99,15 @@ function liveto110_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 	register_sidebar( array(
+		'name'          => __( 'Signup Sidebar', 'liveto110' ),
+		'id'            => 'sidebar-signup',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<header class="widget-header"><h1 class="widget-title">',
+		'after_title'   => '</h1></header><div class="widget-content">',
+	) );
+	register_sidebar( array(
 		'name'          => __( 'shop Sidebar', 'liveto110' ),
 		'id'            => 'sidebar-shop',
 		'description'   => '',
@@ -132,7 +143,7 @@ function liveto110_fonts_url() {
 		$font_families = array();
 
 		if ( 'off' !== $lato )
-			$font_families[] = 'Lato:400,700,300italic,400italic,700italic';
+			$font_families[] = 'Lato:300,400,700,300italic,400italic,700italic';
 
 		if ( 'off' !== $quicksand )
 			$font_families[] = 'Quicksand:300,400,700';
