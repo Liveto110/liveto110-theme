@@ -3,6 +3,7 @@
 # ACF Custom Fields
 #-----------------------------------------------------------------#
 if ( function_exists( "register_field_group" ) ) {
+	// Service Post Meta
 	register_field_group( array(
 		'id' => 'acf_service-post-meta',
 		'title' => 'Service Post Meta',
@@ -63,6 +64,7 @@ if ( function_exists( "register_field_group" ) ) {
 		),
 		'menu_order' => 0,
 	));
+	// Testimonials Meta
 	register_field_group(array (
 		'id' => 'acf_testimonials-meta',
 		'title' => 'Testimonials Meta',
@@ -111,7 +113,8 @@ if ( function_exists( "register_field_group" ) ) {
 		),
 		'menu_order' => 0,
 	));
-register_field_group(array (
+	// Signup Page Masthead
+	register_field_group(array (
 		'id' => 'acf_signup-page-masthead',
 		'title' => 'Signup Page Masthead',
 		'fields' => array (
@@ -209,6 +212,7 @@ register_field_group(array (
 		),
 		'menu_order' => 0,
 	));
+	// Signup Page Welcome
 	register_field_group(array (
 		'id' => 'acf_signup-page-welcome',
 		'title' => 'Signup Page Welcome',
