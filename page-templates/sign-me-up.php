@@ -42,7 +42,7 @@ get_header(); ?>
 		<section class="page-welcome clearfix">
 			<div class="container">
 				<div class="entry-content">
-					<?php the_content(); ?>
+					<?php the_field('welcome_text'); ?>
 				</div><!-- /.entry-content -->
 			</div><!-- /.container -->
 		</section><!-- /.page-welcome -->

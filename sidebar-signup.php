@@ -13,50 +13,79 @@
 				</header><!-- /.widget-header -->
 
 				<div class="widget-content">
-					<form role="form">
+					<form accept-charset="UTF-8" action="https://hi138.infusionsoft.com/app/form/process/fd2079bfa7f5a59c0b15331f56d83fea" method="POST" role="form">
+						<input name="inf_form_xid" type="hidden" value="fd2079bfa7f5a59c0b15331f56d83fea" />
+						<input name="inf_form_name" type="hidden" value="Request information" />
+						<input name="infusionsoft_version" type="hidden" value="1.29.11.21" />
+
 						<fieldset class="form-group">
-							<label class="sr-only">E-Mail</label>
-							<input type="email" class="form-control" placeholder="Your Email">
+							<label for="inf_field_Email" class="sr-only">Email *</label>
+							<input id="inf_field_Email" name="inf_field_Email" type="text" class="form-control" placeholder="Your Email">
 						</fieldset><!-- /.form-group -->
 
 						<fieldset class="form-group">
-							<label class="sr-only">First Name</label>
-							<input type="text" class="form-control" placeholder="First Name">
+							<label for="inf_field_FirstName" class="sr-only">First Name *</label>
+							<input id="inf_field_FirstName" name="inf_field_FirstName" type="text" class="form-control" placeholder="First Name">
 						</fieldset><!-- /.form-group -->
 
 						<fieldset class="form-group">
-							<label class="sr-only">Last Name</label>
-							<input type="text" class="form-control" placeholder="Last Name">
+							<label for="inf_field_LastName" class="sr-only">Last Name *</label>
+							<input id="inf_field_LastName" name="inf_field_LastName" type="text" class="form-control" placeholder="Last Name">
 						</fieldset><!-- /.form-group -->
 
 						<fieldset class="form-group">
-							<label>Top Interests include:</label>
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> Nutritional Balancing
-								</label>
-							</div>
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> Detox
-								</label>
-							</div>
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> Modern Paleo
-								</label>
-							</div>
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> Weight Loss
-								</label>
-							</div>
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> Everything!
-								</label>
-							</div>
-						</fieldset><!-- /.form-group -->
+							<label for="inf_option_WhatareyourInterests">Top Interests include:</label>
+
+							<div class="radio-wrap">
+								<div class="radio">
+									<label for="inf_option_WhatareyourInterests_659">
+										<input id="inf_option_WhatareyourInterests_659" name="inf_option_WhatareyourInterests" type="radio" value="659" />
+										Nutritional Balancing
+									</label>
+								</div>
+								<div class="radio">
+									<label for="inf_option_WhatareyourInterests_661">
+										<input id="inf_option_WhatareyourInterests_661" name="inf_option_WhatareyourInterests" type="radio" value="661" />
+										Detox
+									</label>
+								</div>
+								<div class="radio">
+									<label for="inf_option_WhatareyourInterests_663">
+										<input id="inf_option_WhatareyourInterests_663" name="inf_option_WhatareyourInterests" type="radio" value="663" />
+										Modern Paleo
+									</label>
+								</div>
+								<div class="radio">
+									<label for="inf_option_WhatareyourInterests_665">
+										<input id="inf_option_WhatareyourInterests_665" name="inf_option_WhatareyourInterests" type="radio" value="665" />
+										Weight Loss
+									</label>
+								</div>
+								<div class="radio">
+									<label for="inf_option_WhatareyourInterests_667">
+										 <input id="inf_option_WhatareyourInterests_667" name="inf_option_WhatareyourInterests" type="radio" value="667" />
+										Everything!
+									</label>
+								</div>
+							</div><!-- /.radio-wrap -->
+						</fieldset><!-- /.form-group -->						
+						
+						<div class="captcha-wrap text-center">
+							<img alt="captcha" border="0px" name="captcha" onclick="reloadJcaptcha();" src="https://hi138.infusionsoft.com/Jcaptcha/img.jsp" title="If you can't read the image, click it to get another one." />
+							<script type="text/javascript">
+								function reloadJcaptcha() {
+									var now = new Date();
+									if (document.images) {
+										document.images.captcha.src = 'https://hi138.infusionsoft.com/Jcaptcha/img.jsp?reload=' + now;
+									}
+								}
+							</script>
+						</div>
+
+						<fieldset class="form-group">
+							<label for="captcha.typed" class="sr-only">Enter the above code:</label>
+							<input id="captcha.typed" name="captcha.typed" type="text" class="infusion-field-input-container form-control" placeholder="Enter the above code">
+						</fieldset>
 
 						<button id="signmeup-submit" class="btn btn-primary btn-lg">Join Now</button>
 					</form>

@@ -312,6 +312,11 @@
 			background: #84bda0;
 			border: 0;
 			@include box-shadow(none);
+			margin-bottom: 24px;
+			padding-bottom: 6px;
+			@media screen and (min-width: $screen-tablet) {
+				margin-bottom: 48px;
+			}
 			.widget {
 				@include clearfix;
 				.widget-header {
@@ -353,17 +358,12 @@
 								padding-top: $padding-large-horizontal;
 								color: #18433c;
 							}
-							.checkbox label {
+							.radio-wrap label {
 								padding-left: 20px;
 								padding-top: 0;
 							}
-							.checkbox {
+							.radio-wrap {
 								margin-left: 40%;
-								margin-bottom: 0;
-								color: #18433c;
-								&:last-child {
-									margin-bottom: 10px;
-								}
 							}
 						}
 						#signmeup-submit {
