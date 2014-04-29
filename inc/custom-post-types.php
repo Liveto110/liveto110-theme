@@ -1,38 +1,5 @@
 <?php
 #-----------------------------------------------------------------#
-# YT Videos
-#-----------------------------------------------------------------#
-function liveto110_youtubevideo_register() {
-	$youtubevideo_labels = array(
-		'name' => _x('YT Videos', 'taxonomy general name', 'liveto110'),
-		'singular_name' => __('YT Video', 'liveto110'),
-		'search_items' => __('Search YT Videos', 'liveto110'),
-		'all_items' => __('YT Videos', 'liveto110'),
-		'parent_item' => __('Parent YT Video', 'liveto110'),
-		'edit_item' => __('Edit YT Video', 'liveto110'),
-		'update_item' => __('Update YT Video', 'liveto110'),
-		'add_new_item' => __('Add New YT Video', 'liveto110')
-	);
-
-	$args = array(
-		'labels' 			=> $youtubevideo_labels,
-		'rewrite' 			=> array(
-			'slug' 			=> 'youtubevideo',
-			'with_front' 	=> false
-		),
-		'singular_label' 	=> __('YT Video', 'liveto110'),
-		'public' => true,
-		'publicly_queryable' => true,
-		'show_ui' => true,
-		'hierarchical' => false,
-		'menu_icon' => get_template_directory_uri() . '/img/icons/icon-youtubevideos.png',
-		'supports' => array('title', 'editor', 'thumbnail')
-	);
-
-	register_post_type( 'youtubevideo-post', $args );
-}
-add_action( 'init', 'liveto110_youtubevideo_register' );
-#-----------------------------------------------------------------#
 # Testimonials
 #-----------------------------------------------------------------#
 function liveto110_testimonial_register() {
@@ -59,7 +26,7 @@ function liveto110_testimonial_register() {
 		'show_ui' => true,
 		'hierarchical' => false,
 		'menu_icon' => get_template_directory_uri() . '/img/icons/icon-testimonials.png',
-		'supports' => array('title', 'thumbnail')
+		'supports' => array('title', 'editor', 'thumbnail')
 	);
 	register_post_type('testimonial-post', $args);
 }
@@ -255,6 +222,60 @@ register_taxonomy("freebie-type",
 );
 
 #-----------------------------------------------------------------#
+# FAQ
+#-----------------------------------------------------------------#
+function liveto110_faq_register() {
+	$faq_labels = array(
+		'name' => _x('FAQ', 'taxonomy general name', 'liveto110'),
+		'singular_name' => __('FAQ', 'liveto110'),
+		'search_items' => __('Search FAQ', 'liveto110'),
+		'all_items' => __('FAQ', 'liveto110'),
+		'parent_item' => __('Parent FAQ', 'liveto110'),
+		'edit_item' => __('Edit FAQ', 'liveto110'),
+		'update_item' => __('Update FAQ', 'liveto110'),
+		'add_new_item' => __('Add New FAQ', 'liveto110')
+	);
+
+	$args = array(
+		'labels' => $faq_labels,
+		'rewrite' => array('slug' => 'faq', 'with_front' => false),
+		'singular_label' => __('FAQ', 'liveto110'),
+		'public' => true,
+		'publicly_queryable' => true,
+		'show_ui' => true,
+		'hierarchical' => false,
+		'menu_icon' => get_template_directory_uri() . '/img/icons/icon-faq.png',
+		'supports' => array('title', 'editor')
+	);
+	register_post_type('faq', $args);
+}
+add_action('init', 'liveto110_faq_register');
+#-----------------------------------------------------------------#
+# Taxonomies attached to FAQ CPT
+#-----------------------------------------------------------------#
+$category_labels = array(
+	'name' => _x('FAQ Topics', 'taxonomy general name', 'liveto110'),
+	'singular_name' => __('FAQ Topic', 'liveto110'),
+	'search_items' => __('Search FAQ Topics', 'liveto110'),
+	'all_items' => __('All FAQ Topics', 'liveto110'),
+	'parent_item' => __('Parent FAQ Topic', 'liveto110'),
+	'edit_item' => __('Edit FAQ Topic', 'liveto110'),
+	'update_item' => __('Update FAQ Topic', 'liveto110'),
+	'add_new_item' => __('Add New FAQ Topic', 'liveto110'),
+	'menu_name' => __('FAQ Topics', 'liveto110')
+);
+register_taxonomy("faq-topic",
+	array("faq"),
+	array(
+		"hierarchical" => true,
+		'labels' => $category_labels,
+		'show_ui' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => 'faq-topic')
+	)
+);
+
+#-----------------------------------------------------------------#
 # ACF Custom Fields
 #-----------------------------------------------------------------#
 if ( function_exists( "register_field_group" ) ) {
@@ -314,6 +335,54 @@ if ( function_exists( "register_field_group" ) ) {
 				5 => 'categories',
 				6 => 'tags',
 				7 => 'send-trackbacks',
+			),
+		),
+		'menu_order' => 0,
+	));
+	register_field_group(array (
+		'id' => 'acf_testimonials-meta',
+		'title' => 'Testimonials Meta',
+		'fields' => array (
+			array (
+				'key' => 'field_535ebbce960e4',
+				'label' => 'Name',
+				'name' => 'name',
+				'type' => 'text',
+				'instructions' => 'Testimonial author\'s name.',
+				'required' => 1,
+				'default_value' => '',
+				'placeholder' => 'John Doe',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'testimonial-post',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+				0 => 'excerpt',
+				1 => 'custom_fields',
+				2 => 'discussion',
+				3 => 'comments',
+				4 => 'revisions',
+				5 => 'author',
+				6 => 'format',
+				7 => 'categories',
+				8 => 'tags',
+				9 => 'send-trackbacks',
 			),
 		),
 		'menu_order' => 0,

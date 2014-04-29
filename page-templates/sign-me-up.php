@@ -8,13 +8,38 @@ get_header(); ?>
 
 <div id="signup-page-template" class="clearfix">
 	<?php while( have_posts()) : the_post(); ?>
-		<section class="page-masthead clearfix">
+		<div class="page-masthead clearfix">
 			<?php
 				$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'page-masthead' );
 				$url = $thumb['0'];
 			?>
 			<div class="img-block" style="background-image: url('<?php echo $url; ?>');"></div>
-		</section><!-- /.page-masthead -->
+
+			<section class="overlaid-content">
+				<div class="container">
+					<header class="section-header">
+						<h1 class="section-title">Join the live to 100 community</h1>
+						<h2 class="section-subtitle">Start changing your life today!</h2>
+					</header><!-- /.section-header -->
+
+					<div class="section-content">
+						<h3 class="title">Sign up to recieve:</h3><!-- /.title -->
+						<p>Live to 110 by Weighing Less eGuide +<br>
+							The moden Paleo Diet email series +<br>
+							email updates</p>
+					</div><!-- /.section-content -->
+
+					<div class="graphics-wrap">
+						<div class="left-object">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/sign-up-left-object.png" class="img-responsive">
+						</div>
+						<div class="right-object">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/sign-up-right-object.png" class="img-responsive">
+						</div>
+					</div><!-- /.graphics-wrap -->
+				</div><!-- /.container -->
+			</section><!-- /.overlaid-content -->			
+		</div><!-- /.page-masthead -->
 
 		<section class="page-welcome clearfix">
 			<div class="container">

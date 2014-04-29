@@ -2372,11 +2372,38 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #latest-articles .post .post-footer .btn { width: 100%; color: #781e52; background: #e2a2bc; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border: 0; text-align: right; font-size: 12px; line-height: 18px; text-transform: uppercase; }
 
 /* --- Singup Page --- */
-#signup-page-template .page-masthead { position: relative; height: 300px; }
+#signup-page-template .page-masthead { position: relative; height: 300px; display: table; width: 100%; }
 @media screen and (min-width: 768px) { #signup-page-template .page-masthead { height: 400px; } }
 @media screen and (min-width: 992px) { #signup-page-template .page-masthead { height: 500px; } }
 @media screen and (min-width: 1200px) { #signup-page-template .page-masthead { height: 600px; } }
-#signup-page-template .page-masthead .img-block { position: absolute; left: 0; top: 0; height: 100%; width: 100%; background-color: transparent; background-position: center top; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; }
+#signup-page-template .page-masthead .img-block { position: absolute; left: 0; top: 0; height: 100%; width: 100%; background-color: transparent; background-position: center top; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; z-index: 1; }
+#signup-page-template .page-masthead .overlaid-content { position: relative; z-index: 2; display: table-cell; vertical-align: middle; }
+#signup-page-template .page-masthead .overlaid-content .section-header { position: relative; z-index: 3; padding-bottom: 12px; }
+@media screen and (min-width: 768px) { #signup-page-template .page-masthead .overlaid-content .section-header { padding-bottom: 18px; } }
+#signup-page-template .page-masthead .overlaid-content .section-header:after { content: ''; display: block; position: absolute; z-index: 4; bottom: 0; left: 50%; height: 1px; width: 240px; margin-left: -120px; background: #84bda0; }
+#signup-page-template .page-masthead .overlaid-content .section-header .section-title { margin: 0 0 6px 0; padding: 0; text-transform: uppercase; font-family: "Quicksand", sans-serif; font-weight: 700; font-size: 19px; text-align: center; }
+@media screen and (min-width: 768px) { #signup-page-template .page-masthead .overlaid-content .section-header .section-title { font-size: 22px; line-height: 33px; margin-bottom: 0; } }
+@media screen and (min-width: 992px) { #signup-page-template .page-masthead .overlaid-content .section-header .section-title { font-size: 24px; line-height: 36px; } }
+@media screen and (min-width: 1200px) { #signup-page-template .page-masthead .overlaid-content .section-header .section-title { font-size: 27px; line-height: 40px; } }
+#signup-page-template .page-masthead .overlaid-content .section-header .section-subtitle { margin: 0; padding: 0; text-transform: uppercase; font-family: "Quicksand", sans-serif; font-weight: 700; font-size: 14px; text-align: center; }
+@media screen and (min-width: 768px) { #signup-page-template .page-masthead .overlaid-content .section-header .section-subtitle { font-size: 16px; line-height: 24px; } }
+@media screen and (min-width: 992px) { #signup-page-template .page-masthead .overlaid-content .section-header .section-subtitle { font-size: 18px; line-height: 27px; } }
+@media screen and (min-width: 1200px) { #signup-page-template .page-masthead .overlaid-content .section-header .section-subtitle { font-size: 20px; line-height: 30px; } }
+#signup-page-template .page-masthead .overlaid-content .section-content { margin-top: 18px; padding-right: 50px; padding-left: 50px; }
+#signup-page-template .page-masthead .overlaid-content .section-content .title { margin: 0 0 6px 0; padding: 0; text-transform: uppercase; font-family: "Quicksand", sans-serif; font-weight: bold; font-size: 14px; text-align: center; }
+@media screen and (min-width: 768px) { #signup-page-template .page-masthead .overlaid-content .section-content .title { font-size: 16px; } }
+@media screen and (min-width: 992px) { #signup-page-template .page-masthead .overlaid-content .section-content .title { font-size: 18px; } }
+@media screen and (min-width: 1200px) { #signup-page-template .page-masthead .overlaid-content .section-content .title { font-size: 20px; } }
+#signup-page-template .page-masthead .overlaid-content .section-content p { margin: 0; padding: 0; font-family: Georgia, "Times New Roman", Times, serif; font-weight: 400; font-style: italic; font-size: 14px; text-align: center; }
+@media screen and (min-width: 768px) { #signup-page-template .page-masthead .overlaid-content .section-content p { font-size: 17px; } }
+@media screen and (min-width: 992px) { #signup-page-template .page-masthead .overlaid-content .section-content p { font-size: 19px; } }
+@media screen and (min-width: 992px) { #signup-page-template .page-masthead .overlaid-content .section-content p { font-size: 21px; } }
+#signup-page-template .page-masthead .overlaid-content .graphics-wrap { overflow: hidden; *zoom: 1; position: relative; z-index: 5; overflow: visible; max-width: 475px; margin-left: auto; margin-right: auto; }
+@media screen and (min-width: 992px) { #signup-page-template .page-masthead .overlaid-content .graphics-wrap { max-width: 575px; } }
+#signup-page-template .page-masthead .overlaid-content .graphics-wrap .left-object { position: absolute; z-index: 7; left: 0; bottom: 0; content: ''; max-width: 50px; }
+@media screen and (min-width: 768px) { #signup-page-template .page-masthead .overlaid-content .graphics-wrap .left-object { max-width: none; } }
+#signup-page-template .page-masthead .overlaid-content .graphics-wrap .right-object { position: absolute; z-index: 8; right: 0; bottom: 0; content: ''; max-width: 50px; }
+@media screen and (min-width: 768px) { #signup-page-template .page-masthead .overlaid-content .graphics-wrap .right-object { max-width: none; } }
 #signup-page-template .page-welcome { margin-top: 24px; }
 #signup-page-template .page-welcome .entry-content { background: #eaefdc; padding: 12px; border: 10px solid #fff; -webkit-box-shadow: #84bda0 0 0 0 1px; -moz-box-shadow: #84bda0 0 0 0 1px; box-shadow: #84bda0 0 0 0 1px; color: #18433c; }
 @media screen and (min-width: 768px) { #signup-page-template .page-welcome .entry-content { padding: 16px; } }
@@ -2420,7 +2447,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 768px) { #full-width-template .page-masthead { height: 400px; } }
 @media screen and (min-width: 992px) { #full-width-template .page-masthead { height: 500px; } }
 @media screen and (min-width: 1200px) { #full-width-template .page-masthead { height: 600px; } }
-#full-width-template .page-masthead .img-block { position: absolute; left: 0; top: 0; height: 100%; width: 100%; background-color: transparent; background-position: center top; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; }
+#full-width-template .page-masthead .img-block { position: absolute; left: 0; top: 0; height: 100%; width: 100%; background-color: transparent; background-position: center top; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 
 /* --- Youtube Videos Content --- */
 #youtubevideo-carousel .flexslider { margin: 0; padding: 0; border: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
