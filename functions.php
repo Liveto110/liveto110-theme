@@ -219,5 +219,10 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 require get_template_directory() . '/inc/custom-post-types.php';
 
+/**
+ * Load Custom Fields.
+ */
+require get_template_directory() . '/inc/custom-fields.php';
+
 // Register Custom Navigation Walker
 require_once get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
