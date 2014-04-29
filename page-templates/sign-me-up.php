@@ -18,23 +18,21 @@ get_header(); ?>
 			<section class="overlaid-content">
 				<div class="container">
 					<header class="section-header">
-						<h1 class="section-title">Join the live to 100 community</h1>
-						<h2 class="section-subtitle">Start changing your life today!</h2>
+						<h1 class="section-title"><?php the_field('title'); ?></h1>
+						<h2 class="section-subtitle"><?php the_field('subtitle'); ?></h2>
 					</header><!-- /.section-header -->
 
 					<div class="section-content">
-						<h3 class="title">Sign up to recieve:</h3><!-- /.title -->
-						<p>Live to 110 by Weighing Less eGuide +<br>
-							The moden Paleo Diet email series +<br>
-							email updates</p>
+						<h3 class="title"><?php the_field('sub-subtitle'); ?></h3><!-- /.title -->
+						<?php the_field('short_description'); ?>
 					</div><!-- /.section-content -->
 
 					<div class="graphics-wrap">
 						<div class="left-object">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/sign-up-left-object.png" class="img-responsive">
+							<img src="<?php the_field('left_image'); ?>" class="img-responsive">
 						</div>
 						<div class="right-object">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/sign-up-right-object.png" class="img-responsive">
+							<img src="<?php the_field('right_image'); ?>" class="img-responsive">
 						</div>
 					</div><!-- /.graphics-wrap -->
 				</div><!-- /.container -->

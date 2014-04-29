@@ -162,7 +162,13 @@
 					content: '';
 					max-width: 50px;
 					@media screen and (min-width: $screen-tablet) {
-						max-width: none;
+						max-width: 70px;
+					}
+					@media screen and (min-width: $screen-desktop) {
+						max-width: 80px;
+					}
+					@media screen and (min-width: $screen-lg-desktop) {
+						max-width: 90px;
 					}
 				}
 				.right-object {
@@ -173,7 +179,13 @@
 					content: '';
 					max-width: 50px;
 					@media screen and (min-width: $screen-tablet) {
-						max-width: none;
+						max-width: 70px;
+					}
+					@media screen and (min-width: $screen-desktop) {
+						max-width: 80px;
+					}
+					@media screen and (min-width: $screen-lg-desktop) {
+						max-width: 90px;
 					}
 				}
 			}
