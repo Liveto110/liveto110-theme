@@ -2527,3 +2527,5 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #secondary.widget-area .widget_search form label { display: block; margin: 0; padding: 0; }
 #secondary.widget-area .widget_search form label input { font-size: 12px; width: 100%; }
 #secondary.widget-area .widget_search form .btn { position: absolute; right: 0; top: 0; }
+
+#left-sidebar-template #secondary { margin-top: 48px; }
