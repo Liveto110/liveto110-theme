@@ -155,7 +155,7 @@
 					 		'theme_location'    => 'secondary',
 					 		'depth'             => 2,
 					 		'container'         => false,
-					 		'menu_class'        => 'nav navbar-nav navbar-right secondary-links',
+					 		'menu_class'        => 'nav navbar-nav secondary-links',
 					 		'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
 					 		'walker'            => new wp_bootstrap_navwalker()
 					 	) );

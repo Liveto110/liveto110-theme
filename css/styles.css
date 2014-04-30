@@ -2123,8 +2123,11 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #searchform-drawer form .btn { position: absolute; right: 0; top: 0; z-index: 2; margin: 0; padding: 0; height: 30px; width: 30px; display: block; line-height: 20px; }
 
 /* --- Primary Navigation --- */
-#primary-navigation { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border: 0; }
+#primary-navigation { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border: 0; position: relative; z-index: 2; }
 #primary-navigation a { text-transform: uppercase; font-size: 14px; font-family: "Quicksand", sans-serif; font-weight: 700; }
+@media screen and (min-width: 768px) { #primary-navigation a { font-size: 12px; padding-left: 5px; padding-right: 5px; } }
+@media screen and (min-width: 992px) { #primary-navigation a { font-size: 13px; padding-left: 12px; padding-right: 12px; } }
+@media screen and (min-width: 1200px) { #primary-navigation a { font-size: 14px; } }
 #primary-navigation .current-menu-item > a, #primary-navigation .current-menu-parent > a { color: white; background-color: #6eb18f; text-shadow: rgba(0, 0, 0, 0.3) 0 1px 0; }
 #primary-navigation a[title="facebook"], #primary-navigation a[title="Facebook"], #primary-navigation a[title="twitter"], #primary-navigation a[title="Twitter"], #primary-navigation a[title="google-plus"], #primary-navigation a[title="Google-plus"], #primary-navigation a[title="Google-Plus"], #primary-navigation a[title="google plus"], #primary-navigation a[title="Google plus"], #primary-navigation a[title="Google Plus"], #primary-navigation a[title="search"], #primary-navigation a[title="Search"] { text-align: center; width: 32px; overflow: hidden; position: relative; background: transparent; text-indent: -9999px; }
 #primary-navigation a[title="facebook"] .fa, #primary-navigation a[title="Facebook"] .fa, #primary-navigation a[title="twitter"] .fa, #primary-navigation a[title="Twitter"] .fa, #primary-navigation a[title="google-plus"] .fa, #primary-navigation a[title="Google-plus"] .fa, #primary-navigation a[title="Google-Plus"] .fa, #primary-navigation a[title="google plus"] .fa, #primary-navigation a[title="Google plus"] .fa, #primary-navigation a[title="Google Plus"] .fa, #primary-navigation a[title="search"] .fa, #primary-navigation a[title="Search"] .fa { text-indent: 0; position: absolute; left: 10px; top: 12px; text-shadow: rgba(0, 0, 0, 0.3) 0 1px 0; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
@@ -2145,10 +2148,15 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 768px) { #masthead #site-branding .site-description { display: table-cell; vertical-align: middle; text-align: right; margin: 0; width: 125px; } }
 
 /* --- Secondary Navigation --- */
-#secondary-navigation { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+#secondary-navigation { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; position: relative; z-index: 1; }
 #secondary-navigation a { text-shadow: none; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 #secondary-navigation .secondary-links a { text-transform: uppercase; font-size: 14px; font-family: "Quicksand", sans-serif; font-weight: 700; }
+@media screen and (min-width: 768px) { #secondary-navigation .secondary-links a { font-size: 12px; padding-left: 8px; padding-right: 8px; } }
+@media screen and (min-width: 992px) { #secondary-navigation .secondary-links a { font-size: 13px; padding-left: 12px; padding-right: 12px; } }
+@media screen and (min-width: 1200px) { #secondary-navigation .secondary-links a { font-size: 14px; } }
 #secondary-navigation .secondary-links .current-menu-item > a, #secondary-navigation .secondary-links .current-menu-parent > a { color: white; background-color: #571c41; }
+#secondary-navigation .secondary-links-container { text-align: center; }
+#secondary-navigation .secondary-links-container .secondary-links { display: inline-block; float: none; }
 
 /* --- Content --- */
 .hentry { margin: 0 0 24px 0; position: relative; }
