@@ -6,6 +6,30 @@
  */
 ?>
 	<div id="secondary" class="widget-area" role="complementary">
+		<aside id="search" class="widget widget_search">
+			<div class="widget-content">
+				<?php get_search_form(); ?>
+			</div><!-- /.widget-content -->
+		</aside>
+		
+		<aside id="categories-widget" class="widget widget_categories">
+			<header class="widget-header">
+				<h1 class="widget-title">Categories</h1>
+			</header>
+
+			<div class="widget-content">
+				<?php
+					$categories = get_categories('orderby=count&number=10');
+					sort($categories);
+					echo '<ul>';
+					foreach ($categories as $category) { ?>
+						<li><a href="<?php echo get_category_link( $category->term_id ); ?>" title="View all posts in <?php echo $category->name; ?>"><?php echo $category->name; ?></a></li>
+					<?php }
+					echo '</ul>';
+				?>
+			</div>
+		</aside><!-- #categories-widget -->
+
 		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
 			<aside id="search" class="widget widget_search">
