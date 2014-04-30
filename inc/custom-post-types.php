@@ -49,7 +49,7 @@ function liveto110_service_register() {
 
 	$args = array(
 		'labels' => $service_labels,
-		'rewrite' => array('slug' => 'service-post', 'with_front' => false),
+		'rewrite' => array('slug' => 'service', 'with_front' => false),
 		'singular_label' => __('Service post', 'liveto110'),
 		'public' => true,
 		'publicly_queryable' => true,
