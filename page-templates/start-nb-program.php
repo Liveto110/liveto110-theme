@@ -266,15 +266,129 @@ get_header(); ?>
 
 				<hr>
 
-				<section id="learn">Learn</section><!-- /#learn -->
+				<section id="learn">
+					<header class="section-header">
+						<h3 class="section-title">Learn about how nutritional balancing works</h3><!-- /.section-title -->
+					</header><!-- /.section-header -->
+
+					<div class="section-content">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="articles">
+									<h4>Articles</h4>
+									<ul class="list-unstyled">
+										<li><a href="#">Article Title...</a></li>
+										<li><a href="#">Article Title...</a></li>
+										<li><a href="#">Article Title...</a></li>
+										<li><a href="#">Article Title...</a></li>
+										<li><a href="#">Article Title...</a></li>
+										<li><a href="#">Article Title...</a></li>
+										<li><a href="#">Article Title...</a></li>
+										<li><a href="#">Article Title...</a></li>
+										<li><a href="#">Article Title...</a></li>
+										<li><a href="#">Article Title...</a></li>
+										<li><a href="#">Article Title...</a></li>
+										<li><a href="#">Article Title...</a></li>
+										<li><a href="#">Article Title...</a></li>
+										<li><a href="#">Article Title...</a></li>
+										<li><a href="#">Article Title...</a></li>
+									</ul>
+								</div><!-- /.articles -->
+							</div>
+
+							<div class="col-sm-6">
+								<div class="podcasts">
+									<h4>Podcasts</h4>
+									<ul class="list-unstyled">
+										<li><a hhref="#">Podcast Title...</a></li>
+										<li><a hhref="#">Podcast Title...</a></li>
+										<li><a hhref="#">Podcast Title...</a></li>
+										<li><a hhref="#">Podcast Title...</a></li>
+										<li><a hhref="#">Podcast Title...</a></li>
+										<li><a hhref="#">Podcast Title...</a></li>
+										<li><a hhref="#">Podcast Title...</a></li>
+										<li><a hhref="#">Podcast Title...</a></li>
+										<li><a hhref="#">Podcast Title...</a></li>
+										<li><a hhref="#">Podcast Title...</a></li>
+										<li><a hhref="#">Podcast Title...</a></li>
+										<li><a hhref="#">Podcast Title...</a></li>
+										<li><a hhref="#">Podcast Title...</a></li>
+										<li><a hhref="#">Podcast Title...</a></li>
+										<li><a hhref="#">Podcast Title...</a></li>
+									</ul>
+								</div><!-- /.podcasts -->
+							</div>
+						</div><!-- /.row -->
+					</div><!-- /.section-content -->
+
+					<footer class="section-footer">
+						<aside>
+							<header>
+								<h4>Dr. Lawrence Wilson's Website</h4>
+							</header>
+
+							<div class="entry">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div><!-- /.entry -->
+						</aside>
+					</footer><!-- /.section-footer -->
+				</section><!-- /#learn -->
 
 				<hr>
 
-				<section id="faqs">FAQ's</section><!-- /#faqs -->
+				<section id="faqs">
+					<header class="section-header">
+						<h3 class="section-title">FAQ</h3><!-- /.section-title -->
+					</header><!-- /.section-header -->
+
+					<div class="section-content">
+						<div class="panel-group" id="faq-accordion">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<span class="icon-wrap">
+											<i class="fa fa-plus-circle"></i>
+										</span><!-- /.icon-wrap -->
+
+										<a data-toggle="collapse" data-parent="#faq-accordion" href="#faq-1">Is this a question?</a>
+									</h4>
+								</div>
+								<div id="faq-1" class="panel-collapse collapse">
+									<div class="panel-body">
+										<p><strong>Yes!</strong> It is is a question!</p>
+									</div>
+								</div>
+							</div><!-- /.apnel -->
+
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<span class="icon-wrap">
+											<i class="fa fa-plus-circle"></i>
+										</span><!-- /.icon-wrap -->
+										
+										<a data-toggle="collapse" data-parent="#faq-accordion" href="#faq-2">Is this a question as well?</a>
+									</h4>
+								</div>
+								<div id="faq-2" class="panel-collapse collapse">
+									<div class="panel-body">
+										<p>I this this too is a question. What do you think?</p>
+									</div>
+								</div>
+							</div><!-- /.panel -->
+						</div><!-- /#faq-accordion .panel-group -->
+					</div><!-- /.section-content -->
+				</section><!-- /#faqs -->
 
 				<hr>
 
-				<section id="pricing">Pricing</section><!-- /#pricing -->
+				<section id="pricing">
+					<header class="section-header">
+						<h3 class="section-title">Pricing</h3><!-- /.section-title -->
+					</header><!-- /.section-header -->
+
+					<div class="section-content"></div><!-- /.section-content -->
+				</section><!-- /#pricing -->
 
 				<hr>
 			</div><!-- /.page-sections -->
