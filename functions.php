@@ -79,6 +79,9 @@ function liveto110_setup() {
 		'comment-form',
 		'gallery',
 	) );
+
+	// WooCommerce
+	add_theme_support( 'woocommerce' );
 }
 endif; // liveto110_setup
 add_action( 'after_setup_theme', 'liveto110_setup' );
@@ -90,17 +93,17 @@ add_action( 'after_setup_theme', 'liveto110_setup' );
  */
 function liveto110_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'liveto110' ),
+		'name'          => __( 'Right Sidebar', 'liveto110' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
+		'before_title'  => '<header class="widget-header"><h1 class="widget-title">',
+		'after_title'   => '</h1></header><div class="widget-content">',
 	) );
 	register_sidebar( array(
-		'name'          => __( 'Signup Sidebar', 'liveto110' ),
-		'id'            => 'sidebar-signup',
+		'name'          => __( 'Left Sidebar', 'liveto110' ),
+		'id'            => 'sidebar-left',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',

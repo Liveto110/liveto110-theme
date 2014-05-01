@@ -23,7 +23,7 @@ get_header(); ?>
 			<div class="container">
 				<div class="row">
 					<div class="hidden-phone col-sm-4">
-						<?php get_sidebar(); ?>
+						<?php get_sidebar('left'); ?>
 					</div><!-- /.hidden-phone .col-sm-4 -->
 
 					<div class="col-sm-8">

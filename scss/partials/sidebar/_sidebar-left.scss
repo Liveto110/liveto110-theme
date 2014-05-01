@@ -1,5 +1,5 @@
 /* --- Sidebar - Default --- */
-#secondary.widget-area {
+#tertiary.widget-area {
 	background: #fff;
 	@include clearfix;
 	border: 1px solid rgba(0, 0, 0, 0.1);
@@ -103,9 +103,5 @@
 }
 
 #left-sidebar-template #secondary {
-	margin-top: 48px;
-}
-
-.woocommerce-page #secondary {
 	margin-top: 48px;
 }

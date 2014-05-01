@@ -10,6 +10,7 @@
 	.slide {
 		@include clearfix;
 		position: relative;
+		z-index: 1;
 		display: table;
 		width: 100%;
 		height: 250px;

@@ -2123,7 +2123,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #searchform-drawer form .btn { position: absolute; right: 0; top: 0; z-index: 2; margin: 0; padding: 0; height: 30px; width: 30px; display: block; line-height: 20px; }
 
 /* --- Primary Navigation --- */
-#primary-navigation { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border: 0; position: relative; z-index: 2; }
+#primary-navigation { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border: 0; position: relative; z-index: 200; }
 #primary-navigation a { text-transform: uppercase; font-size: 14px; font-family: "Quicksand", sans-serif; font-weight: 700; }
 @media screen and (min-width: 768px) { #primary-navigation a { font-size: 12px; padding-left: 5px; padding-right: 5px; } }
 @media screen and (min-width: 992px) { #primary-navigation a { font-size: 13px; padding-left: 12px; padding-right: 12px; } }
@@ -2148,7 +2148,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 768px) { #masthead #site-branding .site-description { display: table-cell; vertical-align: middle; text-align: right; margin: 0; width: 125px; } }
 
 /* --- Secondary Navigation --- */
-#secondary-navigation { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; position: relative; z-index: 1; }
+#secondary-navigation { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; position: relative; z-index: 100; }
 #secondary-navigation a { text-shadow: none; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 #secondary-navigation .secondary-links a { text-transform: uppercase; font-size: 14px; font-family: "Quicksand", sans-serif; font-weight: 700; }
 @media screen and (min-width: 768px) { #secondary-navigation .secondary-links a { font-size: 12px; padding-left: 8px; padding-right: 8px; } }
@@ -2317,7 +2317,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 /* --- Homepage Content --- */
 #intro { background: #f8faf3; }
 #intro .flexslider { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; border: 0; margin-bottom: 0; }
-#intro .slide { overflow: hidden; *zoom: 1; position: relative; display: table; width: 100%; height: 250px; }
+#intro .slide { overflow: hidden; *zoom: 1; position: relative; z-index: 1; display: table; width: 100%; height: 250px; }
 @media screen and (min-width: 768px) { #intro .slide { height: 350px; } }
 @media screen and (min-width: 992px) { #intro .slide { height: 450px; } }
 @media screen and (min-width: 1200px) { #intro .slide { height: 530px; } }
@@ -2527,5 +2527,31 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #secondary.widget-area .widget_search form label { display: block; margin: 0; padding: 0; }
 #secondary.widget-area .widget_search form label input { font-size: 12px; width: 100%; }
 #secondary.widget-area .widget_search form .btn { position: absolute; right: 0; top: 0; }
+
+#left-sidebar-template #secondary { margin-top: 48px; }
+
+.woocommerce-page #secondary { margin-top: 48px; }
+
+/* --- Sidebar - Default --- */
+#tertiary.widget-area { background: #fff; overflow: hidden; *zoom: 1; border: 1px solid rgba(0, 0, 0, 0.1); color: #333333; padding: 24px 15px 0; -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px; -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px; box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px; /* List Style Widgets*/ /* Recent Posts Widget */ /* RSS Widget */ /* Text Widget */ }
+#tertiary.widget-area .widget { font-size: 14px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; margin-bottom: 48px; width: 100%; word-wrap: break-word; }
+#tertiary.widget-area .widget ul, #tertiary.widget-area .widget ol { list-style: none; margin: 0; padding: 0; }
+#tertiary.widget-area .widget li > ol, #tertiary.widget-area .widget li > ul { margin-left: 18px; }
+#tertiary.widget-area .widget .widget-title { color: #2b2b2b; font-size: 14px; text-transform: uppercase; }
+#tertiary.widget-area .widget_archive li, #tertiary.widget-area .widget_categories li, #tertiary.widget-area .widget_links li, #tertiary.widget-area .widget_meta li, #tertiary.widget-area .widget_nav_menu li, #tertiary.widget-area .widget_pages li, #tertiary.widget-area .widget_recent_comments li, #tertiary.widget-area .widget_recent_entries li { border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 8px 0 9px; }
+#tertiary.widget-area .widget_archive li:first-child, #tertiary.widget-area .widget_categories li:first-child, #tertiary.widget-area .widget_links li:first-child, #tertiary.widget-area .widget_meta li:first-child, #tertiary.widget-area .widget_nav_menu li:first-child, #tertiary.widget-area .widget_pages li:first-child, #tertiary.widget-area .widget_recent_comments li:first-child, #tertiary.widget-area .widget_recent_entries li:first-child { border-top: 0; }
+#tertiary.widget-area .widget_categories li ul, #tertiary.widget-area .widget_nav_menu li ul, #tertiary.widget-area .widget_pages li ul { border-top: 1px solid rgba(0, 0, 0, 0.1); margin-top: 9px; }
+#tertiary.widget-area .widget_categories li li:last-child, #tertiary.widget-area .widget_nav_menu li li:last-child, #tertiary.widget-area .widget_pages li li:last-child { padding-bottom: 0; }
+#tertiary.widget-area .widget_recent_entries .post-date { display: block; }
+#tertiary.widget-area .rsswidget img { margin-top: -4px; }
+#tertiary.widget-area .rssSummary { margin: 9px 0; }
+#tertiary.widget-area .rss-date { display: block; }
+#tertiary.widget-area .widget_rss li { margin-bottom: 18px; }
+#tertiary.widget-area .widget_rss li:last-child { margin-bottom: 0; }
+#tertiary.widget-area .widget_text > div > :last-child { margin-bottom: 0; }
+#tertiary.widget-area .widget_search form { position: relative; width: 100%; }
+#tertiary.widget-area .widget_search form label { display: block; margin: 0; padding: 0; }
+#tertiary.widget-area .widget_search form label input { font-size: 12px; width: 100%; }
+#tertiary.widget-area .widget_search form .btn { position: absolute; right: 0; top: 0; }
 
 #left-sidebar-template #secondary { margin-top: 48px; }
