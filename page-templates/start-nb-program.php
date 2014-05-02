@@ -39,46 +39,40 @@ get_header(); ?>
 				</main><!-- #main -->
 			</div><!-- #primary -->
 
-			<hr>
-
 			<div class="page-sections">
-				<div class="section-anchors">
+				<nav id="nb-section-anchors" class="section-anchors" role="navigation">
 					<ul class="nav nav-pills nav-justified">
-						<li class="active"><a href="#">How it works</a></li>
-						<li><a href="#">Core Components</a></li>
-						<li><a href="#">Learn</a></li>
-						<li><a href="#">FAQ's</a></li>
-						<li><a href="#">Pricing</a></li>
+						<li class="active"><a href="#how-it-works">How it works</a></li>
+						<li><a href="#core-components">Core Components</a></li>
+						<li><a href="#learn">Learn</a></li>
+						<li><a href="#faqs">FAQ's</a></li>
+						<li><a href="#pricing">Pricing</a></li>
 					</ul><!-- /.nav -->
-				</div><!-- /.section-anchors -->
-
-				<hr>
-
-				<div class="sections-intro">
-					<h2 class="intro-title">Start a long term detox today and heal your entire body!!!</h2><!-- /.intro-title -->
-
-					<div class="intro-content">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="left-content">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-								</div><!-- /.left-content -->
-							</div>
-
-							<div class="col-sm-6">
-								<div class="right-content">
-									<p><strong>Lorem ipsum dolor sit</strong><br>amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-									<p><strong>Duis aute irure dolor</strong><br>in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-								</div><!-- /.right-content -->
-							</div>
-						</div><!-- /.row -->
-					</div><!-- /.intro-content -->
-				</div><!-- /.sections-intro -->
-
-				<hr>
-
+				</nav><!-- /#nb-section-anchors .section-anchors -->
+				
 				<section id="how-it-works">
+					<div class="sections-intro">
+						<h2 class="intro-title">Start a long term detox today and heal your entire body!!!</h2><!-- /.intro-title -->
+
+						<div class="intro-content">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="left-content">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									</div><!-- /.left-content -->
+								</div>
+
+								<div class="col-sm-6">
+									<div class="right-content">
+										<p><strong>Lorem ipsum dolor sit</strong><br>amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+										<p><strong>Duis aute irure dolor</strong><br>in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									</div><!-- /.right-content -->
+								</div>
+							</div><!-- /.row -->
+						</div><!-- /.intro-content -->
+					</div><!-- /.sections-intro -->
+
 					<div class="media-wrap">Image/Video</div>
 
 					<header class="section-header">
@@ -131,8 +125,6 @@ get_header(); ?>
 						</aside><!-- /.custom-program-design -->
 					</footer><!-- /.section-footer -->
 				</section><!-- /#how-it-works -->
-
-				<hr>
 
 				<section id="core-components">
 					<header class="section-header">
@@ -220,7 +212,8 @@ get_header(); ?>
 											<h1 class="table-title text-center">Hair Mineral Analysis</h1><!-- /.table-title -->
 
 											<h2 class="price-amount text-center">
-												<i class="fa fa-dollar"></i>300
+												<i class="fa fa-dollar"></i>
+												<span class="text-wrap">300</span>
 											</h2><!-- /.price-amount -->
 										</div><!-- /.table-header -->
 
@@ -248,7 +241,7 @@ get_header(); ?>
 									</header><!-- /.starter-header -->
 
 									<div class="starter-content">
-										<ul class="list-unstyled">
+										<ul>
 											<li><i class="fa fa-angle-right"></i> 1.5 hours of health coaching</li>
 											<li><i class="fa fa-angle-right"></i> Interpretation of your hair mineral analysis</li>
 											<li><i class="fa fa-angle-right"></i> 17-page interpretive report of your hair mineral analysis</li>
@@ -264,8 +257,6 @@ get_header(); ?>
 					</footer><!-- /.section-footer -->
 				</section><!-- /#core-components -->
 
-				<hr>
-
 				<section id="learn">
 					<header class="section-header">
 						<h3 class="section-title">Learn about how nutritional balancing works</h3><!-- /.section-title -->
@@ -275,7 +266,7 @@ get_header(); ?>
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="articles">
-									<h4>Articles</h4>
+									<h4 class="sub-title">Articles</h4>
 									<ul class="list-unstyled">
 										<li><a href="#">Article Title...</a></li>
 										<li><a href="#">Article Title...</a></li>
@@ -298,7 +289,7 @@ get_header(); ?>
 
 							<div class="col-sm-6">
 								<div class="podcasts">
-									<h4>Podcasts</h4>
+									<h4 class="sub-title">Podcasts</h4>
 									<ul class="list-unstyled">
 										<li><a hhref="#">Podcast Title...</a></li>
 										<li><a hhref="#">Podcast Title...</a></li>
@@ -333,8 +324,6 @@ get_header(); ?>
 						</aside>
 					</footer><!-- /.section-footer -->
 				</section><!-- /#learn -->
-
-				<hr>
 
 				<section id="faqs">
 					<header class="section-header">
@@ -380,8 +369,6 @@ get_header(); ?>
 					</div><!-- /.section-content -->
 				</section><!-- /#faqs -->
 
-				<hr>
-
 				<section id="pricing">
 					<header class="section-header">
 						<h3 class="section-title">Pricing</h3><!-- /.section-title -->
@@ -389,8 +376,6 @@ get_header(); ?>
 
 					<div class="section-content"></div><!-- /.section-content -->
 				</section><!-- /#pricing -->
-
-				<hr>
 			</div><!-- /.page-sections -->
 		</div><!-- /.container -->
 	</div><!-- /#content -->	

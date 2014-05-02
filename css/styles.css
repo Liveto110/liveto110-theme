@@ -2461,18 +2461,113 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 1200px) { #full-width-template .page-masthead { height: 600px; } }
 #full-width-template .page-masthead .img-block { position: absolute; left: 0; top: 0; height: 100%; width: 100%; background-color: transparent; background-position: center top; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 
-/* --- Youtube Videos Content --- */
-#youtubevideo-carousel .flexslider { margin: 0; padding: 0; border: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
-#youtubevideo-carousel .slides li .hentry .entry-content { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
-#youtubevideo-carousel .slides li .hentry .entry-content iframe, #youtubevideo-carousel .slides li .hentry .entry-content object, #youtubevideo-carousel .slides li .hentry .entry-content embed { position: absolute; top: 0; left: 0; height: 100%; width: 100%; }
-
-#youtubevideo-sidebar { padding-top: 24px; }
-#youtubevideo-sidebar ul li { margin-bottom: 12px; border-bottom: 1px dashed #6db799; padding-bottom: 12px; }
-#youtubevideo-sidebar ul li:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
-#youtubevideo-sidebar p { margin: 0; padding: 0; }
-#youtubevideo-sidebar .video-title { text-transform: uppercase; }
-#youtubevideo-sidebar .video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
-#youtubevideo-sidebar .video-container iframe, #youtubevideo-sidebar .video-container object, #youtubevideo-sidebar .video-container embed { position: absolute; top: 0; left: 0; height: 100%; width: 100%; }
+/* --- Start A Nutritional Balancing Page Template --- */
+#start-nb-template #main .page-header { margin-bottom: 10px; padding-bottom: 0; border: 0; }
+@media screen and (min-width: 768px) { #start-nb-template #main .page-header { margin-bottom: 20px; } }
+#start-nb-template #main .page-header .page-title { margin: 0; padding: 0; text-transform: uppercase; font-family: "Quicksand", sans-serif; font-weight: 700; font-size: 16px; line-height: 24px; color: #31935f; }
+@media screen and (min-width: 768px) { #start-nb-template #main .page-header .page-title { font-size: 18px; line-height: 27px; } }
+@media screen and (min-width: 992px) { #start-nb-template #main .page-header .page-title { font-size: 22px; line-height: 33px; } }
+@media screen and (min-width: 1200px) { #start-nb-template #main .page-header .page-title { font-size: 30px; line-height: 45px; } }
+#start-nb-template #main .image-wrap { margin-bottom: 10px; }
+@media screen and (min-width: 768px) { #start-nb-template #main .image-wrap { margin-bottom: 0; } }
+#start-nb-template .page-sections .section-anchors { margin-top: 10px; }
+@media screen and (min-width: 768px) { #start-nb-template .page-sections .section-anchors { margin-top: 20px; } }
+#start-nb-template .page-sections .section-anchors .nav li a { background: rgba(109, 40, 80, 0.1); color: #6d2850; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; text-transform: uppercase; }
+@media screen and (min-width: 768px) { #start-nb-template .page-sections .section-anchors .nav li a { font-size: 12px; } }
+@media screen and (min-width: 992px) { #start-nb-template .page-sections .section-anchors .nav li a { font-size: 13px; } }
+@media screen and (min-width: 1200px) { #start-nb-template .page-sections .section-anchors .nav li a { font-size: 14px; } }
+#start-nb-template .page-sections .section-anchors .nav li.active a, #start-nb-template .page-sections .section-anchors .nav li a:active, #start-nb-template .page-sections .section-anchors .nav li a:focus, #start-nb-template .page-sections .section-anchors .nav li a:hover { background: #6d2850; color: #fff; }
+@media screen and (min-width: 768px) { #start-nb-template .page-sections .section-anchors .nav li { padding-left: 5px; padding-right: 5px; }
+  #start-nb-template .page-sections .section-anchors .nav li:first-child { padding-left: 0; }
+  #start-nb-template .page-sections .section-anchors .nav li:last-child { padding-right: 0; } }
+#start-nb-template .page-sections #how-it-works { margin-top: 20px; }
+#start-nb-template .page-sections #how-it-works .sections-intro .intro-title { margin: 0; padding: 0; font-family: "Quicksand", sans-serif; font-weight: 700; font-size: 16px; line-height: 24px; color: #31935f; }
+@media screen and (min-width: 768px) { #start-nb-template .page-sections #how-it-works .sections-intro .intro-title { font-size: 18px; line-height: 27px; text-align: center; } }
+@media screen and (min-width: 992px) { #start-nb-template .page-sections #how-it-works .sections-intro .intro-title { font-size: 22px; line-height: 33px; } }
+@media screen and (min-width: 1200px) { #start-nb-template .page-sections #how-it-works .sections-intro .intro-title { font-size: 30px; line-height: 45px; } }
+#start-nb-template .page-sections #how-it-works .sections-intro .intro-content { margin-top: 10px; }
+@media screen and (min-width: 768px) { #start-nb-template .page-sections #how-it-works .sections-intro .intro-content { margin-top: 20px; } }
+#start-nb-template .page-sections #how-it-works .sections-intro .intro-content .right-content p strong { color: #6d2850; }
+#start-nb-template .page-sections #how-it-works .section-header .section-title { margin: 20px 0 10px 0; padding: 0; text-transform: uppercase; font-family: "Quicksand", sans-serif; font-weight: 700; font-size: 16px; line-height: 24px; color: #31935f; }
+@media screen and (min-width: 768px) { #start-nb-template .page-sections #how-it-works .section-header .section-title { font-size: 18px; line-height: 27px; } }
+@media screen and (min-width: 992px) { #start-nb-template .page-sections #how-it-works .section-header .section-title { font-size: 22px; line-height: 33px; } }
+@media screen and (min-width: 1200px) { #start-nb-template .page-sections #how-it-works .section-header .section-title { font-size: 30px; line-height: 45px; } }
+#start-nb-template .page-sections #how-it-works .section-content p strong { color: #31935f; }
+#start-nb-template .page-sections #how-it-works .section-footer .footer-title { color: #6d2850; text-align: center; margin: 20px 32px; padding: 0; font-size: 15px; line-height: 20px; }
+#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design { background: #eef5ec; position: relative; padding-top: 10px; padding-bottom: 20px; overflow: hidden; *zoom: 1; overflow: visible; }
+#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design:before, #start-nb-template .page-sections #how-it-works .section-footer .custom-program-design:after { display: block; content: ''; height: 100%; width: 15px; position: absolute; top: 0; background: #eef5ec; }
+#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design:before { left: 100%; }
+#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design:after { right: 100%; }
+#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design .aside-header { overflow: hidden; *zoom: 1; }
+#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design .aside-header .aside-title { margin: 0 0 10px 0; padding: 0; font-family: "Lato", sans-serif; font-weight: 400; font-size: 14px; line-height: 20px; }
+#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design .aside-content { background: #fff; overflow: hidden; *zoom: 1; }
+#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design .aside-content ul { margin-left: 16px; margin-top: 10px; }
+#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design .aside-content ul .text-right { margin-right: 16px; }
+#start-nb-template .page-sections #core-components .section-header .section-title { margin: 20px 0 10px 0; padding: 0; text-transform: uppercase; font-family: "Quicksand", sans-serif; font-weight: 700; font-size: 16px; line-height: 24px; color: #31935f; }
+@media screen and (min-width: 768px) { #start-nb-template .page-sections #core-components .section-header .section-title { font-size: 18px; line-height: 27px; } }
+@media screen and (min-width: 992px) { #start-nb-template .page-sections #core-components .section-header .section-title { font-size: 22px; line-height: 33px; } }
+@media screen and (min-width: 1200px) { #start-nb-template .page-sections #core-components .section-header .section-title { font-size: 30px; line-height: 45px; } }
+#start-nb-template .page-sections #core-components .section-content .blurb { margin-bottom: 10px; overflow: hidden; *zoom: 1; }
+@media screen and (min-width: 768px) { #start-nb-template .page-sections #core-components .section-content .blurb { margin-bottom: 20px; } }
+#start-nb-template .page-sections #core-components .section-content .blurb .blurb-header { border-bottom: 1px solid #83c570; margin-bottom: 6px; }
+#start-nb-template .page-sections #core-components .section-content .blurb .blurb-header .blurb-title { margin: 0; padding: 0; font-size: 14px; text-transform: uppercase; color: #83c570; }
+#start-nb-template .page-sections #core-components .section-content .blurb .blurb-header .blurb-title .icon-wrap { display: inline-block; padding: 5px; background: #83c570; color: #fff; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; height: 24px; width: 24px; text-align: center; }
+#start-nb-template .page-sections #core-components .section-content .blurb .blurb-header .blurb-title .icon-wrap i { text-shadow: rgba(0, 0, 0, 0.1) 0 0 1px; }
+#start-nb-template .page-sections #core-components .section-content .blurb .blurb-content p { margin-bottom: 0; }
+#start-nb-template .page-sections #core-components .section-footer { overflow: hidden; *zoom: 1; position: relative; overflow: visible; background: #eef5ec; }
+#start-nb-template .page-sections #core-components .section-footer:before, #start-nb-template .page-sections #core-components .section-footer:after { display: block; content: ''; background: #eef5ec; position: absolute; height: 100%; width: 15px; top: 0; }
+#start-nb-template .page-sections #core-components .section-footer:before { left: 100%; }
+#start-nb-template .page-sections #core-components .section-footer:after { right: 100%; }
+#start-nb-template .page-sections #core-components .section-footer .starter { margin-top: 10px; padding-top: 20px; padding-bottom: 20px; }
+@media screen and (min-width: 992px) { #start-nb-template .page-sections #core-components .section-footer .starter { padding-top: 40px; margin-top: 20px; } }
+#start-nb-template .page-sections #core-components .section-footer .starter .pricing-table { max-width: 250px; margin-left: auto; margin-right: auto; background: #fff; border-color: #92366b; padding-left: 0; padding-right: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; -webkit-box-shadow: rgba(146, 54, 107, 0.4) 0 0 7px; -moz-box-shadow: rgba(146, 54, 107, 0.4) 0 0 7px; box-shadow: rgba(146, 54, 107, 0.4) 0 0 7px; }
+@media screen and (min-width: 992px) { #start-nb-template .page-sections #core-components .section-footer .starter .pricing-table { max-width: 275px; } }
+#start-nb-template .page-sections #core-components .section-footer .starter .pricing-table .table-header .table-title { text-transform: uppercase; font-size: 14px; line-height: 20px; margin-top: 0; padding-top: 0; margin-bottom: 0; padding-bottom: 0; padding-left: 16px; padding-right: 16px; }
+#start-nb-template .page-sections #core-components .section-footer .starter .pricing-table .table-header .price-amount { background: #92366b; padding-top: 20px; padding-bottom: 20px; color: #fff; font-size: 30px; }
+#start-nb-template .page-sections #core-components .section-footer .starter .pricing-table .table-content { padding-left: 16px; padding-right: 16px; }
+#start-nb-template .page-sections #core-components .section-footer .starter .pricing-table .table-content ul li { padding: 12px 0; }
+#start-nb-template .page-sections #core-components .section-footer .starter .pricing-table .table-footer .button-wrap .btn { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
+#start-nb-template .page-sections #core-components .section-footer .starter .starter-header { overflow: hidden; *zoom: 1; text-align: center; margin-top: 20px; }
+@media screen and (min-width: 768px) { #start-nb-template .page-sections #core-components .section-footer .starter .starter-header { margin-top: 0; text-align: left; } }
+#start-nb-template .page-sections #core-components .section-footer .starter .starter-header .starter-title { margin: 0; padding: 0; font-size: 16px; line-height: 24px; }
+@media screen and (min-width: 768px) { #start-nb-template .page-sections #core-components .section-footer .starter .starter-header .starter-title { font-size: 18px; line-height: 27px; } }
+@media screen and (min-width: 992px) { #start-nb-template .page-sections #core-components .section-footer .starter .starter-header .starter-title { font-size: 22px; line-height: 33px; } }
+@media screen and (min-width: 1200px) { #start-nb-template .page-sections #core-components .section-footer .starter .starter-header .starter-title { font-size: 30px; line-height: 45px; } }
+#start-nb-template .page-sections #core-components .section-footer .starter .starter-header .starter-subtitle { margin: 10px 0 0 0; padding: 0; font-size: 14px; line-height: 20px; }
+@media screen and (min-width: 768px) { #start-nb-template .page-sections #core-components .section-footer .starter .starter-header .starter-subtitle { font-size: 16px; line-height: 24px; } }
+@media screen and (min-width: 992px) { #start-nb-template .page-sections #core-components .section-footer .starter .starter-header .starter-subtitle { font-size: 20px; line-height: 30px; } }
+@media screen and (min-width: 1200px) { #start-nb-template .page-sections #core-components .section-footer .starter .starter-header .starter-subtitle { font-size: 24px; line-height: 36px; } }
+#start-nb-template .page-sections #core-components .section-footer .starter .starter-content { margin-top: 10px; }
+#start-nb-template .page-sections #core-components .section-footer .starter .starter-content ul { margin: 0; padding: 0; list-style: none; }
+#start-nb-template .page-sections #learn .section-header .section-title { margin: 20px 0 10px 0; padding: 0; text-transform: uppercase; font-family: "Quicksand", sans-serif; font-weight: 700; font-size: 16px; line-height: 24px; color: #31935f; }
+@media screen and (min-width: 768px) { #start-nb-template .page-sections #learn .section-header .section-title { font-size: 18px; line-height: 27px; } }
+@media screen and (min-width: 992px) { #start-nb-template .page-sections #learn .section-header .section-title { font-size: 22px; line-height: 33px; } }
+@media screen and (min-width: 1200px) { #start-nb-template .page-sections #learn .section-header .section-title { font-size: 30px; line-height: 45px; } }
+#start-nb-template .page-sections #learn .section-content .sub-title { margin: 0; padding: 0; text-transform: uppercase; font-family: "Quicksand", sans-serif; font-weight: 700; font-size: 14px; line-height: 20px; }
+#start-nb-template .page-sections #learn .section-content ul li { padding: 1.25px 0; }
+#start-nb-template .page-sections #learn .section-content ul li a { font-size: 12px; }
+#start-nb-template .page-sections #learn .section-footer { margin-top: 6px; }
+@media screen and (min-width: 768px) { #start-nb-template .page-sections #learn .section-footer { margin-top: 12px; } }
+@media screen and (min-width: 992px) { #start-nb-template .page-sections #learn .section-footer { margin-top: 18px; } }
+@media screen and (min-width: 1200px) { #start-nb-template .page-sections #learn .section-footer { margin-top: 24px; } }
+#start-nb-template .page-sections #learn .section-footer aside { max-width: 300px; margin-left: auto; margin-right: auto; text-align: center; }
+@media screen and (min-width: 768px) { #start-nb-template .page-sections #learn .section-footer aside { max-width: 400px; } }
+#start-nb-template .page-sections #learn .section-footer aside header h4 { margin: 0; padding: 0; text-transform: uppercase; font-family: "Quicksand", sans-serif; font-weight: 700; font-size: 14px; line-height: 20px; }
+#start-nb-template .page-sections #learn .section-footer aside .entry p { text-align: justify; }
+#start-nb-template .page-sections #faqs { padding-top: 20px; }
+@media screen and (min-width: 768px) { #start-nb-template .page-sections #faqs { padding-top: 30px; } }
+@media screen and (min-width: 992px) { #start-nb-template .page-sections #faqs { padding-top: 40px; } }
+#start-nb-template .page-sections #faqs .section-header .section-title { margin: 20px 0 10px 0; padding: 0; text-transform: uppercase; font-family: "Quicksand", sans-serif; font-weight: 700; font-size: 16px; line-height: 24px; color: #31935f; }
+@media screen and (min-width: 768px) { #start-nb-template .page-sections #faqs .section-header .section-title { font-size: 18px; line-height: 27px; } }
+@media screen and (min-width: 992px) { #start-nb-template .page-sections #faqs .section-header .section-title { font-size: 22px; line-height: 33px; } }
+@media screen and (min-width: 1200px) { #start-nb-template .page-sections #faqs .section-header .section-title { font-size: 30px; line-height: 45px; } }
+#start-nb-template .page-sections #faqs #faq-accordion .panel { border-color: rgba(109, 183, 153, 0.1); -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+#start-nb-template .page-sections #faqs #faq-accordion .panel .panel-heading { padding-left: 5px; background: rgba(109, 183, 153, 0.1); }
+@media screen and (min-width: 992px) { #start-nb-template .page-sections #faqs #faq-accordion .panel .panel-heading { padding-left: 10px; } }
+#start-nb-template .page-sections #faqs #faq-accordion .panel .panel-heading .panel-title { margin: 0; padding: 0; font-size: 12px; text-transform: uppercase; font-family: "Lato", sans-serif; color: #31935f; }
+@media screen and (min-width: 992px) { #start-nb-template .page-sections #faqs #faq-accordion .panel .panel-heading .panel-title { font-size: 14px; } }
+#start-nb-template .page-sections #faqs #faq-accordion .panel .panel-heading .panel-title .icon-wrap { padding-right: 5px; }
+#start-nb-template .page-sections #faqs #faq-accordion .panel .panel-collapse .panel-body { border: 0; }
 
 /* --- Signup Section --- */
 #signup-section { background-position: center center; background-repeat: no-repeat; background-attachment: fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding-top: 48px; padding-bottom: 48px; }

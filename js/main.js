@@ -12,4 +12,6 @@ jQuery( document ).ready( function($) {
 		$(this).parent().toggleClass('active');
 		$drawer.slideToggle("fast");
 	});
+
+	// $('.page-sections').scrollspy({ target: '.section-anchors' });
 });

@@ -1,0 +1,575 @@
+/* --- Start A Nutritional Balancing Page Template --- */
+#start-nb-template {
+	#content {}
+	#primary {}
+	#main {
+		.page-header {
+			margin-bottom: $padding-large-vertical;
+			padding-bottom: 0;
+			border: 0;
+			@media screen and (min-width: $screen-tablet) {
+				margin-bottom: $padding-large-vertical * 2;
+			}
+			.page-title {
+				margin: 0;
+				padding: 0;
+				text-transform: uppercase;
+				font-family: $quicksand;
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 24px;
+				color: #31935f;
+				@media screen and (min-width: $screen-tablet) {
+					font-size: 18px;
+					line-height: 27px;
+				}
+				@media screen and (min-width: $screen-desktop) {
+					font-size: 22px;
+					line-height: 33px;
+				}
+				@media screen and (min-width: $screen-lg-desktop) {
+					font-size: 30px;
+					line-height: 45px;
+				}
+			}
+		}
+		.image-wrap {
+			margin-bottom: $padding-large-vertical;
+			@media screen and (min-width: $screen-tablet) {
+				margin-bottom: 0;
+			}
+			img {}
+		}
+		.content-wrap {}
+	}
+	.page-sections {
+		.section-anchors {
+			margin-top: $padding-large-vertical;
+			@media screen and (min-width: $screen-tablet) {
+				margin-top: $padding-large-vertical * 2;
+			}
+			.nav {
+				li {
+					a {
+						background: rgba(#6d2850, .1);
+						color: #6d2850;
+						@include transition(all .2s ease-in-out);
+						text-transform: uppercase;
+						@media screen and (min-width: $screen-tablet) {
+							font-size: 12px;
+						}
+						@media screen and (min-width: $screen-desktop) {
+							font-size: 13px;
+						}
+						@media screen and (min-width: $screen-lg-desktop) {
+							font-size: 14px;
+						}
+					}
+					&.active a,
+					a:active,
+					a:focus,
+					a:hover {
+						background: #6d2850;
+						color: #fff;
+					}
+				}
+				@media screen and (min-width: $screen-tablet) {
+					li {
+						padding-left: $padding-small-horizontal / 2;
+						padding-right: $padding-small-horizontal / 2;
+					}
+					li:first-child { padding-left: 0; }
+					li:last-child { padding-right: 0; }
+				}
+			}
+		}
+		#how-it-works {
+			margin-top: $padding-large-vertical * 2;
+			.sections-intro {
+				.intro-title {
+					margin: 0;
+					padding: 0;
+					font-family: $quicksand;
+					font-weight: 700;
+					font-size: 16px;
+					line-height: 24px;
+					color: #31935f;
+					@media screen and (min-width: $screen-tablet) {
+						font-size: 18px;
+						line-height: 27px;
+						text-align: center;
+					}
+					@media screen and (min-width: $screen-desktop) {
+						font-size: 22px;
+						line-height: 33px;
+					}
+					@media screen and (min-width: $screen-lg-desktop) {
+						font-size: 30px;
+						line-height: 45px;
+					}
+				}
+				.intro-content {
+					margin-top: $padding-large-vertical;
+					@media screen and (min-width: $screen-tablet) {
+						margin-top: $padding-large-vertical * 2;
+					}
+					.left-content {}
+					.right-content {
+						p {
+							strong {
+								color: #6d2850;
+							}
+						}
+					}
+				}
+			}
+			.media-wrap {}
+			.section-header {
+				.section-title {
+					margin: $padding-large-vertical * 2 0 $padding-large-vertical 0;
+					padding: 0;
+					text-transform: uppercase;
+					font-family: $quicksand;
+					font-weight: 700;
+					font-size: 16px;
+					line-height: 24px;
+					color: #31935f;
+					@media screen and (min-width: $screen-tablet) {
+						font-size: 18px;
+						line-height: 27px;
+					}
+					@media screen and (min-width: $screen-desktop) {
+						font-size: 22px;
+						line-height: 33px;
+					}
+					@media screen and (min-width: $screen-lg-desktop) {
+						font-size: 30px;
+						line-height: 45px;
+					}
+				}
+			}
+			.section-content {
+				p {
+					strong {
+						color: #31935f;
+					}
+				}
+			}
+			.section-footer {
+				.footer-title {
+					color: #6d2850;
+					text-align: center;
+					margin: $padding-large-vertical * 2 $padding-large-horizontal * 2;
+					padding: 0;
+					font-size: 15px;
+					line-height: 20px;
+				}
+				.custom-program-design {
+					background: #eef5ec;
+					position: relative;
+					padding-top: $padding-large-vertical;
+					padding-bottom: $padding-large-vertical * 2;
+					@include clearfix;
+					overflow: visible;
+					&:before,
+					&:after {
+						display: block;
+						content: '';
+						height: 100%;
+						width: $grid-gutter-width / 2;
+						position: absolute;
+						top: 0;
+						background: #eef5ec;
+					}
+					&:before {
+						left: 100%;
+					}
+					&:after {
+						right: 100%;
+					}
+					.aside-header {
+						@include clearfix;
+						.aside-title {
+							margin: 0 0 $padding-large-vertical 0;
+							padding: 0;
+							font-family: $lato;
+							font-weight: 400;
+							font-size: 14px;
+							line-height: 20px;
+						}
+					}
+					.aside-content {
+						background: #fff;
+						@include clearfix;
+						.image-wrap {
+							img {}
+						}
+						ul {
+							margin-left: $padding-large-horizontal;
+							margin-top: $padding-large-vertical;
+							li {
+								i {}
+							}
+							.text-right {
+								margin-right: $padding-large-horizontal;
+							}
+						}
+					}
+				}
+			}
+		}
+		#core-components {
+			.section-header {
+				.section-title {
+					margin: $padding-large-vertical * 2 0 $padding-large-vertical 0;
+					padding: 0;
+					text-transform: uppercase;
+					font-family: $quicksand;
+					font-weight: 700;
+					font-size: 16px;
+					line-height: 24px;
+					color: #31935f;
+					@media screen and (min-width: $screen-tablet) {
+						font-size: 18px;
+						line-height: 27px;
+					}
+					@media screen and (min-width: $screen-desktop) {
+						font-size: 22px;
+						line-height: 33px;
+					}
+					@media screen and (min-width: $screen-lg-desktop) {
+						font-size: 30px;
+						line-height: 45px;
+					}
+				}
+			}
+			.section-content {
+				.blurb {
+					margin-bottom: $padding-large-vertical;
+					@include clearfix;
+					@media screen and (min-width: $screen-tablet) {
+						margin-bottom: $padding-large-vertical * 2;
+					}
+					.blurb-header {
+						border-bottom: 1px solid #83c570;
+						margin-bottom: $padding-base-vertical;
+						.blurb-title {
+							margin: 0;
+							padding: 0;
+							font-size: 14px;
+							text-transform: uppercase;
+							color: #83c570;
+							.icon-wrap {
+								display: inline-block;
+								padding: 5px;
+								background: #83c570;
+								color: #fff;
+								@include border-radius(50%);
+								height: 24px;
+								width: 24px;
+								text-align: center;
+								i {
+									@include text-shadow(rgba(black, .1) 0 0 1px);
+								}
+							}
+							.text-wrap {}
+						}
+					}
+					.blurb-content {
+						p {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+			.section-footer {
+				@include clearfix;
+				position: relative;
+				overflow: visible;
+				background: #eef5ec;
+				&:before,
+				&:after {
+					display: block;
+					content: '';
+					background: #eef5ec;
+					position: absolute;
+					height: 100%;
+					width: $grid-gutter-width / 2;
+					top: 0;
+				}
+				&:before {
+					left: 100%;
+				}
+				&:after {
+					right: 100%;
+				}
+				.starter {
+					margin-top: $padding-large-vertical;
+					padding-top: $padding-large-vertical * 2;
+					padding-bottom: $padding-large-vertical * 2;
+					@media screen and (min-width: $screen-desktop) {
+						padding-top: $padding-large-vertical * 4;
+						margin-top: $padding-large-vertical * 2;
+					}
+					.pricing-table {
+						max-width: 250px;
+						margin-left: auto;
+						margin-right: auto;
+						background: #fff;
+						border-color: lighten(#6d2850, 10);
+						padding-left: 0;
+						padding-right: 0;
+						@include border-radius(0);
+						@include box-shadow(rgba(lighten(#6d2850, 10), .4) 0 0 7px);
+						@media screen and (min-width: $screen-desktop) {
+							max-width: 275px;
+						}
+						.table-header {
+							.table-title {
+								text-transform: uppercase;
+								font-size: 14px;
+								line-height: 20px;
+								margin-top: 0;
+								padding-top: 0;
+								margin-bottom: 0;
+								padding-bottom: 0;
+								padding-left: $padding-large-horizontal;
+								padding-right: $padding-large-horizontal;
+							}
+							.price-amount {
+								background: lighten(#6d2850, 10);
+								padding-top: $padding-large-vertical * 2;
+								padding-bottom: $padding-large-vertical * 2;
+								color: #fff;
+								font-size: 30px;
+								i {}
+							}
+						}
+						.table-content {
+							padding-left: $padding-large-horizontal;
+							padding-right: $padding-large-horizontal;
+							ul {
+								li {
+									padding: $padding-base-horizontal 0;
+								}
+							}
+						}
+						.table-footer {
+							.button-wrap {
+								.btn {
+									@include border-radius(0);
+								}
+							}
+						}
+					}
+					.starter-header {
+						@include clearfix;
+						text-align: center;
+						margin-top: $padding-large-vertical * 2;
+						@media screen and (min-width: $screen-tablet) {
+							margin-top: 0;
+							text-align: left;
+						}
+						.starter-title {
+							margin: 0;
+							padding: 0;
+							font-size: 16px;
+							line-height: 24px;
+							@media screen and (min-width: $screen-tablet) {
+								font-size: 18px;
+								line-height: 27px;
+							}
+							@media screen and (min-width: $screen-desktop) {
+								font-size: 22px;
+								line-height: 33px;
+							}
+							@media screen and (min-width: $screen-lg-desktop) {
+								font-size: 30px;
+								line-height: 45px;
+							}
+						}
+						.starter-subtitle {
+							margin: $padding-large-vertical 0 0 0;
+							padding: 0;
+							font-size: 14px;
+							line-height: 20px;
+							@media screen and (min-width: $screen-tablet) {
+								font-size: 16px;
+								line-height: 24px;
+							}
+							@media screen and (min-width: $screen-desktop) {
+								font-size: 20px;
+								line-height: 30px;
+							}
+							@media screen and (min-width: $screen-lg-desktop) {
+								font-size: 24px;
+								line-height: 36px;
+							}
+						}
+					}
+					.starter-content {
+						margin-top: $padding-large-vertical;
+						ul {
+							margin: 0;
+							padding: 0;
+							list-style: none;
+							li {
+								i {}
+							}
+						}
+					}
+				}
+			}
+		}
+		#learn {
+			.section-header {
+				.section-title {
+					margin: $padding-large-vertical * 2 0 $padding-large-vertical 0;
+					padding: 0;
+					text-transform: uppercase;
+					font-family: $quicksand;
+					font-weight: 700;
+					font-size: 16px;
+					line-height: 24px;
+					color: #31935f;
+					@media screen and (min-width: $screen-tablet) {
+						font-size: 18px;
+						line-height: 27px;
+					}
+					@media screen and (min-width: $screen-desktop) {
+						font-size: 22px;
+						line-height: 33px;
+					}
+					@media screen and (min-width: $screen-lg-desktop) {
+						font-size: 30px;
+						line-height: 45px;
+					}
+				}
+			}
+			.section-content {
+				.sub-title {
+					margin: 0;
+					padding: 0;
+					text-transform: uppercase;
+					font-family: $quicksand;
+					font-weight: 700;
+					font-size: 14px;
+					line-height: 20px;
+				}
+				ul {
+					li {
+						padding: $padding-small-vertical / 4 0;
+						a {
+							font-size: 12px;
+						}
+					}
+				}
+			}
+			.section-footer {
+				margin-top: $padding-base-vertical;
+				@media screen and (min-width: $screen-tablet) {
+					margin-top: $padding-base-vertical * 2;
+				}
+				@media screen and (min-width: $screen-desktop) {
+					margin-top: $padding-base-vertical * 3;
+				}
+				@media screen and (min-width: $screen-lg-desktop) {
+					margin-top: $padding-base-vertical * 4;
+				}
+				aside {
+					max-width: 300px;
+					margin-left: auto;
+					margin-right: auto;
+					text-align: center;
+					@media screen and (min-width: $screen-tablet) {
+						max-width: 400px;
+					}
+					header {
+						h4 {
+							margin: 0;
+							padding: 0;
+							text-transform: uppercase;
+							font-family: $quicksand;
+							font-weight: 700;
+							font-size: 14px;
+							line-height: 20px;
+						}
+					}
+					.entry {
+						p {
+							text-align: justify;
+						}
+					}
+				}
+			}
+		}
+		#faqs {
+			padding-top: $padding-large-vertical * 2;
+			@media screen and (min-width: $screen-tablet) {
+				padding-top: $padding-large-vertical * 3;
+			}
+			@media screen and (min-width: $screen-desktop) {
+				padding-top: $padding-large-vertical * 4;
+			}
+			.section-header {
+				.section-title {
+					margin: $padding-large-vertical * 2 0 $padding-large-vertical 0;
+					padding: 0;
+					text-transform: uppercase;
+					font-family: $quicksand;
+					font-weight: 700;
+					font-size: 16px;
+					line-height: 24px;
+					color: #31935f;
+					@media screen and (min-width: $screen-tablet) {
+						font-size: 18px;
+						line-height: 27px;
+					}
+					@media screen and (min-width: $screen-desktop) {
+						font-size: 22px;
+						line-height: 33px;
+					}
+					@media screen and (min-width: $screen-lg-desktop) {
+						font-size: 30px;
+						line-height: 45px;
+					}
+				}
+			}
+			#faq-accordion {
+				.panel {
+					border-color: rgba($brand-primary, .1);
+					@include border-radius(0);
+					@include box-shadow(none);
+					.panel-heading {
+						padding-left: $padding-small-horizontal / 2;
+						background: rgba($brand-primary, .1);
+						@media screen and (min-width: $screen-desktop) {
+							padding-left: $padding-small-horizontal;
+						}
+						.panel-title {
+							margin: 0;
+							padding: 0;
+							font-size: 12px;
+							text-transform: uppercase;
+							font-family: $lato;
+							color: #31935f;
+							@media screen and (min-width: $screen-desktop) {
+								font-size: 14px;
+							}
+							.icon-wrap {
+								padding-right: 5px;
+								i {}
+							}
+							a {}
+						}
+					}
+					.panel-collapse {
+						.panel-body {
+							border: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
