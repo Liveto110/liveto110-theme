@@ -39,13 +39,6 @@ function my_theme_register_required_plugins() {
 			'external_url'       => '', // If set, overrides default API URL and points to an external URL.
 		),
 
-		// Advanced Custom Fields
-		array(
-			'name'      => 'Advanced Custom Fields',
-			'slug'      => 'advanced-custom-fields',
-			'required'  => false,
-		),
-
 		// WooCommerce
 		array(
 			'name'      => 'WooCommerce',

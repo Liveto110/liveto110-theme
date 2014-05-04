@@ -185,8 +185,14 @@ function liveto110_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'liveto110_scripts' );
 
+/* Include ACF */
+include_once get_template_directory() . '/inc/plugins/advanced-custom-fields/acf.php';
+
 /* TGM Plugin Activation Settings */
 require_once get_template_directory() . '/inc/tgm-plugin-settings.php';
+
+/* Include ACF */
+// include_once get_template_directory() . '/inc/advanced-custom-fields/acf.php';
 
 /* Add SMOF */
 require_once('admin/index.php');
