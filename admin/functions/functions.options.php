@@ -851,7 +851,6 @@ $of_options[] = array("name" => "Homepage Layout Builder",
 $of_options[] = array("name" => "Enter Slider Alias",
 	"desc" => "",
 	"id" => "hp_slider_id",
-	"fold" => "hp_slider",
 	"std" => "HomePageSlider",
 	"type" => "text"
 	);
