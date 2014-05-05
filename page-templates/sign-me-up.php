@@ -28,11 +28,8 @@ get_header(); ?>
 					</div><!-- /.section-content -->
 
 					<div class="graphics-wrap">
-						<div class="left-object">
-							<img src="<?php the_field('left_image'); ?>" class="img-responsive">
-						</div>
-						<div class="right-object">
-							<img src="<?php the_field('right_image'); ?>" class="img-responsive">
+						<div class="central-object">
+							<img src="<?php the_field('central_image'); ?>" class="img-responsive">
 						</div>
 					</div><!-- /.graphics-wrap -->
 				</div><!-- /.container -->

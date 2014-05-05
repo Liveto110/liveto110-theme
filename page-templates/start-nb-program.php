@@ -42,11 +42,67 @@ get_header(); ?>
 			<div class="page-sections">
 				<nav id="nb-section-anchors" class="section-anchors" role="navigation">
 					<ul class="nav nav-pills nav-justified">
-						<li class="active"><a href="#how-it-works">How it works</a></li>
-						<li><a href="#core-components">Core Components</a></li>
-						<li><a href="#learn">Learn</a></li>
-						<li><a href="#faqs">FAQ's</a></li>
-						<li><a href="#pricing">Pricing</a></li>
+						<?php
+							// if 'how_it_works' flexible-content has rows of data
+							if ( have_rows('how_it_works') ) {
+								// loop through the rows of data
+								while ( have_rows('how_it_works') ) : the_row();
+									if( get_row_layout() == 'nav_link_text' ):
+										echo '<li class="active"><a href="#how-it-works">';
+											the_sub_field('link_text');
+										echo '</a></li>';
+									endif;
+								endwhile;
+							}
+
+							// if 'core_components' flexible-content has rows of data
+							if ( have_rows('core_components') ) {
+								// loop through the rows of data
+								while ( have_rows('core_components') ) : the_row();
+									if( get_row_layout() == 'nav_link_text' ):
+										echo '<li><a href="#core-components">';
+											the_sub_field('link_text');
+										echo '</a></li>';
+									endif;
+								endwhile;
+							}
+
+							// if 'learn' flexible-content has rows of data
+							if ( have_rows('learn') ) {
+								// loop through the rows of data
+								while ( have_rows('learn') ) : the_row();
+									if( get_row_layout() == 'nav_link_text' ):
+										echo '<li><a href="#learn">';
+											the_sub_field('link_text');
+										echo '</a></li>';
+									endif;
+								endwhile;
+							}
+
+							// if 'faqs' flexible-content has rows of data
+							if ( have_rows('faqs') ) {
+								// loop through the rows of data
+								while ( have_rows('faqs') ) : the_row();
+									if( get_row_layout() == 'nav_link_text' ):
+										echo '<li><a href="#faqs">';
+											the_sub_field('link_text');
+										echo '</a></li>';
+									endif;
+								endwhile;
+							}
+
+							// if 'pricing' flexible-content has rows of data
+							if ( have_rows('pricing') ) {
+								// loop through the rows of data
+								while ( have_rows('pricing') ) : the_row();
+									if( get_row_layout() == 'nav_link_text' ):
+										echo '<li><a href="#pricing">';
+											the_sub_field('link_text');
+										echo '</a></li>';
+									endif;
+								endwhile;
+							}
+						?>
 					</ul><!-- /.nav -->
 				</nav><!-- /#nb-section-anchors .section-anchors -->
 				

@@ -2406,16 +2406,11 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 768px) { #signup-page-template .page-masthead .overlaid-content .section-content p { font-size: 17px; } }
 @media screen and (min-width: 992px) { #signup-page-template .page-masthead .overlaid-content .section-content p { font-size: 19px; } }
 @media screen and (min-width: 992px) { #signup-page-template .page-masthead .overlaid-content .section-content p { font-size: 21px; } }
-#signup-page-template .page-masthead .overlaid-content .graphics-wrap { overflow: hidden; *zoom: 1; position: relative; z-index: 5; overflow: visible; max-width: 475px; margin-left: auto; margin-right: auto; }
-@media screen and (min-width: 992px) { #signup-page-template .page-masthead .overlaid-content .graphics-wrap { max-width: 575px; } }
-#signup-page-template .page-masthead .overlaid-content .graphics-wrap .left-object { position: absolute; z-index: 7; left: 0; bottom: 0; content: ''; max-width: 50px; }
-@media screen and (min-width: 768px) { #signup-page-template .page-masthead .overlaid-content .graphics-wrap .left-object { max-width: 70px; } }
-@media screen and (min-width: 992px) { #signup-page-template .page-masthead .overlaid-content .graphics-wrap .left-object { max-width: 80px; } }
-@media screen and (min-width: 1200px) { #signup-page-template .page-masthead .overlaid-content .graphics-wrap .left-object { max-width: 90px; } }
-#signup-page-template .page-masthead .overlaid-content .graphics-wrap .right-object { position: absolute; z-index: 8; right: 0; bottom: 0; content: ''; max-width: 50px; }
-@media screen and (min-width: 768px) { #signup-page-template .page-masthead .overlaid-content .graphics-wrap .right-object { max-width: 70px; } }
-@media screen and (min-width: 992px) { #signup-page-template .page-masthead .overlaid-content .graphics-wrap .right-object { max-width: 80px; } }
-@media screen and (min-width: 1200px) { #signup-page-template .page-masthead .overlaid-content .graphics-wrap .right-object { max-width: 90px; } }
+#signup-page-template .page-masthead .overlaid-content .graphics-wrap { overflow: hidden; *zoom: 1; margin-top: 6px; max-width: 300px; margin-left: auto; margin-right: auto; }
+@media screen and (min-width: 768px) { #signup-page-template .page-masthead .overlaid-content .graphics-wrap { margin-top: 10px; max-width: 350px; } }
+@media screen and (min-width: 992px) { #signup-page-template .page-masthead .overlaid-content .graphics-wrap { margin-top: 20px; max-width: 400px; } }
+#signup-page-template .page-masthead .overlaid-content .graphics-wrap .central-object { text-align: center; }
+#signup-page-template .page-masthead .overlaid-content .graphics-wrap .central-object img { display: inline-block; }
 #signup-page-template .page-welcome { margin-top: 24px; }
 #signup-page-template .page-welcome .entry-content { background: #eaefdc; padding: 12px; border: 10px solid #fff; -webkit-box-shadow: #84bda0 0 0 0 1px; -moz-box-shadow: #84bda0 0 0 0 1px; box-shadow: #84bda0 0 0 0 1px; color: #18433c; }
 @media screen and (min-width: 768px) { #signup-page-template .page-welcome .entry-content { padding: 16px; } }
