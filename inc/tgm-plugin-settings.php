@@ -26,6 +26,26 @@ function my_theme_register_required_plugins() {
 	 * If the source is NOT from the .org repo, then source is also required.
 	 */
 	$plugins = array(
+		// Advanced Custom Fields
+		array(
+			'name'      => 'Advanced Custom Fields',
+			'slug'      => 'advanced-custom-fields',
+			'required'  => true,
+		),
+
+		// ACF - Flexible Content
+		array(
+			'name'      => 'ACF Flexible Content',
+			'slug'      => 'acf-flexible-content',
+			'required'  => true,
+		),
+
+		// ACF - Repeater Field
+		array(
+			'name'      => 'ACF Repeater Field',
+			'slug'      => 'acf-repeater',
+			'required'  => true,
+		),
 
 		// Include Revolution Slider
 		array(
@@ -43,7 +63,7 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'      => 'WooCommerce',
 			'slug'      => 'woocommerce',
-			'required'  => false,
+			'required'  => true,
 		),
 
 	);

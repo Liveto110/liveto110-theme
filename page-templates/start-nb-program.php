@@ -106,332 +106,336 @@ get_header(); ?>
 					</ul><!-- /.nav -->
 				</nav><!-- /#nb-section-anchors .section-anchors -->
 				
-				<section id="how-it-works">
-					<div class="sections-intro">
-						<h2 class="intro-title">Start a long term detox today and heal your entire body!!!</h2><!-- /.intro-title -->
+				<?php if ( have_rows( 'how_it_works')) : ?>
+					<section id="how-it-works">
+						<?php while ( have_rows( 'how_it_works')) : the_row(); ?>
+							<?php if ( get_row_layout() == 'intro' ) : ?>
+								<div class="sections-intro">							
+									<h2 class="intro-title">
+										<?php the_sub_field('intro_title'); ?>
+									</h2><!-- /.intro-title -->
 
-						<div class="intro-content">
+									<div class="intro-content">
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="left-content">
+													<?php the_sub_field('left_content'); ?>
+												</div><!-- /.left-content -->
+											</div><!-- /.col-sm-6 -->
+
+											<div class="col-sm-6">
+												<div class="right-content">
+													<?php the_sub_field('right_content'); ?>
+												</div><!-- /.right-content -->
+											</div><!-- /.col-sm-6 -->
+										</div><!-- /.row -->
+									</div><!-- /.intro-content -->
+								</div><!-- /.sections-intro -->
+							
+							<?php elseif ( get_row_layout() == 'video' ) : ?>
+								<div class="media-wrap">
+									<div class="video-wrapper">
+										<?php
+											$video_id = get_sub_field('video_url_id');
+											$video_url = '//www.youtube.com/embed/' . $video_id;
+										?>
+										<iframe src="<?php echo $video_url; ?>"></iframe>
+									</div><!-- /.video-wrapper -->
+								</div><!-- /.media-wrap -->
+
+							<?php elseif ( get_row_layout() == 'section_title' ) : ?>
+								<header class="section-header">
+									<h3 class="section-title"><?php the_sub_field('title_text'); ?></h3><!-- /.section-title -->
+								</header><!-- /.section-header -->
+
+							<?php elseif ( get_row_layout() == 'section_content' ) : ?>
+								<div class="section-content">
+									<div class="row">
+										<div class="col-sm-6">
+											<p><?php the_sub_field('left_col_content'); ?></p>
+										</div>
+
+										<div class="col-sm-6">
+											<p><?php the_sub_field('right_col_content'); ?></p>
+										</div>
+									</div><!-- /.row -->
+
+									<p><?php the_sub_field('full_width_content'); ?></p>
+								</div><!-- /.section-content -->
+
+							<?php elseif ( get_row_layout() == 'section_footer' ) : ?>
+								<footer class="section-footer">
+									<h4 class="footer-title"><?php the_sub_field('footer_title'); ?></h4><!-- /.footer-title -->
+
+									<aside class="custom-program-design">
+										<header class="aside-header">
+											<h1 class="aside-title"><?php the_sub_field('aside_title'); ?></h1><!-- /.title -->
+										</header>
+
+										<div class="aside-content">
+											<div class="row">
+												<div class="col-sm-6">
+													<div class="image-wrap">
+														<img src="<?php the_sub_field('aside_image'); ?>" alt="What is Hair Mineral Analysis?" class="img-responsive">
+													</div><!-- /.image-wrap -->
+												</div>
+
+												<div class="col-sm-6">
+													<?php the_sub_field('aside_content'); ?>
+												</div>
+											</div><!-- /.row -->
+										</div><!-- /.aside-content -->
+									</aside><!-- /.custom-program-design -->
+								</footer><!-- /.section-footer -->
+							<?php endif; ?>
+						<?php endwhile; ?>
+					</section><!-- /#how-it-works -->
+				<?php endif; ?>
+
+				<?php if ( have_rows( 'core_components')) : ?>
+					<section id="core-components">
+						<?php while ( have_rows( 'core_components')) : the_row(); ?>
+							<?php if ( get_row_layout() == 'section_title' ) : ?>
+								<header class="section-header">
+									<h3 class="section-title"><?php the_sub_field('title_text'); ?></h3><!-- /.section-title -->
+								</header><!-- /.section-header -->
+
+							<?php elseif ( get_row_layout() == 'section_content' ) : ?>
+								<div class="section-content">
+									<?php if( have_rows('blurb') ): ?>						
+										<div class="row">
+											<?php while( have_rows('blurb') ): the_row();
+												// vars
+												$blurb_icon = get_sub_field('blurb_icon');
+												$blurb_title = get_sub_field('blurb_title');
+												$blurb_content = get_sub_field('blurb_content');
+											?>
+
+												<div class="col-sm-6">
+													<aside class="blurb">
+														<header class="blurb-header">
+															<h4 class="blurb-title">
+																<?php if( $blurb_icon ): ?>
+																	<span class="icon-wrap">
+																		<i class="fa fa-<?php echo $blurb_icon; ?>"></i>
+																	</span>
+																<?php endif; ?>
+
+																<?php if( $blurb_title ): ?>
+																	<span class="text-wrap">
+																		<?php echo $blurb_title; ?>
+																	</span>
+																<?php endif; ?>
+															</h4><!-- /.blurb-title -->
+														</header><!-- /.blurb-header -->
+
+														<div class="blurb-content">
+															<?php if( $blurb_content ): ?>
+																<p><?php echo $blurb_content; ?></p>
+															<?php endif; ?>
+														</div><!-- /.blurb-content -->
+													</aside><!-- /.blurb -->
+												</div>
+											<?php endwhile; ?>
+										</div><!-- /.row -->
+									<?php endif; ?>
+								</div><!-- /.section-content -->
+
+							<?php elseif ( get_row_layout() == 'section_footer' ) : ?>
+								<footer class="section-footer">
+									<article class="starter">
+										<div class="row">
+											<div class="col-sm-5">
+												<?php
+													$posts = get_sub_field('pricing_table');
+
+													if( $posts ):
+
+														foreach( $posts as $post):
+															setup_postdata($post); ?>
+															<div class="pricing-table well">
+																<div class="table-header">
+																	<h1 class="table-title text-center"><?php the_title(); ?></h1><!-- /.table-title -->
+
+																	<h2 class="price-amount text-center">
+																		<span class="text-wrap"><?php echo $product->get_price_html(); ?></span>
+																	</h2><!-- /.price-amount -->
+																</div><!-- /.table-header -->
+
+																<div class="table-content">
+																	<?php the_excerpt(); ?>
+																	<!-- <ul class="list-unstyled text-center">
+																		<li>Increase metabolism</li>
+																		<li>Correct Nutrient Deficiencies</li>
+																		<li>Detox Heavy Metals and Chemicals</li>
+																	</ul> -->
+																</div><!-- /.table-content -->
+
+																<div class="table-footer">
+																	<div class="button-wrap text-center">
+																		<?php echo '<a href="' . $product->add_to_cart_url() . '" rel="nofollow" data-product_id="' . $product->id . '" data-product_sku="' . $product->get_sku() . '" class="btn btn-primary">Get Started!</a>'; ?>
+																	</div><!-- /.button-wrap -->
+																</div><!-- /.table-footer -->
+															</div><!-- /.pricing-table -->
+														<?php endforeach; ?>
+														<?php wp_reset_postdata(); ?>
+													<?php endif;
+												?>
+											</div>
+
+											<div class="col-sm-7">
+												<header class="starter-header">
+													<h1 class="starter-title"><?php the_sub_field('title_text'); ?></h1><!-- /.starter-title -->
+
+													<h2 class="starter-subtitle"><?php the_sub_field('sub_title_text'); ?></h2><!-- /.starter-subtitle -->
+												</header><!-- /.starter-header -->
+
+												<div class="starter-content">
+													<?php the_sub_field('footer_content'); ?>
+													<ul>
+														<li><i class="fa fa-angle-right"></i> 1.5 hours of health coaching</li>
+														<li><i class="fa fa-angle-right"></i> Interpretation of your hair mineral analysis</li>
+														<li><i class="fa fa-angle-right"></i> 17-page interpretive report of your hair mineral analysis</li>
+														<li><i class="fa fa-angle-right"></i> Diet recommendations</li>
+														<li><i class="fa fa-angle-right"></i> Customized supplement recommendations</li>
+														<li><i class="fa fa-angle-right"></i> Lifestyle recommendations</li>
+														<li><i class="fa fa-angle-right"></i> Unlimited email support until your next hair test</li>
+													</ul>
+												</div><!-- /.starter-content -->
+											</div>
+										</div><!-- /.row -->
+									</article><!-- /.get-started -->
+								</footer><!-- /.section-footer -->
+							<?php endif; ?>
+						<?php endwhile; ?>
+					</section><!-- /#core-components -->
+				<?php endif; ?>
+
+				<?php if ( have_rows( 'learn')) : ?>
+					<section id="learn">
+						<header class="section-header">
+							<h3 class="section-title">Learn about how nutritional balancing works</h3><!-- /.section-title -->
+						</header><!-- /.section-header -->
+
+						<div class="section-content">
 							<div class="row">
 								<div class="col-sm-6">
-									<div class="left-content">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-									</div><!-- /.left-content -->
-								</div>
-
-								<div class="col-sm-6">
-									<div class="right-content">
-										<p><strong>Lorem ipsum dolor sit</strong><br>amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-										<p><strong>Duis aute irure dolor</strong><br>in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-									</div><!-- /.right-content -->
-								</div>
-							</div><!-- /.row -->
-						</div><!-- /.intro-content -->
-					</div><!-- /.sections-intro -->
-
-					<div class="media-wrap">Image/Video</div>
-
-					<header class="section-header">
-						<h3 class="section-title">How nutritional balancing works</h3><!-- /.section-title -->
-					</header><!-- /.section-header -->
-
-					<div class="section-content">
-						<div class="row">
-							<div class="col-sm-6">
-								<p><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							</div>
-
-							<div class="col-sm-6">
-								<p><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							</div>
-						</div><!-- /.row -->
-
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div><!-- /.section-content -->
-
-					<footer class="section-footer">
-						<h4 class="footer-title">This PROGRAM IS DESIGNED to help you BEGIN AGAIN, IMPROVE YOUR HEALTH &amp; VITALITY and LIVE to 110</h4><!-- /.footer-title -->
-
-						<aside class="custom-program-design">
-							<header class="aside-header">
-								<h1 class="aside-title">Your Custom Program is designed based upon a hair mineral analysis, which shows:</h1><!-- /.title -->
-							</header>
-
-							<div class="aside-content">
-								<div class="row">
-									<div class="col-sm-6">
-										<div class="image-wrap">
-											<img src="" alt="What is Hair Mineral Analysis?" class="img-responsive">
-										</div><!-- /.image-wrap -->
-									</div>
-
-									<div class="col-sm-6">
+									<div class="articles">
+										<h4 class="sub-title">Articles</h4>
 										<ul class="list-unstyled">
-											<li><i class="fa fa-angle-right"></i> Metabolic rate</li>
-											<li><i class="fa fa-angle-right"></i> Mineral deficiencies</li>
-											<li><i class="fa fa-angle-right"></i> Heavy metal toxicity</li>
-											<li><i class="fa fa-angle-right"></i> Adrenal Fatigue</li>
-											<li><i class="fa fa-angle-right"></i> Thyroid function</li>
-											<li><i class="fa fa-angle-right"></i> Inflammation</li>
-											<li class="text-right">And much more!</li>
+											<li><a href="#">Article Title...</a></li>
+											<li><a href="#">Article Title...</a></li>
+											<li><a href="#">Article Title...</a></li>
+											<li><a href="#">Article Title...</a></li>
+											<li><a href="#">Article Title...</a></li>
+											<li><a href="#">Article Title...</a></li>
+											<li><a href="#">Article Title...</a></li>
+											<li><a href="#">Article Title...</a></li>
+											<li><a href="#">Article Title...</a></li>
+											<li><a href="#">Article Title...</a></li>
+											<li><a href="#">Article Title...</a></li>
+											<li><a href="#">Article Title...</a></li>
+											<li><a href="#">Article Title...</a></li>
+											<li><a href="#">Article Title...</a></li>
+											<li><a href="#">Article Title...</a></li>
 										</ul>
-									</div>
-								</div><!-- /.row -->
-							</div><!-- /.aside-content -->
-						</aside><!-- /.custom-program-design -->
-					</footer><!-- /.section-footer -->
-				</section><!-- /#how-it-works -->
-
-				<section id="core-components">
-					<header class="section-header">
-						<h3 class="section-title">Components of nutritional balancing</h3><!-- /.section-title -->
-					</header><!-- /.section-header -->
-
-					<div class="section-content">
-						<div class="row">
-							<div class="col-sm-6">
-								<aside class="blurb">
-									<header class="blurb-header">
-										<h4 class="blurb-title">
-											<span class="icon-wrap">
-												<i class="fa fa-cutlery"></i>
-											</span>
-											<span class="text-wrap">Diet</span>
-										</h4><!-- /.blurb-title -->
-									</header><!-- /.blurb-header -->
-
-									<div class="blurb-content">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-									</div><!-- /.blurb-content -->
-								</aside><!-- /.blurb -->
-							</div>
-
-							<div class="col-sm-6">
-								<aside class="blurb">
-									<header class="blurb-header">
-										<h4 class="blurb-title">
-											<span class="icon-wrap">
-												<i class="fa fa-bug"></i>
-											</span>
-											<span class="text-wrap">Detox</span>
-										</h4><!-- /.blurb-title -->
-									</header><!-- /.blurb-header -->
-
-									<div class="blurb-content">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-									</div><!-- /.blurb-content -->
-								</aside><!-- /.blurb -->
-							</div>
-
-							<div class="col-sm-6">
-								<aside class="blurb">
-									<header class="blurb-header">
-										<h4 class="blurb-title">
-											<span class="icon-wrap">
-												<i class="fa fa-medkit"></i>
-											</span>
-											<span class="text-wrap">Supplements</span>
-										</h4><!-- /.blurb-title -->
-									</header><!-- /.blurb-header -->
-
-									<div class="blurb-content">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-									</div><!-- /.blurb-content -->
-								</aside><!-- /.blurb -->
-							</div>
-
-							<div class="col-sm-6">
-								<aside class="blurb">
-									<header class="blurb-header">
-										<h4 class="blurb-title">
-											<span class="icon-wrap">
-												<i class="fa fa-puzzle-piece"></i>
-											</span>
-											<span class="text-wrap">Lifestyle</span>
-										</h4><!-- /.blurb-title -->
-									</header><!-- /.blurb-header -->
-
-									<div class="blurb-content">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-									</div><!-- /.blurb-content -->
-								</aside><!-- /.blurb -->
-							</div>
-						</div><!-- /.row -->
-					</div><!-- /.section-content -->
-
-					<footer class="section-footer">
-						<article class="starter">
-							<div class="row">
-								<div class="col-sm-5">
-									<div class="pricing-table well">
-										<div class="table-header">
-											<h1 class="table-title text-center">Hair Mineral Analysis</h1><!-- /.table-title -->
-
-											<h2 class="price-amount text-center">
-												<i class="fa fa-dollar"></i>
-												<span class="text-wrap">300</span>
-											</h2><!-- /.price-amount -->
-										</div><!-- /.table-header -->
-
-										<div class="table-content">
-											<ul class="list-unstyled text-center">
-												<li>Increase metabolism</li>
-												<li>Correct Nutrient Deficiencies</li>
-												<li>Detox Heavy Metals and Chemicals</li>
-											</ul>
-										</div><!-- /.table-content -->
-
-										<div class="table-footer">
-											<div class="button-wrap text-center">
-												<button class="btn btn-primary">Get Started!</button>
-											</div><!-- /.button-wrap -->
-										</div><!-- /.table-footer -->
-									</div><!-- /.pricint-table -->
+									</div><!-- /.articles -->
 								</div>
 
-								<div class="col-sm-7">
-									<header class="starter-header">
-										<h1 class="starter-title">Get Started!</h1><!-- /.starter-title -->
-
-										<h2 class="starter-subtitle">What you get!</h2><!-- /.starter-subtitle -->
-									</header><!-- /.starter-header -->
-
-									<div class="starter-content">
-										<ul>
-											<li><i class="fa fa-angle-right"></i> 1.5 hours of health coaching</li>
-											<li><i class="fa fa-angle-right"></i> Interpretation of your hair mineral analysis</li>
-											<li><i class="fa fa-angle-right"></i> 17-page interpretive report of your hair mineral analysis</li>
-											<li><i class="fa fa-angle-right"></i> Diet recommendations</li>
-											<li><i class="fa fa-angle-right"></i> Customized supplement recommendations</li>
-											<li><i class="fa fa-angle-right"></i> Lifestyle recommendations</li>
-											<li><i class="fa fa-angle-right"></i> Unlimited email support until your next hair test</li>
+								<div class="col-sm-6">
+									<div class="podcasts">
+										<h4 class="sub-title">Podcasts</h4>
+										<ul class="list-unstyled">
+											<li><a hhref="#">Podcast Title...</a></li>
+											<li><a hhref="#">Podcast Title...</a></li>
+											<li><a hhref="#">Podcast Title...</a></li>
+											<li><a hhref="#">Podcast Title...</a></li>
+											<li><a hhref="#">Podcast Title...</a></li>
+											<li><a hhref="#">Podcast Title...</a></li>
+											<li><a hhref="#">Podcast Title...</a></li>
+											<li><a hhref="#">Podcast Title...</a></li>
+											<li><a hhref="#">Podcast Title...</a></li>
+											<li><a hhref="#">Podcast Title...</a></li>
+											<li><a hhref="#">Podcast Title...</a></li>
+											<li><a hhref="#">Podcast Title...</a></li>
+											<li><a hhref="#">Podcast Title...</a></li>
+											<li><a hhref="#">Podcast Title...</a></li>
+											<li><a hhref="#">Podcast Title...</a></li>
 										</ul>
-									</div><!-- /.starter-content -->
+									</div><!-- /.podcasts -->
 								</div>
 							</div><!-- /.row -->
-						</article><!-- /.get-started -->
-					</footer><!-- /.section-footer -->
-				</section><!-- /#core-components -->
+						</div><!-- /.section-content -->
 
-				<section id="learn">
-					<header class="section-header">
-						<h3 class="section-title">Learn about how nutritional balancing works</h3><!-- /.section-title -->
-					</header><!-- /.section-header -->
+						<footer class="section-footer">
+							<aside>
+								<header>
+									<h4>Dr. Lawrence Wilson's Website</h4>
+								</header>
 
-					<div class="section-content">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="articles">
-									<h4 class="sub-title">Articles</h4>
-									<ul class="list-unstyled">
-										<li><a href="#">Article Title...</a></li>
-										<li><a href="#">Article Title...</a></li>
-										<li><a href="#">Article Title...</a></li>
-										<li><a href="#">Article Title...</a></li>
-										<li><a href="#">Article Title...</a></li>
-										<li><a href="#">Article Title...</a></li>
-										<li><a href="#">Article Title...</a></li>
-										<li><a href="#">Article Title...</a></li>
-										<li><a href="#">Article Title...</a></li>
-										<li><a href="#">Article Title...</a></li>
-										<li><a href="#">Article Title...</a></li>
-										<li><a href="#">Article Title...</a></li>
-										<li><a href="#">Article Title...</a></li>
-										<li><a href="#">Article Title...</a></li>
-										<li><a href="#">Article Title...</a></li>
-									</ul>
-								</div><!-- /.articles -->
-							</div>
+								<div class="entry">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div><!-- /.entry -->
+							</aside>
+						</footer><!-- /.section-footer -->
+					</section><!-- /#learn -->
+				<?php endif; ?>
 
-							<div class="col-sm-6">
-								<div class="podcasts">
-									<h4 class="sub-title">Podcasts</h4>
-									<ul class="list-unstyled">
-										<li><a hhref="#">Podcast Title...</a></li>
-										<li><a hhref="#">Podcast Title...</a></li>
-										<li><a hhref="#">Podcast Title...</a></li>
-										<li><a hhref="#">Podcast Title...</a></li>
-										<li><a hhref="#">Podcast Title...</a></li>
-										<li><a hhref="#">Podcast Title...</a></li>
-										<li><a hhref="#">Podcast Title...</a></li>
-										<li><a hhref="#">Podcast Title...</a></li>
-										<li><a hhref="#">Podcast Title...</a></li>
-										<li><a hhref="#">Podcast Title...</a></li>
-										<li><a hhref="#">Podcast Title...</a></li>
-										<li><a hhref="#">Podcast Title...</a></li>
-										<li><a hhref="#">Podcast Title...</a></li>
-										<li><a hhref="#">Podcast Title...</a></li>
-										<li><a hhref="#">Podcast Title...</a></li>
-									</ul>
-								</div><!-- /.podcasts -->
-							</div>
-						</div><!-- /.row -->
-					</div><!-- /.section-content -->
+				<?php if ( have_rows( 'faqs')) : ?>
+					<section id="faqs">
+						<header class="section-header">
+							<h3 class="section-title">FAQ</h3><!-- /.section-title -->
+						</header><!-- /.section-header -->
 
-					<footer class="section-footer">
-						<aside>
-							<header>
-								<h4>Dr. Lawrence Wilson's Website</h4>
-							</header>
+						<div class="section-content">
+							<div class="panel-group" id="faq-accordion">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<span class="icon-wrap">
+												<i class="fa fa-plus-circle"></i>
+											</span><!-- /.icon-wrap -->
 
-							<div class="entry">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-							</div><!-- /.entry -->
-						</aside>
-					</footer><!-- /.section-footer -->
-				</section><!-- /#learn -->
-
-				<section id="faqs">
-					<header class="section-header">
-						<h3 class="section-title">FAQ</h3><!-- /.section-title -->
-					</header><!-- /.section-header -->
-
-					<div class="section-content">
-						<div class="panel-group" id="faq-accordion">
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<span class="icon-wrap">
-											<i class="fa fa-plus-circle"></i>
-										</span><!-- /.icon-wrap -->
-
-										<a data-toggle="collapse" data-parent="#faq-accordion" href="#faq-1">Is this a question?</a>
-									</h4>
-								</div>
-								<div id="faq-1" class="panel-collapse collapse">
-									<div class="panel-body">
-										<p><strong>Yes!</strong> It is is a question!</p>
+											<a data-toggle="collapse" data-parent="#faq-accordion" href="#faq-1">Is this a question?</a>
+										</h4>
 									</div>
-								</div>
-							</div><!-- /.apnel -->
-
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<span class="icon-wrap">
-											<i class="fa fa-plus-circle"></i>
-										</span><!-- /.icon-wrap -->
-										
-										<a data-toggle="collapse" data-parent="#faq-accordion" href="#faq-2">Is this a question as well?</a>
-									</h4>
-								</div>
-								<div id="faq-2" class="panel-collapse collapse">
-									<div class="panel-body">
-										<p>I this this too is a question. What do you think?</p>
+									<div id="faq-1" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p><strong>Yes!</strong> It is is a question!</p>
+										</div>
 									</div>
-								</div>
-							</div><!-- /.panel -->
-						</div><!-- /#faq-accordion .panel-group -->
-					</div><!-- /.section-content -->
-				</section><!-- /#faqs -->
+								</div><!-- /.apnel -->
 
-				<section id="pricing">
-					<header class="section-header">
-						<h3 class="section-title">Pricing</h3><!-- /.section-title -->
-					</header><!-- /.section-header -->
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h4 class="panel-title">
+											<span class="icon-wrap">
+												<i class="fa fa-plus-circle"></i>
+											</span><!-- /.icon-wrap -->
+											
+											<a data-toggle="collapse" data-parent="#faq-accordion" href="#faq-2">Is this a question as well?</a>
+										</h4>
+									</div>
+									<div id="faq-2" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p>I this this too is a question. What do you think?</p>
+										</div>
+									</div>
+								</div><!-- /.panel -->
+							</div><!-- /#faq-accordion .panel-group -->
+						</div><!-- /.section-content -->
+					</section><!-- /#faqs -->
+				<?php endif; ?>
 
-					<div class="section-content"></div><!-- /.section-content -->
-				</section><!-- /#pricing -->
+				<?php if ( have_rows( 'pricing')) : ?>
+					<section id="pricing">
+						<header class="section-header">
+							<h3 class="section-title">Pricing</h3><!-- /.section-title -->
+						</header><!-- /.section-header -->
+
+						<div class="section-content"></div><!-- /.section-content -->
+					</section><!-- /#pricing -->
+				<?php endif; ?>
 			</div><!-- /.page-sections -->
 		</div><!-- /.container -->
 	</div><!-- /#content -->	
