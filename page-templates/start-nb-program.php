@@ -71,9 +71,9 @@ get_header(); ?>
 							if ( have_rows('learn') ) {
 								// loop through the rows of data
 								while ( have_rows('learn') ) : the_row();
-									if( get_row_layout() == 'nav_link_text' ):
+									if( get_row_layout() == 'learn_nav_link_text' ):
 										echo '<li><a href="#learn">';
-											the_sub_field('link_text');
+											the_sub_field('learn_link_text');
 										echo '</a></li>';
 									endif;
 								endwhile;
@@ -264,11 +264,6 @@ get_header(); ?>
 
 																<div class="table-content">
 																	<?php the_excerpt(); ?>
-																	<!-- <ul class="list-unstyled text-center">
-																		<li>Increase metabolism</li>
-																		<li>Correct Nutrient Deficiencies</li>
-																		<li>Detox Heavy Metals and Chemicals</li>
-																	</ul> -->
 																</div><!-- /.table-content -->
 
 																<div class="table-footer">
@@ -292,15 +287,6 @@ get_header(); ?>
 
 												<div class="starter-content">
 													<?php the_sub_field('footer_content'); ?>
-													<ul>
-														<li><i class="fa fa-angle-right"></i> 1.5 hours of health coaching</li>
-														<li><i class="fa fa-angle-right"></i> Interpretation of your hair mineral analysis</li>
-														<li><i class="fa fa-angle-right"></i> 17-page interpretive report of your hair mineral analysis</li>
-														<li><i class="fa fa-angle-right"></i> Diet recommendations</li>
-														<li><i class="fa fa-angle-right"></i> Customized supplement recommendations</li>
-														<li><i class="fa fa-angle-right"></i> Lifestyle recommendations</li>
-														<li><i class="fa fa-angle-right"></i> Unlimited email support until your next hair test</li>
-													</ul>
 												</div><!-- /.starter-content -->
 											</div>
 										</div><!-- /.row -->
@@ -311,73 +297,70 @@ get_header(); ?>
 					</section><!-- /#core-components -->
 				<?php endif; ?>
 
-				<?php if ( have_rows( 'learn')) : ?>
+				<?php if ( have_rows('learn') )  : ?>
 					<section id="learn">
-						<header class="section-header">
-							<h3 class="section-title">Learn about how nutritional balancing works</h3><!-- /.section-title -->
-						</header><!-- /.section-header -->
+						<?php while ( have_rows('learn') ) : the_row(); ?>
+							<?php if ( get_row_layout() == 'learn_section_title' ) : ?>
+								<header class="section-header">
+									<h3 class="section-title"><?php the_sub_field('learn_title_text'); ?></h3><!-- /.section-title -->
+								</header><!-- /.section-header -->
+							
+							<?php elseif ( get_row_layout() == 'learn_left_content' ) : ?>
+								<div class="section-content">
+									<div class="row">
+										<div class="col-sm-6">
+											<h4 class="sub-title"><?php the_sub_field('learn_left_section_title'); ?></h4>
 
-						<div class="section-content">
-							<div class="row">
-								<div class="col-sm-6">
-									<div class="articles">
-										<h4 class="sub-title">Articles</h4>
-										<ul class="list-unstyled">
-											<li><a href="#">Article Title...</a></li>
-											<li><a href="#">Article Title...</a></li>
-											<li><a href="#">Article Title...</a></li>
-											<li><a href="#">Article Title...</a></li>
-											<li><a href="#">Article Title...</a></li>
-											<li><a href="#">Article Title...</a></li>
-											<li><a href="#">Article Title...</a></li>
-											<li><a href="#">Article Title...</a></li>
-											<li><a href="#">Article Title...</a></li>
-											<li><a href="#">Article Title...</a></li>
-											<li><a href="#">Article Title...</a></li>
-											<li><a href="#">Article Title...</a></li>
-											<li><a href="#">Article Title...</a></li>
-											<li><a href="#">Article Title...</a></li>
-											<li><a href="#">Article Title...</a></li>
-										</ul>
-									</div><!-- /.articles -->
-								</div>
+											<?php if( have_rows('learn_left_items') ): ?>
+												<div class="articles">
+													<ul class="list-unstyled">
+														<?php while ( have_rows('learn_left_items') ) : the_row(); ?>
+															<li>
+																<a href="<?php the_sub_field('learn_left_item_url'); ?>">
+																	<?php the_sub_field('learn_left_item_title'); ?>
+																</a>
+															</li>
+														<?php endwhile; ?>
+													</ul>
+												</div><!-- /.articles -->
+											<?php endif; ?>
+										</div><!-- /.col-sm-6 -->
+								
+							<?php elseif ( get_row_layout() == 'learn_right_content' ) : ?>
+										<div class="col-sm-6">
+											<h4 class="sub-title"><?php the_sub_field('learn_right_section_title'); ?></h4>
 
-								<div class="col-sm-6">
-									<div class="podcasts">
-										<h4 class="sub-title">Podcasts</h4>
-										<ul class="list-unstyled">
-											<li><a hhref="#">Podcast Title...</a></li>
-											<li><a hhref="#">Podcast Title...</a></li>
-											<li><a hhref="#">Podcast Title...</a></li>
-											<li><a hhref="#">Podcast Title...</a></li>
-											<li><a hhref="#">Podcast Title...</a></li>
-											<li><a hhref="#">Podcast Title...</a></li>
-											<li><a hhref="#">Podcast Title...</a></li>
-											<li><a hhref="#">Podcast Title...</a></li>
-											<li><a hhref="#">Podcast Title...</a></li>
-											<li><a hhref="#">Podcast Title...</a></li>
-											<li><a hhref="#">Podcast Title...</a></li>
-											<li><a hhref="#">Podcast Title...</a></li>
-											<li><a hhref="#">Podcast Title...</a></li>
-											<li><a hhref="#">Podcast Title...</a></li>
-											<li><a hhref="#">Podcast Title...</a></li>
-										</ul>
-									</div><!-- /.podcasts -->
-								</div>
-							</div><!-- /.row -->
-						</div><!-- /.section-content -->
+											<?php if( have_rows('learn_right_items') ): ?>
+												<div class="podcasts">
+													<ul class="list-unstyled">
+														<?php while ( have_rows('learn_right_items') ) : the_row(); ?>
+															<li>
+																<a href="<?php the_sub_field('learn_right_item_url'); ?>">
+																	<?php the_sub_field('learn_right_item_title'); ?>
+																</a>
+															</li>
+														<?php endwhile; ?>
+													</ul>
+												</div><!-- /.podcasts -->
+											<?php endif; ?>
+										</div><!-- /.col-sm-6 -->
+									</div><!-- /.row -->
+								</div><!-- /.section-content -->
 
-						<footer class="section-footer">
-							<aside>
-								<header>
-									<h4>Dr. Lawrence Wilson's Website</h4>
-								</header>
+							<?php elseif ( get_row_layout() == 'learn_central_content' ) : ?>
+								<footer class="section-footer">
+									<aside>
+										<header>
+											<h4><?php the_sub_field('learn_cc_title'); ?>Dr. Lawrence Wilson's Website</h4>
+										</header>
 
-								<div class="entry">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div><!-- /.entry -->
-							</aside>
-						</footer><!-- /.section-footer -->
+										<div class="entry">
+											<p><?php the_sub_field('learn_cc_content'); ?>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div><!-- /.entry -->
+									</aside>
+								</footer><!-- /.section-footer -->
+							<?php endif; ?>
+						<?php endwhile; ?>
 					</section><!-- /#learn -->
 				<?php endif; ?>
 
