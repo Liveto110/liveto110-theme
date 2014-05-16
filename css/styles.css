@@ -2569,6 +2569,8 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 992px) { #start-nb-template .page-sections #faqs #faq-accordion .panel .panel-heading .panel-title { font-size: 14px; } }
 #start-nb-template .page-sections #faqs #faq-accordion .panel .panel-heading .panel-title .icon-wrap { padding-right: 5px; }
 #start-nb-template .page-sections #faqs #faq-accordion .panel .panel-collapse .panel-body { border: 0; }
+#start-nb-template .page-sections #pricing { padding-bottom: 10px; }
+@media screen and (min-width: 768px) { #start-nb-template .page-sections #pricing { padding-bottom: 20px; } }
 
 /* --- Signup Section --- */
 #signup-section { background-position: center center; background-repeat: no-repeat; background-attachment: fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding-top: 48px; padding-bottom: 48px; }

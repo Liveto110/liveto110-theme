@@ -47,9 +47,9 @@ get_header(); ?>
 							if ( have_rows('how_it_works') ) {
 								// loop through the rows of data
 								while ( have_rows('how_it_works') ) : the_row();
-									if( get_row_layout() == 'nav_link_text' ):
+									if( get_row_layout() == 'how_it_works_nav_link_text' ):
 										echo '<li class="active"><a href="#how-it-works">';
-											the_sub_field('link_text');
+											the_sub_field('how_it_works_link_text');
 										echo '</a></li>';
 									endif;
 								endwhile;
@@ -59,9 +59,9 @@ get_header(); ?>
 							if ( have_rows('core_components') ) {
 								// loop through the rows of data
 								while ( have_rows('core_components') ) : the_row();
-									if( get_row_layout() == 'nav_link_text' ):
+									if( get_row_layout() == 'core_components_nav_link_text' ):
 										echo '<li><a href="#core-components">';
-											the_sub_field('link_text');
+											the_sub_field('core_components_link_text');
 										echo '</a></li>';
 									endif;
 								endwhile;
@@ -83,9 +83,9 @@ get_header(); ?>
 							if ( have_rows('faqs') ) {
 								// loop through the rows of data
 								while ( have_rows('faqs') ) : the_row();
-									if( get_row_layout() == 'nav_link_text' ):
+									if( get_row_layout() == 'faqs_nav_link_text' ):
 										echo '<li><a href="#faqs">';
-											the_sub_field('link_text');
+											the_sub_field('faqs_link_text');
 										echo '</a></li>';
 									endif;
 								endwhile;
@@ -95,9 +95,9 @@ get_header(); ?>
 							if ( have_rows('pricing') ) {
 								// loop through the rows of data
 								while ( have_rows('pricing') ) : the_row();
-									if( get_row_layout() == 'nav_link_text' ):
+									if( get_row_layout() == 'pricing_nav_link_text' ):
 										echo '<li><a href="#pricing">';
-											the_sub_field('link_text');
+											the_sub_field('pricing_link_text');
 										echo '</a></li>';
 									endif;
 								endwhile;
@@ -109,79 +109,79 @@ get_header(); ?>
 				<?php if ( have_rows( 'how_it_works')) : ?>
 					<section id="how-it-works">
 						<?php while ( have_rows( 'how_it_works')) : the_row(); ?>
-							<?php if ( get_row_layout() == 'intro' ) : ?>
+							<?php if ( get_row_layout() == 'how_it_works_intro' ) : ?>
 								<div class="sections-intro">							
 									<h2 class="intro-title">
-										<?php the_sub_field('intro_title'); ?>
+										<?php the_sub_field('how_it_works_intro_title'); ?>
 									</h2><!-- /.intro-title -->
 
 									<div class="intro-content">
 										<div class="row">
 											<div class="col-sm-6">
 												<div class="left-content">
-													<?php the_sub_field('left_content'); ?>
+													<?php the_sub_field('how_it_works_intro_left_content'); ?>
 												</div><!-- /.left-content -->
 											</div><!-- /.col-sm-6 -->
 
 											<div class="col-sm-6">
 												<div class="right-content">
-													<?php the_sub_field('right_content'); ?>
+													<?php the_sub_field('how_it_works_intro_right_content'); ?>
 												</div><!-- /.right-content -->
 											</div><!-- /.col-sm-6 -->
 										</div><!-- /.row -->
 									</div><!-- /.intro-content -->
 								</div><!-- /.sections-intro -->
 							
-							<?php elseif ( get_row_layout() == 'video' ) : ?>
+							<?php elseif ( get_row_layout() == 'how_it_works_intro_video' ) : ?>
 								<div class="media-wrap">
 									<div class="video-wrapper">
 										<?php
-											$video_id = get_sub_field('video_url_id');
+											$video_id = get_sub_field('how_it_works_intro_video_url_id');
 											$video_url = '//www.youtube.com/embed/' . $video_id;
 										?>
 										<iframe src="<?php echo $video_url; ?>"></iframe>
 									</div><!-- /.video-wrapper -->
 								</div><!-- /.media-wrap -->
 
-							<?php elseif ( get_row_layout() == 'section_title' ) : ?>
+							<?php elseif ( get_row_layout() == 'how_it_works_section_title' ) : ?>
 								<header class="section-header">
-									<h3 class="section-title"><?php the_sub_field('title_text'); ?></h3><!-- /.section-title -->
+									<h3 class="section-title"><?php the_sub_field('how_it_works_title_text'); ?></h3><!-- /.section-title -->
 								</header><!-- /.section-header -->
 
-							<?php elseif ( get_row_layout() == 'section_content' ) : ?>
+							<?php elseif ( get_row_layout() == 'how_it_works_section_content' ) : ?>
 								<div class="section-content">
 									<div class="row">
 										<div class="col-sm-6">
-											<p><?php the_sub_field('left_col_content'); ?></p>
+											<p><?php the_sub_field('how_it_works_left_col_content'); ?></p>
 										</div>
 
 										<div class="col-sm-6">
-											<p><?php the_sub_field('right_col_content'); ?></p>
+											<p><?php the_sub_field('how_it_works_right_col_content'); ?></p>
 										</div>
 									</div><!-- /.row -->
 
-									<p><?php the_sub_field('full_width_content'); ?></p>
+									<p><?php the_sub_field('how_it_works_full_width_content'); ?></p>
 								</div><!-- /.section-content -->
 
-							<?php elseif ( get_row_layout() == 'section_footer' ) : ?>
+							<?php elseif ( get_row_layout() == 'how_it_works_section_footer' ) : ?>
 								<footer class="section-footer">
-									<h4 class="footer-title"><?php the_sub_field('footer_title'); ?></h4><!-- /.footer-title -->
+									<h4 class="footer-title"><?php the_sub_field('how_it_works_footer_title'); ?></h4><!-- /.footer-title -->
 
 									<aside class="custom-program-design">
 										<header class="aside-header">
-											<h1 class="aside-title"><?php the_sub_field('aside_title'); ?></h1><!-- /.title -->
+											<h1 class="aside-title"><?php the_sub_field('how_it_works_aside_title'); ?></h1><!-- /.title -->
 										</header>
 
 										<div class="aside-content">
 											<div class="row">
 												<div class="col-sm-6">
 													<div class="image-wrap">
-														<img src="<?php the_sub_field('aside_image'); ?>" alt="What is Hair Mineral Analysis?" class="img-responsive">
+														<img src="<?php the_sub_field('how_it_works_aside_image'); ?>" alt="What is Hair Mineral Analysis?" class="img-responsive">
 													</div><!-- /.image-wrap -->
 												</div>
 
 												<div class="col-sm-6">
-													<?php the_sub_field('aside_content'); ?>
+													<?php the_sub_field('how_it_works_aside_content'); ?>
 												</div>
 											</div><!-- /.row -->
 										</div><!-- /.aside-content -->
@@ -195,20 +195,20 @@ get_header(); ?>
 				<?php if ( have_rows( 'core_components')) : ?>
 					<section id="core-components">
 						<?php while ( have_rows( 'core_components')) : the_row(); ?>
-							<?php if ( get_row_layout() == 'section_title' ) : ?>
+							<?php if ( get_row_layout() == 'core_components_section_title' ) : ?>
 								<header class="section-header">
-									<h3 class="section-title"><?php the_sub_field('title_text'); ?></h3><!-- /.section-title -->
+									<h3 class="section-title"><?php the_sub_field('core_components_title_text'); ?></h3><!-- /.section-title -->
 								</header><!-- /.section-header -->
 
-							<?php elseif ( get_row_layout() == 'section_content' ) : ?>
+							<?php elseif ( get_row_layout() == 'core_components_section_content' ) : ?>
 								<div class="section-content">
-									<?php if( have_rows('blurb') ): ?>						
+									<?php if( have_rows('core_components_blurb') ): ?>						
 										<div class="row">
-											<?php while( have_rows('blurb') ): the_row();
+											<?php while( have_rows('core_components_blurb') ): the_row();
 												// vars
-												$blurb_icon = get_sub_field('blurb_icon');
-												$blurb_title = get_sub_field('blurb_title');
-												$blurb_content = get_sub_field('blurb_content');
+												$blurb_icon = get_sub_field('core_components_blurb_icon');
+												$blurb_title = get_sub_field('core_components_blurb_title');
+												$blurb_content = get_sub_field('core_components_blurb_content');
 											?>
 
 												<div class="col-sm-6">
@@ -241,13 +241,13 @@ get_header(); ?>
 									<?php endif; ?>
 								</div><!-- /.section-content -->
 
-							<?php elseif ( get_row_layout() == 'section_footer' ) : ?>
+							<?php elseif ( get_row_layout() == 'core_components_section_footer' ) : ?>
 								<footer class="section-footer">
 									<article class="starter">
 										<div class="row">
 											<div class="col-sm-5">
 												<?php
-													$posts = get_sub_field('pricing_table');
+													$posts = get_sub_field('core_components_section_footer_pricing_table');
 
 													if( $posts ):
 
@@ -280,13 +280,13 @@ get_header(); ?>
 
 											<div class="col-sm-7">
 												<header class="starter-header">
-													<h1 class="starter-title"><?php the_sub_field('title_text'); ?></h1><!-- /.starter-title -->
+													<h1 class="starter-title"><?php the_sub_field('core_components_section_footer_title_text'); ?></h1><!-- /.starter-title -->
 
-													<h2 class="starter-subtitle"><?php the_sub_field('sub_title_text'); ?></h2><!-- /.starter-subtitle -->
+													<h2 class="starter-subtitle"><?php the_sub_field('core_components_section_footer_sub_title_text'); ?></h2><!-- /.starter-subtitle -->
 												</header><!-- /.starter-header -->
 
 												<div class="starter-content">
-													<?php the_sub_field('footer_content'); ?>
+													<?php the_sub_field('core_components_section_footer_footer_content'); ?>
 												</div><!-- /.starter-content -->
 											</div>
 										</div><!-- /.row -->
@@ -347,15 +347,15 @@ get_header(); ?>
 									</div><!-- /.row -->
 								</div><!-- /.section-content -->
 
-							<?php elseif ( get_row_layout() == 'learn_central_content' ) : ?>
+							<?php elseif ( get_row_layout() == 'learn_section_footer' ) : ?>
 								<footer class="section-footer">
 									<aside>
 										<header>
-											<h4><?php the_sub_field('learn_cc_title'); ?>Dr. Lawrence Wilson's Website</h4>
+											<h4><?php the_sub_field('learn_section_footer_title'); ?></h4>
 										</header>
 
 										<div class="entry">
-											<p><?php the_sub_field('learn_cc_content'); ?>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											<p><?php the_sub_field('learn_section_footer_content'); ?></p>
 										</div><!-- /.entry -->
 									</aside>
 								</footer><!-- /.section-footer -->
@@ -366,47 +366,43 @@ get_header(); ?>
 
 				<?php if ( have_rows( 'faqs')) : ?>
 					<section id="faqs">
-						<header class="section-header">
-							<h3 class="section-title">FAQ</h3><!-- /.section-title -->
-						</header><!-- /.section-header -->
+						<?php while ( have_rows('faqs') ) : the_row(); ?>
+							<?php if ( get_row_layout() == 'faqs_section_title' ) : ?>
+								<header class="section-header">
+									<h3 class="section-title"><?php the_sub_field('faqs_title_text'); ?></h3><!-- /.section-title -->
+								</header><!-- /.section-header -->
 
-						<div class="section-content">
-							<div class="panel-group" id="faq-accordion">
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h4 class="panel-title">
-											<span class="icon-wrap">
-												<i class="fa fa-plus-circle"></i>
-											</span><!-- /.icon-wrap -->
+							<?php elseif ( get_row_layout() == 'faqs_section_content' ) : ?>
+								<div class="section-content">
+									<?php if( have_rows('faqs_faq_items') ): ?>
+										<div class="panel-group" id="faq-accordion">
+											<?php
+												$id_number = 1;
+												while ( have_rows('faqs_faq_items') ) : the_row(); ?>
+													<div class="panel panel-default">
+														<div class="panel-heading">
+															<h4 class="panel-title">
+																<span class="icon-wrap">
+																	<i class="fa fa-plus-circle"></i>
+																</span><!-- /.icon-wrap -->
 
-											<a data-toggle="collapse" data-parent="#faq-accordion" href="#faq-1">Is this a question?</a>
-										</h4>
-									</div>
-									<div id="faq-1" class="panel-collapse collapse">
-										<div class="panel-body">
-											<p><strong>Yes!</strong> It is is a question!</p>
-										</div>
-									</div>
-								</div><!-- /.apnel -->
-
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										<h4 class="panel-title">
-											<span class="icon-wrap">
-												<i class="fa fa-plus-circle"></i>
-											</span><!-- /.icon-wrap -->
-											
-											<a data-toggle="collapse" data-parent="#faq-accordion" href="#faq-2">Is this a question as well?</a>
-										</h4>
-									</div>
-									<div id="faq-2" class="panel-collapse collapse">
-										<div class="panel-body">
-											<p>I this this too is a question. What do you think?</p>
-										</div>
-									</div>
-								</div><!-- /.panel -->
-							</div><!-- /#faq-accordion .panel-group -->
-						</div><!-- /.section-content -->
+																<a data-toggle="collapse" data-parent="#faq-accordion" href="#faq-<?php echo $id_number; ?>"><?php the_sub_field('faqs_faq_items_question'); ?></a>
+															</h4>
+														</div>
+														<div id="faq-<?php echo $id_number; ?>" class="panel-collapse collapse">
+															<div class="panel-body">
+																<p><?php the_sub_field('faqs_faq_items_answer'); ?></p>
+															</div>
+														</div>
+													</div><!-- /.panel -->
+													<?php $id_number++;
+												endwhile;
+											?>
+										</div><!-- /#faq-accordion .panel-group -->
+									<?php endif; ?>
+								</div><!-- /.section-content -->
+							<?php endif; ?>
+						<?php endwhile; ?>
 					</section><!-- /#faqs -->
 				<?php endif; ?>
 

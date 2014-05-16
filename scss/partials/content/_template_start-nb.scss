@@ -616,5 +616,11 @@
 				}
 			}
 		}
+		#pricing {
+			padding-bottom: $padding-large-vertical;
+			@media screen and (min-width: $screen-tablet) {
+				padding-bottom: $padding-large-vertical * 2;
+			}
+		}
 	}
 }
