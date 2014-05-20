@@ -13,5 +13,10 @@ jQuery( document ).ready( function($) {
 		$drawer.slideToggle("fast");
 	});
 
-	// $('.page-sections').scrollspy({ target: '.section-anchors' });
+	// Videos Page Slideshow
+	$('#videos-page-template .flexslider').flexslider({
+		selector: ".slides > .video-post",
+		directionNav: false,
+		controlNav: false
+	});
 });

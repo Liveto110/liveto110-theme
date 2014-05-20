@@ -577,7 +577,7 @@ if ( function_exists( "register_field_group" ) ) {
 									0 => 'product',
 								),
 								'taxonomy' => array (
-									0 => 'product_cat:1368',
+									0 => 'product_cat:1438',
 								),
 								'filters' => array (
 								),
@@ -839,7 +839,7 @@ if ( function_exists( "register_field_group" ) ) {
 								'placeholder' => '',
 								'maxlength' => '',
 								'rows' => '',
-								'formatting' => 'br',
+								'formatting' => 'html',
 							),
 						),
 					),
@@ -942,7 +942,7 @@ if ( function_exists( "register_field_group" ) ) {
 										'placeholder' => '',
 										'maxlength' => '',
 										'rows' => '',
-										'formatting' => 'br',
+										'formatting' => 'html',
 									),
 								),
 								'row_min' => '',

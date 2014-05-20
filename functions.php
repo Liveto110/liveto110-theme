@@ -42,6 +42,7 @@ function liveto110_setup() {
 	add_image_size( 'single-post', 750, 9999);
 	add_image_size( 'page-masthead', 1265, 9999);
 	add_image_size( 'freebie-signup', 125, 9999);
+	add_image_size( 'full-width-slide', 1265, 500, true );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(

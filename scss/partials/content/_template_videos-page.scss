@@ -1,0 +1,61 @@
+/* --- Full Width Page Template --- */
+#videos-page-template {
+	#primary .page-header {
+		.page-title {
+			text-transform: uppercase;
+		}
+	}
+	#primary .videos-wrap {
+		.flexslider {
+			@include border-radius(0);
+			@include box-shadow(none);
+			background: transparent;
+			border: 0;
+			margin-bottom: 0;
+		}
+		.video-post {
+			position: relative;
+			overflow: hidden;
+			.video-content {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				background: $brand-primary;
+				padding: $padding-large-vertical $padding-base-horizontal;
+				@include box-shadow(rgba(black, .4) 0 -5px 10px);
+				.video-header {
+					margin: 0;
+					padding: 0;
+					.video-title {
+						margin: 0;
+						padding: 0;
+						font-size: 18px;
+						line-height: 24px;
+						text-align: center;
+						text-transform: uppercase;
+						color: #fff;
+						@include text-shadow(rgba(black, .2) 0 1px 3px);
+						font-weight: normal;
+						font-family: $lato;
+						@media screen and (min-width: $screen-desktop) {
+							text-align: left;
+						}
+					}
+				}
+				p {
+					display: none;
+					margin: 0;
+					padding: 0;
+					text-align: center;
+					@media screen and (min-width: $screen-tablet) {
+						display: block;
+					}
+					@media screen and (min-width: $screen-desktop) {
+						text-align: left;
+					}
+				}
+			}
+		}
+	}
+}
