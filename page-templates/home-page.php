@@ -43,11 +43,11 @@ foreach ($smof_data['homepage_blocks']['enabled'] as $block) {
 									<div class="col-sm-6 col-md-3">
 										<article class="blurb">
 											<header class="blurb-header">
-												<h1 class="blurb-title"><?php the_title(); ?></h1><!-- /.blurb-title -->
-
 												<div class="icon-wrap">
 													<i class="fa <?php the_field('field_53580a1df276b', get_the_ID()); ?>"></i>
 												</div><!-- /.icon-wrap -->
+
+												<h1 class="blurb-title"><?php the_title(); ?></h1><!-- /.blurb-title -->
 											</header><!-- /.blurb-header -->
 
 											<div class="blurb-entry">
