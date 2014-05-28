@@ -14,7 +14,7 @@
 				margin: 0;
 				padding: 0;
 				text-transform: uppercase;
-				font-family: $quicksand;
+				// font-family: $quicksand;
 				font-weight: 700;
 				font-size: 16px;
 				line-height: 24px;
@@ -40,7 +40,38 @@
 			}
 			img {}
 		}
-		.content-wrap {}
+		.content-wrap {
+			p {
+				color: #6d2850;
+				font-family: $lato;
+				font-weight: bold;
+			}
+			ul {
+				color: #6d2850;
+				font-family: $lato;
+				font-weight: bold;
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				li {
+					position: relative;
+					display: block;
+					margin: 0;
+					padding: 0;
+					&:before {
+						content: '\f105';
+						display: inline-block;
+						font-family: FontAwesome;
+						font-style: normal;
+						//font-weight: normal;
+						line-height: 1;
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+						margin-right: $padding-small-horizontal / 3;
+					}
+				}
+			}
+		}
 	}
 	.page-sections {
 		.section-anchors {
@@ -55,6 +86,8 @@
 						color: #6d2850;
 						@include transition(all .2s ease-in-out);
 						text-transform: uppercase;
+						font-family: $font-family-sans-serif;
+						font-weight: 700;
 						@media screen and (min-width: $screen-tablet) {
 							font-size: 12px;
 						}
@@ -89,8 +122,8 @@
 				.intro-title {
 					margin: 0;
 					padding: 0;
-					font-family: $quicksand;
-					font-weight: 700;
+					// font-family: $quicksand;
+					// font-weight: 700;
 					font-size: 16px;
 					line-height: 24px;
 					color: #31935f;
@@ -145,8 +178,8 @@
 					margin: $padding-large-vertical * 2 0 $padding-large-vertical 0;
 					padding: 0;
 					text-transform: uppercase;
-					font-family: $quicksand;
-					font-weight: 700;
+					// font-family: $quicksand;
+					// font-weight: 700;
 					font-size: 16px;
 					line-height: 24px;
 					color: #31935f;
@@ -208,8 +241,6 @@
 						.aside-title {
 							margin: 0 0 $padding-large-vertical 0;
 							padding: 0;
-							font-family: $lato;
-							font-weight: 400;
 							font-size: 14px;
 							line-height: 20px;
 						}
@@ -258,8 +289,8 @@
 					margin: $padding-large-vertical * 2 0 $padding-large-vertical 0;
 					padding: 0;
 					text-transform: uppercase;
-					font-family: $quicksand;
-					font-weight: 700;
+					// font-family: $quicksand;
+					// font-weight: 700;
 					font-size: 16px;
 					line-height: 24px;
 					color: #31935f;
@@ -392,6 +423,7 @@
 							.button-wrap {
 								.btn {
 									@include border-radius(0);
+									font-family: $font-family-sans-serif;
 								}
 							}
 						}
@@ -472,8 +504,8 @@
 					margin: $padding-large-vertical * 2 0 $padding-large-vertical 0;
 					padding: 0;
 					text-transform: uppercase;
-					font-family: $quicksand;
-					font-weight: 700;
+					// font-family: $quicksand;
+					// font-weight: 700;
 					font-size: 16px;
 					line-height: 24px;
 					color: #31935f;
@@ -496,8 +528,8 @@
 					margin: 0;
 					padding: 0;
 					text-transform: uppercase;
-					font-family: $quicksand;
-					font-weight: 700;
+					// font-family: $quicksand;
+					// font-weight: 700;
 					font-size: 14px;
 					line-height: 20px;
 				}
@@ -505,7 +537,7 @@
 					li {
 						padding: $padding-small-vertical / 4 0;
 						a {
-							font-size: 12px;
+							font-size: 13px;
 						}
 					}
 				}
@@ -534,8 +566,8 @@
 							margin: 0;
 							padding: 0;
 							text-transform: uppercase;
-							font-family: $quicksand;
-							font-weight: 700;
+							// font-family: $quicksand;
+							// font-weight: 700;
 							font-size: 14px;
 							line-height: 20px;
 						}
@@ -561,8 +593,6 @@
 					margin: $padding-large-vertical * 2 0 $padding-large-vertical 0;
 					padding: 0;
 					text-transform: uppercase;
-					font-family: $quicksand;
-					font-weight: 700;
 					font-size: 16px;
 					line-height: 24px;
 					color: #31935f;
@@ -596,7 +626,6 @@
 							padding: 0;
 							font-size: 12px;
 							text-transform: uppercase;
-							font-family: $lato;
 							color: #31935f;
 							@media screen and (min-width: $screen-desktop) {
 								font-size: 14px;

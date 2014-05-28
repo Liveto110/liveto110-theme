@@ -2,7 +2,6 @@
 #searchform-drawer {
 	background: $searchform-drawer-bg;
 	height: 50px;
-	// @include transition(height .3s ease-in-out);
 	display: none;
 	form {
 		position: relative;
@@ -17,7 +16,7 @@
 			z-index: 1;
 			margin: 0;
 			height: 30px; // 24px;
-			font-family: $quicksand;
+			font-family: $lato;
 			font-weight: 400;
 			text-align: center;
 			@include border-radius(0);

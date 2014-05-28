@@ -63,34 +63,34 @@ function liveto110_service_register() {
 add_action('init', 'liveto110_service_register');
 
 #-----------------------------------------------------------------#
-# Team Members
+# Podcasts
 #-----------------------------------------------------------------#
-// function liveto110_team_register() {
-// 	$team_labels = array(
-// 		'name' => _x('Team Members', 'taxonomy general name', 'liveto110'),
-// 		'singular_name' => __('Team member', 'liveto110'),
-// 		'search_items' => __('Search Team Members', 'liveto110'),
-// 		'all_items' => __('Team Members', 'liveto110'),
-// 		'parent_item' => __('Parent Team Member', 'liveto110'),
-// 		'edit_item' => __('Edit Team Member', 'liveto110'),
-// 		'update_item' => __('Update Team Member', 'liveto110'),
-// 		'add_new_item' => __('Add New Team Member', 'liveto110')
-// 	);
+function liveto110_podcasts_register() {
+	$podcast_labels = array(
+		'name' => _x('Podcasts', 'taxonomy general name', 'liveto110'),
+		'singular_name' => __('Podcast', 'liveto110'),
+		'search_items' => __('Search Podcasts', 'liveto110'),
+		'all_items' => __('Podcasts', 'liveto110'),
+		'parent_item' => __('Parent Podcast', 'liveto110'),
+		'edit_item' => __('Edit Podcast', 'liveto110'),
+		'update_item' => __('Update Podcast', 'liveto110'),
+		'add_new_item' => __('Add New Podcast', 'liveto110')
+	);
 
-// 	$args = array(
-// 		'labels' => $team_labels,
-// 		'rewrite' => array('slug' => 'team-post', 'with_front' => false),
-// 		'singular_label' => __('Team Member', 'liveto110'),
-// 		'public' => true,
-// 		'publicly_queryable' => true,
-// 		'show_ui' => true,
-// 		'hierarchical' => false,
-// 		'menu_icon' => get_template_directory_uri() . '/img/icons/icon-teammemder.png',
-// 		'supports' => array('title', 'editor', 'thumbnail', 'excerpt')
-// 	);
-// 	register_post_type('team-post', $args);
-// }
-// add_action('init', 'liveto110_team_register');
+	$args = array(
+		'labels' => $podcast_labels,
+		'rewrite' => array('slug' => 'podcast-post', 'with_front' => false),
+		'singular_label' => __('Podcast', 'liveto110'),
+		'public' => true,
+		'publicly_queryable' => true,
+		'show_ui' => true,
+		'hierarchical' => false,
+		'menu_icon' => get_template_directory_uri() . '/img/icons/icon-podcasts.png',
+		'supports' => array('title', 'editor', 'thumbnail' )
+	);
+	register_post_type('podcast-post', $args);
+}
+add_action('init', 'liveto110_podcasts_register');
 
 #-----------------------------------------------------------------#
 # Portfolio

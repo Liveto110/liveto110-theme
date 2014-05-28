@@ -137,19 +137,19 @@ function liveto110_fonts_url() {
 	$lato = _x( 'on', 'Lato font: on or off', 'liveto110' );
 
 	/* Translators: If there are characters in your language that are not
-	 * supported by Quicksand, translate this to 'off'. Do not translate into your
+	 * supported by EB Garamond, translate this to 'off'. Do not translate into your
 	 * own language.
 	 */
-	$quicksand = _x( 'on', 'Quicksand font: on or off', 'liveto110' );
+	$garamond = _x( 'on', 'EB Garamond font: on or off', 'liveto110' );
 
-	if ( 'off' !== $lato || 'off' !== $quicksand ) {
+	if ( 'off' !== $lato || 'off' !== $garamond ) {
 		$font_families = array();
 
 		if ( 'off' !== $lato )
 			$font_families[] = 'Lato:300,400,700,300italic,400italic,700italic';
 
-		if ( 'off' !== $quicksand )
-			$font_families[] = 'Quicksand:300,400,700';
+		if ( 'off' !== $garamond )
+			$font_families[] = 'EB+Garamond';
 
 		$query_args = array(
 			'family' => urlencode( implode( '|', $font_families ) ),
@@ -212,6 +212,11 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+/**
+ * Custom Shortcodes.
+ */
+require get_template_directory() . '/inc/shortcodes.php';
 
 /**
  * Customizer additions.

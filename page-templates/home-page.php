@@ -125,139 +125,137 @@ foreach ($smof_data['homepage_blocks']['enabled'] as $block) {
 
 					<div class="posts-wrap">
 						<div class="row">
-							<div class="col-sm-4">
-								<article class="post article-post">
-									<?php
-										$podcasts_cat_id = get_cat_ID('podcasts');
-										$recipess_cat_id = get_cat_ID('recipes');
-										$args = array(
-											'category__not_in' => array($podcasts_cat_id, $recipess_cat_id),
-											'post_type' => 'post',
-											'posts_per_page' => 1
-										);
-										$articles = new WP_Query( $args );
+							<?php
+								$podcasts_cat_id = get_cat_ID('podcast');
+								$recipes_cat_id = get_cat_ID('recipes');
 
-										while ( $articles->have_posts() ) : $articles->the_post(); ?>
-											<header class="post-header">
-												<div class="icon-wrap text-center">
-													<i class="fa fa-file-o article-icon"></i>
-												</div><!-- /.icon-wrap -->
-												
-												<h1 class="post-title text-center"><?php the_title(); ?></h1><!-- /.post-title -->
-											</header><!-- /.post-header -->
+								$article_args = array(
+									'category__not_in' => array($podcasts_cat_id, $recipes_cat_id),
+									'post_type' => 'post',
+									'posts_per_page' => 1
+								);
+								
+								$podcast_args = array(
+									'category_name' => 'podcast',
+									'post_type' => 'post',
+									'posts_per_page' => 1
+								);
+								
+								$recipe_args = array(
+									'category_name' => 'recipes',
+									'post_type' => 'post',
+									'posts_per_page' => 1
+								);
+								
+								$articles = new WP_Query( $article_args );
+								$podcasts = new WP_Query( $podcast_args );
+								$recipes = new WP_Query( $recipe_args );
+							?>
 
-											<div class="image-wrap">
-												<?php
-													$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );
-													$url = $thumb['0'];
-												?>
-												<img src="<?php echo $url; ?>" class="img-responsive" title="<?php the_title(); ?>">
-											</div><!-- /.image-wrap -->
+							<?php while ( $articles->have_posts() ) : $articles->the_post(); ?>
+								<div class="col-sm-4">
+									<article class="post article-post">
+										<header class="post-header">
+											<div class="icon-wrap text-center">
+												<i class="fa fa-file-o article-icon"></i>
+											</div><!-- /.icon-wrap -->
 
-											<div class="entry">
-												<?php
-													global $more;
-													$more = 0;
-													the_content( '<a class="read-more-link" href="'. get_permalink() .'"><i class="fa fa-angle-right"></i> More</a>', true ); 
-												?>
-											</div><!-- /.entry -->
+											<h1 class="post-title text-center"><?php the_title(); ?></h1><!-- /.post-title -->
+										</header><!-- /.post-header -->
 
-											<footer class="post-footer">
-												<a href="<?php echo esc_url( home_url( '/' ) ); ?>category/articles/" class="read-more-link btn btn-primary">More Articles <i class="fa fa-fw fa-angle-right"></i></a>
-											</footer><!-- /.post-footer -->
-										<?php endwhile;
-										wp_reset_postdata();
-									?>
-								</article><!-- /.post .article-post -->
-							</div>
+										<div class="image-wrap">
+											<?php
+												$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );
+												$url = $thumb['0'];
+											?>
+											<img src="<?php echo $url; ?>" class="img-responsive" title="<?php the_title(); ?>">
+										</div><!-- /.image-wrap -->
 
-							<div class="col-sm-4">
-								<article class="post podcast-post">
-									<?php
-										$args2 = array(
-											'category_name' => 'podcasts',
-											'post_type' => 'post',
-											'posts_per_page' => 1
-										);
-										$podcasts = new WP_Query( $args2 );
+										<div class="entry">
+											<?php
+												global $more;
+												$more = 0;
+												the_content( '<a class="read-more-link" href="'. get_permalink() .'"><i class="fa fa-angle-right"></i> More</a>', true ); 
+											?>
+										</div><!-- /.entry -->
 
-										while( $podcasts->have_posts() ) : $podcasts->the_post(); ?>
-											<header class="post-header">
-												<div class="icon-wrap text-center">
-													<i class="fa fa-headphones podcast-icon"></i>
-												</div><!-- /.icon-wrap -->
-												
-												<h1 class="post-title text-center"><?php the_title(); ?></h1><!-- /.post-title -->
-											</header><!-- /.post-header -->
+										<footer class="post-footer">
+											<a href="<?php echo esc_url( home_url( '/' ) ); ?>category/blog-and-podcast/" class="read-more-link btn btn-primary">More Articles <i class="fa fa-fw fa-angle-right"></i></a>
+										</footer><!-- /.post-footer -->
+									</article><!-- /.post .article-post -->
+								</div>
+							<?php endwhile; ?>
+							<?php wp_reset_postdata(); ?>
 
-											<div class="image-wrap">
-												<?php
-													$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );
-													$url = $thumb['0'];
-												?>
-												<img src="<?php echo $url; ?>" class="img-responsive" title="<?php the_title(); ?>">
-											</div><!-- /.image-wrap -->
+							<?php while( $podcasts->have_posts() ) : $podcasts->the_post(); ?>
+								<div class="col-sm-4">
+									<article class="post podcast-post">
+										<header class="post-header">
+											<div class="icon-wrap text-center">
+												<i class="fa fa-headphones podcast-icon"></i>
+											</div><!-- /.icon-wrap -->
+											
+											<h1 class="post-title text-center"><?php the_title(); ?></h1><!-- /.post-title -->
+										</header><!-- /.post-header -->
 
-											<div class="entry">
-												<?php
-													global $more;
-													$more = 0;
-													the_content( '<a class="read-more-link" href="'. get_permalink() .'"><i class="fa fa-angle-right"></i> More</a>', true ); 
-												?>
-											</div><!-- /.entry -->
+										<div class="image-wrap">
+											<?php
+												$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );
+												$url = $thumb['0'];
+											?>
+											<img src="<?php echo $url; ?>" class="img-responsive" title="<?php the_title(); ?>">
+										</div><!-- /.image-wrap -->
 
-											<footer class="post-footer">
-												<a href="<?php echo esc_url( home_url( '/' ) ); ?>category/podcasts/" class="read-more-link btn btn-primary">More Podcasts <i class="fa fa-fw fa-angle-right"></i></a>
-											</footer><!-- /.post-footer -->
-										<?php endwhile;
-										wp_reset_postdata();
-									?>
-								</article><!-- /.post .podcast-post -->
-							</div>
+										<div class="entry">
+											<?php
+												global $more;
+												$more = 0;
+												the_content( '<a class="read-more-link" href="'. get_permalink() .'"><i class="fa fa-angle-right"></i> More</a>', true ); 
+											?>
+										</div><!-- /.entry -->
 
-							<div class="col-sm-4">
-								<article class="post recipe-post">
-									<?php
-										$args3 = array(
-											'category_name' => 'recipes',
-											'post_type' => 'post',
-											'posts_per_page' => 1
-										);
-										$recipes = new WP_Query( $args3 );
+										<footer class="post-footer">
+											<a href="<?php echo esc_url( home_url( '/' ) ); ?>category/podcast/" class="read-more-link btn btn-primary">More Podcasts <i class="fa fa-fw fa-angle-right"></i></a>
+										</footer><!-- /.post-footer -->
+									</article><!-- /.post .podcast-post -->
+								</div>
+							<?php endwhile; ?>
+							<?php wp_reset_postdata(); ?>
 
-										while( $recipes->have_posts() ) : $recipes->the_post(); ?>
-											<header class="post-header">
-												<div class="icon-wrap text-center">
-													<i class="fa fa-cutlery recipe-icon"></i>
-												</div><!-- /.icon-wrap -->
-												
-												<h1 class="post-title text-center"><?php the_title(); ?></h1><!-- /.post-title -->
-											</header><!-- /.post-header -->
+							<?php while( $recipes->have_posts() ) : $recipes->the_post(); ?>
+								<div class="col-sm-4">
+									<article class="post recipe-post">
+										<header class="post-header">
+											<div class="icon-wrap text-center">
+												<i class="fa fa-cutlery recipe-icon"></i>
+											</div><!-- /.icon-wrap -->
+											
+											<h1 class="post-title text-center"><?php the_title(); ?></h1><!-- /.post-title -->
+										</header><!-- /.post-header -->
 
-											<div class="image-wrap">
-												<?php
-													$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );
-													$url = $thumb['0'];
-												?>
-												<img src="<?php echo $url; ?>" class="img-responsive" title="<?php the_title(); ?>">
-											</div><!-- /.image-wrap -->
+										<div class="image-wrap">
+											<?php
+												$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );
+												$url = $thumb['0'];
+											?>
+											<img src="<?php echo $url; ?>" class="img-responsive" title="<?php the_title(); ?>">
+										</div><!-- /.image-wrap -->
 
-											<div class="entry">
-												<?php
-													global $more;
-													$more = 0;
-													the_content( '<a class="read-more-link" href="'. get_permalink() .'"><i class="fa fa-angle-right"></i> More</a>', true ); 
-												?>
-											</div><!-- /.entry -->
+										<div class="entry">
+											<?php
+												global $more;
+												$more = 0;
+												the_content( '<a class="read-more-link" href="'. get_permalink() .'"><i class="fa fa-angle-right"></i> More</a>', true ); 
+											?>
+										</div><!-- /.entry -->
 
-											<footer class="post-footer">
-												<a href="<?php echo esc_url( home_url( '/' ) ); ?>category/recipes/" class="read-more-link btn btn-primary">More Recipes <i class="fa fa-fw fa-angle-right"></i></a>
-											</footer><!-- /.post-footer -->
-										<?php endwhile;
-										wp_reset_postdata();
-									?>
-								</article><!-- /.post .recipe-post -->
-							</div>
+										<footer class="post-footer">
+											<a href="<?php echo esc_url( home_url( '/' ) ); ?>category/recipes/" class="read-more-link btn btn-primary">More Recipes <i class="fa fa-fw fa-angle-right"></i></a>
+										</footer><!-- /.post-footer -->
+									</article><!-- /.post .recipe-post -->
+								</div>
+							<?php endwhile; ?>
+							<?php wp_reset_postdata(); ?>
 						</div><!-- /.row -->
 					</div><!-- /.posts-wrap -->
 				</div><!-- /.container -->

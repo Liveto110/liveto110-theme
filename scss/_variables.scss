@@ -2,8 +2,7 @@
 
 // Fonts
 $lato: 			'Lato', sans-serif;
-// $nunito: 		'Nunito', sans-serif;
-$quicksand: 	'Quicksand', sans-serif;
+$garamond: 	'EB Garamond', serif;
 
 // Override Bootstrap variables here
 //== Colors
@@ -26,10 +25,36 @@ $link-color:            $brand-primary;
 $link-hover-color:      darken($link-color, 15%);
 
 //== Typography
-$font-family-base:        $lato;
+//
+//## Font, line-height, and color for body text, headings, and more.
 
-$headings-font-family:    $quicksand;
-$headings-font-weight:    700;
+$font-family-sans-serif:  $lato; // "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       $garamond; //Georgia, "Times New Roman", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-serif; // !default;
+
+$font-size-base:          14px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.428571429 !default; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family:    $font-family-sans-serif; //inherit !default;
+$headings-font-weight:    400 !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          inherit !default;
 
 //== Iconography
 //** Load fonts from this directory.
