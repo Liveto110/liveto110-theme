@@ -1,5 +1,6 @@
 /* --- Singup Page --- */
 #signup-page-template {
+	border-bottom: 1px solid rgba(black, .1);
 	.page-masthead {
 		position: relative;
 		height: 300px;
@@ -403,3 +404,5 @@
 		}
 	}
 }
+
+.page-template-page-templatessign-me-up-php #signup-section { display: none; }
