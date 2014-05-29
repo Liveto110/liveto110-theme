@@ -34,7 +34,7 @@
 
 .blog #content,
 .single #content {
-	background: #eee;
+	// background: #eee;
 	padding-top: 24px;
 	padding-bottom: 24px;
 	@media screen and (min-width: $screen-tablet) {
@@ -50,10 +50,10 @@
 .single #primary .hentry {
 	@include clearfix;
 	background: #fff;
-	padding: $padding-base-vertical;
+	// padding: $padding-base-vertical;
 	@media screen and (min-width: $screen-tablet) {}
 	@media screen and (min-width: $screen-desktop) {
-		border: 1px solid rgba(black, .1);
+		// border: 1px solid rgba(black, .1);
 	}
 	.image-wrap {
 		img {}

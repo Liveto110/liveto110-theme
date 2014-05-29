@@ -2270,12 +2270,11 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 .page-content { margin-bottom: 24px; }
 @media screen and (min-width: 768px) { .page-content { margin-bottom: 48px; } }
 
-.blog #content, .single #content { background: #eee; padding-top: 24px; padding-bottom: 24px; }
+.blog #content, .single #content { padding-top: 24px; padding-bottom: 24px; }
 @media screen and (min-width: 768px) { .blog #content, .single #content { padding-top: 36px; padding-bottom: 36px; } }
 @media screen and (min-width: 992px) { .blog #content, .single #content { padding-top: 48px; padding-bottom: 48px; } }
 
-.blog #primary .hentry, .single #primary .hentry { overflow: hidden; *zoom: 1; background: #fff; padding: 6px; }
-@media screen and (min-width: 992px) { .blog #primary .hentry, .single #primary .hentry { border: 1px solid rgba(0, 0, 0, 0.1); } }
+.blog #primary .hentry, .single #primary .hentry { overflow: hidden; *zoom: 1; background: #fff; }
 .blog #primary .hentry .content-wrap, .single #primary .hentry .content-wrap { overflow: hidden; *zoom: 1; }
 .blog #primary .hentry .content-wrap .entry-content, .single #primary .hentry .content-wrap .entry-content { display: none; }
 @media screen and (min-width: 992px) { .blog #primary .hentry .content-wrap .entry-content, .single #primary .hentry .content-wrap .entry-content { overflow: hidden; *zoom: 1; display: block; margin-top: 12px; } }
