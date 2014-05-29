@@ -296,17 +296,20 @@
 					}
 				}
 				.widget-content {
-					background: #e1ebe4;
+					// background: #e1ebe4;
 					@include clearfix;
-					padding: 36px $padding-large-horizontal;
+					padding-bottom: 36px;
 					margin: $padding-large-vertical $padding-large-horizontal;
 					form {
 						@include clearfix;
 						margin: 0;
 						padding: 0;
-						background: none;
+						background: #e1ebe4;
+						padding: 36px 0 0 0;
 						.form-group {
 							background: #f5faf8;
+							margin-left: $padding-large-horizontal;
+							margin-right: $padding-large-horizontal;
 							.form-control {
 								@include border-radius(0);
 								border: 0;
@@ -343,6 +346,9 @@
 						.captcha-wrap {
 							background: #f5faf8;
 							padding: $padding-large-horizontal;
+							margin-left: $padding-large-horizontal;
+							margin-right: $padding-large-horizontal;
+							\margin-bottom: 36px;
 							img {
 								width: 100%;
 								border: 0;
@@ -363,6 +369,10 @@
 								&:-ms-input-placeholder { color: #999; font-family: $font-family-serif; }
 								&::-webkit-input-placeholder { color: #999; font-family: $font-family-serif; }
 							}
+						}
+						.button-wrap {
+							background: #84bda0;
+							padding-top: $padding-large-horizontal * 2;
 						}
 						#signmeup-submit {
 							@include clearfix;

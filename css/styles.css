@@ -2540,9 +2540,9 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #signup-page-template #content #signmeup-secondary .widget { overflow: hidden; *zoom: 1; }
 #signup-page-template #content #signmeup-secondary .widget .widget-header .widget-title { color: #fff; margin: 48px 0; padding: 0; text-align: center; font-size: 30px; line-height: 45px; font-family: "EB Garamond", serif; }
 @media screen and (min-width: 992px) { #signup-page-template #content #signmeup-secondary .widget .widget-header .widget-title { font-size: 40px; line-height: 60px; } }
-#signup-page-template #content #signmeup-secondary .widget .widget-content { background: #e1ebe4; overflow: hidden; *zoom: 1; padding: 36px 16px; margin: 10px 16px; }
-#signup-page-template #content #signmeup-secondary .widget .widget-content form { overflow: hidden; *zoom: 1; margin: 0; padding: 0; background: none; }
-#signup-page-template #content #signmeup-secondary .widget .widget-content form .form-group { background: #f5faf8; }
+#signup-page-template #content #signmeup-secondary .widget .widget-content { overflow: hidden; *zoom: 1; padding-bottom: 36px; margin: 10px 16px; }
+#signup-page-template #content #signmeup-secondary .widget .widget-content form { overflow: hidden; *zoom: 1; margin: 0; padding: 0; background: #e1ebe4; padding: 36px 0 0 0; }
+#signup-page-template #content #signmeup-secondary .widget .widget-content form .form-group { background: #f5faf8; margin-left: 16px; margin-right: 16px; }
 #signup-page-template #content #signmeup-secondary .widget .widget-content form .form-group .form-control { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; border: 0; background: transparent; color: #18433c; font-family: "Lato", sans-serif; }
 #signup-page-template #content #signmeup-secondary .widget .widget-content form .form-group .form-control::-moz-placeholder { color: #999; opacity: 1; font-family: "EB Garamond", serif; }
 #signup-page-template #content #signmeup-secondary .widget .widget-content form .form-group .form-control:-ms-input-placeholder { color: #999; font-family: "EB Garamond", serif; }
@@ -2550,13 +2550,14 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #signup-page-template #content #signmeup-secondary .widget .widget-content form .form-group label { padding-left: 16px; padding-top: 16px; color: #18433c; font-family: "Lato", sans-serif; }
 #signup-page-template #content #signmeup-secondary .widget .widget-content form .form-group .radio-wrap label { padding-left: 20px; padding-top: 0; color: #18433c; font-family: "EB Garamond", serif; }
 #signup-page-template #content #signmeup-secondary .widget .widget-content form .form-group .radio-wrap { margin-left: 40%; }
-#signup-page-template #content #signmeup-secondary .widget .widget-content form .captcha-wrap { background: #f5faf8; padding: 16px; }
+#signup-page-template #content #signmeup-secondary .widget .widget-content form .captcha-wrap { background: #f5faf8; padding: 16px; margin-left: 16px; margin-right: 16px; \margin-bottom: 36px; }
 #signup-page-template #content #signmeup-secondary .widget .widget-content form .captcha-wrap img { width: 100%; border: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
 #signup-page-template #content #signmeup-secondary .widget .widget-content form .captcha-wrap label { margin-top: 10px; color: #18433c; font-family: "Lato", sans-serif; }
 #signup-page-template #content #signmeup-secondary .widget .widget-content form .captcha-wrap .form-control { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; border: 1px solid #84bda0; color: #18433c; font-family: "Lato", sans-serif; }
 #signup-page-template #content #signmeup-secondary .widget .widget-content form .captcha-wrap .form-control::-moz-placeholder { color: #999; opacity: 1; font-family: "EB Garamond", serif; }
 #signup-page-template #content #signmeup-secondary .widget .widget-content form .captcha-wrap .form-control:-ms-input-placeholder { color: #999; font-family: "EB Garamond", serif; }
 #signup-page-template #content #signmeup-secondary .widget .widget-content form .captcha-wrap .form-control::-webkit-input-placeholder { color: #999; font-family: "EB Garamond", serif; }
+#signup-page-template #content #signmeup-secondary .widget .widget-content form .button-wrap { background: #84bda0; padding-top: 32px; }
 #signup-page-template #content #signmeup-secondary .widget .widget-content form #signmeup-submit { overflow: hidden; *zoom: 1; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; border-color: transparent; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; text-transform: uppercase; display: block; width: 100%; padding-top: 24px; padding-bottom: 24px; margin-top: 24px; background: #ef413d; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; outline: 0; font-family: "Lato", sans-serif; }
 #signup-page-template #content #signmeup-secondary .widget .widget-content form #signmeup-submit:focus, #signup-page-template #content #signmeup-secondary .widget .widget-content form #signmeup-submit:hover, #signup-page-template #content #signmeup-secondary .widget .widget-content form #signmeup-submit:active { background: #b7130f; border-color: #9f100d; outline: 0; }
 

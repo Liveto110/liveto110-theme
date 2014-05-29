@@ -87,7 +87,9 @@
 							</fieldset>
 						</div>
 
-						<button id="signmeup-submit" class="btn btn-primary btn-lg">Join Now</button>
+						<div class="button-wrap">
+							<button id="signmeup-submit" class="btn btn-primary btn-lg">Join Now</button>
+						</div><!-- /.button-wrap -->
 					</form>
 				</div><!-- /.widget-content -->
 			</aside><!-- /#sign-me-up-widget .widget_signmeup -->
