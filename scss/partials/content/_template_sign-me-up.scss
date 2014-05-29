@@ -332,6 +332,37 @@
 							.radio-wrap {
 								margin-left: 40%;
 							}
+							.captcha-input {
+								// @include clearfix;
+								// display: block;
+								// margin-left: $padding-large-horizontal;
+								// margin-bottom: $padding-large-horizontal;
+								// width: 100%;
+							}
+						}
+						.captcha-wrap {
+							background: #f5faf8;
+							padding: $padding-large-horizontal;
+							img {
+								width: 100%;
+								border: 0;
+								@include box-shadow(none);
+							}
+							label {
+								margin-top: $padding-large-vertical;
+								color: #18433c;
+								font-family: $font-family-sans-serif;
+							}
+							.form-control {
+								@include border-radius(0);
+								border: 1px solid #84bda0;
+								// background: transparent;
+								color: #18433c;
+								font-family: $font-family-sans-serif;
+								&::-moz-placeholder { color: #999; opacity: 1; font-family: $font-family-serif; }
+								&:-ms-input-placeholder { color: #999; font-family: $font-family-serif; }
+								&::-webkit-input-placeholder { color: #999; font-family: $font-family-serif; }
+							}
 						}
 						#signmeup-submit {
 							@include clearfix;

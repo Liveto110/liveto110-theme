@@ -70,7 +70,7 @@
 							</div><!-- /.radio-wrap -->
 						</fieldset><!-- /.form-group -->						
 						
-						<div class="captcha-wrap text-center">
+						<div class="captcha-wrap">
 							<img alt="captcha" border="0px" name="captcha" onclick="reloadJcaptcha();" src="https://hi138.infusionsoft.com/Jcaptcha/img.jsp" title="If you can't read the image, click it to get another one." />
 							<script type="text/javascript">
 								function reloadJcaptcha() {
@@ -80,12 +80,12 @@
 									}
 								}
 							</script>
-						</div>
 
-						<fieldset class="form-group">
-							<label for="captcha.typed" class="sr-only">Enter the above code:</label>
-							<input id="captcha.typed" name="captcha.typed" type="text" class="infusion-field-input-container form-control" placeholder="Enter the above code">
-						</fieldset>
+							<fieldset class="captcha-form-group">
+								<label for="captcha.typed">Enter the above code:</label>
+								<input id="captcha.typed" name="captcha.typed" type="text" class="captcha-input form-control">
+							</fieldset>
+						</div>
 
 						<button id="signmeup-submit" class="btn btn-primary btn-lg">Join Now</button>
 					</form>
