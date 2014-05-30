@@ -204,6 +204,8 @@
 	}
 	#content {
 		margin-top: 24px;
+		background: white url(../img/carrots.png) left bottom no-repeat;
+		padding-bottom: 500px;
 		@media screen and (min-width: $screen-tablet) {
 			margin-top: 36px;
 		}

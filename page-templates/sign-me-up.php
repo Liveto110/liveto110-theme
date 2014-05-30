@@ -107,6 +107,10 @@ get_header(); ?>
 			</div><!-- /.row -->
 		</div><!-- /.container -->
 	</div><!-- /#content -->
+
+	<div class="carrot-wrap">
+		<div class="img-block"></div>
+	</div><!-- /.carrot-wrap -->
 	
 </div><!-- /#signup-page-template -->
 
