@@ -1,0 +1,60 @@
+/* --- Health Coaching Page Template --- */
+#health-coaching-template {
+	.page .rates-wrap {
+		@include clearfix;
+		margin-top: 24px;
+		.pricing-table {
+			max-width: 250px;
+			margin-left: auto;
+			margin-right: auto;
+			background: #fff;
+			border-color: lighten(#6d2850, 10);
+			padding-left: 0;
+			padding-right: 0;
+			@include border-radius(0);
+			@include box-shadow(rgba(lighten(#6d2850, 10), .4) 0 0 7px);
+			@media screen and (min-width: $screen-desktop) {
+				max-width: 275px;
+				height: 263px;
+			}
+			.table-header {
+				.table-title {
+					text-transform: uppercase;
+					font-size: 14px;
+					line-height: 20px;
+					margin-top: 0;
+					padding-top: 0;
+					margin-bottom: 0;
+					padding-bottom: 0;
+					padding-left: $padding-large-horizontal;
+					padding-right: $padding-large-horizontal;
+				}
+				.price-amount {
+					background: lighten(#6d2850, 10);
+					padding-top: $padding-large-vertical * 2;
+					padding-bottom: $padding-large-vertical * 2;
+					color: #fff;
+					font-size: 30px;
+					i {}
+				}
+			}
+			.table-content {
+				padding-left: $padding-large-horizontal;
+				padding-right: $padding-large-horizontal;
+				ul {
+					li {
+						padding: $padding-base-horizontal 0;
+					}
+				}
+			}
+			.table-footer {
+				.button-wrap {
+					.btn {
+						@include border-radius(0);
+						font-family: $font-family-sans-serif;
+					}
+				}
+			}
+		}
+	}
+}

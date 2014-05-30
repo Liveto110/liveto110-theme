@@ -2708,6 +2708,16 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 768px) { #videos-page-template #primary .videos-wrap .video-post .video-content .video-entry p { display: block; } }
 @media screen and (min-width: 992px) { #videos-page-template #primary .videos-wrap .video-post .video-content .video-entry p { text-align: left; } }
 
+/* --- Health Coaching Page Template --- */
+#health-coaching-template .page .rates-wrap { overflow: hidden; *zoom: 1; margin-top: 24px; }
+#health-coaching-template .page .rates-wrap .pricing-table { max-width: 250px; margin-left: auto; margin-right: auto; background: #fff; border-color: #92366b; padding-left: 0; padding-right: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; -webkit-box-shadow: rgba(146, 54, 107, 0.4) 0 0 7px; -moz-box-shadow: rgba(146, 54, 107, 0.4) 0 0 7px; box-shadow: rgba(146, 54, 107, 0.4) 0 0 7px; }
+@media screen and (min-width: 992px) { #health-coaching-template .page .rates-wrap .pricing-table { max-width: 275px; height: 263px; } }
+#health-coaching-template .page .rates-wrap .pricing-table .table-header .table-title { text-transform: uppercase; font-size: 14px; line-height: 20px; margin-top: 0; padding-top: 0; margin-bottom: 0; padding-bottom: 0; padding-left: 16px; padding-right: 16px; }
+#health-coaching-template .page .rates-wrap .pricing-table .table-header .price-amount { background: #92366b; padding-top: 20px; padding-bottom: 20px; color: #fff; font-size: 30px; }
+#health-coaching-template .page .rates-wrap .pricing-table .table-content { padding-left: 16px; padding-right: 16px; }
+#health-coaching-template .page .rates-wrap .pricing-table .table-content ul li { padding: 12px 0; }
+#health-coaching-template .page .rates-wrap .pricing-table .table-footer .button-wrap .btn { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; font-family: "Lato", sans-serif; }
+
 /* --- Signup Section --- */
 #signup-section { background-position: center center; background-repeat: no-repeat; background-attachment: fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding-top: 48px; padding-bottom: 48px; }
 #signup-section .signup-wrapper { background: rgba(255, 255, 255, 0.5); }
