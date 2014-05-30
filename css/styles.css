@@ -2695,13 +2695,18 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #videos-page-template #primary .page-header .page-title { text-transform: uppercase; }
 #videos-page-template #primary .videos-wrap .flexslider { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; background: transparent; border: 0; margin-bottom: 0; }
 #videos-page-template #primary .videos-wrap .video-post { position: relative; overflow: hidden; }
+#videos-page-template #primary .videos-wrap .video-post .button-wrap { position: absolute; left: 50%; height: 40px; width: 40px; margin: 0; padding: 0; margin-left: -20px; top: 50%; margin-top: -35px; }
+#videos-page-template #primary .videos-wrap .video-post .button-wrap .btn { -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; margin: 0; padding: 0; height: 40px; width: 40px; display: block; outline: 0; border: 0; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+#videos-page-template #primary .videos-wrap .video-post .button-wrap .btn:hover, #videos-page-template #primary .videos-wrap .video-post .button-wrap .btn:focus, #videos-page-template #primary .videos-wrap .video-post .button-wrap .btn:active { background: #fff; color: #6db799; -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px; -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px; box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px; }
 #videos-page-template #primary .videos-wrap .video-post .video-content { position: absolute; bottom: 0; left: 0; width: 100%; background: #6db799; padding: 10px 12px; -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 -5px 10px; -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 -5px 10px; box-shadow: rgba(0, 0, 0, 0.4) 0 -5px 10px; }
 #videos-page-template #primary .videos-wrap .video-post .video-content .video-header { margin: 0; padding: 0; }
-#videos-page-template #primary .videos-wrap .video-post .video-content .video-header .video-title { margin: 0; padding: 0; font-size: 18px; line-height: 24px; text-align: center; text-transform: uppercase; color: #fff; text-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px; font-weight: normal; font-family: "Lato", sans-serif; }
-@media screen and (min-width: 992px) { #videos-page-template #primary .videos-wrap .video-post .video-content .video-header .video-title { text-align: left; } }
-#videos-page-template #primary .videos-wrap .video-post .video-content p { display: none; margin: 0; padding: 0; text-align: center; }
-@media screen and (min-width: 768px) { #videos-page-template #primary .videos-wrap .video-post .video-content p { display: block; } }
-@media screen and (min-width: 992px) { #videos-page-template #primary .videos-wrap .video-post .video-content p { text-align: left; } }
+#videos-page-template #primary .videos-wrap .video-post .video-content .video-header .video-title { margin: 0; padding: 0; font-size: 12px; line-height: 18px; text-align: center; text-transform: uppercase; color: #fff; text-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px; font-weight: normal; font-family: "Lato", sans-serif; }
+@media screen and (min-width: 768px) { #videos-page-template #primary .videos-wrap .video-post .video-content .video-header .video-title { font-size: 14px; line-height: 20px; } }
+@media screen and (min-width: 992px) { #videos-page-template #primary .videos-wrap .video-post .video-content .video-header .video-title { text-align: left; font-size: 16px; line-height: 24px; } }
+@media screen and (min-width: 1200px) { #videos-page-template #primary .videos-wrap .video-post .video-content .video-header .video-title { font-size: 18px; line-height: 27px; } }
+#videos-page-template #primary .videos-wrap .video-post .video-content .video-entry p { display: none; margin: 0; padding: 0; text-align: center; }
+@media screen and (min-width: 768px) { #videos-page-template #primary .videos-wrap .video-post .video-content .video-entry p { display: block; } }
+@media screen and (min-width: 992px) { #videos-page-template #primary .videos-wrap .video-post .video-content .video-entry p { text-align: left; } }
 
 /* --- Signup Section --- */
 #signup-section { background-position: center center; background-repeat: no-repeat; background-attachment: fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding-top: 48px; padding-bottom: 48px; }

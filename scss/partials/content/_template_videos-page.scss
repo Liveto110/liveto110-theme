@@ -16,6 +16,38 @@
 		.video-post {
 			position: relative;
 			overflow: hidden;
+			.button-wrap {
+				position: absolute;
+				left: 50%;
+				height: 40px;
+				width: 40px;
+				margin: 0;
+				padding: 0;
+				margin-left: -20px;
+				top: 50%;
+				margin-top: -35px;
+				.btn {
+					@include border-radius(50%);
+					margin: 0;
+					padding: 0;
+					height: 40px;
+					width: 40px;
+					display: block;
+					outline: 0;
+					border: 0;
+					@include transition(all .2s ease-in-out);
+					&:hover,
+					&:focus,
+					&:active {
+						background: #fff;
+						color: $brand-primary;
+						@include box-shadow(rgba(black, .4) 0 0 5px);
+					}
+				}
+			}
+			.image-wrap {
+				img {}
+			}
 			.video-content {
 				position: absolute;
 				bottom: 0;
@@ -30,29 +62,41 @@
 					.video-title {
 						margin: 0;
 						padding: 0;
-						font-size: 18px;
-						line-height: 24px;
+						font-size: 12px;
+						line-height: 18px;
 						text-align: center;
 						text-transform: uppercase;
 						color: #fff;
 						@include text-shadow(rgba(black, .2) 0 1px 3px);
 						font-weight: normal;
 						font-family: $lato;
+						@media screen and (min-width: $screen-tablet) {
+							font-size: 14px;
+							line-height: 20px;
+						}
 						@media screen and (min-width: $screen-desktop) {
 							text-align: left;
+							font-size: 16px;
+							line-height: 24px;
+						}
+						@media screen and (min-width: $screen-lg-desktop) {
+							font-size: 18px;
+							line-height: 27px;
 						}
 					}
 				}
-				p {
-					display: none;
-					margin: 0;
-					padding: 0;
-					text-align: center;
-					@media screen and (min-width: $screen-tablet) {
-						display: block;
-					}
-					@media screen and (min-width: $screen-desktop) {
-						text-align: left;
+				.video-entry {
+					p {
+						display: none;
+						margin: 0;
+						padding: 0;
+						text-align: center;
+						@media screen and (min-width: $screen-tablet) {
+							display: block;
+						}
+						@media screen and (min-width: $screen-desktop) {
+							text-align: left;
+						}
 					}
 				}
 			}
