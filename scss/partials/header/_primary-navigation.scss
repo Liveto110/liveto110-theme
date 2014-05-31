@@ -81,4 +81,23 @@
 		position: relative;
 		top: -4px;
 	}
+	a[title="facebook"],
+	a[title="Facebook"],
+	a[title="twitter"],
+	a[title="Twitter"],
+	a[title="google-plus"], 
+	a[title="Google-plus"],
+	a[title="Google-Plus"],
+	a[title="google plus"], 
+	a[title="Google plus"],
+	a[title="Google Plus"],
+	a[title="Pinterest"],
+	a[title="pinterest"] {
+		color: #fff;
+		font-size: 18px;
+		.fa {
+			// @include text-shadow(none);
+			// @include box-shadow(none);
+		}
+	}
 }

@@ -2233,6 +2233,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #primary-navigation a[title="search"], #primary-navigation a[title="Search"] { text-indent: 0; width: auto; }
 #primary-navigation a[title="search"] .fa, #primary-navigation a[title="Search"] .fa { position: relative; left: 0; top: -2px; }
 #primary-navigation a[title="shop"], #primary-navigation a[title="Shop"] { background: #fff; margin-top: 12px; padding-top: 2px; padding-bottom: 2px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; border-radius: 5px; position: relative; top: -4px; }
+#primary-navigation a[title="facebook"], #primary-navigation a[title="Facebook"], #primary-navigation a[title="twitter"], #primary-navigation a[title="Twitter"], #primary-navigation a[title="google-plus"], #primary-navigation a[title="Google-plus"], #primary-navigation a[title="Google-Plus"], #primary-navigation a[title="google plus"], #primary-navigation a[title="Google plus"], #primary-navigation a[title="Google Plus"], #primary-navigation a[title="Pinterest"], #primary-navigation a[title="pinterest"] { color: #fff; font-size: 18px; }
 
 /* --- Masthead --- */
 #masthead { background-color: transparent; background-position: center top; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
