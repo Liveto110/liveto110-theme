@@ -3,7 +3,7 @@
 	@include box-shadow(none);
 	border: 0;
 	position: relative;
-	z-index: 200;
+	// z-index: 200;
 	a {
 		// text-shadow: none;
 		text-transform: uppercase;
@@ -70,5 +70,15 @@
 			left: 0;
 			top: -2px;
 		}
+	}
+	a[title="shop"],
+	a[title="Shop"] {
+		background: #fff;
+		margin-top: 12px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		@include border-radius(5px);
+		position: relative;
+		top: -4px;
 	}
 }
