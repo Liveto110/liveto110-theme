@@ -1,36 +1,36 @@
 <?php
 #-----------------------------------------------------------------#
-# Testimonials
+# Homepage Slides
 #-----------------------------------------------------------------#
-// function liveto110_testimonial_register() {
-// 	$testimonial_labels = array(
-// 		'name' => _x('Testimonials', 'taxonomy general name', 'liveto110'),
-// 		'singular_name' => __('Testimonial', 'liveto110'),
-// 		'search_items' => __('Search Testimonials', 'liveto110'),
-// 		'all_items' => __('Testimonials', 'liveto110'),
-// 		'parent_item' => __('Parent Testimonial', 'liveto110'),
-// 		'edit_item' => __('Edit Testimonial', 'liveto110'),
-// 		'update_item' => __('Update Testimonial', 'liveto110'),
-// 		'add_new_item' => __('Add New Testimonial', 'liveto110')
-// 	);
+function liveto110_homeslide_register() {
+	$homeslide_labels = array(
+		'name' => _x('HomeSlides', 'taxonomy general name', 'liveto110'),
+		'singular_name' => __('HomeSlide', 'liveto110'),
+		'search_items' => __('Search HomeSlides', 'liveto110'),
+		'all_items' => __('HomeSlides', 'liveto110'),
+		'parent_item' => __('Parent HomeSlide', 'liveto110'),
+		'edit_item' => __('Edit HomeSlide', 'liveto110'),
+		'update_item' => __('Update HomeSlide', 'liveto110'),
+		'add_new_item' => __('Add New HomeSlide', 'liveto110')
+	);
 
-// 	$args = array(
-// 		'labels' => $testimonial_labels,
-// 		'rewrite' => array(
-// 			'slug' => 'testimonial-post',
-// 			'with_front' => false
-// 		),
-// 		'singular_label' => __('Testimonial', 'liveto110'),
-// 		'public' => true,
-// 		'publicly_queryable' => true,
-// 		'show_ui' => true,
-// 		'hierarchical' => false,
-// 		'menu_icon' => get_template_directory_uri() . '/img/icons/icon-testimonials.png',
-// 		'supports' => array('title', 'editor', 'thumbnail')
-// 	);
-// 	register_post_type('testimonial-post', $args);
-// }
-// add_action('init', 'liveto110_testimonial_register');
+	$args = array(
+		'labels' => $homeslide_labels,
+		'rewrite' => array(
+			'slug' => 'homeslide',
+			'with_front' => false
+		),
+		'singular_label' => __('HomeSlide', 'liveto110'),
+		'public' => true,
+		'publicly_queryable' => true,
+		'show_ui' => true,
+		'hierarchical' => false,
+		'menu_icon' => get_template_directory_uri() . '/img/icons/icon-homeslide.png',
+		'supports' => array('title', 'editor', 'thumbnail')
+	);
+	register_post_type('homeslide', $args);
+}
+add_action('init', 'liveto110_homeslide_register');
 
 #-----------------------------------------------------------------#
 # Service posts

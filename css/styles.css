@@ -2421,12 +2421,13 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 /* --- Homepage Content --- */
 #intro { background: #f8faf3; }
 #intro .flexslider { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; border: 0; margin-bottom: 0; }
-#intro .slide { overflow: hidden; *zoom: 1; position: relative; z-index: 1; display: table; width: 100%; height: 250px; }
-@media screen and (min-width: 768px) { #intro .slide { height: 350px; } }
-@media screen and (min-width: 992px) { #intro .slide { height: 450px; } }
-@media screen and (min-width: 1200px) { #intro .slide { height: 530px; } }
-#intro .slide .image-wrap { height: 100%; width: 100%; position: absolute; z-index: 1; left: 0; top: 0; background-color: transparent; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-#intro .slide .content-wrap { position: relative; z-index: 2; display: table-cell; vertical-align: middle; }
+#intro .home-slide { overflow: hidden; *zoom: 1; position: relative; z-index: 1; height: 250px; display: table; width: 100%; background: red; }
+@media screen and (min-width: 768px) { #intro .home-slide { height: 350px; } }
+@media screen and (min-width: 992px) { #intro .home-slide { height: 450px; } }
+@media screen and (min-width: 1200px) { #intro .home-slide { height: 530px; } }
+#intro .home-slide .image-wrap { height: 100%; width: 100%; position: absolute; z-index: 1; left: 0; top: 0; background-color: transparent; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+#intro .home-slide .slide-content { display: table-cell; vertical-align: middle; width: 100% !important; }
+#intro .home-slide .slide-content .container { background: red; }
 
 #about-liveto110 { background: #f8faf3; padding-top: 48px; padding-bottom: 48px; }
 #about-liveto110 .section-title { text-transform: uppercase; font-size: 30px; }
@@ -2699,20 +2700,11 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 
 /* --- Full Width Page Template --- */
 #videos-page-template #primary .page-header .page-title { text-transform: uppercase; }
-#videos-page-template #primary .videos-wrap .flexslider { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; background: transparent; border: 0; margin-bottom: 0; }
-#videos-page-template #primary .videos-wrap .video-post { position: relative; overflow: hidden; }
-#videos-page-template #primary .videos-wrap .video-post .button-wrap { position: absolute; left: 50%; height: 40px; width: 40px; margin: 0; padding: 0; margin-left: -20px; top: 50%; margin-top: -35px; }
-#videos-page-template #primary .videos-wrap .video-post .button-wrap .btn { -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; margin: 0; padding: 0; height: 40px; width: 40px; display: block; outline: 0; border: 0; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
-#videos-page-template #primary .videos-wrap .video-post .button-wrap .btn:hover, #videos-page-template #primary .videos-wrap .video-post .button-wrap .btn:focus, #videos-page-template #primary .videos-wrap .video-post .button-wrap .btn:active { background: #fff; color: #6db799; -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px; -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px; box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px; }
-#videos-page-template #primary .videos-wrap .video-post .video-content { position: absolute; bottom: 0; left: 0; width: 100%; background: #6db799; padding: 10px 12px; -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 -5px 10px; -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 -5px 10px; box-shadow: rgba(0, 0, 0, 0.4) 0 -5px 10px; }
-#videos-page-template #primary .videos-wrap .video-post .video-content .video-header { margin: 0; padding: 0; }
-#videos-page-template #primary .videos-wrap .video-post .video-content .video-header .video-title { margin: 0; padding: 0; font-size: 12px; line-height: 18px; text-align: center; text-transform: uppercase; color: #fff; text-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px; font-weight: normal; font-family: "Lato", sans-serif; }
-@media screen and (min-width: 768px) { #videos-page-template #primary .videos-wrap .video-post .video-content .video-header .video-title { font-size: 14px; line-height: 20px; } }
-@media screen and (min-width: 992px) { #videos-page-template #primary .videos-wrap .video-post .video-content .video-header .video-title { text-align: left; font-size: 16px; line-height: 24px; } }
-@media screen and (min-width: 1200px) { #videos-page-template #primary .videos-wrap .video-post .video-content .video-header .video-title { font-size: 18px; line-height: 27px; } }
-#videos-page-template #primary .videos-wrap .video-post .video-content .video-entry p { display: none; margin: 0; padding: 0; text-align: center; }
-@media screen and (min-width: 768px) { #videos-page-template #primary .videos-wrap .video-post .video-content .video-entry p { display: block; } }
-@media screen and (min-width: 992px) { #videos-page-template #primary .videos-wrap .video-post .video-content .video-entry p { text-align: left; } }
+#videos-page-template #primary .featured-video-wrap .video-wrapper { position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px; height: 0; }
+#videos-page-template #primary .featured-video-wrap .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+
+.video-modals .video-wrapper { position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px; height: 0; }
+.video-modals .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
 
 /* --- Health Coaching Page Template --- */
 #health-coaching-template .page .rates-wrap { overflow: hidden; *zoom: 1; margin-top: 24px; }

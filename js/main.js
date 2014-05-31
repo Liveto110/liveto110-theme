@@ -13,6 +13,14 @@ jQuery( document ).ready( function($) {
 		$drawer.slideToggle("fast");
 	});
 
+	// HomePage Slideshow
+	$('#intro .flexslider').flexslider({
+		selector: ".slides > .home-slide",
+		// directionNav: false,
+		// controlNav: false,
+		animation: "slide",
+		pauseOnHover: true,
+	});
 	// Videos Page Slideshow
 	$('#videos-page-template .flexslider').flexslider({
 		selector: ".slides > .video-post",

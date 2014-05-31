@@ -13,9 +13,41 @@ foreach ($smof_data['homepage_blocks']['enabled'] as $block) {
 			?>
 			<!-- ========== INTRO SECTION ========== -->
 			<div id="intro" class="clearfix">
-				<?php if ( function_exists( 'putRevSlider' ) ) {
-					putRevSlider( $smof_data['hp_slider_id'] );
-				} ?>
+				<?php
+					$args = array(
+						'post_type' => 'homeslide',
+						'posts_per_page' => -1
+					);
+					$slides = new WP_Query( $args );
+				?>
+				<?php if ( $slides->have_posts()) : ?>
+					<div class="flexslider">
+						<div class="slides">
+							<?php while ( $slides->have_posts()) : $slides->the_post(); ?>
+								<article <?php post_class( 'home-slide' ); ?>>
+									<div class="image-wrap">
+										<?php
+											$slide_img = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full-width-slide' );
+											$slide_img = $slide_img['0'];
+										?>
+										<?php if ('' != $slide_img ) { ?>
+											<img src="<?php echo $slide_img; ?>" class="img-responsive">
+										<?php } ?>
+									</div><!-- /.image-wrap -->
+
+									<div class="slide-content">
+										<div class="container">
+											<header class="slide-header">
+												<h1 class="slide-title h4"><?php the_title(); ?></h1><!-- /.slide-title -->
+											</header><!-- /.slide-header -->
+										</div>
+									</div><!-- /.slide-content -->
+								</article><!-- /.slide-post -->
+							<?php endwhile; ?>
+							<?php wp_reset_postdata(); ?>
+						</div><!-- /.slides -->
+					</div><!-- /.flexslider -->
+				<?php endif; ?>
 			</div><!-- /#intro -->
 			<?php break;
 		case 'About LiveTo110' :
