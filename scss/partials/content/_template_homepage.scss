@@ -120,6 +120,15 @@
 			margin: 0 0 $grid-gutter-width 0;
 			@include box-shadow(rgba(black, .1) 1px 1px 2px);
 			background: #fff;
+			@media screen and (min-width: $screen-tablet) and (max-width: $screen-desktop - 1) {
+				height: 260px;
+			}
+			@media screen and (min-width: $screen-desktop) and (max-width: $screen-lg-desktop - 1) {
+				height: 310px;
+			}
+			@media screen and (min-width: $screen-lg-desktop) {
+				height: 285px;
+			}
 		}
 		.blurb-header {
 			padding-top: $padding-large-vertical;
