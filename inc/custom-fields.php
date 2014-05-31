@@ -1017,4 +1017,38 @@ if ( function_exists( "register_field_group" ) ) {
 		),
 		'menu_order' => 0,
 	));
+	// Health Coaching Page
+	register_field_group(array (
+		'id' => 'acf_health-coaching',
+		'title' => 'Health Coaching',
+		'fields' => array (
+			array (
+				'key' => 'field_5389a6ebb9f9f',
+				'label' => 'Additional Content',
+				'name' => 'additional_content',
+				'type' => 'wysiwyg',
+				'default_value' => '',
+				'toolbar' => 'full',
+				'media_upload' => 'yes',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'page_template',
+					'operator' => '==',
+					'value' => 'page-templates/health-coaching.php',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
 }

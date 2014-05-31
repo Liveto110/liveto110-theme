@@ -20,6 +20,17 @@ get_header(); ?>
 										<h1 class="page-title entry-title"><?php the_title(); ?></h1>
 									</header><!-- .entry-header -->
 
+									<div class="entry-content">
+										<?php the_content(); ?>
+
+										<?php
+											wp_link_pages( array(
+												'before' => '<div class="page-links">' . __( 'Pages:', 'liveto110' ),
+												'after'  => '</div>',
+											) );
+										?>
+									</div><!-- .entry-content -->
+
 									<div class="rates-wrap">
 										<?php
 											$left_item_args = array(
@@ -107,18 +118,11 @@ get_header(); ?>
 										</div><!-- /.row -->
 									</div><!-- /.rates-wrap -->
 
-									<div class="entry-content">
-										<?php the_content(); ?>
-
-										<?php
-											wp_link_pages( array(
-												'before' => '<div class="page-links">' . __( 'Pages:', 'liveto110' ),
-												'after'  => '</div>',
-											) );
-										?>
-									</div><!-- .entry-content -->
-
-									<footer class="entry-footer"></footer>
+									<footer class="entry-footer">
+										<div class="additional-content">
+											<?php the_field('additional_content' ); ?>
+										</div><!-- /.additional-content -->
+									</footer>
 								</article><!-- #post-## -->
 
 							<?php endwhile; // end of the loop. ?>
