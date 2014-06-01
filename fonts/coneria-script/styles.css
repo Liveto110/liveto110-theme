@@ -1,0 +1,8 @@
+
+@font-face {
+	font-family: 'ConeriaScriptDemo';
+	src: url('ConeriaScriptDemo.eot?') format('eot'), 
+	     url('ConeriaScriptDemo.woff') format('woff'), 
+	     url('ConeriaScriptDemo.ttf')  format('truetype'),
+	     url('ConeriaScriptDemo.svg#ConeriaScriptDemo') format('svg');
+}

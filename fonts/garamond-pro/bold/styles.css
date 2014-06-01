@@ -1,0 +1,9 @@
+
+@font-face {
+	font-family: 'AGaramondPro-Bold';
+	src: url('AGaramondPro-Bold.eot?') format('eot'), 
+	     url('AGaramondPro-Bold.otf')  format('opentype'),
+	     url('AGaramondPro-Bold.woff') format('woff'), 
+	     url('AGaramondPro-Bold.ttf')  format('truetype'),
+	     url('AGaramondPro-Bold.svg#AGaramondPro-Bold') format('svg');
+}

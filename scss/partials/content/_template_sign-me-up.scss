@@ -33,29 +33,11 @@
 			display: table-cell;
 			vertical-align: middle;
 			.section-header {
-				position: relative;
-				z-index: 3;
-				padding-bottom: 12px;
-				@media screen and (min-width: $screen-tablet) {
-					padding-bottom: 18px;
-				}
-				&:after {
-					content: '';
-					display: block;
-					position: absolute;
-					z-index: 4;
-					bottom: 0;
-					left: 50%;
-					height: 1px;
-					width: 240px;
-					margin-left: -120px;
-					background: #84bda0;
-				}
 				.section-title {
 					margin: 0 0 6px 0;
 					padding: 0;
 					text-transform: uppercase;
-					font-weight: 700;
+					font-weight: bold;
 					font-size: 19px;
 					text-align: center;
 					@media screen and (min-width: $screen-tablet) {
@@ -71,14 +53,27 @@
 						font-size: 27px;
 						line-height: 40px;
 					}
+					span {
+						font-family: $coneria;
+						font-weight: bold;
+					}
 				}
 				.section-subtitle {
 					margin: 0;
 					padding: 0;
 					text-transform: uppercase;
-					font-weight: 700;
+					font-weight: bold;
+					font-style: italic;
 					font-size: 14px;
 					text-align: center;
+					border-top: 1px solid $brand-primary;
+					border-bottom: 1px solid $brand-primary;
+					max-width: 50%;
+					text-align: center;
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: $padding-large-vertical;
+					color: $brand-primary;
 					@media screen and (min-width: $screen-tablet) {
 						font-size: 16px;
 						line-height: 24px;

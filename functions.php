@@ -124,7 +124,7 @@ function liveto110_widgets_init() {
 add_action( 'widgets_init', 'liveto110_widgets_init' );
 
 /**
- * Register Lato and Nunito Google font
+ * Register Quicksand, Adobe Garamond Pro and Lato fonts
  *
  * @return string
  */
@@ -132,25 +132,25 @@ function liveto110_fonts_url() {
 	$fonts_url = '';
 
 	/* Translators: If there are characters in your language that are not
+	 * supported by Quicksand, translate this to 'off'. Do not translate into your
+	 * own language.
+	 */
+	$quicksand = _x( 'on', 'Quicksand font: on or off', 'liveto110' );
+
+	/* Translators: If there are characters in your language that are not
 	 * supported by Lato, translate this to 'off'. Do not translate into your
 	 * own language.
 	 */
 	$lato = _x( 'on', 'Lato font: on or off', 'liveto110' );
 
-	/* Translators: If there are characters in your language that are not
-	 * supported by EB Garamond, translate this to 'off'. Do not translate into your
-	 * own language.
-	 */
-	$garamond = _x( 'on', 'EB Garamond font: on or off', 'liveto110' );
-
-	if ( 'off' !== $lato || 'off' !== $garamond ) {
+	if ( 'off' !== $quicksand || 'off' !== $lato ) {
 		$font_families = array();
+
+		if ( 'off' !== $quicksand )
+			$font_families[] = 'Quicksand:300,400,700';
 
 		if ( 'off' !== $lato )
 			$font_families[] = 'Lato:300,400,700,300italic,400italic,700italic';
-
-		if ( 'off' !== $garamond )
-			$font_families[] = 'EB+Garamond';
 
 		$query_args = array(
 			'family' => urlencode( implode( '|', $font_families ) ),
@@ -166,8 +166,18 @@ function liveto110_fonts_url() {
  * Enqueue scripts and styles.
  */
 function liveto110_scripts() {
-	// Add Nunito and Lato fonts.
+	// Add Quicksand and Lato fonts.
 	wp_enqueue_style( 'liveto110-fonts', liveto110_fonts_url(), array(), null );
+	// Add Adobe Garamond Pro Regular font.
+	wp_enqueue_style( 'garamond-regular', get_template_directory_uri() . '/fonts/garamond-pro/regular/styles.css', array(), '' );
+	// Add Adobe Garamond Pro Bold font.
+	wp_enqueue_style( 'garamond-bold', get_template_directory_uri() . '/fonts/garamond-pro/bold/styles.css', array(), '' );
+	// Add Adobe Garamond Pro Italic font.
+	wp_enqueue_style( 'garamond-italic', get_template_directory_uri() . '/fonts/garamond-pro/italic/styles.css', array(), '' );
+	// Add Adobe Garamond Pro BoldItalic font.
+	wp_enqueue_style( 'garamond-bolditalic', get_template_directory_uri() . '/fonts/garamond-pro/bolditalic/styles.css', array(), '' );
+	// Add Coneria Script font.
+	wp_enqueue_style( 'coneria-script', get_template_directory_uri() . '/fonts/coneria-script/styles.css', array(), '' );	
 	// Add FontAwesome font.
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/css/font-awesome/font-awesome.css', array(), '' );
 	// The main stylesheet
