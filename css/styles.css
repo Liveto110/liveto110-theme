@@ -2529,8 +2529,9 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 992px) { #signup-page-template .page-welcome .entry-content p { font-size: 21px; line-height: 32px; } }
 @media screen and (min-width: 1200px) { #signup-page-template .page-welcome .entry-content p { font-size: 25px; line-height: 38px; } }
 #signup-page-template #content { margin-top: 24px; background: white url(../img/carrots.png) left bottom no-repeat; padding-bottom: 500px; }
-@media screen and (min-width: 768px) { #signup-page-template #content { margin-top: 36px; } }
-@media screen and (min-width: 992px) { #signup-page-template #content { margin-top: 48px; } }
+@media screen and (min-width: 768px) { #signup-page-template #content { margin-top: 36px; padding-bottom: 400px; } }
+@media screen and (min-width: 992px) { #signup-page-template #content { margin-top: 48px; padding-bottom: 250px; } }
+@media screen and (min-width: 1200px) { #signup-page-template #content { padding-bottom: 200px; } }
 #signup-page-template #content #primary #main .freebies-wrap .freebie { margin: 0 0 48px 0; padding: 0; }
 #signup-page-template #content #primary #main .freebies-wrap .freebie .entry-header { margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; }
 #signup-page-template #content #primary #main .freebies-wrap .freebie .entry-header .entry-title { margin: 0; padding: 0; text-transform: none; font-size: 15px; line-height: 20px; color: #18433c; font-weight: bold; }

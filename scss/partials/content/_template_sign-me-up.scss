@@ -203,9 +203,14 @@
 		padding-bottom: 500px;
 		@media screen and (min-width: $screen-tablet) {
 			margin-top: 36px;
+			padding-bottom: 400px;
 		}
 		@media screen and (min-width: $screen-desktop) {
 			margin-top: 48px;
+			padding-bottom: 250px;
+		}
+		@media screen and (min-width: $screen-lg-desktop) {
+			padding-bottom: 200px;
 		}
 		#primary {
 			#main {
