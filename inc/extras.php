@@ -169,3 +169,4 @@ add_filter( 'woocommerce_product_add_to_cart_text', 'woo_custom_cart_button_text
 function woo_custom_cart_button_text() {
 	return __( 'Buy now', 'woocommerce' );
 }
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
