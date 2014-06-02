@@ -31,7 +31,7 @@ foreach ($smof_data['homepage_blocks']['enabled'] as $block) {
 											$slide_img = $slide_img['0'];
 										?>
 										<?php if ('' != $slide_img ) { ?>
-											<img src="<?php echo $slide_img; ?>" class="img-responsive">
+											<div class="img-block" style="background-image: url('<?php echo $slide_img; ?>');"></div><!-- /.img-block -->
 										<?php } ?>
 									</div><!-- /.image-wrap -->
 

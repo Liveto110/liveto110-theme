@@ -6,44 +6,61 @@
 		@include border-radius(0);
 		border: 0;
 		margin-bottom: 0;
+		background: transparent;
 	}
 	.home-slide {
-		@include clearfix;
 		position: relative;
-		z-index: 1;
-		height: 250px;
-		display: table;
-		width: 100%;
-		background: red;
-		@media screen and (min-width: $screen-tablet) {
-			height: 350px;
-		}
-		@media screen and (min-width: $screen-desktop) {
-			height: 450px;
-		}
-		@media screen and (min-width: $screen-lg-desktop) {
-			height: 530px;
-		}
 		.image-wrap {
-			height: 100%;
-			width: 100%;
-			position: absolute;
+			position: relative;
+			height: 180px;			
 			z-index: 1;
-			left: 0;
-			top: 0;
-			background-color: transparent;
-			background-position: center center;
-			background-repeat: no-repeat;
-			@include background-size(cover);
-		}
-		.slide-content {
-			display: table-cell;
-			vertical-align: middle;
-			width: 100% !important;
-			.container {
-				background: red;
+			@media screen and (min-width: $screen-tablet) {
+				height: 240px;
+			}
+			@media screen and (min-width: $screen-desktop) {
+				height: 320px;
+			}
+			@media screen and (min-width: $screen-lg-desktop) {
+				height: 480px;
+			}
+			.img-block {
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 100%;
+				width: 100%;				
+				background-color: transparent;
+				background-position: center center;
+				background-repeat: no-repeat;
+				@include background-size(cover);
 			}
 		}
+		.slide-content {
+			position: absolute;
+			z-index: 2;
+			left: 0;
+			bottom: 0;
+			display: table;
+			height: 40px;
+			width: 100%;
+			background: rgba(black, .6);
+			.container {
+				display: table-cell;
+				vertical-align: middle;
+			}
+			.slide-header {
+				.slide-title {
+					text-align: center;
+					text-transform: uppercase;
+					font-family: $font-family-sans-serif;
+					font-weight: bold;
+					color: #fff;
+				}
+			}
+		}
+	}
+	.flex-control-nav  {
+		bottom: -30px;
 	}
 }
 

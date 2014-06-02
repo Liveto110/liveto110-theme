@@ -2420,14 +2420,17 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 
 /* --- Homepage Content --- */
 #intro { background: #f8faf3; }
-#intro .flexslider { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; border: 0; margin-bottom: 0; }
-#intro .home-slide { overflow: hidden; *zoom: 1; position: relative; z-index: 1; height: 250px; display: table; width: 100%; background: red; }
-@media screen and (min-width: 768px) { #intro .home-slide { height: 350px; } }
-@media screen and (min-width: 992px) { #intro .home-slide { height: 450px; } }
-@media screen and (min-width: 1200px) { #intro .home-slide { height: 530px; } }
-#intro .home-slide .image-wrap { height: 100%; width: 100%; position: absolute; z-index: 1; left: 0; top: 0; background-color: transparent; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-#intro .home-slide .slide-content { display: table-cell; vertical-align: middle; width: 100% !important; }
-#intro .home-slide .slide-content .container { background: red; }
+#intro .flexslider { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; border: 0; margin-bottom: 0; background: transparent; }
+#intro .home-slide { position: relative; }
+#intro .home-slide .image-wrap { position: relative; height: 180px; z-index: 1; }
+@media screen and (min-width: 768px) { #intro .home-slide .image-wrap { height: 240px; } }
+@media screen and (min-width: 992px) { #intro .home-slide .image-wrap { height: 320px; } }
+@media screen and (min-width: 1200px) { #intro .home-slide .image-wrap { height: 480px; } }
+#intro .home-slide .image-wrap .img-block { position: absolute; left: 0; top: 0; height: 100%; width: 100%; background-color: transparent; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+#intro .home-slide .slide-content { position: absolute; z-index: 2; left: 0; bottom: 0; display: table; height: 40px; width: 100%; background: rgba(0, 0, 0, 0.6); }
+#intro .home-slide .slide-content .container { display: table-cell; vertical-align: middle; }
+#intro .home-slide .slide-content .slide-header .slide-title { text-align: center; text-transform: uppercase; font-family: "Quicksand", sans-serif; font-weight: bold; color: #fff; }
+#intro .flex-control-nav { bottom: -30px; }
 
 #about-liveto110 { background: #f8faf3; padding-top: 48px; padding-bottom: 48px; }
 #about-liveto110 .section-title { text-transform: uppercase; font-size: 30px; }
