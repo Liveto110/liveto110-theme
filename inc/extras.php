@@ -170,3 +170,5 @@ function woo_custom_cart_button_text() {
 	return __( 'Buy now', 'woocommerce' );
 }
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
