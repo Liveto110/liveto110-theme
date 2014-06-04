@@ -2324,6 +2324,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 .entry-content .podicons, .entry-summary .podicons, .page-content .podicons { display: -webkit-inline-box; }
 .entry-content .itunessec, .entry-summary .itunessec, .page-content .itunessec { text-align: center; border: #89c464 2px solid; padding: 15px; background: #f0f7f4; }
 .entry-content .qpodcast, .entry-summary .qpodcast, .page-content .qpodcast { margin: 30px 0 30px 20px; padding: 0 0 0 25px; border-left: 3px solid #eee; font-size: 24px; font-style: italic; line-height: 28px; font-weight: bold; color: #99cc00; }
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6, .entry-summary h1, .entry-summary h2, .entry-summary h3, .entry-summary h4, .entry-summary h5, .entry-summary h6, .page-content h1, .page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6 { color: #81afa2; }
 
 .site-content .entry-content, .site-content .entry-summary, .page-content { background-color: #fff; padding: 12px 10px 0; }
 
