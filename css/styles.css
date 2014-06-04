@@ -2299,7 +2299,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 .entry-title { font-size: 18px; font-weight: 400; text-transform: uppercase; margin: 10px 0 0 0; padding: 0; margin-top: 0; }
 @media screen and (min-width: 768px) { .entry-title { font-size: 24px; margin-bottom: 6px; } }
 @media screen and (min-width: 992px) { .entry-title { font-size: 30px; margin-bottom: 12px; } }
-.entry-title a { color: #99cc00; -webkit-transition: color 0.3s ease-in-out; -moz-transition: color 0.3s ease-in-out; -o-transition: color 0.3s ease-in-out; transition: color 0.3s ease-in-out; text-decoration: none; }
+.entry-title a { color: #333333; -webkit-transition: color 0.3s ease-in-out; -moz-transition: color 0.3s ease-in-out; -o-transition: color 0.3s ease-in-out; transition: color 0.3s ease-in-out; text-decoration: none; }
 .entry-title a:hover, .entry-title a:focus, .entry-title a:active { color: #6db799; }
 
 .single #primary .entry-header { margin-bottom: 16px; }

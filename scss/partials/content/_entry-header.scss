@@ -20,7 +20,7 @@
 		margin-bottom: 12px;
 	}
 	a {
-		color: #99cc00; //$text-color;
+		color: $text-color;
 		@include transition(color .3s ease-in-out);
 		text-decoration: none;
 		&:hover,
