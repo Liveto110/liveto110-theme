@@ -2718,6 +2718,13 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #health-coaching-template .page .rates-wrap .pricing-table .table-content ul li { padding: 12px 0; }
 #health-coaching-template .page .rates-wrap .pricing-table .table-footer .button-wrap .btn { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; font-family: "Quicksand", sans-serif; }
 
+/* --- Store Section --- */
+#content #primary #main .page .entry-content .woocommerce .products .product > a h3 { padding: 0; margin: 10px 0; line-height: 18px; height: 36px; }
+@media screen and (min-width: 768px) { #content #primary #main .page .entry-content .woocommerce .products .product > a h3 { height: 72px; } }
+@media screen and (min-width: 992px) { #content #primary #main .page .entry-content .woocommerce .products .product > a h3 { height: 36px; } }
+#content #primary #main .page .entry-content .woocommerce .products .product > a .price { padding: 0; margin: 10px 0; }
+#content #primary #main .page .entry-content .woocommerce .products .product .button.product_type_external { margin: 10px 0; }
+
 /* --- Signup Section --- */
 #signup-section { background-position: center center; background-repeat: no-repeat; background-attachment: fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding-top: 48px; padding-bottom: 48px; }
 #signup-section .signup-wrapper { background: rgba(255, 255, 255, 0.5); }
