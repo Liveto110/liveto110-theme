@@ -27,4 +27,7 @@ jQuery( document ).ready( function($) {
 		directionNav: false,
 		controlNav: false
 	});
+
+	// Amazon target _blank
+	$('.product_type_external.button').attr('target', '_blank');
 });
