@@ -15,7 +15,7 @@ jQuery( document ).ready( function($) {
 
 	// HomePage Slideshow
 	$('#intro .flexslider').flexslider({
-		selector: ".slides > .home-slide",
+		selector: ".slides > li",
 		directionNav: false,
 		// controlNav: false,
 		animation: "slide",

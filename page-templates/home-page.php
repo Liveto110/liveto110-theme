@@ -22,30 +22,108 @@ foreach ($smof_data['homepage_blocks']['enabled'] as $block) {
 				?>
 				<?php if ( $slides->have_posts()) : ?>
 					<div class="flexslider">
-						<div class="slides">
+						<ul class="slides">
 							<?php while ( $slides->have_posts()) : $slides->the_post(); ?>
-								<article <?php post_class( 'home-slide' ); ?>>
-									<div class="image-wrap">
-										<?php
-											$slide_img = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full-width-slide' );
-											$slide_img = $slide_img['0'];
-										?>
-										<?php if ('' != $slide_img ) { ?>
-											<div class="img-block" style="background-image: url('<?php echo $slide_img; ?>');"></div><!-- /.img-block -->
-										<?php } ?>
-									</div><!-- /.image-wrap -->
+								<li>									
+									<article <?php post_class( 'home-slide' ); ?>>
+										<div class="image-wrap">
+											<div class="img-block">
+												<?php the_post_thumbnail(); ?>
+											</div><!-- /.img-block -->
+										</div><!-- /.image-wrap -->
 
-									<div class="slide-content">
-										<div class="container">
-											<header class="slide-header">
-												<h1 class="slide-title h4"><?php the_title(); ?></h1><!-- /.slide-title -->
-											</header><!-- /.slide-header -->
-										</div>
-									</div><!-- /.slide-content -->
-								</article><!-- /.slide-post -->
+										<div class="content-wrap">
+											<?php if(get_field('slide_layout') == "complex") { ?>
+												<div class="row">
+													<div class="col-xs-4">
+														<article class="blurb">
+															<header>
+																<h1 class="blurb-title">Slide Title</h1>
+															</header>
+
+															<div class="blurb-entry">
+																<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+																proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+															</div><!-- /.blurb-entry -->
+
+															<footer class="blurb-footer">
+																<a href="#" class="btn btn-primary btn-lg">Read More</a>
+															</footer><!-- /.blurb-footer -->
+														</article><!-- /.blurb -->
+													</div>
+
+													<div class="col-xs-4">
+														<article class="blurb">
+															<header>
+																<h1 class="blurb-title">Slide Title</h1>
+															</header>
+
+															<div class="blurb-entry">
+																<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+																proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+															</div><!-- /.blurb-entry -->
+
+															<footer class="blurb-footer">
+																<a href="#" class="btn btn-primary btn-lg">Read More</a>
+															</footer><!-- /.blurb-footer -->
+														</article><!-- /.blurb -->
+													</div>
+
+													<div class="col-xs-4">
+														<article class="blurb">
+															<header>
+																<h1 class="blurb-title">Slide Title</h1>
+															</header>
+
+															<div class="blurb-entry">
+																<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+																proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+															</div><!-- /.blurb-entry -->
+
+															<footer class="blurb-footer">
+																<a href="#" class="btn btn-primary btn-lg">Read More</a>
+															</footer><!-- /.blurb-footer -->
+														</article><!-- /.blurb -->
+													</div>
+												</div><!-- /.row -->
+											<?php } ?>
+
+											<?php if(get_field('slide_layout') !== "complex") { ?>
+												<header>
+													<h1 class="slide-title"><?php the_title(); ?></h1>
+												</header>
+
+												<div class="slide-entry">
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+													tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+													quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+													consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+													cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+													proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+												</div><!-- /.slide-entry -->
+
+												<footer class="slide-footer">
+													<a href="#" class="btn btn-primary btn-lg">Read More</a>
+												</footer><!-- /.slide-footer -->
+											<?php } ?>
+										</div><!-- /.content-wrap -->
+									</article><!-- /.home-slide -->									
+								</li>
 							<?php endwhile; ?>
 							<?php wp_reset_postdata(); ?>
-						</div><!-- /.slides -->
+						</ul><!-- /.slides -->
 					</div><!-- /.flexslider -->
 				<?php endif; ?>
 			</div><!-- /#intro -->
