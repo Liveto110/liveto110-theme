@@ -59,6 +59,8 @@
 		text-align: center;
 		img {
 			display: inline;
+			border: 3px solid #fff;
+			@include box-shadow(rgba(black, .2) 0 1px 5px);
 		}
 	}
 	.content-wrap {

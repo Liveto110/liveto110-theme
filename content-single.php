@@ -15,7 +15,7 @@
 
 	<?php if(has_post_thumbnail()) { ?>
 		<div class="image-wrap">
-			<?php the_post_thumbnail('single-post'); ?>
+			<?php the_post_thumbnail( 'single-post' ); ?>
 		</div><!-- /.image-wrap -->
 	<?php } ?>
 
