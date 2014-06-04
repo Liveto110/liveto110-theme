@@ -2335,6 +2335,8 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 
 .page-links > .page-links-title { height: auto; margin: 0; padding-right: 7px; width: auto; }
 
+.single .entry-content .tptn_counter { display: none; }
+
 /* --- Gallery --- */
 .gallery { margin-bottom: 20px; }
 
@@ -2433,7 +2435,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #intro .flex-control-nav { bottom: -30px; }
 
 #about-liveto110 { background: #f8faf3; padding-top: 48px; padding-bottom: 48px; }
-#about-liveto110 .section-title { text-transform: uppercase; font-size: 30px; }
+#about-liveto110 .section-title { text-transform: uppercase; font-size: 30px; font-weight: bold; }
 #about-liveto110 .section-subtitle { font-weight: 400; font-size: 17px; line-height: 18px; margin-top: 0; color: #999999; margin-bottom: 18px; }
 #about-liveto110 .section-subtitle span { font-style: italic; color: #1C904A; }
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(1) .blurb-header { background: #008fc8; }
