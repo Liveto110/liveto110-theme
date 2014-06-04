@@ -56,7 +56,10 @@
 		// border: 1px solid rgba(black, .1);
 	}
 	.image-wrap {
-		img {}
+		text-align: center;
+		img {
+			display: inline;
+		}
 	}
 	.content-wrap {
 		@include clearfix;

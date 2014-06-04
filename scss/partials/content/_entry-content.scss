@@ -4,6 +4,8 @@
 .page-content {
 	@include hyphens(auto);
 	word-wrap: break-word;
+	text-align: justify;
+	line-height: 25px;
 }
 
 .site-content .entry-content,

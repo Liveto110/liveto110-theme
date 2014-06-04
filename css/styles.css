@@ -2277,6 +2277,8 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 992px) { .blog #content, .single #content { padding-top: 48px; padding-bottom: 48px; } }
 
 .blog #primary .hentry, .single #primary .hentry { overflow: hidden; *zoom: 1; background: #fff; }
+.blog #primary .hentry .image-wrap, .single #primary .hentry .image-wrap { text-align: center; }
+.blog #primary .hentry .image-wrap img, .single #primary .hentry .image-wrap img { display: inline; }
 .blog #primary .hentry .content-wrap, .single #primary .hentry .content-wrap { overflow: hidden; *zoom: 1; }
 .blog #primary .hentry .content-wrap .entry-content, .single #primary .hentry .content-wrap .entry-content { display: none; }
 @media screen and (min-width: 992px) { .blog #primary .hentry .content-wrap .entry-content, .single #primary .hentry .content-wrap .entry-content { overflow: hidden; *zoom: 1; display: block; margin-top: 12px; } }
@@ -2318,7 +2320,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 .single .byline, .group-blog .byline { display: inline; }
 
 /* --- Entry Content --- */
-.entry-content, .entry-summary, .page-content { -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; word-wrap: break-word; }
+.entry-content, .entry-summary, .page-content { -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; word-wrap: break-word; text-align: justify; line-height: 25px; }
 
 .site-content .entry-content, .site-content .entry-summary, .page-content { background-color: #fff; padding: 12px 10px 0; }
 
