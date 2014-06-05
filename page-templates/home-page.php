@@ -26,98 +26,72 @@ foreach ($smof_data['homepage_blocks']['enabled'] as $block) {
 							<?php while ( $slides->have_posts()) : $slides->the_post(); ?>
 								<li>									
 									<article <?php post_class( 'home-slide' ); ?>>
-										<div class="image-wrap">
-											<div class="img-block">
-												<?php the_post_thumbnail(); ?>
-											</div><!-- /.img-block -->
-										</div><!-- /.image-wrap -->
+										<?php
+											$slide_image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'single-post' );
+											$url = $slide_image['0'];
+										?>
+										<div class="image-wrap" style="background-image: url('<?php echo $url; ?>');"></div><!-- /.image-wrap -->
 
 										<div class="content-wrap">
-											<?php if(get_field('slide_layout') == "complex") { ?>
-												<div class="row">
-													<div class="col-xs-4">
-														<article class="blurb">
-															<header>
-																<h1 class="blurb-title">Slide Title</h1>
-															</header>
+											<div class="container">
+												<?php if(get_field('slide_layout') == "complex") { ?>
+													<div class="complex-layout">
+														<?php if( have_rows('blurbs') ): ?>	
+															<div class="row">
+																<?php while( have_rows('blurbs') ): the_row();
+																	// vars
+																	$blurb_title = get_sub_field('blurb_title');
+																	$blurb_subtitle = get_sub_field('blurb_subtitle');
+																	$blurb_image = get_sub_field('blurb_image');
+																	$blurb_linkurl = get_sub_field('blurb_link_url');
+																?>
+																	<div class="col-xs-4">
+																		<article class="blurb">
+																			<header class="blurb-header">
+																				<?php if( $blurb_title ): ?>
+																					<h1 class="blurb-title"><?php echo $blurb_title; ?></h1>
+																				<?php endif; ?>
 
-															<div class="blurb-entry">
-																<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-																proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-															</div><!-- /.blurb-entry -->
+																				<?php if( $blurb_subtitle ): ?>
+																					<h2 class="blurb-subtitle"><?php echo $blurb_subtitle; ?></h2>
+																				<?php endif; ?>
+																			</header><!-- /.blurb-header -->
 
-															<footer class="blurb-footer">
-																<a href="#" class="btn btn-primary btn-lg">Read More</a>
-															</footer><!-- /.blurb-footer -->
-														</article><!-- /.blurb -->
-													</div>
+																			<div class="image-wrap">
+																				<?php if( $blurb_image ): ?>																
+																					<div class="img-block" style="background-image: url('<?php echo $blurb_image; ?>');"></div>
+																				<?php endif; ?>
+																			</div><!-- /.image-wrap -->
 
-													<div class="col-xs-4">
-														<article class="blurb">
-															<header>
-																<h1 class="blurb-title">Slide Title</h1>
-															</header>
+																			<footer class="blurb-footer">
+																				<?php if( $blurb_linkurl ): ?>
+																					<a href="<?php echo $blurb_linkurl; ?>" class="btn btn-primary">Read More</a>
+																				<?php endif; ?>
+																			</footer><!-- /.blurb-footer -->
+																		</article><!-- /.blurb -->
+																	</div><!-- /.col-xs-4 -->
+																<?php endwhile; ?>
+															</div><!-- /.row -->
+														<?php endif; ?>
+													</div><!-- /.complex-layout -->
+												<?php } ?>
 
-															<div class="blurb-entry">
-																<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-																proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-															</div><!-- /.blurb-entry -->
+												<?php if(get_field('slide_layout') !== "complex") { ?>
+													<div class="simple-layout">
+														<header class="slide-header">
+															<h1 class="slide-title"><?php the_title(); ?></h1>
+														</header>
 
-															<footer class="blurb-footer">
-																<a href="#" class="btn btn-primary btn-lg">Read More</a>
-															</footer><!-- /.blurb-footer -->
-														</article><!-- /.blurb -->
-													</div>
+														<div class="slide-entry">
+															<?php the_content(); ?>
+														</div><!-- /.slide-entry -->
 
-													<div class="col-xs-4">
-														<article class="blurb">
-															<header>
-																<h1 class="blurb-title">Slide Title</h1>
-															</header>
-
-															<div class="blurb-entry">
-																<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-																tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-																quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-																consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-																cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-																proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-															</div><!-- /.blurb-entry -->
-
-															<footer class="blurb-footer">
-																<a href="#" class="btn btn-primary btn-lg">Read More</a>
-															</footer><!-- /.blurb-footer -->
-														</article><!-- /.blurb -->
-													</div>
-												</div><!-- /.row -->
-											<?php } ?>
-
-											<?php if(get_field('slide_layout') !== "complex") { ?>
-												<header>
-													<h1 class="slide-title"><?php the_title(); ?></h1>
-												</header>
-
-												<div class="slide-entry">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-													tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-													quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-													consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-													cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-													proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-												</div><!-- /.slide-entry -->
-
-												<footer class="slide-footer">
-													<a href="#" class="btn btn-primary btn-lg">Read More</a>
-												</footer><!-- /.slide-footer -->
-											<?php } ?>
+														<footer class="slide-footer">
+															<a href="<?php the_permalink(); ?>" class="btn btn-primary">Read More</a>
+														</footer><!-- /.slide-footer -->
+													</div><!-- /.simple-layout -->
+												<?php } ?>
+											</div><!-- /.container -->
 										</div><!-- /.content-wrap -->
 									</article><!-- /.home-slide -->									
 								</li>
@@ -140,49 +114,55 @@ foreach ($smof_data['homepage_blocks']['enabled'] as $block) {
 						<h2 class="section-subtitle text-center"><?php echo $smof_data['aboutliveto110_subtitle']; ?></h2>
 					<?php } ?>
 
-					<div class="blurbs-wrap">
-						<div class="row">
-							<?php
-								$args = array(
-									'post_type' => 'service-post',
-									'posts_per_page' => 4
-								);
-								$service_posts = new WP_Query( $args );
+					Advanced Loop
+					<?php while(have_posts(2)) : the_post(); ?>
+						<?php if( have_rows('home_teasers') ): ?>
+							<div class="blurbs-wrap">
+								<div class="row">
+									<?php while( have_rows('home_teasers') ): the_row(); ?>
+										<?php
+											// vars
+											$teaser_icon = get_sub_field('home_teaser_icon');
+											$teaser_title = get_sub_field('home_teaser_title');
+											$teaser_content = get_sub_field('home_teaser_content');
+											$teaser_button_text = get_sub_field('home_teaser_button_text');
+											$teaser_button_url = get_sub_field('home_teaser_title_url');
+										?>
+										<div class="col-sm-6 col-md-3">
+											<article class="blurb">
+												<header class="blurb-header">
+													<?php if( $teaser_icon ): ?>
+														<div class="icon-wrap">
+															<i class="fa <?php echo $teaser_icon; ?>"></i>
+														</div><!-- /.icon-wrap -->
+													<?php endif; ?>
 
-								while ( $service_posts->have_posts() ) : $service_posts->the_post(); ?>
-									<div class="col-sm-6 col-md-3">
-										<article class="blurb">
-											<header class="blurb-header">
-												<div class="icon-wrap">
-													<i class="fa <?php the_field('field_53580a1df276b', get_the_ID()); ?>"></i>
-												</div><!-- /.icon-wrap -->
+													<?php if( $teaser_title ): ?>
+														<h1 class="blurb-title"><?php echo $teaser_title; ?></h1><!-- /.blurb-title -->
+													<?php endif; ?>
+												</header><!-- /.blurb-header -->
 
-												<h1 class="blurb-title"><?php the_title(); ?></h1><!-- /.blurb-title -->
-											</header><!-- /.blurb-header -->
+												<div class="blurb-entry">
+													<?php if( $teaser_title ): ?>
+														<p><?php echo $teaser_content; ?></p>
+													<?php endif; ?>
+												</div><!-- /.blurb-entry -->
 
-											<div class="blurb-entry">
-												<p>
-													<?php
-														$content = get_the_content();
-														$trimmed_content = wp_trim_words( $content, 20, '&hellip;' );
-														echo $trimmed_content;
-													?>
-												</p>
-											</div><!-- /.blurb-entry -->
-
-											<footer class="blurb-footer">
-												<a href="<?php the_permalink(); ?>" class="read-more-link">
-													<span class="btn-text"><?php the_field( "field_53569c497bf1d", get_the_ID() ); ?></span><!-- /.btn-text -->
-													<span class="go-to-icon"><i class="fa fa-angle-right"></i></span><!-- /.goto-icon -->
-												</a><!-- /.read-more-link -->
-											</footer><!-- /.blurb-footer -->
-										</article><!-- /.blurb -->
-									</div>
-								<?php endwhile;
-								wp_reset_postdata();
-							?>
-						</div><!-- /.row -->
-					</div><!-- /.blurbs-wrap -->
+												<footer class="blurb-footer">
+													<?php if( $teaser_button_url && $teaser_button_text ) : ?>
+														<a href="<?php echo $teaser_button_url; ?>" class="read-more-link">
+															<span class="btn-text"><?php echo $teaser_button_text; ?></span><!-- /.btn-text -->
+															<span class="go-to-icon"><i class="fa fa-angle-right"></i></span><!-- /.goto-icon -->
+														</a><!-- /.read-more-link -->
+													<?php endif; ?>
+												</footer><!-- /.blurb-footer -->
+											</article><!-- /.blurb -->
+										</div><!-- /.col-sm-6 col-md-3 -->
+									<?php endwhile; ?>
+								</div><!-- /.row -->					 
+							</div><!-- /.blurbs-wrap -->
+						<?php endif; ?>
+					<?php endwhile; ?>
 				</div><!-- /.container -->
 			</div><!-- /#about-liveto110 -->
 			<?php break;
