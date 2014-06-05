@@ -14,13 +14,13 @@
 		display: table;
 		width: 100%;
 		@media screen and (min-width: $screen-tablet) {
-			height: 240px;
+			height: 280px;
 		}
 		@media screen and (min-width: $screen-desktop) {
-			height: 320px;
+			height: 360px;
 		}
 		@media screen and (min-width: $screen-lg-desktop) {
-			height: 480px;
+			height: 520px;
 		}
 		.image-wrap {
 			position: absolute;

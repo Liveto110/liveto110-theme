@@ -2444,9 +2444,9 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #intro { background: #f8faf3; }
 #intro .flexslider { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; border: 0; margin-bottom: 0; background: transparent; }
 #intro .home-slide { position: relative; height: 180px; display: table; width: 100%; }
-@media screen and (min-width: 768px) { #intro .home-slide { height: 240px; } }
-@media screen and (min-width: 992px) { #intro .home-slide { height: 320px; } }
-@media screen and (min-width: 1200px) { #intro .home-slide { height: 480px; } }
+@media screen and (min-width: 768px) { #intro .home-slide { height: 280px; } }
+@media screen and (min-width: 992px) { #intro .home-slide { height: 360px; } }
+@media screen and (min-width: 1200px) { #intro .home-slide { height: 520px; } }
 #intro .home-slide .image-wrap { position: absolute; height: 100%; width: 100%; z-index: 1; left: 0; top: 0; background-color: transparent; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 #intro .home-slide .content-wrap { position: relative; z-index: 2; overflow: hidden; *zoom: 1; display: table-cell; vertical-align: middle; }
 #intro .home-slide .content-wrap .simple-layout { overflow: hidden; *zoom: 1; }
