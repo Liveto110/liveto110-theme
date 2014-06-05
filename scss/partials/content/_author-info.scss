@@ -9,7 +9,8 @@
 		margin: 0 10px 0 0;
 		img {
 			margin: 0;
-			@include box-shadow(rgba(black, .1) 0 0 5px); 
+			@include box-shadow(rgba(black, .1) 0 0 5px);
+            border-radius: 5px; 
 		}
 	}
     #author-bio {
@@ -25,7 +26,6 @@
 		margin: $padding-base-vertical 0;
 		padding: $padding-large-vertical 0 0 0;
 		@include clearfix;
-		border-top: 1px dashed $brand-primary;
 		text-align: center;
 		ul {
 			margin: 0;
