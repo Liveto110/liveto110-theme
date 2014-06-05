@@ -24,7 +24,7 @@ get_header(); ?>
 									<div class="col-xs-3">
 										<div id="author-image">
 											<a href="<?php the_author_meta('user_url'); ?>">
-												<?php echo get_avatar( get_the_author_meta('user_email'), '80', '' ); ?>
+												<?php echo get_avatar( get_the_author_meta('user_email'), '100', '' ); ?>
 											</a>
 										</div><!-- /.author-image -->
 									</div>
