@@ -2432,8 +2432,9 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 
 /* --- Author Info --- */
 #main #author-info { background: rgba(109, 183, 153, 0.1); padding: 12px; margin: 16px 0; -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px inset; -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px inset; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px inset; }
-#main #author-info #author-image { margin: 0; }
+#main #author-info #author-image { float: left; margin: 0 10px 0 0; }
 #main #author-info #author-image img { margin: 0; -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px; -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px; box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px; }
+#main #author-info #author-bio { margin: -10px 0 0; }
 #main #author-info .author-name { font-family: "AGaramondPro-Regular", serif; text-transform: uppercase; color: #6db799; text-shadow: rgba(255, 255, 255, 0.8) 0 1px 0; }
 #main #author-info .author-social-links { margin: 6px 0; padding: 10px 0 0 0; overflow: hidden; *zoom: 1; border-top: 1px dashed #6db799; text-align: center; }
 #main #author-info .author-social-links ul { margin: 0; padding: 0; list-style: none; display: inline; }
