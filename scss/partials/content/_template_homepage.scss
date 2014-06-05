@@ -257,74 +257,99 @@
 			}
 		}
 		.blurb {
-			padding: 0 0 $padding-large-horizontal 0;
-			margin: 0 0 $grid-gutter-width 0;
+			padding: 0 0 $padding-small-horizontal 0;
+			margin: 0 0 $grid-gutter-width/2 0;
 			@include box-shadow(rgba(black, .1) 1px 1px 2px);
 			background: #fff;
+			position: relative;
 			@media screen and (min-width: $screen-tablet) and (max-width: $screen-desktop - 1) {
-				height: 260px;
+				height: 200px;
 			}
 			@media screen and (min-width: $screen-desktop) and (max-width: $screen-lg-desktop - 1) {
-				height: 310px;
+				// height: 310px;
 			}
 			@media screen and (min-width: $screen-lg-desktop) {
-				height: 285px;
+				// height: 285px;
 			}
 		}
 		.blurb-header {
-			padding-top: $padding-large-vertical;
+			padding-top: $padding-small-vertical;
+			padding-left: $padding-small-horizontal;
+			@media screen and (min-width: $screen-tablet) {
+				padding-top: $padding-base-vertical;
+				padding-left: $padding-base-horizontal;
+				padding-bottom: $padding-small-vertical;
+			}
 			.icon-wrap {
-				display: block;
+				display: inline-block;
 				margin: 0;
 				padding: 0;
-				height: 60px;
-				font-size: 48px;
-				line-height: 60px;
+				font-size: 16px;
+				line-height: 24px;
 				color: #fff;
-				display: table;
-				width: 100%;
-				background: transparent;
-				text-align: center;
-				i {
-					display: inline-block;
-				}
+				@media screen and (min-width: $screen-tablet) {
+					font-size: 18px;
+					line-height: 27px;
+				}		
+				i {}
 			}
 			.blurb-title {
 				text-align: center;
-				display: block;
-				font-size: 27px;
-				line-height: 60px;
+				display: inline-block;
+				font-size: 16px;
+				line-height: 24px;
 				text-transform: uppercase;
 				margin: 0;
 				padding: 0;
-				line-height: 50px;
 				color: #fff;
+				@media screen and (min-width: $screen-tablet) {
+					font-size: 18px;
+					line-height: 27px;
+				}
 			}
 			
 		}
 		.blurb-entry {
 			text-align: center;
 			color: #828386;
-			padding: $padding-large-vertical $padding-large-horizontal;
+			padding: $padding-base-vertical $padding-small-horizontal;
 			font-family: $font-family-serif;
+			@media screen and (min-width: $screen-tablet) {
+				padding: $padding-large-vertical $padding-base-horizontal;
+			}
 			p {
-				font-size: 16px;
-				line-height: 24px;
+				font-size: 14px;
+				line-height: 20px;
+				@media screen and (min-width: $screen-tablet) {
+					font-size: 16px;
+					line-height: 24px;
+				}
 			}
 		}
 		.blurb-footer {
+			text-align: center;
+			@media screen and (min-width: $screen-tablet) {
+				position: absolute;
+				width: 100%;
+				bottom: $padding-small-horizontal;
+				left: 0;
+			}
 			.read-more-link {
-				display: block;
+				display: inline-block;
 				text-align: center;
-				margin-left: $padding-large-horizontal;
-				margin-right: $padding-large-horizontal;
 				font-size: 13px;
-				line-height: 24px;
+				line-height: 20px;
 				text-transform: uppercase;
 				color: #fff;
-				padding: $padding-large-vertical $padding-large-horizontal;
+				padding: $padding-base-vertical $padding-large-horizontal 0 $padding-large-horizontal;
 				text-decoration: none;
 				@include transition(all .3s ease-in-out);
+				@media screen and (min-width: $screen-tablet) {
+					font-size: 14px;
+					line-height: 20px;
+					padding-top: $padding-large-vertical;
+					padding-bottom: $padding-small-vertical;
+				}
 				.go-to-icon {
 					margin-left: 5px;
 				}
