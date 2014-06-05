@@ -35,32 +35,32 @@ add_action('init', 'liveto110_homeslide_register');
 #-----------------------------------------------------------------#
 # Service posts
 #-----------------------------------------------------------------#
-function liveto110_service_register() {
-	$service_labels = array(
-		'name' => _x('Service posts', 'taxonomy general name', 'liveto110'),
-		'singular_name' => __('Service post', 'liveto110'),
-		'search_items' => __('Search Service posts', 'liveto110'),
-		'all_items' => __('Service posts', 'liveto110'),
-		'parent_item' => __('Parent Service post', 'liveto110'),
-		'edit_item' => __('Edit Service post', 'liveto110'),
-		'update_item' => __('Update Service post', 'liveto110'),
-		'add_new_item' => __('Add New Service post', 'liveto110')
-	);
+// function liveto110_service_register() {
+// 	$service_labels = array(
+// 		'name' => _x('Service posts', 'taxonomy general name', 'liveto110'),
+// 		'singular_name' => __('Service post', 'liveto110'),
+// 		'search_items' => __('Search Service posts', 'liveto110'),
+// 		'all_items' => __('Service posts', 'liveto110'),
+// 		'parent_item' => __('Parent Service post', 'liveto110'),
+// 		'edit_item' => __('Edit Service post', 'liveto110'),
+// 		'update_item' => __('Update Service post', 'liveto110'),
+// 		'add_new_item' => __('Add New Service post', 'liveto110')
+// 	);
 
-	$args = array(
-		'labels' => $service_labels,
-		'rewrite' => array('slug' => 'service', 'with_front' => false),
-		'singular_label' => __('Service post', 'liveto110'),
-		'public' => true,
-		'publicly_queryable' => true,
-		'show_ui' => true,
-		'hierarchical' => false,
-		'menu_icon' => get_template_directory_uri() . '/img/icons/icon-services.png',
-		'supports' => array('title', 'editor', 'thumbnail')
-	);
-	register_post_type('service-post', $args);
-}
-add_action('init', 'liveto110_service_register');
+// 	$args = array(
+// 		'labels' => $service_labels,
+// 		'rewrite' => array('slug' => 'service', 'with_front' => false),
+// 		'singular_label' => __('Service post', 'liveto110'),
+// 		'public' => true,
+// 		'publicly_queryable' => true,
+// 		'show_ui' => true,
+// 		'hierarchical' => false,
+// 		'menu_icon' => get_template_directory_uri() . '/img/icons/icon-services.png',
+// 		'supports' => array('title', 'editor', 'thumbnail')
+// 	);
+// 	register_post_type('service-post', $args);
+// }
+// add_action('init', 'liveto110_service_register');
 
 #-----------------------------------------------------------------#
 # Podcasts
