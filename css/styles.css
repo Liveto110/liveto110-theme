@@ -2494,12 +2494,16 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(4) .blurb-footer .read-more-link:hover { background: #fff; color: #c873a0; letter-spacing: 1px; }
 #about-liveto110 .blurbs-wrap .blurb { padding: 0 0 10px 0; margin: 0 0 15px 0; -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px; -moz-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px; box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px; background: #fff; position: relative; }
 @media screen and (min-width: 768px) and (max-width: 991px) { #about-liveto110 .blurbs-wrap .blurb { height: 200px; } }
+@media screen and (min-width: 992px) and (max-width: 1199px) { #about-liveto110 .blurbs-wrap .blurb { height: 260px; } }
 #about-liveto110 .blurbs-wrap .blurb-header { padding-top: 5px; padding-left: 10px; }
 @media screen and (min-width: 768px) { #about-liveto110 .blurbs-wrap .blurb-header { padding-top: 6px; padding-left: 12px; padding-bottom: 5px; } }
+@media screen and (min-width: 992px) { #about-liveto110 .blurbs-wrap .blurb-header { padding-top: 10px; padding-left: 0; } }
 #about-liveto110 .blurbs-wrap .blurb-header .icon-wrap { display: inline-block; margin: 0; padding: 0; font-size: 16px; line-height: 24px; color: #fff; }
 @media screen and (min-width: 768px) { #about-liveto110 .blurbs-wrap .blurb-header .icon-wrap { font-size: 18px; line-height: 27px; } }
+@media screen and (min-width: 992px) { #about-liveto110 .blurbs-wrap .blurb-header .icon-wrap { display: block; width: 100%; text-align: center; font-size: 30px; line-height: 30px; } }
 #about-liveto110 .blurbs-wrap .blurb-header .blurb-title { text-align: center; display: inline-block; font-size: 16px; line-height: 24px; text-transform: uppercase; margin: 0; padding: 0; color: #fff; }
 @media screen and (min-width: 768px) { #about-liveto110 .blurbs-wrap .blurb-header .blurb-title { font-size: 18px; line-height: 27px; } }
+@media screen and (min-width: 992px) { #about-liveto110 .blurbs-wrap .blurb-header .blurb-title { display: block; width: 100%; font-size: 20px; line-height: 27px; } }
 #about-liveto110 .blurbs-wrap .blurb-entry { text-align: center; color: #828386; padding: 6px 10px; font-family: "AGaramondPro-Regular", serif; }
 @media screen and (min-width: 768px) { #about-liveto110 .blurbs-wrap .blurb-entry { padding: 10px 12px; } }
 #about-liveto110 .blurbs-wrap .blurb-entry p { font-size: 14px; line-height: 20px; }
