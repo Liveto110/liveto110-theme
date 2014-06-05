@@ -20,23 +20,19 @@ get_header(); ?>
 							<?php liveto110_post_nav(); ?>
 
 							<div id="author-info">
-								<div class="row">
-									<div class="col-xs-3">
-										<div id="author-image">
-											<a href="<?php the_author_meta('user_url'); ?>">
-												<?php echo get_avatar( get_the_author_meta('user_email'), '100', '' ); ?>
-											</a>
-										</div><!-- /.author-image -->
-									</div>
+								<div id="author-image">
+									<a href="<?php the_author_meta('user_url'); ?>">
+										<?php echo get_avatar( get_the_author_meta('user_email'), '100', '' ); ?>
+									</a>
+								</div><!-- /.author-image -->
+								
+								<div id="author-bio">
+									<h4 class="author-name"><?php the_author_link(); ?></h4><!-- /.author-name -->
 
-									<div class="col-xs-9">
-										<div id="author-bio">
-											<h4 class="author-name"><?php the_author_link(); ?></h4><!-- /.author-name -->
-
-											<p><?php the_author_meta('description'); ?></p>
-										</div><!-- /.author-bio -->
-									</div>
-								</div><!-- /.row -->
+									<p><?php the_author_meta('description'); ?></p>
+								</div><!-- /.author-bio -->
+                                
+                                <div class="clearfix"></div>
 
 								<div class="author-social-links">
 									<ul>
