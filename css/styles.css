@@ -2293,6 +2293,19 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 768px) { .post-format-icon { -webkit-transform: scale(1, 1); -moz-transform: scale(1, 1); -ms-transform: scale(1, 1); -o-transform: scale(1, 1); transform: scale(1, 1); } }
 @media screen and (min-width: 992px) { .post-format-icon { top: 7px; margin-top: 0; } }
 
+/* Social Icons */
+[class^='icon-social'] { background: url(../img/icons/icon-social.png) no-repeat; width: 24px; height: 24px; display: inline-block; }
+
+.icon-social-facebook { background-position: 0 0; }
+
+.icon-social-twitter { background-position: -24px 0; }
+
+.icon-social-pinterest { background-position: -48px 0; }
+
+.icon-social-youtube { background-position: -72px 0; }
+
+.icon-social-googleplus { background-position: -96px 0; }
+
 /* --- Entry Header --- */
 .entry-header { margin: 0; padding: 0 40px 0 0; }
 
