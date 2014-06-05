@@ -10,11 +10,11 @@
 		img {
 			margin: 0;
 			@include box-shadow(rgba(black, .1) 0 0 5px);
-            border-radius: 5px; 
+            border-radius: 4px; 
 		}
 	}
     #author-bio {
-        margin: -10px 0 0;
+        margin: 0;
     }
 	.author-name {
 		font-family: $font-family-serif;

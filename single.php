@@ -22,7 +22,7 @@ get_header(); ?>
 							<div id="author-info">
 								<div id="author-image">
 									<a href="<?php the_author_meta('user_url'); ?>" class="thumbnail">
-										<?php echo get_avatar( get_the_author_meta('user_email'), '150', '' ); ?>
+										<?php echo get_avatar( get_the_author_meta('user_email'), '120', '' ); ?>
 									</a>
 								</div><!-- /.author-image -->
 								
