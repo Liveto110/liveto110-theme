@@ -7,6 +7,9 @@
 	#author-image {
         float: left;
 		margin: 0 10px 0 0;
+        .thumbnail {
+            margin-bottom: 0;
+        }
 		img {
 			margin: 0;
 			@include box-shadow(rgba(black, .1) 0 0 5px);
@@ -23,8 +26,6 @@
 		@include text-shadow(rgba(white, .8) 0 1px 0);
 	}
 	.author-social-links {
-		margin: $padding-base-vertical 0;
-		padding: $padding-large-vertical 0 0 0;
 		@include clearfix;
 		text-align: center;
 		ul {

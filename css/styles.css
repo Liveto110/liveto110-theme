@@ -8333,6 +8333,9 @@ span + .edit-link:before,
   float: left;
   margin: 0 10px 0 0;
 }
+#main #author-info #author-image .thumbnail {
+  margin-bottom: 0;
+}
 #main #author-info #author-image img {
   margin: 0;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px;
@@ -8350,8 +8353,6 @@ span + .edit-link:before,
   text-shadow: rgba(255, 255, 255, 0.8) 0 1px 0;
 }
 #main #author-info .author-social-links {
-  margin: 6px 0;
-  padding: 10px 0 0 0;
   overflow: hidden;
   *zoom: 1;
   text-align: center;
