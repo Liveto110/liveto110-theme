@@ -7516,6 +7516,8 @@ span + .edit-link:before,
 #primary-navigation a[title="Facebook"],
 #primary-navigation a[title="twitter"],
 #primary-navigation a[title="Twitter"],
+#primary-navigation a[title="youtube"],
+#primary-navigation a[title="Youtube"],
 #primary-navigation a[title="google-plus"],
 #primary-navigation a[title="Google-plus"],
 #primary-navigation a[title="Google-Plus"],
@@ -7537,6 +7539,8 @@ span + .edit-link:before,
 #primary-navigation a[title="Facebook"] .fa,
 #primary-navigation a[title="twitter"] .fa,
 #primary-navigation a[title="Twitter"] .fa,
+#primary-navigation a[title="youtube"] .fa,
+#primary-navigation a[title="Youtube"] .fa,
 #primary-navigation a[title="google-plus"] .fa,
 #primary-navigation a[title="Google-plus"] .fa,
 #primary-navigation a[title="Google-Plus"] .fa,
@@ -7549,8 +7553,8 @@ span + .edit-link:before,
 #primary-navigation a[title="pinterest"] .fa {
   text-indent: 0;
   position: absolute;
-  left: 10px;
-  top: 12px;
+  left: 5px;
+  top: 8px;
   text-shadow: rgba(0, 0, 0, 0.3) 0 1px 0;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -7586,6 +7590,8 @@ span + .edit-link:before,
 #primary-navigation a[title="Facebook"],
 #primary-navigation a[title="twitter"],
 #primary-navigation a[title="Twitter"],
+#primary-navigation a[title="youtube"],
+#primary-navigation a[title="Youtube"],
 #primary-navigation a[title="google-plus"],
 #primary-navigation a[title="Google-plus"],
 #primary-navigation a[title="Google-Plus"],
@@ -10603,7 +10609,7 @@ span + .edit-link:before,
   /* Text Widget */
 }
 #secondary.widget-area .widget {
-  font-size: 14px;
+  font-size: 16px;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
@@ -10621,9 +10627,10 @@ span + .edit-link:before,
 #secondary.widget-area .widget li > ul {
   margin-left: 18px;
 }
-#secondary.widget-area .widget .widget-title {
+#secondary.widget-area .widget .widget-title, #secondary.widget-area .widget .widget-title a {
   color: #2b2b2b;
-  font-size: 14px;
+  font-size: 20px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 #secondary.widget-area .widget_archive li,
