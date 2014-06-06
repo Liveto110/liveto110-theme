@@ -7601,7 +7601,7 @@ span + .edit-link:before,
 #primary-navigation a[title="Pinterest"],
 #primary-navigation a[title="pinterest"] {
   color: #fff;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 /* --- Masthead --- */
@@ -7917,7 +7917,7 @@ span + .edit-link:before,
 }
 
 .entry-title {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
   margin: 10px 0 0 0;
@@ -8641,6 +8641,10 @@ span + .edit-link:before,
     padding: 10px 16px;
     line-height: 18px;
   }
+}
+
+.section-title {
+  font-weight: bold !important;
 }
 
 #about-liveto110 {
