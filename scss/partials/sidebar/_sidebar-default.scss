@@ -109,3 +109,11 @@
 .woocommerce-page #secondary {
 	margin-top: 48px;
 }
+
+.tptn_posts_widget li {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px 0 9px;
+    &:first-child {
+        border-top: 0;
+    }
+}

@@ -7912,7 +7912,7 @@ span + .edit-link:before,
 
 .entry-title {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: bold;
   text-transform: uppercase;
   margin: 10px 0 0 0;
   padding: 0;
@@ -10704,6 +10704,14 @@ span + .edit-link:before,
 
 .woocommerce-page #secondary {
   margin-top: 48px;
+}
+
+.tptn_posts_widget li {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 8px 0 9px;
+}
+.tptn_posts_widget li:first-child {
+  border-top: 0;
 }
 
 /* --- Sidebar - Default --- */
