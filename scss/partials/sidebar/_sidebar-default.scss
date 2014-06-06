@@ -7,7 +7,7 @@
 	padding: 24px 15px 0;
 	@include box-shadow(rgba(black, .1) 0 0 5px);
 	.widget {
-		font-size: 14px;
+		font-size: 16px;
 		@include hyphens(auto);
 		margin-bottom: 48px;
 		width: 100%;
@@ -22,10 +22,10 @@
 		li > ul {
 			margin-left: 18px;
 		}
-		.widget-title {
-			// border-top: 5px solid #000;
+		.widget-title, .widget-title a {
 			color: #2b2b2b;
-			font-size: 14px;
+			font-size: 20px;
+            font-weight: bold;
 			text-transform: uppercase;
 		}
 	}
@@ -108,4 +108,12 @@
 
 .woocommerce-page #secondary {
 	margin-top: 48px;
+}
+
+.tptn_posts_widget li {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px 0 9px;
+    &:first-child {
+        border-top: 0;
+    }
 }

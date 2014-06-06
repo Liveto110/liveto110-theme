@@ -20,39 +20,39 @@ get_header(); ?>
 							<?php liveto110_post_nav(); ?>
 
 							<div id="author-info">
-								<div id="author-image">
-									<a href="<?php the_author_meta('user_url'); ?>">
-										<?php echo get_avatar( get_the_author_meta('user_email'), '100', '' ); ?>
-									</a>
-								</div><!-- /.author-image -->
-								
-								<div id="author-bio">
-									<h4 class="author-name"><?php the_author_link(); ?></h4><!-- /.author-name -->
+                                <div class="clearfix">
+								    <div id="author-image">
+									    <a href="<?php the_author_meta('user_url'); ?>" class="thumbnail">
+										    <?php echo get_avatar( get_the_author_meta('user_email'), '130', '' ); ?>
+									    </a>
+								    </div><!-- /.author-image -->
+								    
+								    <div id="author-bio">
+									    <h4 class="author-name"><?php the_author_link(); ?></h4><!-- /.author-name -->
 
-									<p><?php the_author_meta('description'); ?></p>
-								</div><!-- /.author-bio -->
-                                
-                                <div class="clearfix"></div>
-
-								<div class="author-social-links">
-									<ul>
-										<?php if( '' != get_the_author_meta('facebook_profile')) { ?>
-											<li><a href="<?php the_author_meta('facebook_profile'); ?>"><i class="fa fa-facebook fa-2x fa-fw"></i></a></li>
-										<?php } ?>
-										<?php if( '' != get_the_author_meta('twitter_profile')) { ?>
-											<li><a href="<?php the_author_meta('twitter_profile'); ?>"><i class="fa fa-twitter fa-2x fa-fw"></i></a></li>
-										<?php } ?>
-										<?php if( '' != get_the_author_meta('pinterest_profile')) { ?>
-											<li><a href="<?php the_author_meta('pinterest_profile'); ?>"><i class="fa fa-pinterest fa-2x fa-fw"></i></a></li>
-										<?php } ?>
-										<?php if( '' != get_the_author_meta('youtube_profile')) { ?>
-											<li><a href="<?php the_author_meta('youtube_profile'); ?>"><i class="fa fa-youtube fa-2x fa-fw"></i></a></li>
-										<?php } ?>
-										<?php if( '' != get_the_author_meta('google_profile')) { ?>
-											<li><a href="<?php the_author_meta('google_profile'); ?>"><i class="fa fa-google-plus fa-2x fa-fw"></i></a></li>
-										<?php } ?>
-									</ul>
-								</div><!-- /.author-social-links -->
+									    <p><?php the_author_meta('description'); ?></p>
+								    </div><!-- /.author-bio -->
+                                    
+                                    <div class="author-social-links">
+                                        <ul>
+                                            <?php if( '' != get_the_author_meta('facebook_profile')) { ?>
+                                                <li><a href="<?php the_author_meta('facebook_profile'); ?>"><i class="fa fa-facebook fa-2x fa-fw"></i></a></li>
+                                            <?php } ?>
+                                            <?php if( '' != get_the_author_meta('twitter_profile')) { ?>
+                                                <li><a href="<?php the_author_meta('twitter_profile'); ?>"><i class="fa fa-twitter fa-2x fa-fw"></i></a></li>
+                                            <?php } ?>
+                                            <?php if( '' != get_the_author_meta('pinterest_profile')) { ?>
+                                                <li><a href="<?php the_author_meta('pinterest_profile'); ?>"><i class="fa fa-pinterest fa-2x fa-fw"></i></a></li>
+                                            <?php } ?>
+                                            <?php if( '' != get_the_author_meta('youtube_profile')) { ?>
+                                                <li><a href="<?php the_author_meta('youtube_profile'); ?>"><i class="fa fa-youtube fa-2x fa-fw"></i></a></li>
+                                            <?php } ?>
+                                            <?php if( '' != get_the_author_meta('google_profile')) { ?>
+                                                <li><a href="<?php the_author_meta('google_profile'); ?>"><i class="fa fa-google-plus fa-2x fa-fw"></i></a></li>
+                                            <?php } ?>
+                                        </ul>
+                                    </div><!-- /.author-social-links -->
+                                </div>
 							</div><!--Author Info-->
 
 							<?php
