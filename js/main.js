@@ -18,7 +18,7 @@ jQuery( document ).ready( function($) {
 		selector: ".slides > li",
 		directionNav: false,
 		// controlNav: false,
-		animation: "slide",
+		animation: "fade",
 		pauseOnHover: true,
 	});
 
