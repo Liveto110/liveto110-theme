@@ -2550,7 +2550,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 768px) { #signup-page-template .page-masthead .overlaid-content .section-header .section-title { font-size: 22px; line-height: 33px; margin-bottom: 0; } }
 @media screen and (min-width: 992px) { #signup-page-template .page-masthead .overlaid-content .section-header .section-title { font-size: 24px; line-height: 36px; } }
 @media screen and (min-width: 1200px) { #signup-page-template .page-masthead .overlaid-content .section-header .section-title { font-size: 36px; line-height: 54px; margin-bottom: 20px; } }
-#signup-page-template .page-masthead .overlaid-content .section-header .section-title span { font-family: "ConeriaScriptDemo", serif; }
+#signup-page-template .page-masthead .overlaid-content .section-header .section-title span { font-family: "ConeriaScriptDemo", serif; text-transform: lowercase; }
 #signup-page-template .page-masthead .overlaid-content .section-header .section-subtitle { margin: 0; padding: 0; text-transform: uppercase; font-weight: bold; font-style: italic; font-size: 14px; text-align: center; border-top: 1px solid #6db799; border-bottom: 1px solid #6db799; max-width: 50%; text-align: center; margin-left: auto; margin-right: auto; margin-top: 10px; color: #6db799; }
 @media screen and (min-width: 768px) { #signup-page-template .page-masthead .overlaid-content .section-header .section-subtitle { font-size: 16px; line-height: 24px; } }
 @media screen and (min-width: 992px) { #signup-page-template .page-masthead .overlaid-content .section-header .section-subtitle { font-size: 18px; line-height: 27px; } }
