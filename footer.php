@@ -36,6 +36,7 @@
 						<?php if ($smof_data['footer_logo']) { ?>
 							<img src="<?php echo $smof_data['footer_logo']; ?>" class="img-responsive" alt="">
 						<?php } ?>
+                        <p>Wendy Myers, CHHC</p>
 					</div><!-- /.image-wrap -->
 				</aside><!-- /.widget .logo-widget -->
 			</div>
@@ -92,7 +93,9 @@
 							<?php wp_nav_menu( array( 
 								'theme_location' => 'social-links',
 								'container' => false,
-								'menu_class' => 'menu list-unstyled'
+								'menu_class' => 'menu list-unstyled',
+                                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                                'walker'            => new wp_bootstrap_navwalker()
 							 ) ); ?>
 							 <!-- Social Links END -->
 						</nav><!-- /#social-navigation -->

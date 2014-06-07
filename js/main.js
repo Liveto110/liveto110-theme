@@ -50,4 +50,6 @@ jQuery( document ).ready( function($) {
 
 	// Amazon target _blank
 	$('.product_type_external.button').attr('target', '_blank');
+    
+   $('.dropdown-toggle').dropdownHover();
 });

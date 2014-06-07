@@ -193,6 +193,7 @@ function liveto110_scripts() {
 	}
 
 	wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/js/vendor/bootstrap.min.js', array( 'jquery' ), '', true );
+    wp_enqueue_script( 'bootstrap-hover', get_template_directory_uri() . '/js/vendor/bootstrap-hover-dropdown.min.js', array( 'jquery' ), '', true );
 	wp_enqueue_script( 'plugins-script', get_template_directory_uri() . '/js/plugins.js', array( 'bootstrap-script' ), '', true );
 	wp_enqueue_script( 'liveto110-script', get_template_directory_uri() . '/js/main.js', array( 'plugins-script' ), '', true );
 }
