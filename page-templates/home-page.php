@@ -33,35 +33,23 @@ get_header(); ?>
 											<?php if( have_rows('blurbs') ): ?>	
 												<div class="row">
 													<?php while( have_rows('blurbs') ): the_row();
-													// vars
-													$blurb_title = get_sub_field('blurb_title');
-													$blurb_subtitle = get_sub_field('blurb_subtitle');
-													$blurb_image = get_sub_field('blurb_image');
-													$blurb_linkurl = get_sub_field('blurb_link_url');
+														// vars
+														$blurb_linkurl = get_sub_field('blurb_link_url');
 													?>
 														<div class="col-xs-4">
 															<article class="blurb">
-																<header class="blurb-header">
-																	<?php if( $blurb_title ): ?>
-																		<h1 class="blurb-title"><?php echo $blurb_title; ?></h1>
-																	<?php endif; ?>
-
-																	<?php if( $blurb_subtitle ): ?>
-																		<h2 class="blurb-subtitle"><?php echo $blurb_subtitle; ?></h2>
-																	<?php endif; ?>
-																</header><!-- /.blurb-header -->
-
-																<div class="image-wrap">
-																	<?php if( $blurb_image ): ?>																
-																		<div class="img-block" style="background-image: url('<?php echo $blurb_image; ?>');"></div>
-																	<?php endif; ?>
-																</div><!-- /.image-wrap -->
-
-																<footer class="blurb-footer">
-																	<?php if( $blurb_linkurl ): ?>
-																		<a href="<?php echo $blurb_linkurl; ?>" class="btn btn-primary">Read More</a>
-																	<?php endif; ?>
-																</footer><!-- /.blurb-footer -->
+																<?php if( $blurb_linkurl ): ?>
+																	<a href="<?php echo $blurb_linkurl; ?>">
+																		<?php
+																			$attachment_id = get_sub_field('blurb_image');
+																			$size = "square-thumbnail";
+																			$blurb_image = wp_get_attachment_image_src( $attachment_id, $size );
+																		?>
+																		<?php if( $blurb_image ): ?>
+																			<img src="<?php echo $blurb_image[0]; ?>" class="img-responsive">
+																		<?php endif; ?>
+																	</a>
+																<?php endif; ?>
 															</article><!-- /.blurb -->
 														</div><!-- /.col-xs-4 -->
 													<?php endwhile; ?>
