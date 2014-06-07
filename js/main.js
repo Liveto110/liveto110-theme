@@ -21,11 +21,31 @@ jQuery( document ).ready( function($) {
 		animation: "slide",
 		pauseOnHover: true,
 	});
+
 	// Videos Page Slideshow
-	$('#videos-page-template .flexslider').flexslider({
-		selector: ".slides > .video-post",
-		directionNav: false,
-		controlNav: false
+	// The slider being synced must be initialized first
+	$('#videos-page-template #videos-carousel').flexslider({
+		selector: ".slides > li",
+		animation: "slide",
+		controlNav: false,
+		animationLoop: false,
+		slideshow: false,
+		itemWidth: 210,
+		itemMargin: 5,
+		asNavFor: '#videos-slider',
+		minItems: 4,
+		maxItems: 5,
+		move: 0,
+		allowOneSlide: true
+	});
+
+	$('#videos-page-template #videos-slider').flexslider({
+		selector: ".slides > li",
+		animation: "slide",
+		controlNav: false,
+		animationLoop: false,
+		slideshow: false,
+		sync: "#videos-carousel"
 	});
 
 	// Amazon target _blank
