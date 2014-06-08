@@ -33,36 +33,6 @@ function liveto110_homeslide_register() {
 add_action('init', 'liveto110_homeslide_register');
 
 #-----------------------------------------------------------------#
-# Service posts
-#-----------------------------------------------------------------#
-// function liveto110_service_register() {
-// 	$service_labels = array(
-// 		'name' => _x('Service posts', 'taxonomy general name', 'liveto110'),
-// 		'singular_name' => __('Service post', 'liveto110'),
-// 		'search_items' => __('Search Service posts', 'liveto110'),
-// 		'all_items' => __('Service posts', 'liveto110'),
-// 		'parent_item' => __('Parent Service post', 'liveto110'),
-// 		'edit_item' => __('Edit Service post', 'liveto110'),
-// 		'update_item' => __('Update Service post', 'liveto110'),
-// 		'add_new_item' => __('Add New Service post', 'liveto110')
-// 	);
-
-// 	$args = array(
-// 		'labels' => $service_labels,
-// 		'rewrite' => array('slug' => 'service', 'with_front' => false),
-// 		'singular_label' => __('Service post', 'liveto110'),
-// 		'public' => true,
-// 		'publicly_queryable' => true,
-// 		'show_ui' => true,
-// 		'hierarchical' => false,
-// 		'menu_icon' => get_template_directory_uri() . '/img/icons/icon-services.png',
-// 		'supports' => array('title', 'editor', 'thumbnail')
-// 	);
-// 	register_post_type('service-post', $args);
-// }
-// add_action('init', 'liveto110_service_register');
-
-#-----------------------------------------------------------------#
 # Podcasts
 #-----------------------------------------------------------------#
 function liveto110_podcasts_register() {
@@ -85,87 +55,12 @@ function liveto110_podcasts_register() {
 		'publicly_queryable' => true,
 		'show_ui' => true,
 		'hierarchical' => false,
-		'menu_icon' => get_template_directory_uri() . '/img/icons/icon-podcasts.png',
+		'menu_icon' => get_template_directory_uri() . '/img/icons/icon-podcast.png',
 		'supports' => array('title', 'editor', 'thumbnail' )
 	);
 	register_post_type('podcast-post', $args);
 }
 add_action('init', 'liveto110_podcasts_register');
-
-#-----------------------------------------------------------------#
-# Portfolio
-#-----------------------------------------------------------------#
-// function liveto110_portfolio_register() {
-// 	$portfolio_labels = array(
-// 		'name' => _x('Portfolio', 'taxonomy general name', 'liveto110'),
-// 		'singular_name' => __('Portfolio Item', 'liveto110'),
-// 		'search_items' => __('Search Portfolio Items', 'liveto110'),
-// 		'all_items' => __('Portfolio', 'liveto110'),
-// 		'parent_item' => __('Parent Portfolio Item', 'liveto110'),
-// 		'edit_item' => __('Edit Portfolio Item', 'liveto110'),
-// 		'update_item' => __('Update Portfolio Item', 'liveto110'),
-// 		'add_new_item' => __('Add New Portfolio Item', 'liveto110')
-// 	);
-
-// 	$args = array(
-// 		'labels' => $portfolio_labels,
-// 		'rewrite' => array('slug' => 'portfolio-post', 'with_front' => false),
-// 		'singular_label' => __('Project', 'liveto110'),
-// 		'public' => true,
-// 		'publicly_queryable' => true,
-// 		'show_ui' => true,
-// 		'hierarchical' => false,
-// 		'menu_icon' => get_template_directory_uri() . '/img/icons/icon-portfolio.png',
-// 		'supports' => array('title', 'editor', 'thumbnail')
-// 	);
-// 	register_post_type('portfolio', $args);
-// }
-// add_action('init', 'liveto110_portfolio_register');
-
-#-----------------------------------------------------------------#
-# Taxonomies attached to Portfolio CPT
-#-----------------------------------------------------------------#
-// $category_labels = array(
-// 	'name' => _x('Project Categories', 'taxonomy general name', 'liveto110'),
-// 	'singular_name' => __('Project Category', 'liveto110'),
-// 	'search_items' => __('Search Project Categories', 'liveto110'),
-// 	'all_items' => __('All Project Categories', 'liveto110'),
-// 	'parent_item' => __('Parent Project Category', 'liveto110'),
-// 	'edit_item' => __('Edit Project Category', 'liveto110'),
-// 	'update_item' => __('Update Project Category', 'liveto110'),
-// 	'add_new_item' => __('Add New Project Category', 'liveto110'),
-// 	'menu_name' => __('Project Categories', 'liveto110')
-// );
-// register_taxonomy("project-type",
-// 	array("portfolio"),
-// 	array(
-// 		"hierarchical" => true,
-// 		'labels' => $category_labels,
-// 		'show_ui' => true,
-// 		'query_var' => true,
-// 		'rewrite' => array('slug' => 'project-type')
-// 	)
-// );
-
-#-----------------------------------------------------------------#
-# Portfolio Posts class
-#-----------------------------------------------------------------#
-// add_filter('post_class', 'custom_taxonomy_post_class', 10, 3);
-// if (!function_exists('custom_taxonomy_post_class')) {
-// 	function custom_taxonomy_post_class($classes, $class, $ID) {
-// 		$taxonomy = 'project-type';
-// 		$terms = get_the_terms((int)$ID, $taxonomy);
-
-// 		if (!empty($terms)) {
-// 			foreach ((array)$terms as $order => $term) {
-// 				if (!in_array($term->slug, $classes)) {
-// 					$classes[] = $term->slug;
-// 				}
-// 			}
-// 		}
-// 		return $classes;
-// 	}
-// }
 
 #-----------------------------------------------------------------#
 # Freebies
@@ -190,7 +85,7 @@ function liveto110_freebies_register() {
 		'publicly_queryable' => true,
 		'show_ui' => true,
 		'hierarchical' => false,
-		'menu_icon' => get_template_directory_uri() . '/img/icons/icon-freebies.png',
+		'menu_icon' => get_template_directory_uri() . '/img/icons/icon-freebie.png',
 		'supports' => array('title', 'editor', 'thumbnail')
 	);
 	register_post_type('freebies', $args);
@@ -250,27 +145,3 @@ function liveto110_videos_register() {
 	register_post_type('video', $args);
 }
 add_action('init', 'liveto110_videos_register');
-#-----------------------------------------------------------------#
-# Taxonomies attached to FAQ CPT
-#-----------------------------------------------------------------#
-// $category_labels = array(
-// 	'name' => _x('FAQ Topics', 'taxonomy general name', 'liveto110'),
-// 	'singular_name' => __('FAQ Topic', 'liveto110'),
-// 	'search_items' => __('Search FAQ Topics', 'liveto110'),
-// 	'all_items' => __('All FAQ Topics', 'liveto110'),
-// 	'parent_item' => __('Parent FAQ Topic', 'liveto110'),
-// 	'edit_item' => __('Edit FAQ Topic', 'liveto110'),
-// 	'update_item' => __('Update FAQ Topic', 'liveto110'),
-// 	'add_new_item' => __('Add New FAQ Topic', 'liveto110'),
-// 	'menu_name' => __('FAQ Topics', 'liveto110')
-// );
-// register_taxonomy("faq-topic",
-// 	array("faq"),
-// 	array(
-// 		"hierarchical" => true,
-// 		'labels' => $category_labels,
-// 		'show_ui' => true,
-// 		'query_var' => true,
-// 		'rewrite' => array('slug' => 'faq-topic')
-// 	)
-// );
