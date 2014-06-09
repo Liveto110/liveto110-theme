@@ -10,86 +10,47 @@
 	}
 	.home-slide {
 		position: relative;
-		height: 180px;
-		display: table;
-		width: 100%;
+		// height: 150px;
+		// display: table;
+		// width: 100%;
 		@media screen and (min-width: $screen-tablet) {
-			height: 280px;
+			// height: 280px;
 		}
 		@media screen and (min-width: $screen-desktop) {
-			height: 360px;
+			// height: 360px;
 		}
 		@media screen and (min-width: $screen-lg-desktop) {
-			height: 520px;
+			// height: 520px;
 		}
 		.image-wrap {
-			position: absolute;
-			height: 100%;
-			width: 100%;		
+			position: relative;
 			z-index: 1;
-			left: 0;
-			top: 0;
-			background-color: transparent;
-			background-position: center center;
-			background-repeat: no-repeat;
-			@include background-size(cover);
+			a {
+				display: block;
+				position: absolute;
+				height: 100%;
+				width: 100%;
+			}
+			img {
+				max-height: 600px;
+				width: auto;
+				margin-left: auto;
+				margin-right: auto;
+			}
 		}
 		.content-wrap {
-			position: relative;	
+			position: absolute;	
 			z-index: 2;
+			top: 50%;
+			left: 0;
+			height: 80%;
+			width: 100%;
+			margin-top: -15%;
 			@include clearfix;
-			display: table-cell;
-			vertical-align: middle;
-			.simple-layout {
-				@include clearfix;
-				.slide-header {
-					.slide-title {
-						color: #fff;
-						margin: 0;
-						padding: 0;
-						font-size: 18px;
-						line-height: 20px;
-						margin-bottom: $padding-base-vertical;
-						@media screen and (min-width: $screen-tablet) {
-							font-size: 22px;
-							line-height: 27px;
-						}
-						@media screen and (min-width: $screen-desktop) {
-							font-size: 24px;
-							line-height: 30px;
-						}
-						@media screen and (min-width: $screen-lg-desktop) {
-							font-size: 30px;
-							line-height: 40px;
-						}
-					}
-				}				
-				.slide-entry {
-					color: #fff;
-					p {
-						margin: 0;
-						padding: 0;
-						margin-bottom: $padding-base-vertical;
-						@media screen and (min-width: $screen-tablet) {
-							font-size: 16px;
-							line-height: 20px;
-						}
-						@media screen and (min-width: $screen-desktop) {
-							font-size: 18px;
-							line-height: 27px;
-						}
-						@media screen and (min-width: $screen-lg-desktop) {
-							font-size: 20px;
-							line-height: 27px;
-						}
-					}
-				}
-				.slide-footer {
-					.btn {}
-				}
-			}
 			.complex-layout {
 				@include clearfix;
+				.container {}
+				.row {}
 				.blurb {
 					a {
 						img {}
@@ -99,7 +60,7 @@
 		}
 	}
 	.flex-control-nav  {
-		// bottom: -30px;
+		bottom: -30px;
 	}
 }
 

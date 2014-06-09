@@ -10,7 +10,8 @@ get_header(); ?>
 	<?php
 		$args = array(
 			'post_type' => 'homeslide',
-			'posts_per_page' => -1
+			'posts_per_page' => -1,
+			'order' => 'ASC'
 		);
 		$slides = new WP_Query( $args );
 	?>
@@ -19,63 +20,55 @@ get_header(); ?>
 			<ul class="slides">
 				<?php while ( $slides->have_posts()) : $slides->the_post(); ?>
 					<li>
-						<article <?php post_class( 'home-slide' ); ?>>
-							<?php
-								$slide_image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'page-masthead' );
-								$url = $slide_image['0'];
-							?>
-							<div class="image-wrap" style="background-image: url('<?php echo $url; ?>');"></div><!-- /.image-wrap -->
+						<?php if(get_field('slide_layout') !== "complex" && get_field('homeslide_link_url') !== '') { ?>
+							<a href="<?php the_field('homeslide_link_url'); ?>" target="_blank">
+						<?php } ?>
+								<article <?php post_class( 'home-slide' ); ?>>
+									<?php
+										$slide_image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'homeslide' );
+										$url = $slide_image['0'];
+									?>
+									<div class="image-wrap">
+										<img src="<?php echo $url; ?>" class="img-responsive">
+									</div><!-- /.image-wrap -->
 
-							<div class="content-wrap">
-								<div class="container">
-									<?php if(get_field('slide_layout') == "complex") { ?>
-										<div class="complex-layout">
-											<?php if( have_rows('blurbs') ): ?>	
-												<div class="row">
-													<?php while( have_rows('blurbs') ): the_row();
-														// vars
-														$blurb_linkurl = get_sub_field('blurb_link_url');
-													?>
-														<div class="col-xs-4">
-															<article class="blurb">
-																<?php if( $blurb_linkurl ): ?>
-																	<a href="<?php echo $blurb_linkurl; ?>">
-																		<?php
-																			$attachment_id = get_sub_field('blurb_image');
-																			$size = "square-thumbnail";
-																			$blurb_image = wp_get_attachment_image_src( $attachment_id, $size );
-																		?>
-																		<?php if( $blurb_image ): ?>
-																			<img src="<?php echo $blurb_image[0]; ?>" class="img-responsive">
+									<div class="content-wrap">
+										<div class="container">
+											<?php if(get_field('slide_layout') == "complex") { ?>
+												<div class="complex-layout">
+													<?php if( have_rows('blurbs') ): ?>	
+														<div class="row">
+															<?php while( have_rows('blurbs') ): the_row();
+																// vars
+																$blurb_linkurl = get_sub_field('blurb_link_url');
+															?>
+																<div class="col-xs-4">
+																	<article class="blurb">
+																		<?php if( $blurb_linkurl ): ?>
+																			<a href="<?php echo $blurb_linkurl; ?>" target="_blank">
+																				<?php
+																					$attachment_id = get_sub_field('blurb_image');
+																					$size = "square-thumbnail";
+																					$blurb_image = wp_get_attachment_image_src( $attachment_id, $size );
+																				?>
+																				<?php if( $blurb_image ): ?>
+																					<img src="<?php echo $blurb_image[0]; ?>" class="img-responsive">
+																				<?php endif; ?>
+																			</a>
 																		<?php endif; ?>
-																	</a>
-																<?php endif; ?>
-															</article><!-- /.blurb -->
-														</div><!-- /.col-xs-4 -->
-													<?php endwhile; ?>
-												</div><!-- /.row -->
-											<?php endif; ?>
-										</div><!-- /.complex-layout -->
-									<?php } ?>
-
-									<?php if(get_field('slide_layout') !== "complex") { ?>
-										<div class="simple-layout">
-											<header class="slide-header">
-												<h1 class="slide-title"><?php the_title(); ?></h1>
-											</header>
-
-											<div class="slide-entry">
-												<?php the_content(); ?>
-											</div><!-- /.slide-entry -->
-
-											<footer class="slide-footer">
-												<a href="<?php the_permalink(); ?>" class="btn btn-primary">Read More</a>
-											</footer><!-- /.slide-footer -->
-										</div><!-- /.simple-layout -->
-									<?php } ?>
-								</div><!-- /.container -->
-							</div><!-- /.content-wrap -->
-						</article><!-- /.home-slide -->
+																	</article><!-- /.blurb -->
+																</div><!-- /.col-xs-4 -->
+															<?php endwhile; ?>
+														</div><!-- /.row -->
+													<?php endif; ?>
+												</div><!-- /.complex-layout -->
+											<?php } ?>
+										</div><!-- /.container -->
+									</div><!-- /.content-wrap -->
+								</article><!-- /.home-slide -->
+						<?php if(get_field('slide_layout') !== "complex" && get_field('homeslide_link_url') !== '') { ?>
+							</a>
+						<?php } ?>
 					</li>
 				<?php endwhile; ?>
 				<?php wp_reset_postdata(); ?>

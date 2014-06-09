@@ -4025,186 +4025,166 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 /* line 4, ../scss/partials/content/_template_homepage.scss */
 #intro .flexslider { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; border: 0; margin-bottom: 0; background: transparent; }
 /* line 11, ../scss/partials/content/_template_homepage.scss */
-#intro .home-slide { position: relative; height: 180px; display: table; width: 100%; }
-@media screen and (min-width: 768px) { /* line 11, ../scss/partials/content/_template_homepage.scss */
-  #intro .home-slide { height: 280px; } }
-@media screen and (min-width: 992px) { /* line 11, ../scss/partials/content/_template_homepage.scss */
-  #intro .home-slide { height: 360px; } }
-@media screen and (min-width: 1200px) { /* line 11, ../scss/partials/content/_template_homepage.scss */
-  #intro .home-slide { height: 520px; } }
+#intro .home-slide { position: relative; }
 /* line 25, ../scss/partials/content/_template_homepage.scss */
-#intro .home-slide .image-wrap { position: absolute; height: 100%; width: 100%; z-index: 1; left: 0; top: 0; background-color: transparent; background-position: center center; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-/* line 37, ../scss/partials/content/_template_homepage.scss */
-#intro .home-slide .content-wrap { position: relative; z-index: 2; overflow: hidden; *zoom: 1; display: table-cell; vertical-align: middle; }
-/* line 43, ../scss/partials/content/_template_homepage.scss */
-#intro .home-slide .content-wrap .simple-layout { overflow: hidden; *zoom: 1; }
-/* line 46, ../scss/partials/content/_template_homepage.scss */
-#intro .home-slide .content-wrap .simple-layout .slide-header .slide-title { color: #fff; margin: 0; padding: 0; font-size: 18px; line-height: 20px; margin-bottom: 6px; }
-@media screen and (min-width: 768px) { /* line 46, ../scss/partials/content/_template_homepage.scss */
-  #intro .home-slide .content-wrap .simple-layout .slide-header .slide-title { font-size: 22px; line-height: 27px; } }
-@media screen and (min-width: 992px) { /* line 46, ../scss/partials/content/_template_homepage.scss */
-  #intro .home-slide .content-wrap .simple-layout .slide-header .slide-title { font-size: 24px; line-height: 30px; } }
-@media screen and (min-width: 1200px) { /* line 46, ../scss/partials/content/_template_homepage.scss */
-  #intro .home-slide .content-wrap .simple-layout .slide-header .slide-title { font-size: 30px; line-height: 40px; } }
-/* line 67, ../scss/partials/content/_template_homepage.scss */
-#intro .home-slide .content-wrap .simple-layout .slide-entry { color: #fff; }
-/* line 69, ../scss/partials/content/_template_homepage.scss */
-#intro .home-slide .content-wrap .simple-layout .slide-entry p { margin: 0; padding: 0; margin-bottom: 6px; }
-@media screen and (min-width: 768px) { /* line 69, ../scss/partials/content/_template_homepage.scss */
-  #intro .home-slide .content-wrap .simple-layout .slide-entry p { font-size: 16px; line-height: 20px; } }
-@media screen and (min-width: 992px) { /* line 69, ../scss/partials/content/_template_homepage.scss */
-  #intro .home-slide .content-wrap .simple-layout .slide-entry p { font-size: 18px; line-height: 27px; } }
-@media screen and (min-width: 1200px) { /* line 69, ../scss/partials/content/_template_homepage.scss */
-  #intro .home-slide .content-wrap .simple-layout .slide-entry p { font-size: 20px; line-height: 27px; } }
-/* line 91, ../scss/partials/content/_template_homepage.scss */
+#intro .home-slide .image-wrap { position: relative; z-index: 1; }
+/* line 28, ../scss/partials/content/_template_homepage.scss */
+#intro .home-slide .image-wrap a { display: block; position: absolute; height: 100%; width: 100%; }
+/* line 34, ../scss/partials/content/_template_homepage.scss */
+#intro .home-slide .image-wrap img { max-height: 600px; width: auto; margin-left: auto; margin-right: auto; }
+/* line 41, ../scss/partials/content/_template_homepage.scss */
+#intro .home-slide .content-wrap { position: absolute; z-index: 2; top: 50%; left: 0; height: 80%; width: 100%; margin-top: -15%; overflow: hidden; *zoom: 1; }
+/* line 50, ../scss/partials/content/_template_homepage.scss */
 #intro .home-slide .content-wrap .complex-layout { overflow: hidden; *zoom: 1; }
+/* line 62, ../scss/partials/content/_template_homepage.scss */
+#intro .flex-control-nav { bottom: -30px; }
 
-/* line 106, ../scss/partials/content/_template_homepage.scss */
+/* line 67, ../scss/partials/content/_template_homepage.scss */
 .section-title { font-weight: bold !important; }
 
-/* line 110, ../scss/partials/content/_template_homepage.scss */
+/* line 71, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 { background: #f8faf3; padding-top: 48px; padding-bottom: 48px; }
-/* line 114, ../scss/partials/content/_template_homepage.scss */
+/* line 75, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .section-title { text-transform: uppercase; font-size: 30px; font-weight: bold; }
-/* line 119, ../scss/partials/content/_template_homepage.scss */
+/* line 80, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .section-subtitle { font-weight: 400; font-size: 17px; line-height: 18px; margin-top: 0; color: #999999; margin-bottom: 18px; }
-/* line 126, ../scss/partials/content/_template_homepage.scss */
+/* line 87, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .section-subtitle span { font-style: italic; color: #1C904A; }
-/* line 134, ../scss/partials/content/_template_homepage.scss */
+/* line 95, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(1) .blurb-header { background: #008fc8; }
-/* line 135, ../scss/partials/content/_template_homepage.scss */
+/* line 96, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(1) .blurb-footer .read-more-link { background: #008fc8; border: 1px solid #008fc8; }
-/* line 138, ../scss/partials/content/_template_homepage.scss */
+/* line 99, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(1) .blurb-footer .read-more-link:hover { background: #fff; color: #008fc8; letter-spacing: 1px; }
-/* line 146, ../scss/partials/content/_template_homepage.scss */
+/* line 107, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(2) .blurb-header { background: #ff2c40; }
-/* line 147, ../scss/partials/content/_template_homepage.scss */
+/* line 108, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(2) .blurb-footer .read-more-link { background: #ff2c40; border: 1px solid #ff2c40; }
-/* line 150, ../scss/partials/content/_template_homepage.scss */
+/* line 111, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(2) .blurb-footer .read-more-link:hover { background: #fff; color: #ff2c40; letter-spacing: 1px; }
-/* line 158, ../scss/partials/content/_template_homepage.scss */
+/* line 119, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(3) .blurb-header { background: #7bc46f; }
-/* line 159, ../scss/partials/content/_template_homepage.scss */
+/* line 120, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(3) .blurb-footer .read-more-link { background: #7bc46f; border: 1px solid #7bc46f; }
-/* line 162, ../scss/partials/content/_template_homepage.scss */
+/* line 123, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(3) .blurb-footer .read-more-link:hover { background: #fff; color: #7bc46f; letter-spacing: 1px; }
-/* line 170, ../scss/partials/content/_template_homepage.scss */
+/* line 131, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(4) .blurb-header { background: #c873a0; }
-/* line 171, ../scss/partials/content/_template_homepage.scss */
+/* line 132, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(4) .blurb-footer .read-more-link { background: #c873a0; border: 1px solid #c873a0; }
-/* line 174, ../scss/partials/content/_template_homepage.scss */
+/* line 135, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(4) .blurb-footer .read-more-link:hover { background: #fff; color: #c873a0; letter-spacing: 1px; }
-/* line 182, ../scss/partials/content/_template_homepage.scss */
+/* line 143, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .blurb { padding: 0 0 10px 0; margin: 0 0 15px 0; -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px; -moz-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px; box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px; background: #fff; position: relative; }
-@media screen and (min-width: 768px) and (max-width: 991px) { /* line 182, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 768px) and (max-width: 991px) { /* line 143, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb { height: 200px; } }
-@media screen and (min-width: 992px) and (max-width: 1199px) { /* line 182, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 992px) and (max-width: 1199px) { /* line 143, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb { height: 260px; } }
-@media screen and (min-width: 1200px) { /* line 182, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 1200px) { /* line 143, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb { height: 320px; } }
-/* line 198, ../scss/partials/content/_template_homepage.scss */
+/* line 159, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .blurb-header { padding-top: 5px; padding-left: 10px; }
-@media screen and (min-width: 768px) { /* line 198, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 768px) { /* line 159, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb-header { padding-top: 6px; padding-left: 12px; padding-bottom: 5px; } }
-@media screen and (min-width: 992px) { /* line 198, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 992px) { /* line 159, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb-header { padding-top: 10px; padding-left: 0; } }
-@media screen and (min-width: 1200px) { /* line 198, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 1200px) { /* line 159, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb-header { padding-top: 20px; padding-bottom: 20px; } }
-/* line 214, ../scss/partials/content/_template_homepage.scss */
+/* line 175, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .blurb-header .icon-wrap { display: inline-block; margin: 0; padding: 0; font-size: 16px; line-height: 24px; color: #fff; }
-@media screen and (min-width: 768px) { /* line 214, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 768px) { /* line 175, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb-header .icon-wrap { font-size: 18px; line-height: 27px; } }
-@media screen and (min-width: 992px) { /* line 214, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 992px) { /* line 175, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb-header .icon-wrap { display: block; width: 100%; text-align: center; font-size: 30px; line-height: 30px; } }
-@media screen and (min-width: 1200px) { /* line 214, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 1200px) { /* line 175, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb-header .icon-wrap { font-size: 40px; line-height: 40px; } }
-/* line 238, ../scss/partials/content/_template_homepage.scss */
+/* line 199, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .blurb-header .blurb-title { text-align: center; display: inline-block; font-size: 16px; line-height: 24px; text-transform: uppercase; margin: 0; padding: 0; color: #fff; }
-@media screen and (min-width: 768px) { /* line 238, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 768px) { /* line 199, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb-header .blurb-title { font-size: 18px; line-height: 27px; } }
-@media screen and (min-width: 992px) { /* line 238, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 992px) { /* line 199, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb-header .blurb-title { display: block; width: 100%; font-size: 20px; line-height: 27px; } }
-@media screen and (min-width: 1200px) { /* line 238, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 1200px) { /* line 199, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb-header .blurb-title { font-size: 24px; line-height: 30px; margin-top: 5px; } }
-/* line 264, ../scss/partials/content/_template_homepage.scss */
+/* line 225, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .blurb-entry { text-align: center; color: #828386; padding: 6px 10px; font-family: "AGaramondPro-Regular", serif; }
-@media screen and (min-width: 768px) { /* line 264, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 768px) { /* line 225, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb-entry { padding: 10px 12px; } }
-@media screen and (min-width: 992px) { /* line 264, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 992px) { /* line 225, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb-entry { padding: 20px 16px; } }
-@media screen and (min-width: 1200px) { /* line 264, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 1200px) { /* line 225, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb-entry { padding: 30px 24px; } }
-/* line 278, ../scss/partials/content/_template_homepage.scss */
+/* line 239, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .blurb-entry p { font-size: 14px; line-height: 20px; }
-@media screen and (min-width: 768px) { /* line 278, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 768px) { /* line 239, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb-entry p { font-size: 16px; line-height: 24px; } }
-/* line 287, ../scss/partials/content/_template_homepage.scss */
+/* line 248, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .blurb-footer { text-align: center; }
-@media screen and (min-width: 768px) { /* line 287, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 768px) { /* line 248, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb-footer { position: absolute; width: 100%; bottom: 10px; left: 0; } }
-@media screen and (min-width: 1200px) { /* line 287, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 1200px) { /* line 248, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb-footer { bottom: 16px; } }
-/* line 298, ../scss/partials/content/_template_homepage.scss */
+/* line 259, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .blurb-footer .read-more-link { display: inline-block; text-align: center; font-size: 13px; line-height: 20px; text-transform: uppercase; color: #fff; padding: 6px 16px 0 16px; text-decoration: none; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
-@media screen and (min-width: 768px) { /* line 298, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 768px) { /* line 259, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb-footer .read-more-link { font-size: 14px; line-height: 20px; padding-top: 10px; padding-bottom: 5px; } }
-/* line 314, ../scss/partials/content/_template_homepage.scss */
+/* line 275, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .blurb-footer .read-more-link .go-to-icon { margin-left: 5px; }
 
-/* line 322, ../scss/partials/content/_template_homepage.scss */
+/* line 283, ../scss/partials/content/_template_homepage.scss */
 #special-offers { background-image: url(../img/grass-sky-bg.jpg); background-position: center bottom; background-attachment: fixed; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; min-height: 250px; padding-top: 24px; padding-bottom: 48px; }
-@media screen and (min-width: 768px) { /* line 322, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 768px) { /* line 283, ../scss/partials/content/_template_homepage.scss */
   #special-offers { min-height: 350px; } }
-@media screen and (min-width: 992px) { /* line 322, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 992px) { /* line 283, ../scss/partials/content/_template_homepage.scss */
   #special-offers { min-height: 450px; } }
-@media screen and (min-width: 1200px) { /* line 322, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 1200px) { /* line 283, ../scss/partials/content/_template_homepage.scss */
   #special-offers { min-height: 540px; } }
-/* line 340, ../scss/partials/content/_template_homepage.scss */
+/* line 301, ../scss/partials/content/_template_homepage.scss */
 #special-offers .section-title { text-transform: uppercase; font-size: 30px; color: #7b2355; padding-bottom: 24px; padding-top: 24px; margin-bottom: 0; background: rgba(255, 255, 255, 0.6); }
-/* line 349, ../scss/partials/content/_template_homepage.scss */
+/* line 310, ../scss/partials/content/_template_homepage.scss */
 #special-offers .offers-wrap { background: rgba(255, 255, 255, 0.6); }
-/* line 351, ../scss/partials/content/_template_homepage.scss */
+/* line 312, ../scss/partials/content/_template_homepage.scss */
 #special-offers .offers-wrap .offer { display: block; margin-bottom: 30px; }
-@media screen and (min-width: 768px) { /* line 351, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 768px) { /* line 312, ../scss/partials/content/_template_homepage.scss */
   #special-offers .offers-wrap .offer { margin-bottom: 60px; } }
-/* line 359, ../scss/partials/content/_template_homepage.scss */
+/* line 320, ../scss/partials/content/_template_homepage.scss */
 #special-offers .offers-wrap .offer img { margin-left: auto; margin-right: auto; }
 
-/* line 368, ../scss/partials/content/_template_homepage.scss */
+/* line 329, ../scss/partials/content/_template_homepage.scss */
 #latest-articles { padding-top: 48px; padding-bottom: 48px; background: #f8faf3; }
-/* line 372, ../scss/partials/content/_template_homepage.scss */
+/* line 333, ../scss/partials/content/_template_homepage.scss */
 #latest-articles .section-title { text-transform: uppercase; font-size: 30px; margin-bottom: 24px; color: #00443d; }
-/* line 378, ../scss/partials/content/_template_homepage.scss */
+/* line 339, ../scss/partials/content/_template_homepage.scss */
 #latest-articles .post { background: #fff; padding-top: 24px; padding-bottom: 24px; margin-bottom: 30px; -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px; -moz-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px; box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px; position: relative; padding-bottom: 46px; }
-@media screen and (min-width: 768px) { /* line 378, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 768px) { /* line 339, ../scss/partials/content/_template_homepage.scss */
   #latest-articles .post { margin-bottom: 0; height: 712px; overflow: hidden; } }
-@media screen and (min-width: 992px) { /* line 378, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 992px) { /* line 339, ../scss/partials/content/_template_homepage.scss */
   #latest-articles .post { height: 661px; } }
-/* line 394, ../scss/partials/content/_template_homepage.scss */
+/* line 355, ../scss/partials/content/_template_homepage.scss */
 #latest-articles .post .post-header { height: 120px; margin-bottom: 12px; padding-left: 16px; padding-right: 16px; overflow: hidden; }
-/* line 400, ../scss/partials/content/_template_homepage.scss */
+/* line 361, ../scss/partials/content/_template_homepage.scss */
 #latest-articles .post .post-header .icon-wrap { font-size: 24px; line-height: 24px; color: #d084ac; }
-/* line 405, ../scss/partials/content/_template_homepage.scss */
+/* line 366, ../scss/partials/content/_template_homepage.scss */
 #latest-articles .post .post-header .post-title { font-size: 14px; line-height: 20px; color: #02463f; margin-top: 12px; text-transform: uppercase; }
-@media screen and (min-width: 768px) { /* line 405, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 768px) { /* line 366, ../scss/partials/content/_template_homepage.scss */
   #latest-articles .post .post-header .post-title { font-size: 18px; } }
-@media screen and (min-width: 768px) { /* line 416, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 768px) { /* line 377, ../scss/partials/content/_template_homepage.scss */
   #latest-articles .post .image-wrap { max-height: 156px; overflow: hidden; } }
-@media screen and (min-width: 992px) { /* line 416, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 992px) { /* line 377, ../scss/partials/content/_template_homepage.scss */
   #latest-articles .post .image-wrap { max-height: 208px; } }
-@media screen and (min-width: 1200px) { /* line 416, ../scss/partials/content/_template_homepage.scss */
+@media screen and (min-width: 1200px) { /* line 377, ../scss/partials/content/_template_homepage.scss */
   #latest-articles .post .image-wrap { max-height: 216px; } }
-/* line 428, ../scss/partials/content/_template_homepage.scss */
+/* line 389, ../scss/partials/content/_template_homepage.scss */
 #latest-articles .post .entry { margin-top: 24px; padding-left: 16px; padding-right: 16px; color: #3c5c56; }
-/* line 433, ../scss/partials/content/_template_homepage.scss */
+/* line 394, ../scss/partials/content/_template_homepage.scss */
 #latest-articles .post .entry p { font-family: "AGaramondPro-Regular", serif; font-size: 16px; }
-/* line 437, ../scss/partials/content/_template_homepage.scss */
+/* line 398, ../scss/partials/content/_template_homepage.scss */
 #latest-articles .post .entry .read-more-link { display: inline; text-transform: uppercase; font-family: "AGaramondPro-Regular", serif; margin-left: 5px; font-size: smaller; color: #83bea0; }
-/* line 445, ../scss/partials/content/_template_homepage.scss */
+/* line 406, ../scss/partials/content/_template_homepage.scss */
 #latest-articles .post .entry img { display: none; }
-/* line 449, ../scss/partials/content/_template_homepage.scss */
+/* line 410, ../scss/partials/content/_template_homepage.scss */
 #latest-articles .post .post-footer { margin-top: 12px; padding-left: 16px; padding-right: 16px; position: absolute; bottom: 16px; left: 0; width: 100%; }
-/* line 457, ../scss/partials/content/_template_homepage.scss */
+/* line 418, ../scss/partials/content/_template_homepage.scss */
 #latest-articles .post .post-footer .btn { width: 100%; color: #781e52; background: #e2a2bc; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border: 0; text-align: right; font-size: 12px; line-height: 18px; text-transform: uppercase; }
 
 /* --- Singup Page --- */
