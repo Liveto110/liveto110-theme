@@ -1235,4 +1235,43 @@ if ( function_exists( "register_field_group" ) ) {
 		),
 		'menu_order' => 0,
 	));
+	// Video Fields
+	if(function_exists("register_field_group"))
+	{
+		register_field_group(array (
+			'id' => 'acf_video-fields-2',
+			'title' => 'Video Fields',
+			'fields' => array (
+				array (
+					'key' => 'field_5391f44c6d250',
+					'label' => 'Embed Code',
+					'name' => 'video_embed_code',
+					'type' => 'textarea',
+					'default_value' => '',
+					'placeholder' => '',
+					'maxlength' => '',
+					'rows' => '',
+					'formatting' => 'html',
+				),
+			),
+			'location' => array (
+				array (
+					array (
+						'param' => 'post_type',
+						'operator' => '==',
+						'value' => 'video',
+						'order_no' => 0,
+						'group_no' => 0,
+					),
+				),
+			),
+			'options' => array (
+				'position' => 'normal',
+				'layout' => 'no_box',
+				'hide_on_screen' => array (
+				),
+			),
+			'menu_order' => 0,
+		));
+	}
 }
