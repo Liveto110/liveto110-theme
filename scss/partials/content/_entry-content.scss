@@ -6,6 +6,22 @@
 	word-wrap: break-word;
 	text-align: justify;
 	line-height: 25px;
+	p {
+		font-size: 14px;
+		line-height: 20px;
+		@media screen and (min-width: $screen-tablet) {
+			font-size: 15px;
+			line-height: 22px;
+		}
+		@media screen and (min-width: $screen-desktop) {
+			font-size: 16px;
+			line-height: 24px;
+		}
+		@media screen and (min-width: $screen-lg-desktop) {
+			font-size: 18px;
+			line-height: 27px;
+		}
+	}
 	.podicons {
 		display: -webkit-inline-box;
 	}
