@@ -30,13 +30,14 @@ jQuery( document ).ready( function($) {
 		controlNav: false,
 		animationLoop: false,
 		slideshow: false,
-		itemWidth: 210,
-		itemMargin: 5,
+		itemWidth: 120,
+		itemHeight: 120,
+		itemMargin: 0,
 		asNavFor: '#videos-slider',
-		minItems: 4,
-		maxItems: 5,
+		// minItems: 4,
+		// maxItems: 5,
 		move: 0,
-		allowOneSlide: true
+		allowOneSlide: true,
 	});
 
 	$('#videos-page-template #videos-slider').flexslider({
@@ -45,7 +46,8 @@ jQuery( document ).ready( function($) {
 		controlNav: false,
 		animationLoop: false,
 		slideshow: false,
-		sync: "#videos-carousel"
+		sync: "#videos-carousel",
+		directionNav: false
 	});
 
 	// Amazon target _blank
