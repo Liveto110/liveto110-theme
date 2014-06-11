@@ -3811,7 +3811,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 768px) { /* line 7, ../scss/partials/content/_entry-header.scss */
   .entry-title { font-size: 24px; margin-bottom: 6px; } }
 @media screen and (min-width: 992px) { /* line 7, ../scss/partials/content/_entry-header.scss */
-  .entry-title { font-size: 30px; margin-bottom: 12px; } }
+  .entry-title { font-size: 30px; margin-bottom: 12px; text-align: left; } }
 /* line 22, ../scss/partials/content/_entry-header.scss */
 .entry-title a { color: #333333; -webkit-transition: color 0.3s ease-in-out; -moz-transition: color 0.3s ease-in-out; -o-transition: color 0.3s ease-in-out; transition: color 0.3s ease-in-out; text-decoration: none; }
 /* line 28, ../scss/partials/content/_entry-header.scss */
