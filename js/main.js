@@ -17,7 +17,6 @@ jQuery( document ).ready( function($) {
 	$('#intro .flexslider').flexslider({
 		selector: ".slides > li",
 		directionNav: false,
-		// controlNav: false,
 		animation: "fade",
 		pauseOnHover: true,
 	});
@@ -34,8 +33,6 @@ jQuery( document ).ready( function($) {
 		itemHeight: 120,
 		itemMargin: 0,
 		asNavFor: '#videos-slider',
-		// minItems: 4,
-		// maxItems: 5,
 		move: 0,
 		allowOneSlide: true,
 	});

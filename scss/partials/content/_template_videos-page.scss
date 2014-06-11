@@ -101,15 +101,17 @@
 			.slides {
 				li {
 					cursor: pointer;
-					max-width: 60px;
-					@media screen and (min-width: $screen-tablet) {
-						max-width: 80px;
-					}
-					@media screen and (min-width: $screen-desktop) {
-						max-width: 100px;
-					}
 					@media screen and (min-width: $screen-lg-desktop) {
 						max-width: 120px;
+					}
+					.thumbnail-header {
+						.thumbnail-title {
+							margin: 0;
+							padding: $padding-base-vertical $padding-base-horizontal 0 0;
+							font-size: 12px;
+							line-height: 18px;
+							font-weight: 700;
+						}
 					}
 				}
 			}

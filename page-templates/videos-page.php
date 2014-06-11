@@ -58,6 +58,9 @@ get_header(); ?>
 												$slide_img = $slide_img['0'];
 											?>
 											<img src="<?php echo $slide_img; ?>" class="img-responsive">
+											<header class="thumbnail-header">
+												<h1 class="thumbnail-title"><?php the_title(); ?></h1>
+											</header><!-- /.thumbnail-header -->
 										</li>
 									<?php endwhile; ?>
 									<?php wp_reset_postdata(); ?>
