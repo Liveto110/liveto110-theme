@@ -19,7 +19,9 @@ jQuery( document ).ready( function($) {
 		directionNav: false,
 		animation: "fade",
 		pauseOnHover: true,
+		slideshow: false,
 	});
+	$('#intro .flexslider .simple-layout .slide-header .header-title').arctext({radius: 65});
 
 	// Videos Page Slideshow
 	// The slider being synced must be initialized first

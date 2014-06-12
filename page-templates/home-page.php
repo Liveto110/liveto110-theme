@@ -10,7 +10,6 @@ get_header(); ?>
 	<?php
 		$args = array(
 			'post_type' => 'homeslide',
-			'posts_per_page' => -1,
 			'order' => 'ASC'
 		);
 		$slides = new WP_Query( $args );
@@ -20,7 +19,7 @@ get_header(); ?>
 			<ul class="slides">
 				<?php while ( $slides->have_posts()) : $slides->the_post(); ?>
 					<li>
-						<?php if(get_field('slide_layout') !== "complex" && get_field('homeslide_link_url') !== '') { ?>
+						<?php if(get_field('slide_layout') == "simple" && get_field('homeslide_link_url') !== '') { ?>
 							<a href="<?php the_field('homeslide_link_url'); ?>" target="_blank">
 						<?php } ?>
 								<article <?php post_class( 'home-slide' ); ?>>
@@ -29,11 +28,38 @@ get_header(); ?>
 										$url = $slide_image['0'];
 									?>
 									<div class="image-wrap">
-										<img src="<?php echo $url; ?>" class="img-responsive">
+										<div class="img-block" style="background-image: url(<?php echo $url; ?>);"></div>
 									</div><!-- /.image-wrap -->
 
 									<div class="content-wrap">
 										<div class="container">
+											<?php if(get_field('slide_layout') == "simple") { ?>
+												<div class="simple-layout">
+													<div class="slide-header">
+														<h1 class="header-title">Join the</h1><!-- /.header-title -->
+														<h1 class="header-subtitle">Live To 110 <span>community</span></h1><!-- /.header-title -->
+													</div><!-- /.slide-header -->
+
+													<div class="slide-subheader">
+														<h2 class="subheader-title">Start Changing Your Life Today</h2><!-- /.subheader-title -->
+													</div><!-- /.slide-subheader -->
+
+													<section class="slide-content">
+														<header class="content-header">
+															<h3 class="content-title">Content title</h3><!-- /.content-title -->
+														</header><!-- /.content-header -->
+
+														<div class="content-entry">
+															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+														</div><!-- /.content-entry -->
+
+														<div class="content-image">
+															<img src="<?php echo get_template_directory_uri(); ?>/img/books.png" class="img-responsive" alt="Free Gifts">
+														</div><!-- /.content-image -->
+													</section><!-- /.slide-content -->
+												</div><!-- /.simple-layout -->
+											<?php } ?>
+
 											<?php if(get_field('slide_layout') == "complex") { ?>
 												<div class="complex-layout">
 													<?php if( have_rows('blurbs') ): ?>	
@@ -66,7 +92,7 @@ get_header(); ?>
 										</div><!-- /.container -->
 									</div><!-- /.content-wrap -->
 								</article><!-- /.home-slide -->
-						<?php if(get_field('slide_layout') !== "complex" && get_field('homeslide_link_url') !== '') { ?>
+						<?php if(get_field('slide_layout') == "simple" && get_field('homeslide_link_url') !== '') { ?>
 							</a>
 						<?php } ?>
 					</li>
