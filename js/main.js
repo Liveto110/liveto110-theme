@@ -52,5 +52,18 @@ jQuery( document ).ready( function($) {
 	// Amazon target _blank
 	$('.product_type_external.button').attr('target', '_blank');
     
-   $('.dropdown-toggle').dropdownHover();
+    $('.dropdown-toggle').dropdownHover();
+    
+    $(window).load(function() {
+        if (matchMedia('only screen and (min-width: 768px)').matches && $('#secondary.widget-area').length) {
+            var main_height = $('#primary.content-area').height();
+            var sidebar_height = 0;
+            
+            $('#secondary.widget-area .widget').each(function() {
+                sidebar_height += $(this).height();
+                
+                if (sidebar_height > main_height) $(this).hide();        
+            });
+        }
+    });
 });
