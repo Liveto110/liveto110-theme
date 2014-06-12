@@ -9410,6 +9410,11 @@ span + .edit-link:before,
   background-position: -96px 0;
 }
 
+/* line 131, ../scss/partials/content/_general.scss */
+input[name="coupon_code"].input-text {
+  width: auto;
+}
+
 /* --- Entry Header --- */
 /* line 2, ../scss/partials/content/_entry-header.scss */
 .entry-header {
