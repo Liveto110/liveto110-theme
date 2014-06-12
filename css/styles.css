@@ -12587,19 +12587,24 @@ span + .edit-link:before,
   margin: 0;
   padding: 0;
 }
-/* line 22, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 20, ../scss/partials/sidebar/_sidebar-default.scss */
+#secondary.widget-area .widget ul li > a,
+#secondary.widget-area .widget ol li > a {
+  color: #000;
+}
+/* line 25, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget li > ol,
 #secondary.widget-area .widget li > ul {
   margin-left: 18px;
 }
-/* line 25, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 28, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget .widget-title, #secondary.widget-area .widget .widget-title a {
   color: #2b2b2b;
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 40, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 43, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_archive li,
 #secondary.widget-area .widget_categories li,
 #secondary.widget-area .widget_links li,
@@ -12611,7 +12616,7 @@ span + .edit-link:before,
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: 8px 0 9px;
 }
-/* line 43, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 46, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_archive li:first-child,
 #secondary.widget-area .widget_categories li:first-child,
 #secondary.widget-area .widget_links li:first-child,
@@ -12622,86 +12627,86 @@ span + .edit-link:before,
 #secondary.widget-area .widget_recent_entries li:first-child {
   border-top: 0;
 }
-/* line 49, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 52, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_categories li ul,
 #secondary.widget-area .widget_nav_menu li ul,
 #secondary.widget-area .widget_pages li ul {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   margin-top: 9px;
 }
-/* line 55, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 58, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_categories li li:last-child,
 #secondary.widget-area .widget_nav_menu li li:last-child,
 #secondary.widget-area .widget_pages li li:last-child {
   padding-bottom: 0;
 }
-/* line 59, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 62, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_recent_entries .post-date {
   display: block;
 }
-/* line 63, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 66, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .rsswidget img {
   margin-top: -4px;
 }
-/* line 66, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 69, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .rssSummary {
   margin: 9px 0;
 }
-/* line 69, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 72, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .rss-date {
   display: block;
 }
-/* line 72, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 75, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_rss li {
   margin-bottom: 18px;
 }
-/* line 75, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 78, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_rss li:last-child {
   margin-bottom: 0;
 }
-/* line 79, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 82, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_text > div > :last-child {
   margin-bottom: 0;
 }
-/* line 84, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 87, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_search form {
   position: relative;
   width: 100%;
 }
-/* line 87, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 90, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_search form label {
   display: block;
   margin: 0;
   padding: 0;
 }
-/* line 91, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 94, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_search form label input {
   font-size: 12px;
   width: 100%;
 }
-/* line 96, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 99, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_search form .btn {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-/* line 105, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 108, ../scss/partials/sidebar/_sidebar-default.scss */
 #left-sidebar-template #secondary {
   margin-top: 48px;
 }
 
-/* line 109, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 112, ../scss/partials/sidebar/_sidebar-default.scss */
 .woocommerce-page #secondary {
   margin-top: 48px;
 }
 
-/* line 113, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 116, ../scss/partials/sidebar/_sidebar-default.scss */
 .tptn_posts_widget li {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: 8px 0 9px;
 }
-/* line 116, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 119, ../scss/partials/sidebar/_sidebar-default.scss */
 .tptn_posts_widget li:first-child {
   border-top: 0;
 }
