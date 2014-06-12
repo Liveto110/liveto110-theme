@@ -4815,7 +4815,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #secondary.widget-area .widget li > ol, #secondary.widget-area .widget li > ul { margin-left: 18px; }
 /* line 28, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget .widget-title, #secondary.widget-area .widget .widget-title a { color: #2b2b2b; font-size: 20px; font-weight: bold; text-transform: uppercase; }
-@media screen and (max-width: 768px -1) { /* line 9, ../scss/partials/sidebar/_sidebar-default.scss */
+@media screen and (max-width: 767px) { /* line 9, ../scss/partials/sidebar/_sidebar-default.scss */
   #secondary.widget-area .widget { display: block !important; } }
 /* line 47, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_archive li, #secondary.widget-area .widget_categories li, #secondary.widget-area .widget_links li, #secondary.widget-area .widget_meta li, #secondary.widget-area .widget_nav_menu li, #secondary.widget-area .widget_pages li, #secondary.widget-area .widget_recent_comments li, #secondary.widget-area .widget_recent_entries li { border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 8px 0 9px; }

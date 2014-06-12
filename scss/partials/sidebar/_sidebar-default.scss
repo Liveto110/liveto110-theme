@@ -32,7 +32,7 @@
 			text-transform: uppercase;
 		}
         
-        @media screen and (max-width: $screen-tablet - 1) {
+        @media screen and (max-width: $screen-phone) {
             display: block !important;
         }
 	}

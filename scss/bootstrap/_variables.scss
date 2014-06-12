@@ -276,6 +276,7 @@ $screen-phone:               $screen-xs-min !default;
 $screen-sm:                  768px !default;
 $screen-sm-min:              $screen-sm !default;
 $screen-tablet:              $screen-sm-min !default;
+$screen-phone:               $screen-sm - 1;
 
 // Medium screen / desktop
 // Note: Deprecated $screen-md and $screen-desktop as of v3.0.1
