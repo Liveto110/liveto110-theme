@@ -104,4 +104,8 @@
 			// @include box-shadow(none);
 		}
 	}
+    
+    #menu-search-shop li:last-child a {
+        color: #000 !important;
+    }
 }

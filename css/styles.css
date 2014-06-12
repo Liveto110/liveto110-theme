@@ -9050,6 +9050,10 @@ span + .edit-link:before,
   color: #fff;
   font-size: 24px;
 }
+/* line 108, ../scss/partials/header/_primary-navigation.scss */
+#primary-navigation #menu-search-shop li:last-child a {
+  color: #000 !important;
+}
 
 /* --- Masthead --- */
 /* line 2, ../scss/partials/header/_masthead.scss */
