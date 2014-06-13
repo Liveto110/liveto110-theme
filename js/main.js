@@ -22,6 +22,7 @@ jQuery( document ).ready( function($) {
 		slideshow: false,
 	});
 	$('#intro .flexslider .simple-layout .slide-header .header-title').arctext({radius: 65});
+	console.log($('#intro .flexslider .complex-layout').parent('content-wrap')); //.css('background', 'red');
 
 	// Videos Page Slideshow
 	// The slider being synced must be initialized first

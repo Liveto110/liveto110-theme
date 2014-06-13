@@ -31,7 +31,14 @@ get_header(); ?>
 										<div class="img-block" style="background-image: url(<?php echo $url; ?>);"></div>
 									</div><!-- /.image-wrap -->
 
-									<div class="content-wrap">
+									<?php
+										if ( get_field( 'homeslide_layout_type' ) == "complex") {
+											$classnames = 'content-wrap complex-content-wrap';
+										} else {
+											$classnames = 'content-wrap';
+										}
+									?>
+									<div class="<?php echo $classnames; ?>">
 										<div class="container">
 											<?php if(get_field('homeslide_layout_type') == "simple") { ?>
 												<?php
