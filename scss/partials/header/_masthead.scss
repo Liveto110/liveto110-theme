@@ -2,9 +2,8 @@
 #masthead {
 	// background-image: url(../img/green-leaves.png);
 	background-color: transparent;
-	background-position: center top;
+	background-position: right top;
 	background-repeat: no-repeat;
-	@include background-size(cover);
 	#site-branding {
 		// min-height: 165px;
 		padding-top: 12px;
@@ -60,7 +59,7 @@
 			@media screen and (min-width: $screen-tablet) {
 				display: table-cell;
 				vertical-align: middle;
-				text-align: left;
+				text-align: right;
 				margin: 0;
 				width: 220px;
 			}
