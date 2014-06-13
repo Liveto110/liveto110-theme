@@ -55,7 +55,11 @@
         }
     }
 }
-
-.shipping-calculator-form {
-    display: block !important;
+.shipping_calculator {
+    h2 a {
+        text-decoration: none;
+    }
+    .shipping-calculator-form {
+        display: block !important;
+    }
 }
