@@ -4741,6 +4741,11 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 /* line 25, ../scss/partials/content/_store.scss */
 #content #primary #main .page .entry-content .woocommerce .products .product .button.product_type_external { margin: 10px 0; }
 
+/* line 35, ../scss/partials/content/_store.scss */
+.woocommerce .related ul.products li.product { width: 23.5%; margin-right: 2%; }
+/* line 38, ../scss/partials/content/_store.scss */
+.woocommerce .related ul.products li.product:last-child { margin-right: 0; }
+
 /* --- Signup Section --- */
 /* line 2, ../scss/partials/footer/_signup-section.scss */
 #signup-section { background-position: center center; background-repeat: no-repeat; background-attachment: fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding-top: 48px; padding-bottom: 48px; }
