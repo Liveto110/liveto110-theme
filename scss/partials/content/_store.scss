@@ -38,6 +38,10 @@
                 &:last-child {
                     margin-right: 0;
                 }
+                @media screen and (max-width: $screen-phone) {
+                    width: 48%;
+                    margin-right: 4%;    
+                }
             }
         }
     }
