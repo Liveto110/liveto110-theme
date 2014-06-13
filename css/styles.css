@@ -4750,6 +4750,9 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (max-width: 767px) { /* line 37, ../scss/partials/content/_store.scss */
   .woocommerce .related ul.products li.product { width: 48%; margin-right: 4%; } }
 
+/* line 59, ../scss/partials/content/_store.scss */
+.shipping-calculator-form { display: block !important; }
+
 /* --- Signup Section --- */
 /* line 2, ../scss/partials/footer/_signup-section.scss */
 #signup-section { background-position: center center; background-repeat: no-repeat; background-attachment: fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding-top: 48px; padding-bottom: 48px; }
