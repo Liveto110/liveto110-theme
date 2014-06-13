@@ -27,9 +27,7 @@ get_header(); ?>
 										$slide_image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'homeslide' );
 										$url = $slide_image['0'];
 									?>
-									<div class="image-wrap">
 										<div class="img-block" style="background-image: url(<?php echo $url; ?>);"></div>
-									</div><!-- /.image-wrap -->
 
 									<?php
 										if ( get_field( 'homeslide_layout_type' ) == "complex") {
@@ -39,6 +37,9 @@ get_header(); ?>
 										}
 									?>
 									<div class="<?php echo $classnames; ?>">
+										<?php if(get_field('homeslide_layout_type') == "complex") { ?>
+											<div class="outer-wrapper"></div><!-- /.outer-wrapper -->
+										<?php } ?>
 										<div class="container">
 											<?php if(get_field('homeslide_layout_type') == "simple") { ?>
 												<?php
