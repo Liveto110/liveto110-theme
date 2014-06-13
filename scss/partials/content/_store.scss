@@ -58,6 +58,10 @@
 .shipping_calculator {
     h2 a {
         text-decoration: none;
+        cursor: text;
+        &:hover {
+            color: #81afa2;
+        }
     }
     .shipping-calculator-form {
         display: block !important;

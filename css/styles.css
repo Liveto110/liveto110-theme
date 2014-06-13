@@ -4761,8 +4761,10 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
   .woocommerce .related ul.products li.product { width: 48%; margin-right: 4%; } }
 
 /* line 59, ../scss/partials/content/_store.scss */
-.shipping_calculator h2 a { text-decoration: none; }
+.shipping_calculator h2 a { text-decoration: none; cursor: text; }
 /* line 62, ../scss/partials/content/_store.scss */
+.shipping_calculator h2 a:hover { color: #81afa2; }
+/* line 66, ../scss/partials/content/_store.scss */
 .shipping_calculator .shipping-calculator-form { display: block !important; }
 
 /* --- Signup Section --- */
