@@ -17,7 +17,6 @@
 		position: relative;
 		@media screen and (min-width: $screen-desktop) {}
 		@media screen and (min-width: $screen-lg-desktop) {}
-		.image-wrap {			
 			.img-block {
 				position: absolute;
 				z-index: 1;
@@ -28,10 +27,9 @@
 				background-position: top right;
 				@include background-size(cover);
 			}
-		}
 		.content-wrap {
 			position: relative;	
-			z-index: 2;		
+			z-index: 2;
 			@include clearfix;
 			.simple-layout {
 				text-align: center;
@@ -205,6 +203,25 @@
 				@include clearfix;
 				.row {}
 				.blurb {
+					margin-top: $padding-large-vertical;
+					margin-bottom: $padding-large-vertical;
+					@include box-shadow(rgba(black, .2) 0 0 10px);
+					@include transition(all .2s ease-in-out);
+					@media screen and (min-width: $screen-tablet) {
+						margin-top: $padding-large-vertical * 2;
+						margin-bottom: $padding-large-vertical * 2;
+					}
+					@media screen and (min-width: $screen-desktop) {
+						margin-top: $padding-large-vertical * 3;
+						margin-bottom: $padding-large-vertical * 3;
+					}
+					@media screen and (min-width: $screen-lg-desktop) {
+						margin-top: $padding-large-vertical * 4;
+						margin-bottom: $padding-large-vertical * 4;
+					}
+					&:hover {
+						@include box-shadow(rgba(black, .4) 0 0 5px);
+					}
 					a {
 						img {}
 					}

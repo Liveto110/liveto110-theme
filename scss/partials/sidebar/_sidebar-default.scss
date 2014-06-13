@@ -6,6 +6,9 @@
 	color: $text-color;
 	padding: 24px 15px 0;
 	@include box-shadow(rgba(black, .1) 0 0 5px);
+	@media screen and (min-width: $screen-tablet) {
+		margin-top: $padding-large-vertical * 2;
+	}
 	.widget {
 		font-size: 16px;
 		@include hyphens(auto);
