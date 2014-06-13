@@ -36,7 +36,14 @@
                 width: 23.5%;
                 margin-right: 2%;
                 &:last-child {
-                    margin-right: 0;
+                    @media screen and (min-width: $screen-tablet) {
+                        margin-right: 0;
+                    }
+                }
+                &:nth-child(2n) {
+                    @media screen and (max-width: $screen-phone) {
+                        margin-right: 0;
+                    }    
                 }
                 @media screen and (max-width: $screen-phone) {
                     width: 48%;

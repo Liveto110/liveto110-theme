@@ -4743,8 +4743,10 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 
 /* line 35, ../scss/partials/content/_store.scss */
 .woocommerce .related ul.products li.product { width: 23.5%; margin-right: 2%; }
-/* line 38, ../scss/partials/content/_store.scss */
-.woocommerce .related ul.products li.product:last-child { margin-right: 0; }
+@media screen and (min-width: 768px) { /* line 38, ../scss/partials/content/_store.scss */
+  .woocommerce .related ul.products li.product:last-child { margin-right: 0; } }
+@media screen and (max-width: 767px) { /* line 43, ../scss/partials/content/_store.scss */
+  .woocommerce .related ul.products li.product:nth-child(2n) { margin-right: 0; } }
 @media screen and (max-width: 767px) { /* line 35, ../scss/partials/content/_store.scss */
   .woocommerce .related ul.products li.product { width: 48%; margin-right: 4%; } }
 
