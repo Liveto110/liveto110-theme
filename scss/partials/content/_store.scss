@@ -9,6 +9,7 @@
 					margin: $padding-large-vertical 0;
 					line-height: 18px;
 					height: 36px;
+                    color: #000;
 					@media screen and (min-width: $screen-tablet) {
 						height: 72px;
 					}
@@ -19,6 +20,7 @@
 				.price {
 					padding: 0;
 					margin: $padding-large-vertical 0;
+                    color: #000;
 				}
 			}
 			h3 {}
@@ -27,4 +29,29 @@
 			}
 		}
 	}
+}
+
+.woocommerce {
+    .related {
+        ul.products {
+            li.product {
+                width: 23.5%;
+                margin-right: 2%;
+                &:last-child {
+                    @media screen and (min-width: $screen-tablet) {
+                        margin-right: 0;
+                    }
+                }
+                &:nth-child(2n) {
+                    @media screen and (max-width: $screen-phone) {
+                        margin-right: 0;
+                    }    
+                }
+                @media screen and (max-width: $screen-phone) {
+                    width: 48%;
+                    margin-right: 4%;    
+                }
+            }
+        }
+    }
 }

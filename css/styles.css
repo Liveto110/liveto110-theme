@@ -3812,17 +3812,17 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 .entry-header { margin: 0; padding: 0 40px 0 0; }
 
 /* line 7, ../scss/partials/content/_entry-header.scss */
-.entry-title { font-size: 24px; font-weight: bold; text-transform: uppercase; margin: 10px 0 0 0; padding: 0; margin-top: 0; }
+.entry-title { font-size: 24px; font-weight: bold; text-transform: uppercase; margin: 10px 0 0 0; padding: 0; margin-top: 0; text-align: left; }
 @media screen and (min-width: 768px) { /* line 7, ../scss/partials/content/_entry-header.scss */
   .entry-title { font-size: 24px; margin-bottom: 6px; } }
 @media screen and (min-width: 992px) { /* line 7, ../scss/partials/content/_entry-header.scss */
   .entry-title { font-size: 30px; margin-bottom: 12px; } }
-/* line 22, ../scss/partials/content/_entry-header.scss */
+/* line 23, ../scss/partials/content/_entry-header.scss */
 .entry-title a { color: #333333; -webkit-transition: color 0.3s ease-in-out; -moz-transition: color 0.3s ease-in-out; -o-transition: color 0.3s ease-in-out; transition: color 0.3s ease-in-out; text-decoration: none; }
-/* line 28, ../scss/partials/content/_entry-header.scss */
+/* line 29, ../scss/partials/content/_entry-header.scss */
 .entry-title a:hover, .entry-title a:focus, .entry-title a:active { color: #6db799; }
 
-/* line 34, ../scss/partials/content/_entry-header.scss */
+/* line 35, ../scss/partials/content/_entry-header.scss */
 .single #primary .entry-header { margin-bottom: 16px; }
 
 /* --- Entry Meta --- */
@@ -4731,15 +4731,24 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 
 /* --- Store Section --- */
 /* line 7, ../scss/partials/content/_store.scss */
-#content #primary #main .page .entry-content .woocommerce .products .product > a h3 { padding: 0; margin: 10px 0; line-height: 18px; height: 36px; }
+#content #primary #main .page .entry-content .woocommerce .products .product > a h3 { padding: 0; margin: 10px 0; line-height: 18px; height: 36px; color: #000; }
 @media screen and (min-width: 768px) { /* line 7, ../scss/partials/content/_store.scss */
   #content #primary #main .page .entry-content .woocommerce .products .product > a h3 { height: 72px; } }
 @media screen and (min-width: 992px) { /* line 7, ../scss/partials/content/_store.scss */
   #content #primary #main .page .entry-content .woocommerce .products .product > a h3 { height: 36px; } }
-/* line 19, ../scss/partials/content/_store.scss */
-#content #primary #main .page .entry-content .woocommerce .products .product > a .price { padding: 0; margin: 10px 0; }
-/* line 25, ../scss/partials/content/_store.scss */
+/* line 20, ../scss/partials/content/_store.scss */
+#content #primary #main .page .entry-content .woocommerce .products .product > a .price { padding: 0; margin: 10px 0; color: #000; }
+/* line 27, ../scss/partials/content/_store.scss */
 #content #primary #main .page .entry-content .woocommerce .products .product .button.product_type_external { margin: 10px 0; }
+
+/* line 37, ../scss/partials/content/_store.scss */
+.woocommerce .related ul.products li.product { width: 23.5%; margin-right: 2%; }
+@media screen and (min-width: 768px) { /* line 40, ../scss/partials/content/_store.scss */
+  .woocommerce .related ul.products li.product:last-child { margin-right: 0; } }
+@media screen and (max-width: 767px) { /* line 45, ../scss/partials/content/_store.scss */
+  .woocommerce .related ul.products li.product:nth-child(2n) { margin-right: 0; } }
+@media screen and (max-width: 767px) { /* line 37, ../scss/partials/content/_store.scss */
+  .woocommerce .related ul.products li.product { width: 48%; margin-right: 4%; } }
 
 /* --- Signup Section --- */
 /* line 2, ../scss/partials/footer/_signup-section.scss */
@@ -4815,46 +4824,48 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #secondary.widget-area .widget li > ol, #secondary.widget-area .widget li > ul { margin-left: 18px; }
 /* line 28, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget .widget-title, #secondary.widget-area .widget .widget-title a { color: #2b2b2b; font-size: 20px; font-weight: bold; text-transform: uppercase; }
-/* line 43, ../scss/partials/sidebar/_sidebar-default.scss */
+@media screen and (max-width: 767px) { /* line 9, ../scss/partials/sidebar/_sidebar-default.scss */
+  #secondary.widget-area .widget { display: block !important; } }
+/* line 47, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_archive li, #secondary.widget-area .widget_categories li, #secondary.widget-area .widget_links li, #secondary.widget-area .widget_meta li, #secondary.widget-area .widget_nav_menu li, #secondary.widget-area .widget_pages li, #secondary.widget-area .widget_recent_comments li, #secondary.widget-area .widget_recent_entries li { border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 8px 0 9px; }
-/* line 46, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 50, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_archive li:first-child, #secondary.widget-area .widget_categories li:first-child, #secondary.widget-area .widget_links li:first-child, #secondary.widget-area .widget_meta li:first-child, #secondary.widget-area .widget_nav_menu li:first-child, #secondary.widget-area .widget_pages li:first-child, #secondary.widget-area .widget_recent_comments li:first-child, #secondary.widget-area .widget_recent_entries li:first-child { border-top: 0; }
-/* line 52, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 56, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_categories li ul, #secondary.widget-area .widget_nav_menu li ul, #secondary.widget-area .widget_pages li ul { border-top: 1px solid rgba(0, 0, 0, 0.1); margin-top: 9px; }
-/* line 58, ../scss/partials/sidebar/_sidebar-default.scss */
-#secondary.widget-area .widget_categories li li:last-child, #secondary.widget-area .widget_nav_menu li li:last-child, #secondary.widget-area .widget_pages li li:last-child { padding-bottom: 0; }
 /* line 62, ../scss/partials/sidebar/_sidebar-default.scss */
-#secondary.widget-area .widget_recent_entries .post-date { display: block; }
+#secondary.widget-area .widget_categories li li:last-child, #secondary.widget-area .widget_nav_menu li li:last-child, #secondary.widget-area .widget_pages li li:last-child { padding-bottom: 0; }
 /* line 66, ../scss/partials/sidebar/_sidebar-default.scss */
+#secondary.widget-area .widget_recent_entries .post-date { display: block; }
+/* line 70, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .rsswidget img { margin-top: -4px; }
-/* line 69, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 73, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .rssSummary { margin: 9px 0; }
-/* line 72, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 76, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .rss-date { display: block; }
-/* line 75, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 79, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_rss li { margin-bottom: 18px; }
-/* line 78, ../scss/partials/sidebar/_sidebar-default.scss */
-#secondary.widget-area .widget_rss li:last-child { margin-bottom: 0; }
 /* line 82, ../scss/partials/sidebar/_sidebar-default.scss */
+#secondary.widget-area .widget_rss li:last-child { margin-bottom: 0; }
+/* line 86, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_text > div > :last-child { margin-bottom: 0; }
-/* line 87, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 91, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_search form { position: relative; width: 100%; }
-/* line 90, ../scss/partials/sidebar/_sidebar-default.scss */
-#secondary.widget-area .widget_search form label { display: block; margin: 0; padding: 0; }
 /* line 94, ../scss/partials/sidebar/_sidebar-default.scss */
+#secondary.widget-area .widget_search form label { display: block; margin: 0; padding: 0; }
+/* line 98, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_search form label input { font-size: 12px; width: 100%; }
-/* line 99, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 103, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_search form .btn { position: absolute; right: 0; top: 0; }
 
-/* line 108, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 112, ../scss/partials/sidebar/_sidebar-default.scss */
 #left-sidebar-template #secondary { margin-top: 48px; }
 
-/* line 112, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 116, ../scss/partials/sidebar/_sidebar-default.scss */
 .woocommerce-page #secondary { margin-top: 48px; }
 
-/* line 116, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 120, ../scss/partials/sidebar/_sidebar-default.scss */
 .tptn_posts_widget li { border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 8px 0 9px; }
-/* line 119, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 123, ../scss/partials/sidebar/_sidebar-default.scss */
 .tptn_posts_widget li:first-child { border-top: 0; }
 
 /* --- Sidebar - Default --- */

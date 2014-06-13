@@ -178,3 +178,17 @@ remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 
 
 // Remove WooCommerce Result Count
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
+
+// Display only min price for variable products
+add_filter('woocommerce_variable_price_html', 'custom_variation_price', 10, 2);
+ 
+function custom_variation_price( $price, $product ) {
+     
+     $price = '';
+            
+     if ( $product->min_variation_price && $product->max_variation_price ) {
+          $price = woocommerce_price($product->min_variation_price);
+     }
+ 
+     return $price;
+}
