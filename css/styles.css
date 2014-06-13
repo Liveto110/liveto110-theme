@@ -4731,23 +4731,23 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 
 /* --- Store Section --- */
 /* line 7, ../scss/partials/content/_store.scss */
-#content #primary #main .page .entry-content .woocommerce .products .product > a h3 { padding: 0; margin: 10px 0; line-height: 18px; height: 36px; }
+#content #primary #main .page .entry-content .woocommerce .products .product > a h3 { padding: 0; margin: 10px 0; line-height: 18px; height: 36px; color: #000; }
 @media screen and (min-width: 768px) { /* line 7, ../scss/partials/content/_store.scss */
   #content #primary #main .page .entry-content .woocommerce .products .product > a h3 { height: 72px; } }
 @media screen and (min-width: 992px) { /* line 7, ../scss/partials/content/_store.scss */
   #content #primary #main .page .entry-content .woocommerce .products .product > a h3 { height: 36px; } }
-/* line 19, ../scss/partials/content/_store.scss */
-#content #primary #main .page .entry-content .woocommerce .products .product > a .price { padding: 0; margin: 10px 0; }
-/* line 25, ../scss/partials/content/_store.scss */
+/* line 20, ../scss/partials/content/_store.scss */
+#content #primary #main .page .entry-content .woocommerce .products .product > a .price { padding: 0; margin: 10px 0; color: #000; }
+/* line 27, ../scss/partials/content/_store.scss */
 #content #primary #main .page .entry-content .woocommerce .products .product .button.product_type_external { margin: 10px 0; }
 
-/* line 35, ../scss/partials/content/_store.scss */
+/* line 37, ../scss/partials/content/_store.scss */
 .woocommerce .related ul.products li.product { width: 23.5%; margin-right: 2%; }
-@media screen and (min-width: 768px) { /* line 38, ../scss/partials/content/_store.scss */
+@media screen and (min-width: 768px) { /* line 40, ../scss/partials/content/_store.scss */
   .woocommerce .related ul.products li.product:last-child { margin-right: 0; } }
-@media screen and (max-width: 767px) { /* line 43, ../scss/partials/content/_store.scss */
+@media screen and (max-width: 767px) { /* line 45, ../scss/partials/content/_store.scss */
   .woocommerce .related ul.products li.product:nth-child(2n) { margin-right: 0; } }
-@media screen and (max-width: 767px) { /* line 35, ../scss/partials/content/_store.scss */
+@media screen and (max-width: 767px) { /* line 37, ../scss/partials/content/_store.scss */
   .woocommerce .related ul.products li.product { width: 48%; margin-right: 4%; } }
 
 /* --- Signup Section --- */
