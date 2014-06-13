@@ -1,0 +1,52 @@
+/* --- Plugin Styles --- */
+/* Accordion Shortcodes */
+/* Accordion Styles */
+.accordion {
+    margin-bottom: $padding-small-vertical;
+    @media screen and (min-width: $screen-tablet) {
+    	margin-bottom: $padding-base-vertical;
+    }
+    @media screen and (min-width: $screen-desktop) {
+    	margin-bottom: $padding-large-vertical;
+    }
+    @media screen and (min-width: $screen-lg-desktop) {
+    	margin-bottom: $padding-large-vertical * 2;
+    }
+    > br {
+    	display: none;
+    }
+}
+.accordion-title {
+    margin: 0;
+    padding: $padding-small-vertical 0;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: $lato;
+    @include transition(all .2s ease-in-out);
+    @media screen and (min-width: $screen-tablet) {
+    	font-size: 15px;
+    }
+    @media screen and (min-width: $screen-desktop) {
+    	font-size: 16px;
+    	line-height: 24px;
+    }
+    @media screen and (min-width: $screen-lg-desktop) {
+    	font-size: 18px;
+    	line-height: 27px;
+    }
+    &:hover {
+    	color: $secondary-nav-bg;
+    }
+    &.open {
+    	cursor: default;
+    	font-weight: bold;
+    	color: $secondary-nav-bg;
+    }
+}
+.accordion-content {
+	padding-bottom: $padding-small-vertical;
+	@media screen and (min-width: $screen-tablet) {}
+	@media screen and (min-width: $screen-desktop) {}
+	@media screen and (min-width: $screen-lg-desktop) {}
+}
