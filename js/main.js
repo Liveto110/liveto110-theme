@@ -67,4 +67,8 @@ jQuery( document ).ready( function($) {
             });
         }
     });
+    
+    $('.shipping-calculator-button').on('click', function(e) {
+        e.preventDefault();    
+    });
 });
