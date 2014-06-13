@@ -186,7 +186,7 @@ function custom_variation_price( $price, $product ) {
      
      $price = '';
             
-     if ( $product->min_variation_price && $product->max_variation_price !== $product->min_variation_price ) {
+     if ( $product->min_variation_price && $product->max_variation_price ) {
           $price = woocommerce_price($product->min_variation_price);
      }
  
