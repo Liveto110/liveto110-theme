@@ -3710,7 +3710,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 /* line 52, ../scss/partials/header/_masthead.scss */
 #masthead #site-branding .site-description { text-align: center; text-transform: uppercase; font-family: "Lato", sans-serif; font-weight: 300; color: #BF76A4; display: none; }
 @media screen and (min-width: 768px) { /* line 52, ../scss/partials/header/_masthead.scss */
-  #masthead #site-branding .site-description { display: table-cell; vertical-align: middle; text-align: right; margin: 0; width: 200px; top: 15px; right: 200px; font-size: 45px; line-height: .9; position: absolute; } }
+  #masthead #site-branding .site-description { display: table-cell; vertical-align: middle; text-align: right; margin: 0; width: 200px; top: 35px; right: 200px; font-size: 45px; line-height: .9; position: absolute; } }
 
 /* --- Secondary Navigation --- */
 /* line 2, ../scss/partials/header/_secondary-navigation.scss */
