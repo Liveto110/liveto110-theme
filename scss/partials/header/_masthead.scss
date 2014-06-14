@@ -4,6 +4,7 @@
 	background-color: transparent;
 	background-position: right top;
 	background-repeat: no-repeat;
+    position: relative;
 	#site-branding {
 		// min-height: 165px;
 		padding-top: 20px;
@@ -60,10 +61,10 @@
 				display: table-cell;
 				vertical-align: middle;
 				text-align: right;
-				margin-top: 12px;
-                margin-right: 70px;
+				margin: 0;
 				width: 200px;
-                float: right;
+                top: 15px;
+                right: 200px;
                 font-size: 45px;
                 line-height: .9;
                 position: absolute;
