@@ -17,6 +17,10 @@ get_header(); ?>
 							<h1 class="page-title"><?php the_title(); ?></h1>
 						</div>
 
+						<div class="page-content">
+							<?php the_content(); ?>
+						</div><!-- /.page-content -->
+
 						<?php
 							$args = array(
 								'post_type' => 'video',
