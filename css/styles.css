@@ -3852,46 +3852,46 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 /* --- Entry Content --- */
 /* line 4, ../scss/partials/content/_entry-content.scss */
 .entry-content, .entry-summary, .page-content { -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; word-wrap: break-word; text-align: justify; line-height: 25px; }
-/* line 9, ../scss/partials/content/_entry-content.scss */
-.entry-content p, .entry-summary p, .page-content p { font-size: 14px; line-height: 20px; }
-@media screen and (min-width: 768px) { /* line 9, ../scss/partials/content/_entry-content.scss */
-  .entry-content p, .entry-summary p, .page-content p { font-size: 15px; line-height: 22px; } }
-@media screen and (min-width: 992px) { /* line 9, ../scss/partials/content/_entry-content.scss */
-  .entry-content p, .entry-summary p, .page-content p { font-size: 16px; line-height: 24px; } }
-@media screen and (min-width: 1200px) { /* line 9, ../scss/partials/content/_entry-content.scss */
-  .entry-content p, .entry-summary p, .page-content p { font-size: 18px; line-height: 27px; } }
-/* line 25, ../scss/partials/content/_entry-content.scss */
+/* line 11, ../scss/partials/content/_entry-content.scss */
+.entry-content p, .entry-content ul, .entry-content ol, .entry-summary p, .entry-summary ul, .entry-summary ol, .page-content p, .page-content ul, .page-content ol { font-size: 14px; line-height: 20px; }
+@media screen and (min-width: 768px) { /* line 11, ../scss/partials/content/_entry-content.scss */
+  .entry-content p, .entry-content ul, .entry-content ol, .entry-summary p, .entry-summary ul, .entry-summary ol, .page-content p, .page-content ul, .page-content ol { font-size: 15px; line-height: 22px; } }
+@media screen and (min-width: 992px) { /* line 11, ../scss/partials/content/_entry-content.scss */
+  .entry-content p, .entry-content ul, .entry-content ol, .entry-summary p, .entry-summary ul, .entry-summary ol, .page-content p, .page-content ul, .page-content ol { font-size: 16px; line-height: 24px; } }
+@media screen and (min-width: 1200px) { /* line 11, ../scss/partials/content/_entry-content.scss */
+  .entry-content p, .entry-content ul, .entry-content ol, .entry-summary p, .entry-summary ul, .entry-summary ol, .page-content p, .page-content ul, .page-content ol { font-size: 18px; line-height: 27px; } }
+/* line 27, ../scss/partials/content/_entry-content.scss */
 .entry-content .podicons, .entry-summary .podicons, .page-content .podicons { display: -webkit-inline-box; }
-/* line 28, ../scss/partials/content/_entry-content.scss */
+/* line 30, ../scss/partials/content/_entry-content.scss */
 .entry-content .itunessec, .entry-summary .itunessec, .page-content .itunessec { text-align: center; border: #89c464 2px solid; padding: 15px; background: #f0f7f4; }
-/* line 34, ../scss/partials/content/_entry-content.scss */
+/* line 36, ../scss/partials/content/_entry-content.scss */
 .entry-content .qpodcast, .entry-summary .qpodcast, .page-content .qpodcast { margin: 30px 0 30px 20px; padding: 0 0 0 25px; border-left: 3px solid #eee; font-size: 24px; font-style: italic; line-height: 28px; font-weight: bold; color: #81afa2; }
-/* line 49, ../scss/partials/content/_entry-content.scss */
+/* line 51, ../scss/partials/content/_entry-content.scss */
 .entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6, .entry-summary h1, .entry-summary h2, .entry-summary h3, .entry-summary h4, .entry-summary h5, .entry-summary h6, .page-content h1, .page-content h2, .page-content h3, .page-content h4, .page-content h5, .page-content h6 { color: #81afa2; }
 
-/* line 56, ../scss/partials/content/_entry-content.scss */
+/* line 58, ../scss/partials/content/_entry-content.scss */
 .site-content .entry-content, .site-content .entry-summary, .page-content { background-color: #fff; padding: 12px 10px 0 0; }
 
-/* line 61, ../scss/partials/content/_entry-content.scss */
+/* line 63, ../scss/partials/content/_entry-content.scss */
 .blog .entry-content img { display: none; }
 
 /* Page links */
-/* line 68, ../scss/partials/content/_entry-content.scss */
+/* line 70, ../scss/partials/content/_entry-content.scss */
 .page-links { clear: both; font-size: 12px; font-weight: 900; line-height: 2; margin: 24px 0; text-transform: uppercase; }
 
-/* line 77, ../scss/partials/content/_entry-content.scss */
+/* line 79, ../scss/partials/content/_entry-content.scss */
 .page-links a, .page-links > span { background: #fff; border: 1px solid #fff; display: inline-block; height: 22px; margin: 0 1px 2px 0; text-align: center; width: 22px; }
 
-/* line 86, ../scss/partials/content/_entry-content.scss */
+/* line 88, ../scss/partials/content/_entry-content.scss */
 .page-links a { background: #000; border: 1px solid #000; color: #fff; text-decoration: none; }
 
-/* line 92, ../scss/partials/content/_entry-content.scss */
+/* line 94, ../scss/partials/content/_entry-content.scss */
 .page-links a:hover { background: #41a62a; border: 1px solid #41a62a; color: #fff; }
 
-/* line 97, ../scss/partials/content/_entry-content.scss */
+/* line 99, ../scss/partials/content/_entry-content.scss */
 .page-links > .page-links-title { height: auto; margin: 0; padding-right: 7px; width: auto; }
 
-/* line 104, ../scss/partials/content/_entry-content.scss */
+/* line 106, ../scss/partials/content/_entry-content.scss */
 .single .entry-content .tptn_counter { display: none; }
 
 /* --- Gallery --- */

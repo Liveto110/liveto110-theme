@@ -6,7 +6,9 @@
 	word-wrap: break-word;
 	text-align: justify;
 	line-height: 25px;
-	p {
+	p,
+	ul,
+	ol {
 		font-size: 14px;
 		line-height: 20px;
 		@media screen and (min-width: $screen-tablet) {
