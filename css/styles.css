@@ -3737,9 +3737,9 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 .btn { font-family: "Quicksand", sans-serif; }
 
 /* line 12, ../scss/partials/content/_general.scss */
-.hentry { margin: 0 0 24px 0; position: relative; }
+.hentry { margin: 0 0 10px 0; position: relative; }
 @media screen and (min-width: 768px) { /* line 12, ../scss/partials/content/_general.scss */
-  .hentry { margin: 0 0 48px 0; } }
+  .hentry { margin-bottom: 20px; } }
 
 /* line 24, ../scss/partials/content/_general.scss */
 .site-content .entry-header, .site-content .entry-content, .site-content .entry-summary, .site-content .entry-meta, .page-content { margin: 0 auto; }
@@ -3779,32 +3779,32 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 
 /* Post Format Icon */
 /* line 95, ../scss/partials/content/_general.scss */
-.post-format-icon { position: absolute; right: 7px; top: 50%; margin-top: -17px; content: ''; height: 34px; width: 34px; background-color: transparent; background-image: url(../img/icons/post-format-icons/standard.png); background-position: center center; background-repeat: no-repeat; -webkit-transform: scale(0.75, 0.75); -moz-transform: scale(0.75, 0.75); -ms-transform: scale(0.75, 0.75); -o-transform: scale(0.75, 0.75); transform: scale(0.75, 0.75); }
+.post-format-icon { position: absolute; right: 7px; top: 0; content: ''; height: 34px; width: 34px; background-color: transparent; background-image: url(../img/icons/post-format-icons/standard.png); background-position: center center; background-repeat: no-repeat; -webkit-transform: scale(0.65, 0.65); -moz-transform: scale(0.65, 0.65); -ms-transform: scale(0.65, 0.65); -o-transform: scale(0.65, 0.65); transform: scale(0.65, 0.65); }
 @media screen and (min-width: 768px) { /* line 95, ../scss/partials/content/_general.scss */
-  .post-format-icon { -webkit-transform: scale(1, 1); -moz-transform: scale(1, 1); -ms-transform: scale(1, 1); -o-transform: scale(1, 1); transform: scale(1, 1); } }
+  .post-format-icon { -webkit-transform: scale(0.85, 0.85); -moz-transform: scale(0.85, 0.85); -ms-transform: scale(0.85, 0.85); -o-transform: scale(0.85, 0.85); transform: scale(0.85, 0.85); } }
 @media screen and (min-width: 992px) { /* line 95, ../scss/partials/content/_general.scss */
-  .post-format-icon { top: 7px; margin-top: 0; } }
+  .post-format-icon { -webkit-transform: scale(1, 1); -moz-transform: scale(1, 1); -ms-transform: scale(1, 1); -o-transform: scale(1, 1); transform: scale(1, 1); } }
 
 /* Social Icons */
-/* line 118, ../scss/partials/content/_general.scss */
+/* line 117, ../scss/partials/content/_general.scss */
 [class^='icon-social'] { background: url(../img/icons/icon-social.png) no-repeat; width: 24px; height: 24px; display: inline-block; }
 
-/* line 125, ../scss/partials/content/_general.scss */
+/* line 124, ../scss/partials/content/_general.scss */
 .icon-social-facebook { background-position: 0 0; }
 
-/* line 126, ../scss/partials/content/_general.scss */
+/* line 125, ../scss/partials/content/_general.scss */
 .icon-social-twitter { background-position: -24px 0; }
 
-/* line 127, ../scss/partials/content/_general.scss */
+/* line 126, ../scss/partials/content/_general.scss */
 .icon-social-pinterest { background-position: -48px 0; }
 
-/* line 128, ../scss/partials/content/_general.scss */
+/* line 127, ../scss/partials/content/_general.scss */
 .icon-social-youtube { background-position: -72px 0; }
 
-/* line 129, ../scss/partials/content/_general.scss */
+/* line 128, ../scss/partials/content/_general.scss */
 .icon-social-googleplus { background-position: -96px 0; }
 
-@media screen and (min-width: 768px) { /* line 131, ../scss/partials/content/_general.scss */
+@media screen and (min-width: 768px) { /* line 130, ../scss/partials/content/_general.scss */
   .coupon input[name="coupon_code"] { width: auto !important; } }
 
 /* --- Entry Header --- */
@@ -3812,41 +3812,49 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 .entry-header { margin: 0; padding: 0 40px 0 0; }
 
 /* line 7, ../scss/partials/content/_entry-header.scss */
-.entry-title { font-size: 24px; font-weight: bold; text-transform: uppercase; margin: 10px 0 0 0; padding: 0; margin-top: 0; text-align: left; }
+.entry-title { font-size: 14px; font-weight: bold; text-transform: uppercase; margin: 0; padding: 0; text-align: left; }
 @media screen and (min-width: 768px) { /* line 7, ../scss/partials/content/_entry-header.scss */
-  .entry-title { font-size: 24px; margin-bottom: 6px; } }
+  .entry-title { font-size: 16px; line-height: 24px; } }
 @media screen and (min-width: 992px) { /* line 7, ../scss/partials/content/_entry-header.scss */
-  .entry-title { font-size: 30px; margin-bottom: 12px; } }
-/* line 23, ../scss/partials/content/_entry-header.scss */
+  .entry-title { font-size: 18px; line-height: 27px; } }
+@media screen and (min-width: 992px) { /* line 7, ../scss/partials/content/_entry-header.scss */
+  .entry-title { font-size: 22px; line-height: 33px; } }
+/* line 26, ../scss/partials/content/_entry-header.scss */
 .entry-title a { color: #333333; -webkit-transition: color 0.3s ease-in-out; -moz-transition: color 0.3s ease-in-out; -o-transition: color 0.3s ease-in-out; transition: color 0.3s ease-in-out; text-decoration: none; }
-/* line 29, ../scss/partials/content/_entry-header.scss */
+/* line 32, ../scss/partials/content/_entry-header.scss */
 .entry-title a:hover, .entry-title a:focus, .entry-title a:active { color: #6db799; }
 
-/* line 35, ../scss/partials/content/_entry-header.scss */
+/* line 38, ../scss/partials/content/_entry-header.scss */
 .single #primary .entry-header { margin-bottom: 16px; }
 
 /* --- Entry Meta --- */
 /* line 2, ../scss/partials/content/_entry-meta.scss */
-.entry-meta { color: #333333; font-size: 12px; font-weight: 400; }
-/* line 6, ../scss/partials/content/_entry-meta.scss */
-.entry-meta a { color: #333333; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
-/* line 11, ../scss/partials/content/_entry-meta.scss */
+.entry-meta { color: rgba(51, 51, 51, 0.6); font-size: 12px; line-height: 18px; font-weight: 400; }
+@media screen and (min-width: 768px) { /* line 2, ../scss/partials/content/_entry-meta.scss */
+  .entry-meta { font-size: 13px; line-height: 18px; } }
+@media screen and (min-width: 992px) { /* line 2, ../scss/partials/content/_entry-meta.scss */
+  .entry-meta { font-size: 15px; line-height: 20px; } }
+@media screen and (min-width: 992px) { /* line 2, ../scss/partials/content/_entry-meta.scss */
+  .entry-meta { font-size: 16px; line-height: 24px; } }
+/* line 19, ../scss/partials/content/_entry-meta.scss */
+.entry-meta a { color: rgba(51, 51, 51, 0.6); -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+/* line 24, ../scss/partials/content/_entry-meta.scss */
 .entry-meta a:hover, .entry-meta a:focus, .entry-meta a:active { color: #6db799; }
 
-/* line 17, ../scss/partials/content/_entry-meta.scss */
+/* line 30, ../scss/partials/content/_entry-meta.scss */
 .sticky .entry-date { display: none; }
 
-/* line 21, ../scss/partials/content/_entry-meta.scss */
+/* line 34, ../scss/partials/content/_entry-meta.scss */
 .cat-links { font-weight: 700; text-transform: uppercase; }
-/* line 24, ../scss/partials/content/_entry-meta.scss */
+/* line 37, ../scss/partials/content/_entry-meta.scss */
 .cat-links a { color: #333333; -webkit-transition: color 0.3s ease-in-out; -moz-transition: color 0.3s ease-in-out; -o-transition: color 0.3s ease-in-out; transition: color 0.3s ease-in-out; }
-/* line 30, ../scss/partials/content/_entry-meta.scss */
+/* line 43, ../scss/partials/content/_entry-meta.scss */
 .cat-links a:hover, .cat-links a:focus, .cat-links a:active { color: #6db799; }
 
-/* line 36, ../scss/partials/content/_entry-meta.scss */
+/* line 49, ../scss/partials/content/_entry-meta.scss */
 .byline { display: none; }
 
-/* line 41, ../scss/partials/content/_entry-meta.scss */
+/* line 54, ../scss/partials/content/_entry-meta.scss */
 .single .byline, .group-blog .byline { display: inline; }
 
 /* --- Entry Content --- */
