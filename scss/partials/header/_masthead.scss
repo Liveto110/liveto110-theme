@@ -67,11 +67,8 @@
                 font-size: 45px;
                 line-height: .9;
 			}
-            @media screen and (max-width: $screen-lg-max) {
-                margin-right: 200px;
-            }
-            @media screen and (max-width: $screen-md-max) {
-                margin-right: 200px;
+            @media screen and (min-width: $screen-lg) {
+                margin-right: 0;
             }
 		}
 	}
