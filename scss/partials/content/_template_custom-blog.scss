@@ -1,0 +1,121 @@
+/* --- Full Width Page Template --- */
+#custom-blog-template {
+	.blog-roll {}
+	.featured-post-wrap {
+		.featured-post {
+			position: relative;
+			> img {}
+			.post-content {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			.post-header {
+				text-align: right;
+				margin: $padding-small-vertical;
+				@include clearfix;
+				.post-title {
+					display: block;
+					background: rgba(white, .6);
+					font-family: $quicksand;
+					font-weight: 300;
+					text-transform: uppercase;
+					margin: 0;
+					padding: 0 $padding-small-horizontal;
+					a {
+						color: #000;
+					}
+				}
+				.post-metadata {
+					@include clearfix;
+					background: rgba(black, .8);
+					display: block;
+					margin: $padding-small-vertical 0 0 0;
+					padding: 0 $padding-small-horizontal;
+				}
+			}
+		}
+	}
+	.posts-wrap {
+		margin-top: $padding-large-vertical;
+		.post {
+			@include clearfix;
+			margin: 0 0 $padding-small-vertical 0;
+			padding: 0 0 $padding-small-vertical 0;
+			border-bottom: 1px dotted $hr-border;
+			&:last-child {
+				border-bottom: 0;
+				padding-bottom: 0;
+			}
+			.image-wrap {
+				width: 20%;
+				height: 60px;
+				float: left;
+				.img-block {
+					height: 100%;
+					width: 100%;
+					background-color: transparent;
+					background-repeat: no-repeat;
+					background-position: center center;
+					@include background-size(cover);
+				}
+			}
+			.content-wrap {
+				width: 80%;
+				height: 60px;
+				float: left;
+			}
+			.fullwidth-content-wrap {
+				.post-header {
+					.post-title {
+						margin-left: 0;
+					}
+				}
+			}
+			.post-header {
+				.post-title {
+					margin: 0;
+					padding: 0;
+					font-size: 14px;
+					line-height: 20px;
+					margin-left: $padding-small-horizontal;
+					text-transform: uppercase;
+					font-weight: normal;
+					font-family: $lato;
+				}
+			}
+			.entry {
+				display: none;
+				p {
+					.read-more-link {}
+				}
+			}
+			.post-footer {
+				display: none;
+			}
+		}
+	}
+	#nav-posts {
+		@include clearfix;
+		margin-top: $padding-large-vertical;
+		padding-top: $padding-large-vertical;
+		margin-bottom: $padding-large-vertical;
+		padding-bottom: $padding-large-vertical;
+		.prev {
+			float: left;
+			width: 50%;
+			text-align: left;
+			a {
+				display: inline-block;
+			}
+		}
+		.next {
+			float: right;
+			width: 50%;
+			text-align: right;
+			a {
+				display: inline-block;
+			}
+		}
+	}
+}

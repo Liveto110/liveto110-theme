@@ -4749,6 +4749,50 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 /* line 52, ../scss/partials/content/_template_healthcoaching-page.scss */
 #health-coaching-template .page .rates-wrap .pricing-table .table-footer .button-wrap .btn { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; font-family: "Quicksand", sans-serif; }
 
+/* --- Full Width Page Template --- */
+/* line 5, ../scss/partials/content/_template_custom-blog.scss */
+#custom-blog-template .featured-post-wrap .featured-post { position: relative; }
+/* line 8, ../scss/partials/content/_template_custom-blog.scss */
+#custom-blog-template .featured-post-wrap .featured-post .post-content { position: absolute; top: 0; right: 0; }
+/* line 13, ../scss/partials/content/_template_custom-blog.scss */
+#custom-blog-template .featured-post-wrap .featured-post .post-header { text-align: right; margin: 5px; overflow: hidden; *zoom: 1; }
+/* line 17, ../scss/partials/content/_template_custom-blog.scss */
+#custom-blog-template .featured-post-wrap .featured-post .post-header .post-title { display: block; background: rgba(255, 255, 255, 0.6); font-family: "Quicksand", sans-serif; font-weight: 300; text-transform: uppercase; margin: 0; padding: 0 10px; }
+/* line 25, ../scss/partials/content/_template_custom-blog.scss */
+#custom-blog-template .featured-post-wrap .featured-post .post-header .post-title a { color: #000; }
+/* line 29, ../scss/partials/content/_template_custom-blog.scss */
+#custom-blog-template .featured-post-wrap .featured-post .post-header .post-metadata { overflow: hidden; *zoom: 1; background: rgba(0, 0, 0, 0.8); display: block; margin: 5px 0 0 0; padding: 0 10px; }
+/* line 39, ../scss/partials/content/_template_custom-blog.scss */
+#custom-blog-template .posts-wrap { margin-top: 10px; }
+/* line 41, ../scss/partials/content/_template_custom-blog.scss */
+#custom-blog-template .posts-wrap .post { overflow: hidden; *zoom: 1; margin: 0 0 5px 0; padding: 0 0 5px 0; border-bottom: 1px dotted #eeeeee; }
+/* line 46, ../scss/partials/content/_template_custom-blog.scss */
+#custom-blog-template .posts-wrap .post:last-child { border-bottom: 0; padding-bottom: 0; }
+/* line 50, ../scss/partials/content/_template_custom-blog.scss */
+#custom-blog-template .posts-wrap .post .image-wrap { width: 20%; height: 60px; float: left; }
+/* line 54, ../scss/partials/content/_template_custom-blog.scss */
+#custom-blog-template .posts-wrap .post .image-wrap .img-block { height: 100%; width: 100%; background-color: transparent; background-repeat: no-repeat; background-position: center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+/* line 63, ../scss/partials/content/_template_custom-blog.scss */
+#custom-blog-template .posts-wrap .post .content-wrap { width: 80%; height: 60px; float: left; }
+/* line 70, ../scss/partials/content/_template_custom-blog.scss */
+#custom-blog-template .posts-wrap .post .fullwidth-content-wrap .post-header .post-title { margin-left: 0; }
+/* line 76, ../scss/partials/content/_template_custom-blog.scss */
+#custom-blog-template .posts-wrap .post .post-header .post-title { margin: 0; padding: 0; font-size: 14px; line-height: 20px; margin-left: 10px; text-transform: uppercase; font-weight: normal; font-family: "Lato", sans-serif; }
+/* line 87, ../scss/partials/content/_template_custom-blog.scss */
+#custom-blog-template .posts-wrap .post .entry { display: none; }
+/* line 93, ../scss/partials/content/_template_custom-blog.scss */
+#custom-blog-template .posts-wrap .post .post-footer { display: none; }
+/* line 98, ../scss/partials/content/_template_custom-blog.scss */
+#custom-blog-template #nav-posts { overflow: hidden; *zoom: 1; margin-top: 10px; padding-top: 10px; margin-bottom: 10px; padding-bottom: 10px; }
+/* line 104, ../scss/partials/content/_template_custom-blog.scss */
+#custom-blog-template #nav-posts .prev { float: left; width: 50%; text-align: left; }
+/* line 108, ../scss/partials/content/_template_custom-blog.scss */
+#custom-blog-template #nav-posts .prev a { display: inline-block; }
+/* line 112, ../scss/partials/content/_template_custom-blog.scss */
+#custom-blog-template #nav-posts .next { float: right; width: 50%; text-align: right; }
+/* line 116, ../scss/partials/content/_template_custom-blog.scss */
+#custom-blog-template #nav-posts .next a { display: inline-block; }
+
 /* --- Store Section --- */
 /* line 7, ../scss/partials/content/_store.scss */
 #content #primary #main .page .entry-content .woocommerce .products .product > a h3 { padding: 0; margin: 10px 0; line-height: 18px; height: 36px; color: #000; }
