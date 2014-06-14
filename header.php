@@ -132,7 +132,7 @@
 						</a>
 					</h1><!-- /.site-title -->
 
-					<h2 class="site-description"><?php htmlspecialchars(bloginfo( 'description' )); ?></h2><!-- /.site-description -->	
+					<h2 class="site-description"><?php htmlspecialchars_decode(bloginfo( 'description' )); ?></h2><!-- /.site-description -->	
 				</div><!-- /.site-branding -->
 			</div><!-- /.container -->
 		</header><!-- /#masthead -->
