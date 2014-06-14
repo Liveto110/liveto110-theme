@@ -6,8 +6,8 @@
 	background-repeat: no-repeat;
 	#site-branding {
 		// min-height: 165px;
-		padding-top: 12px;
-		padding-bottom: 12px;
+		padding-top: 20px;
+		padding-bottom: 18px;
 		display: table;
 		width: 100%;
 		@media screen and (min-width: $screen-tablet) {
@@ -53,15 +53,18 @@
 			text-transform: uppercase;
 			font-family: $lato;
 			font-weight: 300;
-			font-style: italic;
+			// font-style: italic;
 			color: #BF76A4;
 			display: none;
 			@media screen and (min-width: $screen-tablet) {
 				display: table-cell;
 				vertical-align: middle;
 				text-align: right;
-				margin: 0;
-				width: 220px;
+				margin: 12px 200px 0;
+				width: 200px;
+                float: right;
+                font-size: 45px;
+                line-height: .9;
 			}
 		}
 	}
