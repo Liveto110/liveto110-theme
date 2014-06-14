@@ -66,10 +66,8 @@
                 float: right;
                 font-size: 45px;
                 line-height: .9;
+                position: absolute;
 			}
-            @media screen and (max-width: $screen-md-max) {
-                margin-right: 200px;
-            }
 		}
 	}
 }
