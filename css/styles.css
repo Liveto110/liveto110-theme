@@ -3711,6 +3711,8 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #masthead #site-branding .site-description { text-align: center; text-transform: uppercase; font-family: "Lato", sans-serif; font-weight: 300; color: #BF76A4; display: none; }
 @media screen and (min-width: 768px) { /* line 51, ../scss/partials/header/_masthead.scss */
   #masthead #site-branding .site-description { display: table-cell; vertical-align: middle; text-align: right; margin: 12px 200px 0; width: 200px; float: right; font-size: 45px; line-height: .9; } }
+@media screen and (min-width: 1199px) { /* line 51, ../scss/partials/header/_masthead.scss */
+  #masthead #site-branding .site-description { margin-right: 70px; } }
 
 /* --- Secondary Navigation --- */
 /* line 2, ../scss/partials/header/_secondary-navigation.scss */
