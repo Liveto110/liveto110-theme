@@ -4114,11 +4114,11 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 /* line 208, ../scss/partials/content/_template_homepage.scss */
 #intro .home-slide .content-wrap .complex-layout .blurb { margin-top: 10px; margin-bottom: 10px; -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px; -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px; box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 @media screen and (min-width: 768px) { /* line 208, ../scss/partials/content/_template_homepage.scss */
-  #intro .home-slide .content-wrap .complex-layout .blurb { margin-top: 20px; margin-bottom: 20px; } }
+  #intro .home-slide .content-wrap .complex-layout .blurb { margin-top: 53px; margin-bottom: 52px; } }
 @media screen and (min-width: 992px) { /* line 208, ../scss/partials/content/_template_homepage.scss */
-  #intro .home-slide .content-wrap .complex-layout .blurb { margin-top: 30px; margin-bottom: 30px; } }
+  #intro .home-slide .content-wrap .complex-layout .blurb { margin-top: 70px; margin-bottom: 70px; } }
 @media screen and (min-width: 1200px) { /* line 208, ../scss/partials/content/_template_homepage.scss */
-  #intro .home-slide .content-wrap .complex-layout .blurb { margin-top: 40px; margin-bottom: 40px; } }
+  #intro .home-slide .content-wrap .complex-layout .blurb { margin-top: 79px; margin-bottom: 78px; } }
 /* line 225, ../scss/partials/content/_template_homepage.scss */
 #intro .home-slide .content-wrap .complex-layout .blurb:hover { -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px; -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px; box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px; }
 /* line 235, ../scss/partials/content/_template_homepage.scss */
