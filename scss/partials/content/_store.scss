@@ -72,4 +72,16 @@
     @media screen and (min-width: $screen-tablet) {
         width: 60%;
     }
+    table {
+        th {
+            @media screen and (min-width: $screen-tablet) {
+                width: 40%;
+            }
+        }
+        td {
+            @media screen and (min-width: $screen-tablet) {
+                width: 60%;
+            }
+        }
+    }
 }

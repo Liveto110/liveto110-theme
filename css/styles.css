@@ -4979,6 +4979,10 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 
 @media screen and (min-width: 768px) { /* line 71, ../scss/partials/content/_store.scss */
   .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals { width: 60%; } }
+@media screen and (min-width: 768px) { /* line 76, ../scss/partials/content/_store.scss */
+  .woocommerce .cart-collaterals .cart_totals table th, .woocommerce-page .cart-collaterals .cart_totals table th { width: 40%; } }
+@media screen and (min-width: 768px) { /* line 81, ../scss/partials/content/_store.scss */
+  .woocommerce .cart-collaterals .cart_totals table td, .woocommerce-page .cart-collaterals .cart_totals table td { width: 60%; } }
 
 /* --- Signup Section --- */
 /* line 2, ../scss/partials/footer/_signup-section.scss */
