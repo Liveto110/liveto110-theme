@@ -207,16 +207,16 @@
 					@include box-shadow(rgba(black, .2) 0 0 10px);
 					@include transition(all .2s ease-in-out);
 					@media screen and (min-width: $screen-tablet) {
-						margin-top: 53px;
-						margin-bottom: 52px;
+						margin-top: 43px;
+						margin-bottom: 42px;
 					}
 					@media screen and (min-width: $screen-desktop) {
-						margin-top: 70px;
-						margin-bottom: 70px;
+						margin-top: 55px;
+						margin-bottom: 55px;
 					}
 					@media screen and (min-width: $screen-lg-desktop) {
-						margin-top: 79px;
-						margin-bottom: 78px;
+						margin-top: 59px;
+						margin-bottom: 58px;
 					}
 					&:hover {
 						@include box-shadow(rgba(black, .4) 0 0 5px);
