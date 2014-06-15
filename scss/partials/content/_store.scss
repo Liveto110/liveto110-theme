@@ -69,10 +69,12 @@
 }
 .woocommerce .cart-collaterals .cart_totals, 
 .woocommerce-page .cart-collaterals .cart_totals {
-    @media screen and (min-width: $screen-tablet) {
-        width: 60%;
-    }
     table {
+        @media screen and (min-width: $screen-tablet) {
+            table-layout: fixed;
+            width: 400px;
+            float: right;
+        }
         th {
             @media screen and (min-width: $screen-tablet) {
                 width: 40%;
