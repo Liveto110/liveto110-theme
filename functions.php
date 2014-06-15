@@ -97,7 +97,7 @@ add_action( 'after_setup_theme', 'liveto110_setup' );
 function liveto110_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Right Sidebar', 'liveto110' ),
-		'id'            => 'sidebar-1',
+		'id'            => 'sidebar-right',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
