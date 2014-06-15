@@ -4122,13 +4122,13 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 /* line 225, ../scss/partials/content/_template_homepage.scss */
 #intro .home-slide .content-wrap .complex-layout .blurb:hover { -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px; -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px; box-shadow: rgba(0, 0, 0, 0.4) 0 0 5px; }
 /* line 235, ../scss/partials/content/_template_homepage.scss */
-#intro .flex-control-nav { bottom: -30px; }
+#intro .flex-control-nav { bottom: -10px; }
 
 /* line 240, ../scss/partials/content/_template_homepage.scss */
 .section-title { font-weight: bold !important; }
 
 /* line 244, ../scss/partials/content/_template_homepage.scss */
-#about-liveto110 { background: #f8faf3; padding-top: 48px; padding-bottom: 48px; }
+#about-liveto110 { background: #f8faf3; padding-top: 16px; padding-bottom: 48px; }
 /* line 248, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .section-title { text-transform: uppercase; font-size: 30px; font-weight: bold; }
 /* line 253, ../scss/partials/content/_template_homepage.scss */
