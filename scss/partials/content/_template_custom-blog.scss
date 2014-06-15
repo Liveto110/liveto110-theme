@@ -1,0 +1,240 @@
+/* --- Full Width Page Template --- */
+#custom-blog-template {
+	.blog-roll {}
+	.featured-post-wrap {
+		.featured-post {
+			position: relative;
+			> img {}
+			.img-block {
+				position: absolute;
+				z-index: 1;
+				height: 100%;
+				width: 100%;
+			}
+			.post-content {
+				position: relative;
+				z-index: 2;
+				padding-top: $padding-large-vertical;
+				padding-bottom: $padding-large-vertical;
+				@media screen and (min-width: $screen-tablet) {
+					padding-top: $padding-large-vertical * 2;
+					padding-bottom: $padding-large-vertical * 2;
+				}
+			}
+			.post-header {
+				text-align: right;
+				margin: 0;
+				@include clearfix;
+				.post-title {
+					display: block;
+					background: rgba(white, .6);
+					font-family: $quicksand;
+					font-weight: 300;
+					text-transform: uppercase;
+					margin: 0;
+					padding: 0 $padding-small-horizontal;
+					@media screen and (min-width: $screen-tablet) {
+						font-size: 48px;
+					}
+					@media screen and (min-width: $screen-desktop) {
+						font-size: 60px;
+					}
+					@media screen and (min-width: $screen-lg-desktop) {
+						font-size: 72px;
+					}
+					a {
+						color: #000;
+					}
+				}
+				.post-metadata {
+					@include clearfix;
+					background: rgba(black, .8);
+					display: block;
+					margin: $padding-small-vertical 0 0 0;
+					padding: 0 $padding-small-horizontal;
+					@media screen and (min-width: $screen-tablet) {
+						font-size: 18px;
+						margin-top: $padding-large-vertical;
+					}
+					@media screen and (min-width: $screen-desktop) {
+						font-size: 22px;
+					}
+					@media screen and (min-width: $screen-lg-desktop) {
+						font-size: 27px;
+					}
+				}
+			}
+		}
+	}
+	.posts-wrap {
+		margin-top: $padding-large-vertical;
+		@media screen and (min-width: $screen-tablet) {
+			margin-top: $padding-large-vertical * 2;
+		}
+		@media screen and (min-width: $screen-desktop) {
+			margin-top: $padding-large-vertical * 3;
+		}
+		@media screen and (min-width: $screen-lg-desktop) {
+			margin-top: $padding-large-vertical * 4;
+		}
+		.post {
+			@include clearfix;
+			margin: 0 0 $padding-small-vertical 0;
+			padding: 0 0 $padding-small-vertical 0;
+			border-bottom: 1px dotted $hr-border;
+			&:last-child {
+				border-bottom: 0;
+				padding-bottom: 0;
+			}
+			@media screen and (min-width: $screen-tablet) {
+				margin-bottom: $padding-large-vertical;
+				padding-bottom: 0;
+				border-bottom: 0;
+			}
+			@media screen and (min-width: $screen-desktop) {
+				margin-bottom: $padding-large-vertical * 2;
+			}
+			@media screen and (min-width: $screen-lg-desktop) {
+				margin-bottom: $padding-large-vertical * 4;
+			}
+			.image-wrap {
+				width: 20%;
+				height: 60px;
+				float: left;
+				@media screen and (min-width: $screen-tablet) {
+					width: 30%;
+					height: 80px;
+				}
+				@media screen and (min-width: $screen-desktop) {
+					height: 120px;
+				}
+				@media screen and (min-width: $screen-lg-desktop) {
+					width: 40%;
+					height: 160px;
+				}
+				.img-block {
+					height: 100%;
+					width: 100%;
+					background-color: transparent;
+					background-repeat: no-repeat;
+					background-position: center center;
+					@include background-size(cover);
+				}
+			}
+			.content-wrap {
+				width: 80%;
+				height: 60px;
+				float: left;
+				@media screen and (min-width: $screen-tablet) {
+					width: 70%;
+					height: auto;
+				}
+				@media screen and (min-width: $screen-lg-desktop) {
+					width: 60%;
+				}
+			}
+			.fullwidth-content-wrap {
+				.post-header {
+					.post-title {
+						margin-left: 0;
+					}
+				}
+				.entry {
+					margin-left: 0;
+				}
+			}
+			.post-header {
+				.post-title {
+					margin: 0;
+					padding: 0;
+					font-size: 14px;
+					line-height: 20px;
+					margin-left: $padding-small-horizontal;
+					text-transform: uppercase;
+					font-weight: normal;
+					font-family: $lato;
+					@media screen and (min-width: $screen-tablet) {
+						font-size: 16px;
+						line-height: 24px;
+					}
+					@media screen and (min-width: $screen-desktop) {
+						font-size: 18px;
+						line-height: 27px;
+						margin-left: $padding-base-horizontal;
+					}
+					@media screen and (min-width: $screen-lg-desktop) {
+						font-size: 22px;
+						line-height: 33px;
+						margin-left: $padding-large-horizontal;
+					}
+				}
+			}
+			.entry {
+				@include clearfix;
+				display: none;
+				@media screen and (min-width: $screen-desktop) {
+					display: block;
+					margin-left: $padding-base-horizontal;
+				}
+				@media screen and (min-width: $screen-lg-desktop) {
+					display: block;
+					margin-left: $padding-large-horizontal;
+				}
+				p,
+				ul,
+				ol {
+					font-size: 14px;
+					line-height: 20px;
+					@media screen and (min-width: $screen-tablet) {
+						font-size: 15px;
+						line-height: 22px;
+					}
+					@media screen and (min-width: $screen-desktop) {
+						font-size: 16px;
+						line-height: 24px;
+					}
+					@media screen and (min-width: $screen-lg-desktop) {
+						font-size: 18px;
+						line-height: 27px;
+					}
+				}
+				.read-more-link {
+					display: block;
+					float: right;
+					text-transform: uppercase;
+					font-family: $lato;
+					font-size: 12px;
+					@media screen and (min-width: $screen-desktop) {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+	#nav-posts {
+		@include clearfix;
+		margin-top: $padding-large-vertical;
+		padding-top: $padding-large-vertical;
+		margin-bottom: $padding-large-vertical;
+		padding-bottom: $padding-large-vertical;
+		.prev {
+			float: left;
+			width: 50%;
+			text-align: left;
+			a {
+				display: inline-block;
+			}
+		}
+		.next {
+			float: right;
+			width: 50%;
+			text-align: right;
+			a {
+				display: inline-block;
+			}
+		}
+	}
+	#secondary {
+		margin-top: 0;
+	}
+}

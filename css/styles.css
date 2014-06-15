@@ -1,12 +1,12 @@
 /*
 Syntax error: Invalid CSS after "...nd (min-width: ": expected expression (e.g. 1px, bold), was "#screen-tablet) {"
         on line 59 of C:/Users/Angel/Desktop/liveto110-theme/scss/partials/content/_store.scss
-        from line 19 of C:/Users/Angel/Desktop/liveto110-theme/scss/_content.scss
+        from line 20 of C:/Users/Angel/Desktop/liveto110-theme/scss/_content.scss
         from line 12 of C:/Users/Angel/Desktop/liveto110-theme/scss/styles.scss
 
 Backtrace:
 C:/Users/Angel/Desktop/liveto110-theme/scss/partials/content/_store.scss:59
-C:/Users/Angel/Desktop/liveto110-theme/scss/_content.scss:19
+C:/Users/Angel/Desktop/liveto110-theme/scss/_content.scss:20
 C:/Users/Angel/Desktop/liveto110-theme/scss/styles.scss:12
 c:/program files/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/scss/parser.rb:1129:in `expected'
 c:/program files/scout/vendor/gems/gems/sass-3.2.1/lib/sass/../sass/script/lexer.rb:199:in `expected!'
@@ -116,4 +116,4 @@ c:\program files\scout\bin\compass:12:in `(root)'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"...nd (min-width: \": expected expression (e.g. 1px, bold), was \"#screen-tablet) {\"\A         on line 59 of C:/Users/Angel/Desktop/liveto110-theme/scss/partials/content/_store.scss\A         from line 19 of C:/Users/Angel/Desktop/liveto110-theme/scss/_content.scss\A         from line 12 of C:/Users/Angel/Desktop/liveto110-theme/scss/styles.scss"; }
+  content: "Syntax error: Invalid CSS after \"...nd (min-width: \": expected expression (e.g. 1px, bold), was \"#screen-tablet) {\"\A         on line 59 of C:/Users/Angel/Desktop/liveto110-theme/scss/partials/content/_store.scss\A         from line 20 of C:/Users/Angel/Desktop/liveto110-theme/scss/_content.scss\A         from line 12 of C:/Users/Angel/Desktop/liveto110-theme/scss/styles.scss"; }

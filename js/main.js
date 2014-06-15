@@ -21,9 +21,10 @@ jQuery( document ).ready( function($) {
 		pauseOnHover: true,
 		slideshow: false,
 	});
-	$('#intro .flexslider .simple-layout .slide-header .header-title').arctext({radius: 65});
-	console.log($('#intro .flexslider .complex-layout').parent('content-wrap')); //.css('background', 'red');
-
+	$('#intro .flexslider .simple-layout .slide-header .header-title').arctext({
+		radius: 80
+	});
+	
 	// Videos Page Slideshow
 	// The slider being synced must be initialized first
 	$('#videos-page-template #videos-carousel').flexslider({

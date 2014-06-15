@@ -17,16 +17,16 @@
 		position: relative;
 		@media screen and (min-width: $screen-desktop) {}
 		@media screen and (min-width: $screen-lg-desktop) {}
-			.img-block {
-				position: absolute;
-				z-index: 1;
-				height: 100%;
-				width: 100%;
-				background-color: transparent;
-				background-repeat: no-repeat;
-				background-position: top right;
-				@include background-size(cover);
-			}
+		.img-block {
+			position: absolute;
+			z-index: 1;
+			height: 100%;
+			width: 100%;
+			background-color: transparent;
+			background-repeat: no-repeat;
+			background-position: top right;
+			@include background-size(cover);
+		}
 		.content-wrap {
 			position: relative;	
 			z-index: 2;
@@ -52,8 +52,8 @@
 					.header-title {
 						margin: 0;
 						padding: 0;
-						font-size: 14px;
-						line-height: 20px;
+						font-size: 12px;
+						line-height: 18px;
 						font-weight: bold;
 						text-transform: uppercase;
 						color: #00443b;
@@ -72,8 +72,8 @@
 							margin-top: $padding-large-vertical * 1.5;
 						}
 						@media screen and (min-width: $screen-lg-desktop) {
-							font-size: 24px;
-							line-height: 36px;
+							font-size: 27px;
+							line-height: 40px;
 							margin-bottom: $padding-large-vertical * 2;
 							margin-top: $padding-large-vertical * 2;
 						}
@@ -86,20 +86,20 @@
 						font-weight: bold;
 						text-transform: uppercase;
 						color: #00443b;
-						margin-top: $padding-small-vertical;
+						margin-top: $padding-small-vertical * 2;
 						@media screen and (min-width: $screen-tablet) {
-							font-size: 18px;
-							line-height: 27px;
+							font-size: 20px;
+							line-height: 30px;
 							margin-top: $padding-large-vertical;
 						}
 						@media screen and (min-width: $screen-desktop) {
-							font-size: 22px;
-							line-height: 33px;
+							font-size: 24px;
+							line-height: 36px;
 							margin-top: $padding-large-vertical * 1.5;
 						}
 						@media screen and (min-width: $screen-lg-desktop) {
-							font-size: 24px;
-							line-height: 36px;
+							font-size: 30px;
+							line-height: 45px;
 							margin-top: $padding-large-vertical * 2;
 						}
 						span {
@@ -123,31 +123,34 @@
 						margin-top: $padding-large-vertical * 2;
 					}
 					@media screen and (min-width: $screen-lg-desktop) {
-						max-width: 40%;
+						max-width: 50%;
 						margin-top: $padding-large-vertical * 1.5;
 					}
 					.subheader-title {
 						margin: 0;
-						padding: $padding-small-vertical / 2 0;
+						padding: $padding-small-vertical / 4 0;
 						text-transform: uppercase;
 						font-weight: bold;
 						font-style: italic;
-						font-size: 12px;					
+						font-size: 13px;
+						line-height: 18px;					
 						color: $brand-primary;
 						@media screen and (min-width: $screen-tablet) {
 							padding-top: $padding-small-vertical;
 							padding-bottom: $padding-small-vertical;
-							font-size: 16px;
+							font-size: 19px;
+							line-height: 27px;
 						}
 						@media screen and (min-width: $screen-desktop) {
 							padding-top: $padding-large-vertical;
 							padding-bottom: $padding-large-vertical;
-							font-size: 18px;
+							font-size: 22px;
+							line-height: 30px;
 						}
 						@media screen and (min-width: $screen-lg-desktop) {
 							padding-top: $padding-large-vertical;
 							padding-bottom: $padding-large-vertical;
-							font-size: 22px;
+							font-size: 27px;
 						}
 					}
 				}
@@ -156,21 +159,21 @@
 						.content-title {
 							margin: 0;
 							padding: 0;
-							font-size: 13px;
+							font-size: 11px;
 							font-weight: bold;
 							text-transform: uppercase;
 							color: #00443b;
 							margin-top: $padding-base-vertical;
 							@media screen and (min-width: $screen-tablet) {
-								font-size: 15px;
+								font-size: 17px;
 								margin-top: $padding-large-vertical * 2;
 							}
 							@media screen and (min-width: $screen-desktop) {
-								font-size: 17px;
+								font-size: 19px;
 								margin-top: $padding-large-vertical * 3;
 							}
 							@media screen and (min-width: $screen-lg-desktop) {
-								font-size: 18px;
+								font-size: 21px;
 								margin-top: $padding-large-vertical * 4;
 							}
 						}

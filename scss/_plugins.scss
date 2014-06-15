@@ -45,8 +45,64 @@
     }
 }
 .accordion-content {
-	padding-bottom: $padding-small-vertical;
-	@media screen and (min-width: $screen-tablet) {}
-	@media screen and (min-width: $screen-desktop) {}
-	@media screen and (min-width: $screen-lg-desktop) {}
+	padding-bottom: $padding-small-vertical;	
+}
+
+/* --- Contextual Related Posts --- */
+.suggested-reading-wrapper {
+    @include clearfix;
+    .crp_related {
+        @include clearfix;
+        margin: 0;
+        padding: 0;
+        .sr-title {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            line-height: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $brand-primary;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: block;
+            li {
+                display: block;
+                width: 50%;
+                float: left;
+                margin-bottom: $padding-base-vertical;
+                @media screen and (min-width: $screen-desktop) {
+                    margin-bottom: $padding-large-vertical;
+                }
+                a {
+                    display: block;
+                    margin-right: $padding-base-vertical / 2;
+                    @include box-shadow(rgba(black, .1) 0 0 5px);
+                    @include transition(all .2s ease-in-out);
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        @include box-shadow(rgba(black, .4) 0 1px 5px);
+                    }
+                    @media screen and (min-width: $screen-desktop) {
+                        margin-right: $padding-large-vertical / 2;
+                    }
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+                &:nth-of-type(even) a {
+                    margin-left: $padding-base-vertical / 2;
+                    margin-right: 0;
+                    @media screen and (min-width: $screen-desktop) {
+                        margin-left: $padding-large-vertical / 2;
+                    }
+                }
+            }
+        }
+    }
 }

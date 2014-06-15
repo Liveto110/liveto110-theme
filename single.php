@@ -55,6 +55,10 @@ get_header(); ?>
                                 </div>
 							</div><!--Author Info-->
 
+							<section class="suggested-reading-wrapper">
+								<?php if ( function_exists( 'echo_ald_crp' ) ) echo_ald_crp(); ?>
+							</section><!-- /.suggested-reading-wrapper -->
+
 							<?php
 								// If comments are open or we have at least one comment, load up the comment template
 								if ( comments_open() || '0' != get_comments_number() ) :

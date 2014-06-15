@@ -1,10 +1,23 @@
 /* --- Entry Meta --- */
 .entry-meta {
-	color: $text-color;
+	color: rgba($text-color, .6);
 	font-size: 12px;
+	line-height: 18px;
 	font-weight: 400;
+	@media screen and (min-width: $screen-tablet) {
+		font-size: 13px;
+		line-height: 18px;
+	}
+	@media screen and (min-width: $screen-desktop) {
+		font-size: 15px;
+		line-height: 20px;
+	}
+	@media screen and (min-width: $screen-desktop) {
+		font-size: 16px;
+		line-height: 24px;
+	}
 	a {
-		color: $text-color;
+		color: rgba($text-color, .6);
 		@include transition(all .3s ease-in-out);
 		&:hover,
 		&:focus,
