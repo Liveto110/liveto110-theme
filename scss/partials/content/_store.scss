@@ -67,3 +67,9 @@
         display: block !important;
     }
 }
+.woocommerce .cart-collaterals .cart_totals, 
+.woocommerce-page .cart-collaterals .cart_totals {
+    @media screen and (min-width: $screen-tablet) {
+        width: 60%;
+    }
+}

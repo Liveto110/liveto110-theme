@@ -4883,6 +4883,9 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 /* line 66, ../scss/partials/content/_store.scss */
 .shipping_calculator .shipping-calculator-form { display: block !important; }
 
+@media screen and (min-width: 768px) { /* line 71, ../scss/partials/content/_store.scss */
+  .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals { width: 60%; } }
+
 /* --- Signup Section --- */
 /* line 2, ../scss/partials/footer/_signup-section.scss */
 #signup-section { background-position: center center; background-repeat: no-repeat; background-attachment: fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding-top: 48px; padding-bottom: 48px; }
