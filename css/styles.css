@@ -4977,13 +4977,15 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 /* line 66, ../scss/partials/content/_store.scss */
 .shipping_calculator .shipping-calculator-form { display: block !important; }
 
-@media screen and (min-width: 768px) { /* line 72, ../scss/partials/content/_store.scss */
+@media screen and (min-width: 768px) { /* line 71, ../scss/partials/content/_store.scss */
+  .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals { width: 60%; } }
+@media screen and (min-width: 768px) { /* line 75, ../scss/partials/content/_store.scss */
   .woocommerce .cart-collaterals .cart_totals table, .woocommerce-page .cart-collaterals .cart_totals table { table-layout: fixed; width: 400px; float: right; } }
-@media screen and (min-width: 768px) { /* line 78, ../scss/partials/content/_store.scss */
+@media screen and (min-width: 768px) { /* line 81, ../scss/partials/content/_store.scss */
   .woocommerce .cart-collaterals .cart_totals table th, .woocommerce-page .cart-collaterals .cart_totals table th { width: 40%; } }
-@media screen and (min-width: 768px) { /* line 83, ../scss/partials/content/_store.scss */
+@media screen and (min-width: 768px) { /* line 86, ../scss/partials/content/_store.scss */
   .woocommerce .cart-collaterals .cart_totals table td, .woocommerce-page .cart-collaterals .cart_totals table td { width: 60%; } }
-@media screen and (min-width: 768px) { /* line 89, ../scss/partials/content/_store.scss */
+@media screen and (min-width: 768px) { /* line 92, ../scss/partials/content/_store.scss */
   .woocommerce .cart-collaterals .cart_totals p, .woocommerce-page .cart-collaterals .cart_totals p { clear: both; } }
 
 /* --- Signup Section --- */
