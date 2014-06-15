@@ -86,4 +86,9 @@
             }
         }
     }
+    p {
+        @media screen and (min-width: $screen-tablet) {
+            clear: both;
+        }
+    }
 }
