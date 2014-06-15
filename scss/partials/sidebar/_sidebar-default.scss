@@ -38,7 +38,8 @@
         @media screen and (max-width: $screen-phone) {
             display: block !important;
         }
-        #menu-product-categories {
+        #menu-product-categories,
+        #menu-category-menu {
             li {
                 a {
                     -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
