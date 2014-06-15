@@ -4166,7 +4166,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 992px) and (max-width: 1199px) { /* line 316, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb { height: 260px; } }
 @media screen and (min-width: 1200px) { /* line 316, ../scss/partials/content/_template_homepage.scss */
-  #about-liveto110 .blurbs-wrap .blurb { height: 320px; } }
+  #about-liveto110 .blurbs-wrap .blurb { height: 290px; } }
 /* line 332, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .blurb-header { padding-top: 5px; padding-left: 10px; }
 @media screen and (min-width: 768px) { /* line 332, ../scss/partials/content/_template_homepage.scss */
@@ -4198,7 +4198,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 992px) { /* line 398, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb-entry { padding: 20px 16px; } }
 @media screen and (min-width: 1200px) { /* line 398, ../scss/partials/content/_template_homepage.scss */
-  #about-liveto110 .blurbs-wrap .blurb-entry { padding: 30px 24px; } }
+  #about-liveto110 .blurbs-wrap .blurb-entry { padding: 15px 24px; } }
 /* line 412, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .blurb-entry p { font-size: 14px; line-height: 20px; }
 @media screen and (min-width: 768px) { /* line 412, ../scss/partials/content/_template_homepage.scss */
