@@ -21,56 +21,9 @@ get_header(); ?>
 							<?php the_content(); ?>
 						</div><!-- /.page-content -->
 
-						<?php
-							$args = array(
-								'post_type' => 'video',
-								'posts_per_page' => '-1'
-							);
-							$videos = new WP_Query( $args );
-						?>
-						<?php if ( $videos->have_posts()) : ?>
-							<div id="videos-slider" class="flexslider">														
-								<ul class="slides">
-									<?php while ( $videos->have_posts()) : $videos->the_post(); ?>
-										<li>
-											<article <?php post_class( 'video-slide' ); ?>>
-												<div class="video-wrapper">
-													<?php the_field('video_embed_code'); ?>
-												</div><!-- /.video-wrapper -->
-
-												<div class="video-content">
-													<header class="video-header">
-														<h1 class="video-title h4"><?php the_title(); ?></h1><!-- /.video-title -->
-													</header><!-- /.video-header -->
-
-													<div class="video-entry">
-														<?php the_content(); ?>
-													</div><!-- /.video-entry -->
-												</div><!-- /.video-content -->
-											</article><!-- /.video-slide -->
-										</li>
-									<?php endwhile; ?>
-								</ul><!-- /.slides -->
-							</div><!-- /#videos-slider .flexslider -->
-
-							<div id="videos-carousel" class="flexslider">
-								<ul class="slides">
-									<?php while ( $videos->have_posts()) : $videos->the_post(); ?>
-										<li>
-											<?php
-												$slide_img = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'videos-carousel-thumbnail' );
-												$slide_img = $slide_img['0'];
-											?>
-											<img src="<?php echo $slide_img; ?>" class="img-responsive">
-											<header class="thumbnail-header">
-												<h1 class="thumbnail-title"><?php the_title(); ?></h1>
-											</header><!-- /.thumbnail-header -->
-										</li>
-									<?php endwhile; ?>
-									<?php wp_reset_postdata(); ?>
-								</ul>
-							</div><!-- /#videos-carousel .flexslider -->
-						<?php endif; ?>
+						<div id="youtube-channel-gallery-wrapper" class="clearfix">
+							<?php dynamic_sidebar( 'sidebar-youtube' ); ?>
+						</div><!-- /#youtube-channel-gallery-wrapper -->
 					</main><!-- #main -->
 				</div><!-- #primary -->
 			</div><!-- /.container -->
