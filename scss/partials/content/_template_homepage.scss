@@ -33,18 +33,14 @@
 			@include clearfix;
 			.simple-layout {
 				text-align: center;
-				padding-top: $padding-large-vertical;
 				padding-bottom: $padding-large-vertical;
 				@media screen and (min-width: $screen-tablet) {
-					padding-top: $padding-large-vertical * 2;
 					padding-bottom: $padding-large-vertical * 2;
 				}
 				@media screen and (min-width: $screen-desktop) {
-					padding-top: $padding-large-vertical * 3;
 					padding-bottom: $padding-large-vertical * 3;
 				}
 				@media screen and (min-width: $screen-lg-desktop) {
-					padding-top: $padding-large-vertical * 4;
 					padding-bottom: $padding-large-vertical * 4;
 				}
 				.slide-header {

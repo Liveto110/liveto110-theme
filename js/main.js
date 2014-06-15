@@ -19,7 +19,8 @@ jQuery( document ).ready( function($) {
 		directionNav: false,
 		animation: "fade",
 		pauseOnHover: true,
-		slideshow: false,
+		slideshow: true,
+        slideshowSpeed: 5000
 	});
 	$('#intro .flexslider .simple-layout .slide-header .header-title').arctext({
 		radius: 80
