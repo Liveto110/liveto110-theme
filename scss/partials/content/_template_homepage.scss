@@ -320,13 +320,13 @@
 			background: #fff;
 			position: relative;
 			@media screen and (min-width: $screen-tablet) and (max-width: $screen-desktop - 1) {
-				height: 200px;
+				height: 160px;
 			}
 			@media screen and (min-width: $screen-desktop) and (max-width: $screen-lg-desktop - 1) {
 				height: 260px;
 			}
 			@media screen and (min-width: $screen-lg-desktop) {
-				height: 290px;
+				height: 280px;
 			}
 		}
 		.blurb-header {
@@ -407,7 +407,7 @@
 				padding: $padding-large-vertical * 2 $padding-large-horizontal;
 			}
 			@media screen and (min-width: $screen-lg-desktop) {
-				padding: $padding-large-vertical * 1.5 $padding-large-horizontal * 1.5;
+				padding: $padding-large-vertical $padding-large-horizontal * 1.5;
 			}
 			p {
 				font-size: 14px;
