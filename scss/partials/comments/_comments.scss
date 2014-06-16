@@ -1,0 +1,118 @@
+/* --- Comments --- */
+#comments {
+	@include clearfix;
+	margin-top: $padding-large-vertical * 2;
+	.section-header {
+		margin: 0;
+		padding: 0;
+		.section-title {
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			line-height: 24px;
+			text-transform: uppercase;
+			border-bottom: 1px solid $hr-border;
+		}
+	}
+	.commentlist {
+		margin-top: $padding-large-vertical;
+		padding-top: $padding-small-horizontal;
+		background: rgba(black, .05);
+		padding-left: $padding-small-horizontal;
+		padding-right: $padding-small-horizontal;
+		.comment {
+			background: transparent;			
+			margin: 0;
+			padding: 0;
+			@include clearfix;
+			margin-bottom: $padding-small-vertical;
+			@media screen and (min-width: $screen-tablet) {
+				margin-bottom: $padding-base-vertical;
+			}
+			@media screen and (min-width: $screen-desktop) {
+				margin-bottom: $padding-large-vertical;
+			}
+			@media screen and (min-width: $screen-lg-desktop) {
+				margin-bottom: $padding-large-vertical * 2;
+			}
+			.col-xs-2 {
+				padding-right: $padding-small-vertical;
+			}
+			.col-xs-10 {
+				padding-left: $padding-small-vertical;
+			}
+			.avatar-wrap {
+				@include clearfix;
+				img.avatar {
+					max-width: 100%;
+					height: auto;
+					@include border-radius(50%);
+					@media screen and (min-width: $screen-desktop) {
+						max-width: 80%;
+						float: right;
+					}
+				}
+			}
+			.comment-body {
+				background: #fff;
+				@include box-shadow(rgba(black, .1) 0 1px 5px);
+				padding: 0;
+			}
+			.comment-author.vcard {
+				position: relative;
+				.reply {
+					position: absolute;
+					right: 0;
+					top: 0;
+					margin: 0;
+					padding: 0;
+					.comment-reply-link {
+						display: block;
+						@include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+						@include button-size(3px, 11px, 10px, 15px, 0);
+						font-family: $lato;
+						text-transform: uppercase;
+						font-weight: bold;
+						border: 0;
+						text-decoration: none;
+						@include transition(all .2s ease-in-out);
+					}
+				}
+				.comment-info {
+					padding-left: $padding-small-horizontal;
+					padding-top: $padding-small-vertical;
+					.fn {
+						font-family: $quicksand;
+						font-weight: bold;
+						font-size: 14px;
+						line-height: 20px;
+						text-transform: uppercase;
+						display: block;
+						padding-right: 60px;
+						a {}
+					}
+					.comment-meta {
+						a {
+							font-size: 11px;
+							font-family: $lato;
+							color: lighten($text-color, 50);
+							&.comment-edit-link {
+								text-transform: uppercase;
+								margin-left: $padding-small-horizontal / 2;
+							}
+						}
+					}
+				}
+			}
+			.comment-entry {
+				padding: $padding-small-vertical $padding-small-horizontal;
+			}
+		}
+		.children {
+			.comment {}
+			.children {
+				.comment {}
+			}
+		}
+	}
+}

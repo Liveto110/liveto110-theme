@@ -53,14 +53,6 @@ function my_theme_register_required_plugins() {
 			'slug'      => 'woocommerce',
 			'required'  => true,
 		),
-
-		// WooCommerce
-		array(
-			'name'      => 'Disqus Comment System',
-			'slug'      => 'disqus-comment-system',
-			'required'  => false,
-		),
-
 	);
 
 	/**
