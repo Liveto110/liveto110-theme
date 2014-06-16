@@ -26,6 +26,8 @@
 			padding: 0;
 			@include clearfix;
 			margin-bottom: $padding-small-vertical;
+			position: relative;
+			z-index: 2;
 			@media screen and (min-width: $screen-tablet) {
 				margin-bottom: $padding-base-vertical;
 			}
@@ -112,6 +114,50 @@
 			.comment {}
 			.children {
 				.comment {}
+			}
+		}
+	}
+	#respond {
+		background: #fff;
+		position: relative;
+		z-index: 1;
+		top: -$padding-small-vertical;
+		padding: $padding-small-vertical $padding-small-horizontal;
+		margin-bottom: $padding-large-vertical;
+		@include box-shadow(rgba(black, .1) -1px 1px 5px);
+		.comment-reply-title {
+			font-size: 14px;
+			line-height: 20px;
+			margin: 0;
+			padding: 0;
+			text-transform: uppercase;
+			font-family: $quicksand;
+			font-weight: bold;
+			margin-bottom: $padding-small-vertical;
+			small {
+				font-size: 12px;
+				font-weight: bold;
+				a {
+					text-transform: capitalize;
+				}
+			}
+		}
+		.comment-form {
+			.comment-notes {}
+			.form-submit {
+				margin-bottom: 0;
+				#submit {
+					// display: block;
+					@include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+					@include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-small, $line-height-small, $border-radius-base);
+					font-family: $lato;
+					text-transform: uppercase;
+					font-weight: bold;
+					border: 0;
+					text-decoration: none;
+					@include transition(all .2s ease-in-out);
+					outline: 0;
+				}
 			}
 		}
 	}

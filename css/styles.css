@@ -5149,30 +5149,30 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 /* line 17, ../scss/partials/comments/_comments.scss */
 #comments .commentlist { margin-top: 10px; padding-top: 10px; background: rgba(0, 0, 0, 0.05); padding-left: 10px; padding-right: 10px; }
 /* line 23, ../scss/partials/comments/_comments.scss */
-#comments .commentlist .comment { background: transparent; margin: 0; padding: 0; overflow: hidden; *zoom: 1; margin-bottom: 5px; }
+#comments .commentlist .comment { background: transparent; margin: 0; padding: 0; overflow: hidden; *zoom: 1; margin-bottom: 5px; position: relative; z-index: 2; }
 @media screen and (min-width: 768px) { /* line 23, ../scss/partials/comments/_comments.scss */
   #comments .commentlist .comment { margin-bottom: 6px; } }
 @media screen and (min-width: 992px) { /* line 23, ../scss/partials/comments/_comments.scss */
   #comments .commentlist .comment { margin-bottom: 10px; } }
 @media screen and (min-width: 1200px) { /* line 23, ../scss/partials/comments/_comments.scss */
   #comments .commentlist .comment { margin-bottom: 20px; } }
-/* line 38, ../scss/partials/comments/_comments.scss */
+/* line 40, ../scss/partials/comments/_comments.scss */
 #comments .commentlist .comment .col-xs-2 { padding-right: 5px; }
-/* line 41, ../scss/partials/comments/_comments.scss */
+/* line 43, ../scss/partials/comments/_comments.scss */
 #comments .commentlist .comment .col-xs-10 { padding-left: 5px; }
-/* line 44, ../scss/partials/comments/_comments.scss */
-#comments .commentlist .comment .avatar-wrap { overflow: hidden; *zoom: 1; }
 /* line 46, ../scss/partials/comments/_comments.scss */
+#comments .commentlist .comment .avatar-wrap { overflow: hidden; *zoom: 1; }
+/* line 48, ../scss/partials/comments/_comments.scss */
 #comments .commentlist .comment .avatar-wrap img.avatar { max-width: 100%; height: auto; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; }
-@media screen and (min-width: 992px) { /* line 46, ../scss/partials/comments/_comments.scss */
+@media screen and (min-width: 992px) { /* line 48, ../scss/partials/comments/_comments.scss */
   #comments .commentlist .comment .avatar-wrap img.avatar { max-width: 80%; float: right; } }
-/* line 56, ../scss/partials/comments/_comments.scss */
+/* line 58, ../scss/partials/comments/_comments.scss */
 #comments .commentlist .comment .comment-body { background: #fff; -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 5px; -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 5px; box-shadow: rgba(0, 0, 0, 0.1) 0 1px 5px; padding: 0; }
-/* line 61, ../scss/partials/comments/_comments.scss */
-#comments .commentlist .comment .comment-author.vcard { position: relative; }
 /* line 63, ../scss/partials/comments/_comments.scss */
+#comments .commentlist .comment .comment-author.vcard { position: relative; }
+/* line 65, ../scss/partials/comments/_comments.scss */
 #comments .commentlist .comment .comment-author.vcard .reply { position: absolute; right: 0; top: 0; margin: 0; padding: 0; }
-/* line 69, ../scss/partials/comments/_comments.scss */
+/* line 71, ../scss/partials/comments/_comments.scss */
 #comments .commentlist .comment .comment-author.vcard .reply .comment-reply-link { display: block; color: white; background-color: #6db799; border-color: #5caf8d; padding: 3px 11px; font-size: 10px; line-height: 15px; border-radius: 0; font-family: "Lato", sans-serif; text-transform: uppercase; font-weight: bold; border: 0; text-decoration: none; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 /* line 15, ../scss/bootstrap/mixins/_buttons.scss */
 #comments .commentlist .comment .comment-author.vcard .reply .comment-reply-link:hover, #comments .commentlist .comment .comment-author.vcard .reply .comment-reply-link:focus, #comments .commentlist .comment .comment-author.vcard .reply .comment-reply-link:active, #comments .commentlist .comment .comment-author.vcard .reply .comment-reply-link.active, .open > #comments .commentlist .comment .comment-author.vcard .reply .comment-reply-link.dropdown-toggle { color: white; background-color: #50a180; border-color: #44896d; }
@@ -5182,16 +5182,36 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #comments .commentlist .comment .comment-author.vcard .reply .comment-reply-link.disabled, #comments .commentlist .comment .comment-author.vcard .reply .comment-reply-link.disabled:hover, #comments .commentlist .comment .comment-author.vcard .reply .comment-reply-link.disabled:focus, #comments .commentlist .comment .comment-author.vcard .reply .comment-reply-link.disabled:active, #comments .commentlist .comment .comment-author.vcard .reply .comment-reply-link.disabled.active, #comments .commentlist .comment .comment-author.vcard .reply .comment-reply-link[disabled], #comments .commentlist .comment .comment-author.vcard .reply .comment-reply-link[disabled]:hover, #comments .commentlist .comment .comment-author.vcard .reply .comment-reply-link[disabled]:focus, #comments .commentlist .comment .comment-author.vcard .reply .comment-reply-link[disabled]:active, #comments .commentlist .comment .comment-author.vcard .reply .comment-reply-link[disabled].active, fieldset[disabled] #comments .commentlist .comment .comment-author.vcard .reply .comment-reply-link, fieldset[disabled] #comments .commentlist .comment .comment-author.vcard .reply .comment-reply-link:hover, fieldset[disabled] #comments .commentlist .comment .comment-author.vcard .reply .comment-reply-link:focus, fieldset[disabled] #comments .commentlist .comment .comment-author.vcard .reply .comment-reply-link:active, fieldset[disabled] #comments .commentlist .comment .comment-author.vcard .reply .comment-reply-link.active { background-color: #6db799; border-color: #5caf8d; }
 /* line 38, ../scss/bootstrap/mixins/_buttons.scss */
 #comments .commentlist .comment .comment-author.vcard .reply .comment-reply-link .badge { color: #6db799; background-color: white; }
-/* line 81, ../scss/partials/comments/_comments.scss */
+/* line 83, ../scss/partials/comments/_comments.scss */
 #comments .commentlist .comment .comment-author.vcard .comment-info { padding-left: 10px; padding-top: 5px; }
-/* line 84, ../scss/partials/comments/_comments.scss */
+/* line 86, ../scss/partials/comments/_comments.scss */
 #comments .commentlist .comment .comment-author.vcard .comment-info .fn { font-family: "Quicksand", sans-serif; font-weight: bold; font-size: 14px; line-height: 20px; text-transform: uppercase; display: block; padding-right: 60px; }
-/* line 95, ../scss/partials/comments/_comments.scss */
+/* line 97, ../scss/partials/comments/_comments.scss */
 #comments .commentlist .comment .comment-author.vcard .comment-info .comment-meta a { font-size: 11px; font-family: "Lato", sans-serif; color: #b3b3b3; }
-/* line 99, ../scss/partials/comments/_comments.scss */
+/* line 101, ../scss/partials/comments/_comments.scss */
 #comments .commentlist .comment .comment-author.vcard .comment-info .comment-meta a.comment-edit-link { text-transform: uppercase; margin-left: 5px; }
-/* line 107, ../scss/partials/comments/_comments.scss */
+/* line 109, ../scss/partials/comments/_comments.scss */
 #comments .commentlist .comment .comment-entry { padding: 5px 10px; }
+/* line 120, ../scss/partials/comments/_comments.scss */
+#comments #respond { background: #fff; position: relative; z-index: 1; top: -5px; padding: 5px 10px; margin-bottom: 10px; -webkit-box-shadow: rgba(0, 0, 0, 0.1) -1px 1px 5px; -moz-box-shadow: rgba(0, 0, 0, 0.1) -1px 1px 5px; box-shadow: rgba(0, 0, 0, 0.1) -1px 1px 5px; }
+/* line 128, ../scss/partials/comments/_comments.scss */
+#comments #respond .comment-reply-title { font-size: 14px; line-height: 20px; margin: 0; padding: 0; text-transform: uppercase; font-family: "Quicksand", sans-serif; font-weight: bold; margin-bottom: 5px; }
+/* line 137, ../scss/partials/comments/_comments.scss */
+#comments #respond .comment-reply-title small { font-size: 12px; font-weight: bold; }
+/* line 140, ../scss/partials/comments/_comments.scss */
+#comments #respond .comment-reply-title small a { text-transform: capitalize; }
+/* line 147, ../scss/partials/comments/_comments.scss */
+#comments #respond .comment-form .form-submit { margin-bottom: 0; }
+/* line 149, ../scss/partials/comments/_comments.scss */
+#comments #respond .comment-form .form-submit #submit { color: white; background-color: #6db799; border-color: #5caf8d; padding: 6px 12px; font-size: 12px; line-height: 1.5; border-radius: 4px; font-family: "Lato", sans-serif; text-transform: uppercase; font-weight: bold; border: 0; text-decoration: none; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; outline: 0; }
+/* line 15, ../scss/bootstrap/mixins/_buttons.scss */
+#comments #respond .comment-form .form-submit #submit:hover, #comments #respond .comment-form .form-submit #submit:focus, #comments #respond .comment-form .form-submit #submit:active, #comments #respond .comment-form .form-submit #submit.active, .open > #comments #respond .comment-form .form-submit #submit.dropdown-toggle { color: white; background-color: #50a180; border-color: #44896d; }
+/* line 22, ../scss/bootstrap/mixins/_buttons.scss */
+#comments #respond .comment-form .form-submit #submit:active, #comments #respond .comment-form .form-submit #submit.active, .open > #comments #respond .comment-form .form-submit #submit.dropdown-toggle { background-image: none; }
+/* line 32, ../scss/bootstrap/mixins/_buttons.scss */
+#comments #respond .comment-form .form-submit #submit.disabled, #comments #respond .comment-form .form-submit #submit.disabled:hover, #comments #respond .comment-form .form-submit #submit.disabled:focus, #comments #respond .comment-form .form-submit #submit.disabled:active, #comments #respond .comment-form .form-submit #submit.disabled.active, #comments #respond .comment-form .form-submit #submit[disabled], #comments #respond .comment-form .form-submit #submit[disabled]:hover, #comments #respond .comment-form .form-submit #submit[disabled]:focus, #comments #respond .comment-form .form-submit #submit[disabled]:active, #comments #respond .comment-form .form-submit #submit[disabled].active, fieldset[disabled] #comments #respond .comment-form .form-submit #submit, fieldset[disabled] #comments #respond .comment-form .form-submit #submit:hover, fieldset[disabled] #comments #respond .comment-form .form-submit #submit:focus, fieldset[disabled] #comments #respond .comment-form .form-submit #submit:active, fieldset[disabled] #comments #respond .comment-form .form-submit #submit.active { background-color: #6db799; border-color: #5caf8d; }
+/* line 38, ../scss/bootstrap/mixins/_buttons.scss */
+#comments #respond .comment-form .form-submit #submit .badge { color: #6db799; background-color: white; }
 
 /* --- Plugin Styles --- */
 /* Accordion Shortcodes */
