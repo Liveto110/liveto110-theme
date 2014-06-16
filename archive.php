@@ -71,25 +71,15 @@ get_header(); ?>
 							<?php while ( have_posts() ) : the_post(); ?>
 								<?php if ($count == 1) { ?>
 									<article class="featured-post">
-										<?php
-											$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full-width-slide' );
-											$url = $thumb['0'];
-										?>
-										<?php if ('' != $url ) { ?>
-											<div class="img-block" style="background-image: url('<?php echo $url; ?>');"></div>
-										<?php } ?>
-
-										<div class="post-content">
-											<header class="post-header">
-												<h1 class="post-title">
-													<a href="<?php the_permalink(); ?>" class="permalink"><?php the_title(); ?></a><!-- /.permalink -->
-												</h1><!-- /.post-title -->
-
-												<div class="post-metadata">
-													<?php liveto110_posted_on(); ?>
-												</div>
-											</header><!-- /.post-header -->
-										</div><!-- /.post-content -->
+										<a href="<?php the_permalink(); ?>" class="permalink">
+											<?php
+												$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full-width-slide' );
+												$url = $thumb['0'];
+											?>
+											<?php if ('' != $url ) { ?>
+												<img src="<?php echo $url; ?>" class="img-responsive">
+											<?php } ?>
+										</a><!-- /.permalink -->
 									</article><!-- /.featured-post -->
 								<?php } ?>
 
