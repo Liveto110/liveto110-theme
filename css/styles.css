@@ -5192,17 +5192,37 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #comments .commentlist .comment .comment-author.vcard .comment-info .comment-meta a.comment-edit-link { text-transform: uppercase; margin-left: 5px; }
 /* line 109, ../scss/partials/comments/_comments.scss */
 #comments .commentlist .comment .comment-entry { padding: 5px 10px; }
-/* line 120, ../scss/partials/comments/_comments.scss */
-#comments #respond { background: #fff; position: relative; z-index: 1; top: -5px; padding: 5px 10px; margin-bottom: 10px; -webkit-box-shadow: rgba(0, 0, 0, 0.1) -1px 1px 5px; -moz-box-shadow: rgba(0, 0, 0, 0.1) -1px 1px 5px; box-shadow: rgba(0, 0, 0, 0.1) -1px 1px 5px; }
-/* line 128, ../scss/partials/comments/_comments.scss */
+/* line 119, ../scss/partials/comments/_comments.scss */
+#comments .commentlist #respond { background: #fff; position: relative; z-index: 1; top: -5px; padding: 5px 10px; margin-bottom: 10px; -webkit-box-shadow: rgba(0, 0, 0, 0.1) -1px 1px 5px; -moz-box-shadow: rgba(0, 0, 0, 0.1) -1px 1px 5px; box-shadow: rgba(0, 0, 0, 0.1) -1px 1px 5px; }
+/* line 127, ../scss/partials/comments/_comments.scss */
+#comments .commentlist #respond .comment-reply-title { font-size: 14px; line-height: 20px; margin: 0; padding: 0; text-transform: uppercase; font-family: "Quicksand", sans-serif; font-weight: bold; margin-bottom: 5px; }
+/* line 136, ../scss/partials/comments/_comments.scss */
+#comments .commentlist #respond .comment-reply-title small { font-size: 12px; font-weight: bold; }
+/* line 139, ../scss/partials/comments/_comments.scss */
+#comments .commentlist #respond .comment-reply-title small a { text-transform: capitalize; }
+/* line 146, ../scss/partials/comments/_comments.scss */
+#comments .commentlist #respond .comment-form .form-submit { margin-bottom: 0; }
+/* line 148, ../scss/partials/comments/_comments.scss */
+#comments .commentlist #respond .comment-form .form-submit #submit { color: white; background-color: #6db799; border-color: #5caf8d; padding: 6px 12px; font-size: 12px; line-height: 1.5; border-radius: 4px; font-family: "Lato", sans-serif; text-transform: uppercase; font-weight: bold; border: 0; text-decoration: none; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; outline: 0; }
+/* line 15, ../scss/bootstrap/mixins/_buttons.scss */
+#comments .commentlist #respond .comment-form .form-submit #submit:hover, #comments .commentlist #respond .comment-form .form-submit #submit:focus, #comments .commentlist #respond .comment-form .form-submit #submit:active, #comments .commentlist #respond .comment-form .form-submit #submit.active, .open > #comments .commentlist #respond .comment-form .form-submit #submit.dropdown-toggle { color: white; background-color: #50a180; border-color: #44896d; }
+/* line 22, ../scss/bootstrap/mixins/_buttons.scss */
+#comments .commentlist #respond .comment-form .form-submit #submit:active, #comments .commentlist #respond .comment-form .form-submit #submit.active, .open > #comments .commentlist #respond .comment-form .form-submit #submit.dropdown-toggle { background-image: none; }
+/* line 32, ../scss/bootstrap/mixins/_buttons.scss */
+#comments .commentlist #respond .comment-form .form-submit #submit.disabled, #comments .commentlist #respond .comment-form .form-submit #submit.disabled:hover, #comments .commentlist #respond .comment-form .form-submit #submit.disabled:focus, #comments .commentlist #respond .comment-form .form-submit #submit.disabled:active, #comments .commentlist #respond .comment-form .form-submit #submit.disabled.active, #comments .commentlist #respond .comment-form .form-submit #submit[disabled], #comments .commentlist #respond .comment-form .form-submit #submit[disabled]:hover, #comments .commentlist #respond .comment-form .form-submit #submit[disabled]:focus, #comments .commentlist #respond .comment-form .form-submit #submit[disabled]:active, #comments .commentlist #respond .comment-form .form-submit #submit[disabled].active, fieldset[disabled] #comments .commentlist #respond .comment-form .form-submit #submit, fieldset[disabled] #comments .commentlist #respond .comment-form .form-submit #submit:hover, fieldset[disabled] #comments .commentlist #respond .comment-form .form-submit #submit:focus, fieldset[disabled] #comments .commentlist #respond .comment-form .form-submit #submit:active, fieldset[disabled] #comments .commentlist #respond .comment-form .form-submit #submit.active { background-color: #6db799; border-color: #5caf8d; }
+/* line 38, ../scss/bootstrap/mixins/_buttons.scss */
+#comments .commentlist #respond .comment-form .form-submit #submit .badge { color: #6db799; background-color: white; }
+/* line 164, ../scss/partials/comments/_comments.scss */
+#comments #respond { background: #fff; position: relative; z-index: 1; top: -5px; padding: 5px 10px; margin-bottom: 10px; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+/* line 172, ../scss/partials/comments/_comments.scss */
 #comments #respond .comment-reply-title { font-size: 14px; line-height: 20px; margin: 0; padding: 0; text-transform: uppercase; font-family: "Quicksand", sans-serif; font-weight: bold; margin-bottom: 5px; }
-/* line 137, ../scss/partials/comments/_comments.scss */
+/* line 181, ../scss/partials/comments/_comments.scss */
 #comments #respond .comment-reply-title small { font-size: 12px; font-weight: bold; }
-/* line 140, ../scss/partials/comments/_comments.scss */
+/* line 184, ../scss/partials/comments/_comments.scss */
 #comments #respond .comment-reply-title small a { text-transform: capitalize; }
-/* line 147, ../scss/partials/comments/_comments.scss */
+/* line 191, ../scss/partials/comments/_comments.scss */
 #comments #respond .comment-form .form-submit { margin-bottom: 0; }
-/* line 149, ../scss/partials/comments/_comments.scss */
+/* line 193, ../scss/partials/comments/_comments.scss */
 #comments #respond .comment-form .form-submit #submit { color: white; background-color: #6db799; border-color: #5caf8d; padding: 6px 12px; font-size: 12px; line-height: 1.5; border-radius: 4px; font-family: "Lato", sans-serif; text-transform: uppercase; font-weight: bold; border: 0; text-decoration: none; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; outline: 0; }
 /* line 15, ../scss/bootstrap/mixins/_buttons.scss */
 #comments #respond .comment-form .form-submit #submit:hover, #comments #respond .comment-form .form-submit #submit:focus, #comments #respond .comment-form .form-submit #submit:active, #comments #respond .comment-form .form-submit #submit.active, .open > #comments #respond .comment-form .form-submit #submit.dropdown-toggle { color: white; background-color: #50a180; border-color: #44896d; }
