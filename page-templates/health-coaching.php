@@ -80,7 +80,7 @@ get_header(); ?>
 
 															<div class="table-footer">
 																<div class="button-wrap text-center">
-																	<?php echo '<a href="' . $product->add_to_cart_url() . '" rel="nofollow" data-product_id="' . $product->id . '" data-product_sku="' . $product->get_sku() . '" class="btn btn-primary">Get Started!</a>'; ?>
+																	<?php echo '<a href="' . get_the_permalink() . '" class="btn btn-primary">Get Started!</a>'; ?>
 																</div><!-- /.button-wrap -->
 															</div><!-- /.table-footer -->
 														</div><!-- /.pricing-table -->
@@ -107,7 +107,7 @@ get_header(); ?>
 
 															<div class="table-footer">
 																<div class="button-wrap text-center">
-																	<?php echo '<a href="' . $product->add_to_cart_url() . '" rel="nofollow" data-product_id="' . $product->id . '" data-product_sku="' . $product->get_sku() . '" class="btn btn-primary">Get Started!</a>'; ?>
+																	<?php echo '<a href="' . get_the_permalink() . '" class="btn btn-primary">Get Started!</a>'; ?>
 																</div><!-- /.button-wrap -->
 															</div><!-- /.table-footer -->
 														</div><!-- /.pricing-table -->
