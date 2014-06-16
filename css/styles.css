@@ -5020,8 +5020,6 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 /* --- Sidebar - Default --- */
 /* line 2, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area { background: #fff; overflow: hidden; *zoom: 1; border: 1px solid rgba(0, 0, 0, 0.1); color: #333333; padding: 24px 15px 0; -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px; -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px; box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px; /* List Style Widgets*/ /* Recent Posts Widget */ /* RSS Widget */ /* Text Widget */ }
-@media screen and (min-width: 768px) { /* line 2, ../scss/partials/sidebar/_sidebar-default.scss */
-  #secondary.widget-area { margin-top: 20px; } }
 /* line 12, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget { font-size: 16px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; margin-bottom: 48px; width: 100%; word-wrap: break-word; display: block !important; }
 /* line 20, ../scss/partials/sidebar/_sidebar-default.scss */
