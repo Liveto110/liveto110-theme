@@ -39,35 +39,19 @@
 			}
 			.image-wrap {
 				width: 20%;
-				height: 60px;
 				float: left;
 				@media screen and (min-width: $screen-tablet) {
 					width: 30%;
-					height: 80px;
-				}
-				@media screen and (min-width: $screen-desktop) {
-					height: 120px;
 				}
 				@media screen and (min-width: $screen-lg-desktop) {
 					width: 40%;
-					height: 160px;
-				}
-				.img-block {
-					height: 100%;
-					width: 100%;
-					background-color: transparent;
-					background-repeat: no-repeat;
-					background-position: center center;
-					@include background-size(cover);
 				}
 			}
 			.content-wrap {
 				width: 80%;
-				height: 60px;
 				float: left;
 				@media screen and (min-width: $screen-tablet) {
 					width: 70%;
-					height: auto;
 				}
 				@media screen and (min-width: $screen-lg-desktop) {
 					width: 60%;

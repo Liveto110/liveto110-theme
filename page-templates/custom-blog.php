@@ -57,7 +57,7 @@ get_header(); ?>
 								?>
 								<?php if ('' != $url ) { ?>
 									<div class="image-wrap">
-										<div class="img-block" style="background-image: url('<?php echo $url; ?>');"></div>
+										<img src="<?php echo $url; ?>" class="img-responsive">
 									</div>
 								<?php } ?>
 
