@@ -3,67 +3,7 @@
 	.blog-roll {}
 	.featured-post-wrap {
 		.featured-post {
-			position: relative;
 			> img {}
-			.img-block {
-				position: absolute;
-				z-index: 1;
-				height: 100%;
-				width: 100%;
-			}
-			.post-content {
-				position: relative;
-				z-index: 2;
-				padding-top: $padding-large-vertical;
-				padding-bottom: $padding-large-vertical;
-				@media screen and (min-width: $screen-tablet) {
-					padding-top: $padding-large-vertical * 2;
-					padding-bottom: $padding-large-vertical * 2;
-				}
-			}
-			.post-header {
-				text-align: right;
-				margin: 0;
-				@include clearfix;
-				.post-title {
-					display: block;
-					background: rgba(white, .6);
-					font-family: $quicksand;
-					font-weight: 300;
-					text-transform: uppercase;
-					margin: 0;
-					padding: 0 $padding-small-horizontal;
-					@media screen and (min-width: $screen-tablet) {
-						font-size: 48px;
-					}
-					@media screen and (min-width: $screen-desktop) {
-						font-size: 60px;
-					}
-					@media screen and (min-width: $screen-lg-desktop) {
-						font-size: 72px;
-					}
-					a {
-						color: #000;
-					}
-				}
-				.post-metadata {
-					@include clearfix;
-					background: rgba(black, .8);
-					display: block;
-					margin: $padding-small-vertical 0 0 0;
-					padding: 0 $padding-small-horizontal;
-					@media screen and (min-width: $screen-tablet) {
-						font-size: 18px;
-						margin-top: $padding-large-vertical;
-					}
-					@media screen and (min-width: $screen-desktop) {
-						font-size: 22px;
-					}
-					@media screen and (min-width: $screen-lg-desktop) {
-						font-size: 27px;
-					}
-				}
-			}
 		}
 	}
 	.posts-wrap {
