@@ -5034,52 +5034,64 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #secondary.widget-area .widget .widget-title, #secondary.widget-area .widget .widget-title a { color: #2b2b2b; font-size: 20px; font-weight: bold; text-transform: uppercase; }
 @media screen and (max-width: 767px) { /* line 12, ../scss/partials/sidebar/_sidebar-default.scss */
   #secondary.widget-area .widget { display: block !important; } }
+/* line 43, ../scss/partials/sidebar/_sidebar-default.scss */
+#secondary.widget-area .widget #menu-product-categories, #secondary.widget-area .widget #menu-category-menu { overflow: hidden; *zoom: 1; }
 /* line 45, ../scss/partials/sidebar/_sidebar-default.scss */
-#secondary.widget-area .widget #menu-product-categories li a, #secondary.widget-area .widget #menu-category-menu li a { -moz-box-shadow: inset 0px 1px 0px 0px #ffffff; -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff; box-shadow: inset 0px 1px 0px 0px #ffffff; background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf)); background: -moz-linear-gradient(center top, #ededed 5%, #dfdfdf 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf'); background-color: #ededed; -webkit-border-top-left-radius: 6px; -moz-border-radius-topleft: 6px; border-top-left-radius: 6px; -webkit-border-top-right-radius: 6px; -moz-border-radius-topright: 6px; border-top-right-radius: 6px; -webkit-border-bottom-right-radius: 6px; -moz-border-radius-bottomright: 6px; border-bottom-right-radius: 6px; -webkit-border-bottom-left-radius: 6px; -moz-border-radius-bottomleft: 6px; border-bottom-left-radius: 6px; text-indent: 0; border: 1px solid #dcdcdc; display: inline-block; height: 40px; line-height: 40px; width: 200px; text-decoration: none; text-align: center; text-shadow: 1px 1px 0px #ffffff; }
-/* line 74, ../scss/partials/sidebar/_sidebar-default.scss */
-#secondary.widget-area .widget #menu-product-categories li a:hover, #secondary.widget-area .widget #menu-category-menu li a:hover { background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed)); background: -moz-linear-gradient(center top, #dfdfdf 5%, #ededed 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed'); background-color: #dfdfdf; }
-/* line 80, ../scss/partials/sidebar/_sidebar-default.scss */
-#secondary.widget-area .widget #menu-product-categories li a:active, #secondary.widget-area .widget #menu-category-menu li a:active { position: relative; top: 1px; }
-/* line 96, ../scss/partials/sidebar/_sidebar-default.scss */
+#secondary.widget-area .widget #menu-product-categories li, #secondary.widget-area .widget #menu-category-menu li { display: block; float: left; border: 0; padding: 0; margin: 0; margin-right: 5px; margin-bottom: 5px; }
+@media screen and (min-width: 992px) { /* line 45, ../scss/partials/sidebar/_sidebar-default.scss */
+  #secondary.widget-area .widget #menu-product-categories li, #secondary.widget-area .widget #menu-category-menu li { margin-right: 6px; margin-bottom: 6px; } }
+/* line 57, ../scss/partials/sidebar/_sidebar-default.scss */
+#secondary.widget-area .widget #menu-product-categories li a, #secondary.widget-area .widget #menu-category-menu li a { color: white; background-color: #6db799; border-color: #5caf8d; padding: 5px 10px; font-size: 12px; line-height: 1.5; border-radius: 3px; font-family: "Lato", sans-serif; text-transform: uppercase; text-decoration: none; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; display: inline-block; }
+/* line 15, ../scss/bootstrap/mixins/_buttons.scss */
+#secondary.widget-area .widget #menu-product-categories li a:hover, #secondary.widget-area .widget #menu-product-categories li a:focus, #secondary.widget-area .widget #menu-product-categories li a:active, #secondary.widget-area .widget #menu-product-categories li a.active, .open > #secondary.widget-area .widget #menu-product-categories li a.dropdown-toggle, #secondary.widget-area .widget #menu-category-menu li a:hover, #secondary.widget-area .widget #menu-category-menu li a:focus, #secondary.widget-area .widget #menu-category-menu li a:active, #secondary.widget-area .widget #menu-category-menu li a.active, .open > #secondary.widget-area .widget #menu-category-menu li a.dropdown-toggle { color: white; background-color: #50a180; border-color: #44896d; }
+/* line 22, ../scss/bootstrap/mixins/_buttons.scss */
+#secondary.widget-area .widget #menu-product-categories li a:active, #secondary.widget-area .widget #menu-product-categories li a.active, .open > #secondary.widget-area .widget #menu-product-categories li a.dropdown-toggle, #secondary.widget-area .widget #menu-category-menu li a:active, #secondary.widget-area .widget #menu-category-menu li a.active, .open > #secondary.widget-area .widget #menu-category-menu li a.dropdown-toggle { background-image: none; }
+/* line 32, ../scss/bootstrap/mixins/_buttons.scss */
+#secondary.widget-area .widget #menu-product-categories li a.disabled, #secondary.widget-area .widget #menu-product-categories li a.disabled:hover, #secondary.widget-area .widget #menu-product-categories li a.disabled:focus, #secondary.widget-area .widget #menu-product-categories li a.disabled:active, #secondary.widget-area .widget #menu-product-categories li a.disabled.active, #secondary.widget-area .widget #menu-product-categories li a[disabled], #secondary.widget-area .widget #menu-product-categories li a[disabled]:hover, #secondary.widget-area .widget #menu-product-categories li a[disabled]:focus, #secondary.widget-area .widget #menu-product-categories li a[disabled]:active, #secondary.widget-area .widget #menu-product-categories li a[disabled].active, fieldset[disabled] #secondary.widget-area .widget #menu-product-categories li a, fieldset[disabled] #secondary.widget-area .widget #menu-product-categories li a:hover, fieldset[disabled] #secondary.widget-area .widget #menu-product-categories li a:focus, fieldset[disabled] #secondary.widget-area .widget #menu-product-categories li a:active, fieldset[disabled] #secondary.widget-area .widget #menu-product-categories li a.active, #secondary.widget-area .widget #menu-category-menu li a.disabled, #secondary.widget-area .widget #menu-category-menu li a.disabled:hover, #secondary.widget-area .widget #menu-category-menu li a.disabled:focus, #secondary.widget-area .widget #menu-category-menu li a.disabled:active, #secondary.widget-area .widget #menu-category-menu li a.disabled.active, #secondary.widget-area .widget #menu-category-menu li a[disabled], #secondary.widget-area .widget #menu-category-menu li a[disabled]:hover, #secondary.widget-area .widget #menu-category-menu li a[disabled]:focus, #secondary.widget-area .widget #menu-category-menu li a[disabled]:active, #secondary.widget-area .widget #menu-category-menu li a[disabled].active, fieldset[disabled] #secondary.widget-area .widget #menu-category-menu li a, fieldset[disabled] #secondary.widget-area .widget #menu-category-menu li a:hover, fieldset[disabled] #secondary.widget-area .widget #menu-category-menu li a:focus, fieldset[disabled] #secondary.widget-area .widget #menu-category-menu li a:active, fieldset[disabled] #secondary.widget-area .widget #menu-category-menu li a.active { background-color: #6db799; border-color: #5caf8d; }
+/* line 38, ../scss/bootstrap/mixins/_buttons.scss */
+#secondary.widget-area .widget #menu-product-categories li a .badge, #secondary.widget-area .widget #menu-category-menu li a .badge { color: #6db799; background-color: white; }
+@media screen and (min-width: 992px) { /* line 57, ../scss/partials/sidebar/_sidebar-default.scss */
+  #secondary.widget-area .widget #menu-product-categories li a, #secondary.widget-area .widget #menu-category-menu li a { padding: 6px 12px; font-size: 14px; line-height: 1.42857; border-radius: 4px; } }
+/* line 81, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_archive li, #secondary.widget-area .widget_categories li, #secondary.widget-area .widget_links li, #secondary.widget-area .widget_meta li, #secondary.widget-area .widget_nav_menu li, #secondary.widget-area .widget_pages li, #secondary.widget-area .widget_recent_comments li, #secondary.widget-area .widget_recent_entries li { border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 8px 0 9px; }
-/* line 99, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 84, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_archive li:first-child, #secondary.widget-area .widget_categories li:first-child, #secondary.widget-area .widget_links li:first-child, #secondary.widget-area .widget_meta li:first-child, #secondary.widget-area .widget_nav_menu li:first-child, #secondary.widget-area .widget_pages li:first-child, #secondary.widget-area .widget_recent_comments li:first-child, #secondary.widget-area .widget_recent_entries li:first-child { border-top: 0; }
-/* line 105, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 90, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_categories li ul, #secondary.widget-area .widget_nav_menu li ul, #secondary.widget-area .widget_pages li ul { border-top: 1px solid rgba(0, 0, 0, 0.1); margin-top: 9px; }
-/* line 111, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 96, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_categories li li:last-child, #secondary.widget-area .widget_nav_menu li li:last-child, #secondary.widget-area .widget_pages li li:last-child { padding-bottom: 0; }
-/* line 115, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 100, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_recent_entries .post-date { display: block; }
-/* line 119, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 104, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .rsswidget img { margin-top: -4px; }
-/* line 122, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 107, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .rssSummary { margin: 9px 0; }
-/* line 125, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 110, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .rss-date { display: block; }
-/* line 128, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 113, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_rss li { margin-bottom: 18px; }
-/* line 131, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 116, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_rss li:last-child { margin-bottom: 0; }
-/* line 135, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 120, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_text > div > :last-child { margin-bottom: 0; }
-/* line 140, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 125, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_search form { position: relative; width: 100%; }
-/* line 143, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 128, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_search form label { display: block; margin: 0; padding: 0; }
-/* line 147, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 132, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_search form label input { font-size: 12px; width: 100%; }
-/* line 152, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 137, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget_search form .btn { position: absolute; right: 0; top: 0; }
 
-/* line 161, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 146, ../scss/partials/sidebar/_sidebar-default.scss */
 #left-sidebar-template #secondary { margin-top: 48px; }
 
-/* line 165, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 150, ../scss/partials/sidebar/_sidebar-default.scss */
 .woocommerce-page #secondary { margin-top: 48px; }
 
-/* line 169, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 154, ../scss/partials/sidebar/_sidebar-default.scss */
 .tptn_posts_widget li { border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 8px 0 9px; }
-/* line 172, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 157, ../scss/partials/sidebar/_sidebar-default.scss */
 .tptn_posts_widget li:first-child { border-top: 0; }
 
 /* --- Sidebar - Default --- */
