@@ -15,7 +15,7 @@
 			@include box-shadow(rgba(lighten(#6d2850, 10), .4) 0 0 7px);
 			@media screen and (min-width: $screen-desktop) {
 				max-width: 275px;
-				height: 263px;
+				// height: 263px;
 			}
 			.table-header {
 				.table-title {
@@ -28,6 +28,7 @@
 					padding-bottom: 0;
 					padding-left: $padding-large-horizontal;
 					padding-right: $padding-large-horizontal;
+					font-weight: bold;
 				}
 				.price-amount {
 					background: lighten(#6d2850, 10);
