@@ -5,7 +5,7 @@
  * @package LiveTo110 Theme
  */
 ?>
-	<div id="secondary" class="widget-area" role="complementary">
+	<div id="secondary" class="widget-area ccc" role="complementary">
 		<?php if ( ! dynamic_sidebar( 'sidebar-shop' ) ) : ?>
 
 			<aside id="search" class="widget widget_search">
