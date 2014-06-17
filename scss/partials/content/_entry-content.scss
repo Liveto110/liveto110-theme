@@ -4,8 +4,6 @@
 .page-content {
 	@include hyphens(auto);
 	word-wrap: break-word;
-	text-align: justify;
-	line-height: 25px;
 	p,
 	ul,
 	ol {
@@ -38,6 +36,7 @@
 		border: #89c464 2px solid;
 		padding: 15px;
 		background: #f0f7f4;
+		color: #3a3a3a;
 	}
 	.qpodcast {
 		margin: 30px 0 30px 20px;
