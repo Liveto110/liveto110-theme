@@ -23,6 +23,11 @@
 			line-height: 27px;
 		}
 	}
+	table thead {
+		font-family: $quicksand;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
 	ul,
 	ol {
 		margin-left: 0;
