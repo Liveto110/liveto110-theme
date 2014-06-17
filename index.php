@@ -89,13 +89,7 @@ get_header(); ?>
 			</div><!-- /.col-sm-8 -->
 
 			<div class="hidden-phone col-sm-4">
-				<?php
-                    if (is_page('store')) :
-                        get_sidebar( 'shop' ); 
-                    else :
-                        get_sidebar( 'shop' ); 
-                    endif;
-                ?>
+				<?php get_sidebar(); ?>
 			</div><!-- /.hidden-phone .col-sm-4 -->
 		</div><!-- /.row -->
 	</div><!-- /.container -->
