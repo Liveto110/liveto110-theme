@@ -93,7 +93,7 @@ get_header(); ?>
                     if (is_page('store')) :
                         get_sidebar( 'shop' ); 
                     else :
-                        get_sidebar(); 
+                        get_sidebar( 'shop' ); 
                     endif;
                 ?>
 			</div><!-- /.hidden-phone .col-sm-4 -->
