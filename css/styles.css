@@ -1,4 +1,4 @@
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/* normalize.css v3.0.1 | MIT License | git.io/normalize */
 /* line 9, ../scss/bootstrap/_normalize.scss */
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
@@ -3512,7 +3512,7 @@ html[xmlns] .slides { display: block; }
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }
 
 /* line 84, ../scss/partials/vendor/_flexslider.scss */
-.flex-direction-nav .flex-disabled { opacity: 0 !important; filter: alpha(opacity=0); cursor: default; }
+.flex-direction-nav .flex-disabled { opacity: 0!important; filter: alpha(opacity=0); cursor: default; }
 
 /* line 85, ../scss/partials/vendor/_flexslider.scss */
 .flex-direction-nav a:before { font-family: "flexslider-icon"; font-size: 40px; display: inline-block; content: '\f001'; }
@@ -4999,7 +4999,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 /* line 2, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area { background: #fff; overflow: hidden; *zoom: 1; border: 1px solid rgba(0, 0, 0, 0.1); color: #333333; padding: 24px 15px 0; -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px; -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px; box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px; /* List Style Widgets*/ /* Recent Posts Widget */ /* RSS Widget */ /* Text Widget */ }
 /* line 12, ../scss/partials/sidebar/_sidebar-default.scss */
-#secondary.widget-area .widget { font-size: 16px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; margin-bottom: 48px; width: 100%; word-wrap: break-word; display: block !important; }
+#secondary.widget-area .widget { font-size: 16px; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; margin-bottom: 48px; width: 100%; word-wrap: break-word; display: block; }
 /* line 20, ../scss/partials/sidebar/_sidebar-default.scss */
 #secondary.widget-area .widget ul, #secondary.widget-area .widget ol { list-style: none; margin: 0; padding: 0; }
 /* line 24, ../scss/partials/sidebar/_sidebar-default.scss */
