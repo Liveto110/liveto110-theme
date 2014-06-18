@@ -75,6 +75,11 @@
     table {
         @media screen and (min-width: $screen-tablet) {
             table-layout: fixed;
+            width: 400px;
+            float: right;
+        }
+        @media screen and (min-width: $screen-md) {
+            table-layout: fixed;
             width: 480px;
             float: right;
         }
