@@ -36,11 +36,11 @@ get_header(); ?>
 
 			<div class="hidden-phone col-sm-4">
 				<?php 
-                    //if (is_page( 'Shop' )) :
-                    //    get_sidebar( 'shop' ); 
-                    //else :
+                    if (is_page( 'Shop' ) || is_page( 'Checkout' ) || is_page( 'Cart' )) :
+                        get_sidebar( 'shop' ); 
+                    else :
                         get_sidebar();
-                    //endif;
+                    endif;
                 ?>
 			</div><!-- /.hidden-phone .col-sm-4 -->
 		</div><!-- /.row -->
