@@ -4283,8 +4283,10 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 /* line 576, ../scss/partials/content/_template_homepage.scss */
 #latest-articles .post .entry img { display: none; }
 /* line 580, ../scss/partials/content/_template_homepage.scss */
+#latest-articles .post .entry .powerpress_player, #latest-articles .post .entry .powerpress_links { display: none !important; }
+/* line 584, ../scss/partials/content/_template_homepage.scss */
 #latest-articles .post .post-footer { margin-top: 12px; padding-left: 16px; padding-right: 16px; position: absolute; bottom: 16px; left: 0; width: 100%; }
-/* line 588, ../scss/partials/content/_template_homepage.scss */
+/* line 592, ../scss/partials/content/_template_homepage.scss */
 #latest-articles .post .post-footer .btn { width: 100%; color: #781e52; background: #e2a2bc; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border: 0; text-align: right; font-size: 12px; line-height: 18px; text-transform: uppercase; }
 
 /* --- Singup Page --- */

@@ -576,6 +576,10 @@
 			img {
 				display: none;
 			}
+			.powerpress_player,
+			.powerpress_links {
+				display: none !important;
+			}
 		}
 		.post-footer {
 			margin-top: 12px;
