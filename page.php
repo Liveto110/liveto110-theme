@@ -35,7 +35,13 @@ get_header(); ?>
 			</div><!-- /.col-sm-8 -->
 
 			<div class="hidden-phone col-sm-4">
-				<?php get_sidebar(); ?>
+				<?php 
+                    if (is_page( 'Shop' ) || is_page( 'Checkout' ) || is_page( 'Cart' )) :
+                        get_sidebar( 'shop' ); 
+                    else :
+                        get_sidebar();
+                    endif;
+                ?>
 			</div><!-- /.hidden-phone .col-sm-4 -->
 		</div><!-- /.row -->
 	</div><!-- /.container -->
