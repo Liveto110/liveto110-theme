@@ -92,7 +92,15 @@ add_action( 'wp', 'liveto110_setup_author' );
  * Custom Read More Link
  * =================================================================================*/
 function new_excerpt_more( $more ) {
-	return ' <a class="read-more-link" href="'. get_permalink( get_the_ID() ) . '"><i class="fa fa-angle-right"></i> ' . __('Read More', 'liveto110') . '</a>';
+	$custom_read_more_text = get_field( 'read_more_text' );
+
+	if ('' == $custom_read_more_text) {
+		$read_more_text = 'Read More';
+	}
+	if ('' != $custom_read_more_text) {
+		$read_more_text = $custom_read_more_text;
+	}
+	return ' <a class="read-more-link" href="'. get_permalink( get_the_ID() ) . '"><i class="fa fa-angle-right"></i> ' . $read_more_text . '</a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 

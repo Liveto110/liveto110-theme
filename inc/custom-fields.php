@@ -1392,4 +1392,41 @@ if ( function_exists( "register_field_group" ) ) {
 			'menu_order' => 0,
 		));
 	}
+	// Custom Read More text-field
+	register_field_group(array (
+		'id' => 'acf_custom-read-more',
+		'title' => 'Custom Read More',
+		'fields' => array (
+			array (
+				'key' => 'field_53a2e3188c97f',
+				'label' => 'Read More Text',
+				'name' => 'read_more_text',
+				'type' => 'text',
+				'default_value' => 'Read More',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'post',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
 }
