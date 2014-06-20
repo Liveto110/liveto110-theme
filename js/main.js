@@ -59,7 +59,13 @@ jQuery( document ).ready( function($) {
     
     $(window).load(function() {
         if (matchMedia('only screen and (min-width: 768px)').matches && $('#secondary.widget-area').length) {
-            var main_height = $('#primary.content-area').height();
+            var main_height = 2000;
+            if ($('#primary.content-area').length)
+                main_height = $('#primary.content-area').height();
+                
+            if ($('#custom-archive-template .posts-wrap').length)
+                main_height = $('#custom-archive-template .posts-wrap').height();
+            
             var sidebar_height = 0;
             console.log(main_height);
             $('#secondary.widget-area .widget').each(function() {
