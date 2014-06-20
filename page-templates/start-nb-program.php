@@ -90,18 +90,6 @@ get_header(); ?>
 									endif;
 								endwhile;
 							}
-
-							// if 'pricing' flexible-content has rows of data
-							if ( have_rows('pricing') ) {
-								// loop through the rows of data
-								while ( have_rows('pricing') ) : the_row();
-									if( get_row_layout() == 'pricing_nav_link_text' ):
-										echo '<li><a href="#pricing">';
-											the_sub_field('pricing_link_text');
-										echo '</a></li>';
-									endif;
-								endwhile;
-							}
 						?>
 					</ul><!-- /.nav -->
 				</nav><!-- /#nb-section-anchors .section-anchors -->
@@ -168,10 +156,6 @@ get_header(); ?>
 									<h4 class="footer-title"><?php the_sub_field('how_it_works_footer_title'); ?></h4><!-- /.footer-title -->
 
 									<aside class="custom-program-design">
-										<header class="aside-header">
-											<h1 class="aside-title"><?php the_sub_field('how_it_works_aside_title'); ?></h1><!-- /.title -->
-										</header>
-
 										<div class="aside-content">
 											<div class="row">
 												<div class="col-sm-6">
@@ -244,6 +228,12 @@ get_header(); ?>
 							<?php elseif ( get_row_layout() == 'core_components_section_footer' ) : ?>
 								<footer class="section-footer">
 									<article class="starter">
+										<header class="starter-header">
+											<h1 class="starter-title"><?php the_sub_field('core_components_section_footer_title_text'); ?></h1><!-- /.starter-title -->
+
+											<h2 class="starter-subtitle"><?php the_sub_field('core_components_section_footer_sub_title_text'); ?></h2><!-- /.starter-subtitle -->
+										</header><!-- /.starter-header -->
+
 										<div class="row">
 											<div class="col-sm-5">
 												<?php
@@ -279,12 +269,6 @@ get_header(); ?>
 											</div>
 
 											<div class="col-sm-7">
-												<header class="starter-header">
-													<h1 class="starter-title"><?php the_sub_field('core_components_section_footer_title_text'); ?></h1><!-- /.starter-title -->
-
-													<h2 class="starter-subtitle"><?php the_sub_field('core_components_section_footer_sub_title_text'); ?></h2><!-- /.starter-subtitle -->
-												</header><!-- /.starter-header -->
-
 												<div class="starter-content">
 													<?php the_sub_field('core_components_section_footer_footer_content'); ?>
 												</div><!-- /.starter-content -->
@@ -347,18 +331,6 @@ get_header(); ?>
 									</div><!-- /.row -->
 								</div><!-- /.section-content -->
 
-							<?php elseif ( get_row_layout() == 'learn_section_footer' ) : ?>
-								<footer class="section-footer">
-									<aside>
-										<header>
-											<h4><?php the_sub_field('learn_section_footer_title'); ?></h4>
-										</header>
-
-										<div class="entry">
-											<p><?php the_sub_field('learn_section_footer_content'); ?></p>
-										</div><!-- /.entry -->
-									</aside>
-								</footer><!-- /.section-footer -->
 							<?php endif; ?>
 						<?php endwhile; ?>
 					</section><!-- /#learn -->
@@ -383,7 +355,7 @@ get_header(); ?>
 														<div class="panel-heading">
 															<h4 class="panel-title">
 																<span class="icon-wrap">
-																	<i class="fa fa-plus-circle"></i>
+																	<i class="fa fa-plus"></i>
 																</span><!-- /.icon-wrap -->
 
 																<a data-toggle="collapse" data-parent="#faq-accordion" href="#faq-<?php echo $id_number; ?>"><?php the_sub_field('faqs_faq_items_question'); ?></a>
@@ -405,18 +377,10 @@ get_header(); ?>
 						<?php endwhile; ?>
 					</section><!-- /#faqs -->
 				<?php endif; ?>
-
-				<?php if ( have_rows( 'pricing')) : ?>
-					<section id="pricing">
-						<header class="section-header">
-							<h3 class="section-title">Pricing</h3><!-- /.section-title -->
-						</header><!-- /.section-header -->
-
-						<div class="section-content"></div><!-- /.section-content -->
-					</section><!-- /#pricing -->
-				<?php endif; ?>
 			</div><!-- /.page-sections -->
 		</div><!-- /.container -->
+
+		<div class="custom-bottom-bg"></div>
 	</div><!-- /#content -->	
 </div><!-- /#start-nb-template -->
 

@@ -1,8 +1,32 @@
 /* --- Start A Nutritional Balancing Page Template --- */
 #start-nb-template {
-	#content {}
+	#content {
+		.custom-bottom-bg {
+			@include clearfix;
+			display: block;
+			height: 150px;
+			width: 100%;
+			background-image: url(../img/mineral-power-bg.png);
+			background-color: transparent;;
+			background-position: center bottom;
+			background-repeat: no-repeat;
+			@include background-size(cover);
+			@media screen and (min-width: $screen-tablet) {
+				height: 180px;
+			}
+			@media screen and (min-width: $screen-desktop) {
+				height: 220px;
+			}
+			@media screen and (min-width: $screen-lg-desktop) {
+				height: 400px;
+			}
+		}
+	}
 	#primary {}
 	#main {
+		.row {
+			background: $mp-bg-blue;
+		}
 		.page-header {
 			margin-bottom: $padding-large-vertical;
 			padding-bottom: 0;
@@ -18,7 +42,7 @@
 				font-weight: 700;
 				font-size: 16px;
 				line-height: 24px;
-				color: #31935f;
+				color: $mp-bg-blue-text; //#31935f;
 				@media screen and (min-width: $screen-tablet) {
 					font-size: 18px;
 					line-height: 27px;
@@ -42,34 +66,26 @@
 		}
 		.content-wrap {
 			p {
-				color: #6d2850;
+				color: $mp-bg-blue-text; //#6d2850;
 				font-family: $lato;
 				font-weight: bold;
 				text-align: center;
+				@media screen and (min-width: $screen-tablet) {
+					margin-top: $padding-large-vertical * 2;
+				}
 			}
 			ul {
-				color: #6d2850;
+				color: $mp-bg-blue-text; //#6d2850;
 				font-family: $lato;
 				font-weight: bold;
 				margin: 0;
 				padding: 0;
 				list-style: none;
 				li {
-					position: relative;
 					display: block;
 					margin: 0;
 					padding: 0;
-					&:before {
-						content: '\f105';
-						display: inline-block;
-						font-family: FontAwesome;
-						font-style: normal;
-						//font-weight: normal;
-						line-height: 1;
-						-webkit-font-smoothing: antialiased;
-						-moz-osx-font-smoothing: grayscale;
-						margin-right: $padding-small-horizontal / 3;
-					}
+					text-align: center;
 				}
 			}
 		}
@@ -83,8 +99,8 @@
 			.nav {
 				li {
 					a {
-						background: rgba(#6d2850, .1);
-						color: #6d2850;
+						background: $mp-subnav-btn-bg; //rgba(#6d2850, .1);
+						color: #fff; //#6d2850;
 						@include transition(all .2s ease-in-out);
 						text-transform: uppercase;
 						font-family: $font-family-sans-serif;
@@ -103,8 +119,8 @@
 					a:active,
 					a:focus,
 					a:hover {
-						background: #6d2850;
-						color: #fff;
+						background: $mp-subnav-btn-hover-bg; //#6d2850;
+						// color: #fff;
 					}
 				}
 				@media screen and (min-width: $screen-tablet) {
@@ -127,7 +143,17 @@
 					// font-weight: 700;
 					font-size: 16px;
 					line-height: 24px;
-					color: #31935f;
+					color: $mp-title-color; //#31935f;
+					position: relative;
+					&:after {
+						display: block;
+						content: '';
+						height: 1px;
+						width: 240px;
+						margin: 0 auto;
+						padding: 0;
+						background: $mp-title-border;
+					}
 					@media screen and (min-width: $screen-tablet) {
 						font-size: 18px;
 						line-height: 27px;
@@ -151,7 +177,7 @@
 					.right-content {
 						p {
 							strong {
-								color: #6d2850;
+								color: $mp-subtitle-color; //#6d2850;
 							}
 						}
 					}
@@ -183,7 +209,18 @@
 					// font-weight: 700;
 					font-size: 16px;
 					line-height: 24px;
-					color: #31935f;
+					color: $mp-title-color-alt; //#31935f;
+					text-align: center;
+					position: relative;
+					&:after {
+						display: block;
+						content: '';
+						height: 1px;
+						width: 240px;
+						margin: 0 auto;
+						padding: 0;
+						background: $mp-title-border;
+					}
 					@media screen and (min-width: $screen-tablet) {
 						font-size: 18px;
 						line-height: 27px;
@@ -201,13 +238,13 @@
 			.section-content {
 				p {
 					strong {
-						color: #31935f;
+						color: $mp-subtitle-color; //#31935f;
 					}
 				}
 			}
 			.section-footer {
 				.footer-title {
-					color: #6d2850;
+					color: $mp-title-color; //#6d2850;
 					text-align: center;
 					margin: $padding-large-vertical * 2 $padding-large-horizontal * 2;
 					padding: 0;
@@ -215,10 +252,10 @@
 					line-height: 20px;
 				}
 				.custom-program-design {
-					background: #eef5ec;
+					background: $mp-bg-blue; //#eef5ec;
 					position: relative;
-					padding-top: $padding-large-vertical;
-					padding-bottom: $padding-large-vertical * 2;
+					padding-top: 0; //$padding-large-vertical;
+					padding-bottom: 0; //$padding-large-vertical * 2;
 					@include clearfix;
 					overflow: visible;
 					&:before,
@@ -229,7 +266,7 @@
 						width: $grid-gutter-width / 2;
 						position: absolute;
 						top: 0;
-						background: #eef5ec;
+						background: $mp-bg-blue; //#eef5ec;
 					}
 					&:before {
 						left: 100%;
@@ -237,18 +274,9 @@
 					&:after {
 						right: 100%;
 					}
-					.aside-header {
-						@include clearfix;
-						.aside-title {
-							margin: 0 0 $padding-large-vertical 0;
-							padding: 0;
-							font-size: 14px;
-							line-height: 20px;
-						}
-					}
 					.aside-content {
-						background: #fff;
 						@include clearfix;
+						text-align: center;
 						.image-wrap {
 							img {}
 						}
@@ -294,7 +322,18 @@
 					// font-weight: 700;
 					font-size: 16px;
 					line-height: 24px;
-					color: #31935f;
+					color: $mp-title-color-alt; //#31935f;
+					text-align: center;
+					position: relative;
+					&:after {
+						display: block;
+						content: '';
+						height: 1px;
+						width: 240px;
+						margin: 0 auto;
+						padding: 0;
+						background: $mp-title-border;
+					}
 					@media screen and (min-width: $screen-tablet) {
 						font-size: 18px;
 						line-height: 27px;
@@ -317,28 +356,43 @@
 						margin-bottom: $padding-large-vertical * 2;
 					}
 					.blurb-header {
-						border-bottom: 1px solid #83c570;
+						border-bottom: 1px solid $mp-title-color; //#83c570;
 						margin-bottom: $padding-base-vertical;
+						@media screen and (min-width: $screen-tablet) {
+							border-bottom: 0;
+						}
 						.blurb-title {
 							margin: 0;
 							padding: 0;
 							font-size: 14px;
 							text-transform: uppercase;
-							color: #83c570;
+							color: $mp-title-color; //#83c570;
 							.icon-wrap {
 								display: inline-block;
 								padding: 5px;
-								background: #83c570;
+								background: $mp-title-color; //#83c570;
 								color: #fff;
 								@include border-radius(50%);
 								height: 24px;
 								width: 24px;
 								text-align: center;
+								@media screen and (min-width: $screen-tablet) {
+									display: block;
+									margin-left: auto;
+									margin-right: auto;
+								}
 								i {
 									@include text-shadow(rgba(black, .1) 0 0 1px);
 								}
 							}
-							.text-wrap {}
+							.text-wrap {
+								color: $mp-title-color-alt;
+								@media screen and (min-width: $screen-tablet) {
+									display: block;
+									text-align: center;
+									margin-top: $padding-base-vertical;
+								}
+							}
 						}
 					}
 					.blurb-content {
@@ -350,25 +404,6 @@
 			}
 			.section-footer {
 				@include clearfix;
-				position: relative;
-				overflow: visible;
-				background: #eef5ec;
-				&:before,
-				&:after {
-					display: block;
-					content: '';
-					background: #eef5ec;
-					position: absolute;
-					height: 100%;
-					width: $grid-gutter-width / 2;
-					top: 0;
-				}
-				&:before {
-					left: 100%;
-				}
-				&:after {
-					right: 100%;
-				}
 				.starter {
 					margin-top: $padding-large-vertical;
 					padding-top: $padding-large-vertical * 2;
@@ -377,65 +412,25 @@
 						padding-top: $padding-large-vertical * 4;
 						margin-top: $padding-large-vertical * 2;
 					}
-					.pricing-table {
-						max-width: 250px;
-						margin-left: auto;
-						margin-right: auto;
-						background: #fff;
-						border-color: lighten(#6d2850, 10);
-						padding-left: 0;
-						padding-right: 0;
-						@include border-radius(0);
-						@include box-shadow(rgba(lighten(#6d2850, 10), .4) 0 0 7px);
-						@media screen and (min-width: $screen-desktop) {
-							max-width: 275px;
-						}
-						.table-header {
-							.table-title {
-								text-transform: uppercase;
-								font-size: 14px;
-								line-height: 20px;
-								margin-top: 0;
-								padding-top: 0;
-								margin-bottom: 0;
-								padding-bottom: 0;
-								padding-left: $padding-large-horizontal;
-								padding-right: $padding-large-horizontal;
-							}
-							.price-amount {
-								background: lighten(#6d2850, 10);
-								padding-top: $padding-large-vertical * 2;
-								padding-bottom: $padding-large-vertical * 2;
-								color: #fff;
-								font-size: 30px;
-								i {}
-							}
-						}
-						.table-content {
-							padding-left: $padding-large-horizontal;
-							padding-right: $padding-large-horizontal;
-							ul {
-								li {
-									padding: $padding-base-horizontal 0;
-								}
-							}
-						}
-						.table-footer {
-							.button-wrap {
-								.btn {
-									@include border-radius(0);
-									font-family: $font-family-sans-serif;
-								}
-							}
-						}
-					}
 					.starter-header {
 						@include clearfix;
 						text-align: center;
 						margin-top: $padding-large-vertical * 2;
-						@media screen and (min-width: $screen-tablet) {
-							margin-top: 0;
-							text-align: left;
+						margin-bottom: $padding-large-vertical * 2;
+						padding-bottom: $padding-large-vertical * 2;
+						position: relative;
+						&:after {
+							position: absolute;
+							bottom: 0;
+							left: 50%;
+							display: block;
+							content: '';
+							height: 1px;
+							width: 240px;
+							margin: 0;
+							padding: 0;
+							background: $mp-title-border;
+							margin-left: -120px;
 						}
 						.starter-title {
 							margin: 0;
@@ -474,24 +469,92 @@
 							}
 						}
 					}
+					.pricing-table {
+						max-width: 250px;
+						margin-left: auto;
+						margin-right: auto;
+						background: $mp-bg-blue; //#fff;
+						border: 0;
+						padding-left: 0;
+						padding-right: 0;
+						@include border-radius(0);
+						position: relative;
+						overflow: hidden;
+						&:before {
+							content: '';
+							display: block;
+							position: absolute;
+							z-index: 1;
+							top: -20px;
+							left: 0;
+							height: 100px;
+							width: 100%;
+							background-image: url(../img/pricing-table-bg-img.png);
+							background-position: center top;
+							@include background-size(cover);
+						}
+						@media screen and (min-width: $screen-desktop) {
+							max-width: 275px;
+						}
+						.table-header {
+							position: relative;
+							z-index: 2;
+							.table-title {
+								text-transform: uppercase;
+								font-size: 14px;
+								line-height: 20px;
+								margin-top: 0;
+								padding-top: 0;
+								margin-bottom: 0;
+								padding-bottom: 0;
+								padding-left: $padding-large-horizontal;
+								padding-right: $padding-large-horizontal;
+								padding-bottom: $padding-large-vertical;
+								color: #fff;
+							}
+							.price-amount {
+								// background: lighten(#6d2850, 10);
+								// padding-top: $padding-large-vertical * 2;
+								padding-bottom: $padding-large-vertical * 2;
+								margin: 0;
+								color: #fff;
+								font-size: 16px; //30px;
+								i {}
+							}
+						}
+						.table-content {
+							padding-left: $padding-large-horizontal;
+							padding-right: $padding-large-horizontal;
+							color: $mp-bg-blue-text;
+							font-family: $lato;
+							text-align: center;
+							ul {
+								li {
+									padding: $padding-base-horizontal 0;
+								}
+							}
+						}
+						.table-footer {
+							.button-wrap {
+								.btn {
+									@include border-radius(0);
+									font-family: $lato;
+									border: 0;
+									background: $mp-subnav-btn-hover-bg;
+									@include box-shadow(none);
+									@include text-shadow(rgba(black, .2) 0 1px 3px);
+									text-transform: uppercase;
+								}
+							}
+						}
+					}
 					.starter-content {
 						margin-top: $padding-large-vertical;
 						ul {
 							margin: 0;
 							padding: 0;
-							list-style: none;
+							list-style: disc;
 							li {
-								&:before {
-									display: inline-block;
-									content: '\f105';
-									font-family: FontAwesome;
-									font-style: normal;
-									font-weight: normal;
-									line-height: 1;
-									-webkit-font-smoothing: antialiased;
-									-moz-osx-font-smoothing: grayscale;
-									margin-right: 5px;
-								}
 								i {}
 							}
 						}
@@ -502,14 +565,25 @@
 		#learn {
 			.section-header {
 				.section-title {
-					margin: $padding-large-vertical * 2 0 $padding-large-vertical 0;
+					margin: $padding-large-vertical * 2 0 $padding-large-vertical * 2 0;
 					padding: 0;
 					text-transform: uppercase;
 					// font-family: $quicksand;
 					// font-weight: 700;
 					font-size: 16px;
 					line-height: 24px;
-					color: #31935f;
+					color: $mp-title-color-alt; // #31935f;
+					text-align: center;
+					position: relative;
+					&:after {
+						display: block;
+						content: '';
+						height: 1px;
+						width: 240px;
+						margin: 0 auto;
+						padding: 0;
+						background: $mp-title-border;
+					}
 					@media screen and (min-width: $screen-tablet) {
 						font-size: 18px;
 						line-height: 27px;
@@ -529,53 +603,24 @@
 					margin: 0;
 					padding: 0;
 					text-transform: uppercase;
-					// font-family: $quicksand;
-					// font-weight: 700;
+					font-family: $quicksand;
+					font-weight: 700;
 					font-size: 14px;
 					line-height: 20px;
+					color: $mp-title-color-alt;
 				}
 				ul {
 					li {
 						padding: $padding-small-vertical / 4 0;
 						a {
 							font-size: 13px;
-						}
-					}
-				}
-			}
-			.section-footer {
-				margin-top: $padding-base-vertical;
-				@media screen and (min-width: $screen-tablet) {
-					margin-top: $padding-base-vertical * 2;
-				}
-				@media screen and (min-width: $screen-desktop) {
-					margin-top: $padding-base-vertical * 3;
-				}
-				@media screen and (min-width: $screen-lg-desktop) {
-					margin-top: $padding-base-vertical * 4;
-				}
-				aside {
-					max-width: 300px;
-					margin-left: auto;
-					margin-right: auto;
-					text-align: center;
-					@media screen and (min-width: $screen-tablet) {
-						max-width: 400px;
-					}
-					header {
-						h4 {
-							margin: 0;
-							padding: 0;
-							text-transform: uppercase;
-							// font-family: $quicksand;
-							// font-weight: 700;
-							font-size: 14px;
-							line-height: 20px;
-						}
-					}
-					.entry {
-						p {
-							text-align: justify;
+							color: $mp-title-color;
+							@include transition(color .2s ease-in-out);
+							&:hover,
+							&:focus,
+							&:active {
+								color: $mp-title-color-alt;
+							}
 						}
 					}
 				}
@@ -591,12 +636,23 @@
 			}
 			.section-header {
 				.section-title {
-					margin: $padding-large-vertical * 2 0 $padding-large-vertical 0;
+					margin: $padding-large-vertical * 2 0 $padding-large-vertical * 2 0;
 					padding: 0;
 					text-transform: uppercase;
 					font-size: 16px;
 					line-height: 24px;
-					color: #31935f;
+					color: $mp-title-color-alt; //#31935f;
+					text-align: center;
+					position: relative;
+					&:after {
+						display: block;
+						content: '';
+						height: 1px;
+						width: 240px;
+						margin: 0 auto;
+						padding: 0;
+						background: $mp-title-border;
+					}
 					@media screen and (min-width: $screen-tablet) {
 						font-size: 18px;
 						line-height: 27px;
@@ -613,12 +669,12 @@
 			}
 			#faq-accordion {
 				.panel {
-					border-color: rgba($brand-primary, .1);
+					border-color: $mp-bg-blue; // rgba($brand-primary, .1);
 					@include border-radius(0);
 					@include box-shadow(none);
 					.panel-heading {
 						padding-left: $padding-small-horizontal / 2;
-						background: rgba($brand-primary, .1);
+						background: $mp-bg-blue; // rgba($brand-primary, .1);
 						@media screen and (min-width: $screen-desktop) {
 							padding-left: $padding-small-horizontal;
 						}
@@ -627,7 +683,9 @@
 							padding: 0;
 							font-size: 12px;
 							text-transform: uppercase;
-							color: #31935f;
+							color: $mp-bg-blue-text; //#31935f;
+							font-weight: bold;
+							font-family: $lato;
 							@media screen and (min-width: $screen-desktop) {
 								font-size: 14px;
 							}
@@ -644,12 +702,6 @@
 						}
 					}
 				}
-			}
-		}
-		#pricing {
-			padding-bottom: $padding-large-vertical;
-			@media screen and (min-width: $screen-tablet) {
-				padding-bottom: $padding-large-vertical * 2;
 			}
 		}
 	}

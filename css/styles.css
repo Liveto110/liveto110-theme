@@ -1,4 +1,4 @@
-/* normalize.css v3.0.1 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /* line 9, ../scss/bootstrap/_normalize.scss */
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
@@ -3512,7 +3512,7 @@ html[xmlns] .slides { display: block; }
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }
 
 /* line 84, ../scss/partials/vendor/_flexslider.scss */
-.flex-direction-nav .flex-disabled { opacity: 0!important; filter: alpha(opacity=0); cursor: default; }
+.flex-direction-nav .flex-disabled { opacity: 0 !important; filter: alpha(opacity=0); cursor: default; }
 
 /* line 85, ../scss/partials/vendor/_flexslider.scss */
 .flex-direction-nav a:before { font-family: "flexslider-icon"; font-size: 40px; display: inline-block; content: '\f001'; }
@@ -4468,242 +4468,244 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #full-width-template .page-masthead .img-block { position: absolute; left: 0; top: 0; height: 100%; width: 100%; background-color: transparent; background-position: center top; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 
 /* --- Start A Nutritional Balancing Page Template --- */
-/* line 6, ../scss/partials/content/_template_start-nb.scss */
+/* line 4, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template #content .custom-bottom-bg { overflow: hidden; *zoom: 1; display: block; height: 150px; width: 100%; background-image: url(../img/mineral-power-bg.png); background-color: transparent; background-position: center bottom; background-repeat: no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+@media screen and (min-width: 768px) { /* line 4, ../scss/partials/content/_template_start-nb.scss */
+  #start-nb-template #content .custom-bottom-bg { height: 180px; } }
+@media screen and (min-width: 992px) { /* line 4, ../scss/partials/content/_template_start-nb.scss */
+  #start-nb-template #content .custom-bottom-bg { height: 220px; } }
+@media screen and (min-width: 1200px) { /* line 4, ../scss/partials/content/_template_start-nb.scss */
+  #start-nb-template #content .custom-bottom-bg { height: 400px; } }
+/* line 27, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template #main .row { background: #d9e9f6; }
+/* line 30, ../scss/partials/content/_template_start-nb.scss */
 #start-nb-template #main .page-header { margin-bottom: 10px; padding-bottom: 0; border: 0; }
-@media screen and (min-width: 768px) { /* line 6, ../scss/partials/content/_template_start-nb.scss */
+@media screen and (min-width: 768px) { /* line 30, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template #main .page-header { margin-bottom: 20px; } }
-/* line 13, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template #main .page-header .page-title { margin: 0; padding: 0; text-transform: uppercase; font-weight: 700; font-size: 16px; line-height: 24px; color: #31935f; }
-@media screen and (min-width: 768px) { /* line 13, ../scss/partials/content/_template_start-nb.scss */
+/* line 37, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template #main .page-header .page-title { margin: 0; padding: 0; text-transform: uppercase; font-weight: 700; font-size: 16px; line-height: 24px; color: #1559a5; }
+@media screen and (min-width: 768px) { /* line 37, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template #main .page-header .page-title { font-size: 18px; line-height: 27px; } }
-@media screen and (min-width: 992px) { /* line 13, ../scss/partials/content/_template_start-nb.scss */
+@media screen and (min-width: 992px) { /* line 37, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template #main .page-header .page-title { font-size: 22px; line-height: 33px; } }
-@media screen and (min-width: 1200px) { /* line 13, ../scss/partials/content/_template_start-nb.scss */
+@media screen and (min-width: 1200px) { /* line 37, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template #main .page-header .page-title { font-size: 30px; line-height: 45px; } }
-/* line 36, ../scss/partials/content/_template_start-nb.scss */
+/* line 60, ../scss/partials/content/_template_start-nb.scss */
 #start-nb-template #main .image-wrap { margin-bottom: 10px; }
-@media screen and (min-width: 768px) { /* line 36, ../scss/partials/content/_template_start-nb.scss */
+@media screen and (min-width: 768px) { /* line 60, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template #main .image-wrap { margin-bottom: 0; } }
-/* line 44, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template #main .content-wrap p { color: #6d2850; font-family: "Lato", sans-serif; font-weight: bold; text-align: center; }
-/* line 50, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template #main .content-wrap ul { color: #6d2850; font-family: "Lato", sans-serif; font-weight: bold; margin: 0; padding: 0; list-style: none; }
-/* line 57, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template #main .content-wrap ul li { position: relative; display: block; margin: 0; padding: 0; }
-/* line 62, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template #main .content-wrap ul li:before { content: '\f105'; display: inline-block; font-family: FontAwesome; font-style: normal; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; margin-right: 3.33333px; }
-/* line 78, ../scss/partials/content/_template_start-nb.scss */
+/* line 68, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template #main .content-wrap p { color: #1559a5; font-family: "Lato", sans-serif; font-weight: bold; text-align: center; }
+@media screen and (min-width: 768px) { /* line 68, ../scss/partials/content/_template_start-nb.scss */
+  #start-nb-template #main .content-wrap p { margin-top: 20px; } }
+/* line 77, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template #main .content-wrap ul { color: #1559a5; font-family: "Lato", sans-serif; font-weight: bold; margin: 0; padding: 0; list-style: none; }
+/* line 84, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template #main .content-wrap ul li { display: block; margin: 0; padding: 0; text-align: center; }
+/* line 94, ../scss/partials/content/_template_start-nb.scss */
 #start-nb-template .page-sections .section-anchors { margin-top: 10px; }
-@media screen and (min-width: 768px) { /* line 78, ../scss/partials/content/_template_start-nb.scss */
+@media screen and (min-width: 768px) { /* line 94, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections .section-anchors { margin-top: 20px; } }
-/* line 85, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections .section-anchors .nav li a { background: rgba(109, 40, 80, 0.1); color: #6d2850; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; text-transform: uppercase; font-family: "Quicksand", sans-serif; font-weight: 700; }
-@media screen and (min-width: 768px) { /* line 85, ../scss/partials/content/_template_start-nb.scss */
+/* line 101, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections .section-anchors .nav li a { background: #295fa6; color: #fff; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; text-transform: uppercase; font-family: "Quicksand", sans-serif; font-weight: 700; }
+@media screen and (min-width: 768px) { /* line 101, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections .section-anchors .nav li a { font-size: 12px; } }
-@media screen and (min-width: 992px) { /* line 85, ../scss/partials/content/_template_start-nb.scss */
+@media screen and (min-width: 992px) { /* line 101, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections .section-anchors .nav li a { font-size: 13px; } }
-@media screen and (min-width: 1200px) { /* line 85, ../scss/partials/content/_template_start-nb.scss */
+@media screen and (min-width: 1200px) { /* line 101, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections .section-anchors .nav li a { font-size: 14px; } }
-/* line 105, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections .section-anchors .nav li.active a, #start-nb-template .page-sections .section-anchors .nav li a:active, #start-nb-template .page-sections .section-anchors .nav li a:focus, #start-nb-template .page-sections .section-anchors .nav li a:hover { background: #6d2850; color: #fff; }
-@media screen and (min-width: 768px) { /* line 111, ../scss/partials/content/_template_start-nb.scss */
+/* line 121, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections .section-anchors .nav li.active a, #start-nb-template .page-sections .section-anchors .nav li a:active, #start-nb-template .page-sections .section-anchors .nav li a:focus, #start-nb-template .page-sections .section-anchors .nav li a:hover { background: #40d1f3; }
+@media screen and (min-width: 768px) { /* line 127, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections .section-anchors .nav li { padding-left: 5px; padding-right: 5px; }
-  /* line 115, ../scss/partials/content/_template_start-nb.scss */
+  /* line 131, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections .section-anchors .nav li:first-child { padding-left: 0; }
-  /* line 116, ../scss/partials/content/_template_start-nb.scss */
+  /* line 132, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections .section-anchors .nav li:last-child { padding-right: 0; } }
-/* line 120, ../scss/partials/content/_template_start-nb.scss */
+/* line 136, ../scss/partials/content/_template_start-nb.scss */
 #start-nb-template .page-sections #how-it-works { margin-top: 20px; }
-/* line 123, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #how-it-works .sections-intro .intro-title { margin: 0; padding: 0; font-size: 16px; line-height: 24px; color: #31935f; }
-@media screen and (min-width: 768px) { /* line 123, ../scss/partials/content/_template_start-nb.scss */
+/* line 139, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #how-it-works .sections-intro .intro-title { margin: 0; padding: 0; font-size: 16px; line-height: 24px; color: #00cbf2; position: relative; }
+/* line 148, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #how-it-works .sections-intro .intro-title:after { display: block; content: ''; height: 1px; width: 240px; margin: 0 auto; padding: 0; background: #dcc6a8; }
+@media screen and (min-width: 768px) { /* line 139, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections #how-it-works .sections-intro .intro-title { font-size: 18px; line-height: 27px; text-align: center; } }
-@media screen and (min-width: 992px) { /* line 123, ../scss/partials/content/_template_start-nb.scss */
+@media screen and (min-width: 992px) { /* line 139, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections #how-it-works .sections-intro .intro-title { font-size: 22px; line-height: 33px; } }
-@media screen and (min-width: 1200px) { /* line 123, ../scss/partials/content/_template_start-nb.scss */
+@media screen and (min-width: 1200px) { /* line 139, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections #how-it-works .sections-intro .intro-title { font-size: 30px; line-height: 45px; } }
-/* line 145, ../scss/partials/content/_template_start-nb.scss */
+/* line 171, ../scss/partials/content/_template_start-nb.scss */
 #start-nb-template .page-sections #how-it-works .sections-intro .intro-content { margin-top: 10px; }
-@media screen and (min-width: 768px) { /* line 145, ../scss/partials/content/_template_start-nb.scss */
+@media screen and (min-width: 768px) { /* line 171, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections #how-it-works .sections-intro .intro-content { margin-top: 20px; } }
-/* line 153, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #how-it-works .sections-intro .intro-content .right-content p strong { color: #6d2850; }
-/* line 160, ../scss/partials/content/_template_start-nb.scss */
+/* line 179, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #how-it-works .sections-intro .intro-content .right-content p strong { color: #6b8ec0; }
+/* line 186, ../scss/partials/content/_template_start-nb.scss */
 #start-nb-template .page-sections #how-it-works .media-wrap { margin-top: 10px; }
-/* line 162, ../scss/partials/content/_template_start-nb.scss */
+/* line 188, ../scss/partials/content/_template_start-nb.scss */
 #start-nb-template .page-sections #how-it-works .media-wrap .video-wrapper { position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px; height: 0; }
-/* line 167, ../scss/partials/content/_template_start-nb.scss */
+/* line 193, ../scss/partials/content/_template_start-nb.scss */
 #start-nb-template .page-sections #how-it-works .media-wrap .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
-/* line 178, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #how-it-works .section-header .section-title { margin: 20px 0 10px 0; padding: 0; text-transform: uppercase; font-size: 16px; line-height: 24px; color: #31935f; }
-@media screen and (min-width: 768px) { /* line 178, ../scss/partials/content/_template_start-nb.scss */
+/* line 204, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #how-it-works .section-header .section-title { margin: 20px 0 10px 0; padding: 0; text-transform: uppercase; font-size: 16px; line-height: 24px; color: #457cb9; text-align: center; position: relative; }
+/* line 215, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #how-it-works .section-header .section-title:after { display: block; content: ''; height: 1px; width: 240px; margin: 0 auto; padding: 0; background: #dcc6a8; }
+@media screen and (min-width: 768px) { /* line 204, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections #how-it-works .section-header .section-title { font-size: 18px; line-height: 27px; } }
-@media screen and (min-width: 992px) { /* line 178, ../scss/partials/content/_template_start-nb.scss */
+@media screen and (min-width: 992px) { /* line 204, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections #how-it-works .section-header .section-title { font-size: 22px; line-height: 33px; } }
-@media screen and (min-width: 1200px) { /* line 178, ../scss/partials/content/_template_start-nb.scss */
+@media screen and (min-width: 1200px) { /* line 204, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections #how-it-works .section-header .section-title { font-size: 30px; line-height: 45px; } }
-/* line 203, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #how-it-works .section-content p strong { color: #31935f; }
-/* line 209, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #how-it-works .section-footer .footer-title { color: #6d2850; text-align: center; margin: 20px 32px; padding: 0; font-size: 15px; line-height: 20px; }
-/* line 217, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design { background: #eef5ec; position: relative; padding-top: 10px; padding-bottom: 20px; overflow: hidden; *zoom: 1; overflow: visible; }
-/* line 225, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design:before, #start-nb-template .page-sections #how-it-works .section-footer .custom-program-design:after { display: block; content: ''; height: 100%; width: 15px; position: absolute; top: 0; background: #eef5ec; }
-/* line 234, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design:before { left: 100%; }
-/* line 237, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design:after { right: 100%; }
 /* line 240, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design .aside-header { overflow: hidden; *zoom: 1; }
-/* line 242, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design .aside-header .aside-title { margin: 0 0 10px 0; padding: 0; font-size: 14px; line-height: 20px; }
-/* line 249, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design .aside-content { background: #fff; overflow: hidden; *zoom: 1; }
-/* line 255, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design .aside-content ul { list-style: none; margin: 0; padding: 0; margin-left: 16px; margin-top: 10px; }
+#start-nb-template .page-sections #how-it-works .section-content p strong { color: #6b8ec0; }
+/* line 246, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #how-it-works .section-footer .footer-title { color: #00cbf2; text-align: center; margin: 20px 32px; padding: 0; font-size: 15px; line-height: 20px; }
+/* line 254, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design { background: #d9e9f6; position: relative; padding-top: 0; padding-bottom: 0; overflow: hidden; *zoom: 1; overflow: visible; }
 /* line 262, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design:before, #start-nb-template .page-sections #how-it-works .section-footer .custom-program-design:after { display: block; content: ''; height: 100%; width: 15px; position: absolute; top: 0; background: #d9e9f6; }
+/* line 271, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design:before { left: 100%; }
+/* line 274, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design:after { right: 100%; }
+/* line 277, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design .aside-content { overflow: hidden; *zoom: 1; text-align: center; }
+/* line 283, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #how-it-works .section-footer .custom-program-design .aside-content ul { list-style: none; margin: 0; padding: 0; margin-left: 16px; margin-top: 10px; }
+/* line 290, ../scss/partials/content/_template_start-nb.scss */
 #start-nb-template .page-sections #how-it-works .section-footer .custom-program-design .aside-content ul li:before { display: inline-block; content: '\f105'; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; margin-right: 5px; }
-/* line 275, ../scss/partials/content/_template_start-nb.scss */
+/* line 303, ../scss/partials/content/_template_start-nb.scss */
 #start-nb-template .page-sections #how-it-works .section-footer .custom-program-design .aside-content ul li:last-child { text-align: right; margin-right: 16px; }
-/* line 278, ../scss/partials/content/_template_start-nb.scss */
+/* line 306, ../scss/partials/content/_template_start-nb.scss */
 #start-nb-template .page-sections #how-it-works .section-footer .custom-program-design .aside-content ul li:last-child:before { display: none; }
-/* line 289, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #core-components .section-header .section-title { margin: 20px 0 10px 0; padding: 0; text-transform: uppercase; font-size: 16px; line-height: 24px; color: #31935f; }
-@media screen and (min-width: 768px) { /* line 289, ../scss/partials/content/_template_start-nb.scss */
-  #start-nb-template .page-sections #core-components .section-header .section-title { font-size: 18px; line-height: 27px; } }
-@media screen and (min-width: 992px) { /* line 289, ../scss/partials/content/_template_start-nb.scss */
-  #start-nb-template .page-sections #core-components .section-header .section-title { font-size: 22px; line-height: 33px; } }
-@media screen and (min-width: 1200px) { /* line 289, ../scss/partials/content/_template_start-nb.scss */
-  #start-nb-template .page-sections #core-components .section-header .section-title { font-size: 30px; line-height: 45px; } }
-/* line 313, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #core-components .section-content .blurb { margin-bottom: 10px; overflow: hidden; *zoom: 1; }
-@media screen and (min-width: 768px) { /* line 313, ../scss/partials/content/_template_start-nb.scss */
-  #start-nb-template .page-sections #core-components .section-content .blurb { margin-bottom: 20px; } }
-/* line 319, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #core-components .section-content .blurb .blurb-header { border-bottom: 1px solid #83c570; margin-bottom: 6px; }
-/* line 322, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #core-components .section-content .blurb .blurb-header .blurb-title { margin: 0; padding: 0; font-size: 14px; text-transform: uppercase; color: #83c570; }
+/* line 317, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #core-components .section-header .section-title { margin: 20px 0 10px 0; padding: 0; text-transform: uppercase; font-size: 16px; line-height: 24px; color: #457cb9; text-align: center; position: relative; }
 /* line 328, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #core-components .section-content .blurb .blurb-header .blurb-title .icon-wrap { display: inline-block; padding: 5px; background: #83c570; color: #fff; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; height: 24px; width: 24px; text-align: center; }
-/* line 337, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #core-components .section-header .section-title:after { display: block; content: ''; height: 1px; width: 240px; margin: 0 auto; padding: 0; background: #dcc6a8; }
+@media screen and (min-width: 768px) { /* line 317, ../scss/partials/content/_template_start-nb.scss */
+  #start-nb-template .page-sections #core-components .section-header .section-title { font-size: 18px; line-height: 27px; } }
+@media screen and (min-width: 992px) { /* line 317, ../scss/partials/content/_template_start-nb.scss */
+  #start-nb-template .page-sections #core-components .section-header .section-title { font-size: 22px; line-height: 33px; } }
+@media screen and (min-width: 1200px) { /* line 317, ../scss/partials/content/_template_start-nb.scss */
+  #start-nb-template .page-sections #core-components .section-header .section-title { font-size: 30px; line-height: 45px; } }
+/* line 352, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #core-components .section-content .blurb { margin-bottom: 10px; overflow: hidden; *zoom: 1; }
+@media screen and (min-width: 768px) { /* line 352, ../scss/partials/content/_template_start-nb.scss */
+  #start-nb-template .page-sections #core-components .section-content .blurb { margin-bottom: 20px; } }
+/* line 358, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #core-components .section-content .blurb .blurb-header { border-bottom: 1px solid #00cbf2; margin-bottom: 6px; }
+@media screen and (min-width: 768px) { /* line 358, ../scss/partials/content/_template_start-nb.scss */
+  #start-nb-template .page-sections #core-components .section-content .blurb .blurb-header { border-bottom: 0; } }
+/* line 364, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #core-components .section-content .blurb .blurb-header .blurb-title { margin: 0; padding: 0; font-size: 14px; text-transform: uppercase; color: #00cbf2; }
+/* line 370, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #core-components .section-content .blurb .blurb-header .blurb-title .icon-wrap { display: inline-block; padding: 5px; background: #00cbf2; color: #fff; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; height: 24px; width: 24px; text-align: center; }
+@media screen and (min-width: 768px) { /* line 370, ../scss/partials/content/_template_start-nb.scss */
+  #start-nb-template .page-sections #core-components .section-content .blurb .blurb-header .blurb-title .icon-wrap { display: block; margin-left: auto; margin-right: auto; } }
+/* line 384, ../scss/partials/content/_template_start-nb.scss */
 #start-nb-template .page-sections #core-components .section-content .blurb .blurb-header .blurb-title .icon-wrap i { text-shadow: rgba(0, 0, 0, 0.1) 0 0 1px; }
-/* line 345, ../scss/partials/content/_template_start-nb.scss */
+/* line 388, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #core-components .section-content .blurb .blurb-header .blurb-title .text-wrap { color: #457cb9; }
+@media screen and (min-width: 768px) { /* line 388, ../scss/partials/content/_template_start-nb.scss */
+  #start-nb-template .page-sections #core-components .section-content .blurb .blurb-header .blurb-title .text-wrap { display: block; text-align: center; margin-top: 6px; } }
+/* line 399, ../scss/partials/content/_template_start-nb.scss */
 #start-nb-template .page-sections #core-components .section-content .blurb .blurb-content p { margin-bottom: 0; }
-/* line 351, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #core-components .section-footer { overflow: hidden; *zoom: 1; position: relative; overflow: visible; background: #eef5ec; }
-/* line 357, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #core-components .section-footer:before, #start-nb-template .page-sections #core-components .section-footer:after { display: block; content: ''; background: #eef5ec; position: absolute; height: 100%; width: 15px; top: 0; }
-/* line 366, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #core-components .section-footer:before { left: 100%; }
-/* line 369, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #core-components .section-footer:after { right: 100%; }
-/* line 372, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #core-components .section-footer .starter { margin-top: 10px; padding-top: 20px; padding-bottom: 20px; }
-@media screen and (min-width: 992px) { /* line 372, ../scss/partials/content/_template_start-nb.scss */
-  #start-nb-template .page-sections #core-components .section-footer .starter { padding-top: 40px; margin-top: 20px; } }
-/* line 380, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #core-components .section-footer .starter .pricing-table { max-width: 250px; margin-left: auto; margin-right: auto; background: #fff; border-color: #92366b; padding-left: 0; padding-right: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; -webkit-box-shadow: rgba(146, 54, 107, 0.4) 0 0 7px; -moz-box-shadow: rgba(146, 54, 107, 0.4) 0 0 7px; box-shadow: rgba(146, 54, 107, 0.4) 0 0 7px; }
-@media screen and (min-width: 992px) { /* line 380, ../scss/partials/content/_template_start-nb.scss */
-  #start-nb-template .page-sections #core-components .section-footer .starter .pricing-table { max-width: 275px; } }
-/* line 394, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #core-components .section-footer .starter .pricing-table .table-header .table-title { text-transform: uppercase; font-size: 14px; line-height: 20px; margin-top: 0; padding-top: 0; margin-bottom: 0; padding-bottom: 0; padding-left: 16px; padding-right: 16px; }
 /* line 405, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #core-components .section-footer .starter .pricing-table .table-header .price-amount { background: #92366b; padding-top: 20px; padding-bottom: 20px; color: #fff; font-size: 30px; }
-/* line 414, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #core-components .section-footer .starter .pricing-table .table-content { padding-left: 16px; padding-right: 16px; }
-/* line 418, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #core-components .section-footer .starter .pricing-table .table-content ul li { padding: 12px 0; }
-/* line 425, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #core-components .section-footer .starter .pricing-table .table-footer .button-wrap .btn { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; font-family: "Quicksand", sans-serif; }
-/* line 432, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #core-components .section-footer .starter .starter-header { overflow: hidden; *zoom: 1; text-align: center; margin-top: 20px; }
-@media screen and (min-width: 768px) { /* line 432, ../scss/partials/content/_template_start-nb.scss */
-  #start-nb-template .page-sections #core-components .section-footer .starter .starter-header { margin-top: 0; text-align: left; } }
-/* line 440, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #core-components .section-footer { overflow: hidden; *zoom: 1; }
+/* line 407, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #core-components .section-footer .starter { margin-top: 10px; padding-top: 20px; padding-bottom: 20px; }
+@media screen and (min-width: 992px) { /* line 407, ../scss/partials/content/_template_start-nb.scss */
+  #start-nb-template .page-sections #core-components .section-footer .starter { padding-top: 40px; margin-top: 20px; } }
+/* line 415, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #core-components .section-footer .starter .starter-header { overflow: hidden; *zoom: 1; text-align: center; margin-top: 20px; margin-bottom: 20px; padding-bottom: 20px; position: relative; }
+/* line 422, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #core-components .section-footer .starter .starter-header:after { position: absolute; bottom: 0; left: 50%; display: block; content: ''; height: 1px; width: 240px; margin: 0; padding: 0; background: #dcc6a8; margin-left: -120px; }
+/* line 435, ../scss/partials/content/_template_start-nb.scss */
 #start-nb-template .page-sections #core-components .section-footer .starter .starter-header .starter-title { margin: 0; padding: 0; font-size: 16px; line-height: 24px; }
-@media screen and (min-width: 768px) { /* line 440, ../scss/partials/content/_template_start-nb.scss */
+@media screen and (min-width: 768px) { /* line 435, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections #core-components .section-footer .starter .starter-header .starter-title { font-size: 18px; line-height: 27px; } }
-@media screen and (min-width: 992px) { /* line 440, ../scss/partials/content/_template_start-nb.scss */
+@media screen and (min-width: 992px) { /* line 435, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections #core-components .section-footer .starter .starter-header .starter-title { font-size: 22px; line-height: 33px; } }
-@media screen and (min-width: 1200px) { /* line 440, ../scss/partials/content/_template_start-nb.scss */
+@media screen and (min-width: 1200px) { /* line 435, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections #core-components .section-footer .starter .starter-header .starter-title { font-size: 30px; line-height: 45px; } }
-/* line 458, ../scss/partials/content/_template_start-nb.scss */
+/* line 453, ../scss/partials/content/_template_start-nb.scss */
 #start-nb-template .page-sections #core-components .section-footer .starter .starter-header .starter-subtitle { margin: 10px 0 0 0; padding: 0; font-size: 14px; line-height: 20px; }
-@media screen and (min-width: 768px) { /* line 458, ../scss/partials/content/_template_start-nb.scss */
+@media screen and (min-width: 768px) { /* line 453, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections #core-components .section-footer .starter .starter-header .starter-subtitle { font-size: 16px; line-height: 24px; } }
-@media screen and (min-width: 992px) { /* line 458, ../scss/partials/content/_template_start-nb.scss */
+@media screen and (min-width: 992px) { /* line 453, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections #core-components .section-footer .starter .starter-header .starter-subtitle { font-size: 20px; line-height: 30px; } }
-@media screen and (min-width: 1200px) { /* line 458, ../scss/partials/content/_template_start-nb.scss */
+@media screen and (min-width: 1200px) { /* line 453, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections #core-components .section-footer .starter .starter-header .starter-subtitle { font-size: 24px; line-height: 36px; } }
-/* line 477, ../scss/partials/content/_template_start-nb.scss */
+/* line 472, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #core-components .section-footer .starter .pricing-table { max-width: 250px; margin-left: auto; margin-right: auto; background: #d9e9f6; border: 0; padding-left: 0; padding-right: 0; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; position: relative; overflow: hidden; }
+/* line 483, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #core-components .section-footer .starter .pricing-table:before { content: ''; display: block; position: absolute; z-index: 1; top: -20px; left: 0; height: 100px; width: 100%; background-image: url(../img/pricing-table-bg-img.png); background-position: center top; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+@media screen and (min-width: 992px) { /* line 472, ../scss/partials/content/_template_start-nb.scss */
+  #start-nb-template .page-sections #core-components .section-footer .starter .pricing-table { max-width: 275px; } }
+/* line 499, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #core-components .section-footer .starter .pricing-table .table-header { position: relative; z-index: 2; }
+/* line 502, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #core-components .section-footer .starter .pricing-table .table-header .table-title { text-transform: uppercase; font-size: 14px; line-height: 20px; margin-top: 0; padding-top: 0; margin-bottom: 0; padding-bottom: 0; padding-left: 16px; padding-right: 16px; padding-bottom: 10px; color: #fff; }
+/* line 515, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #core-components .section-footer .starter .pricing-table .table-header .price-amount { padding-bottom: 20px; margin: 0; color: #fff; font-size: 16px; }
+/* line 525, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #core-components .section-footer .starter .pricing-table .table-content { padding-left: 16px; padding-right: 16px; color: #1559a5; font-family: "Lato", sans-serif; text-align: center; }
+/* line 532, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #core-components .section-footer .starter .pricing-table .table-content ul li { padding: 12px 0; }
+/* line 539, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #core-components .section-footer .starter .pricing-table .table-footer .button-wrap .btn { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; font-family: "Lato", sans-serif; border: 0; background: #40d1f3; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; text-shadow: rgba(0, 0, 0, 0.2) 0 1px 3px; text-transform: uppercase; }
+/* line 551, ../scss/partials/content/_template_start-nb.scss */
 #start-nb-template .page-sections #core-components .section-footer .starter .starter-content { margin-top: 10px; }
-/* line 479, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #core-components .section-footer .starter .starter-content ul { margin: 0; padding: 0; list-style: none; }
-/* line 484, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #core-components .section-footer .starter .starter-content ul li:before { display: inline-block; content: '\f105'; font-family: FontAwesome; font-style: normal; font-weight: normal; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; margin-right: 5px; }
-/* line 504, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #learn .section-header .section-title { margin: 20px 0 10px 0; padding: 0; text-transform: uppercase; font-size: 16px; line-height: 24px; color: #31935f; }
-@media screen and (min-width: 768px) { /* line 504, ../scss/partials/content/_template_start-nb.scss */
+/* line 553, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #core-components .section-footer .starter .starter-content ul { margin: 0; padding: 0; list-style: disc; }
+/* line 567, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #learn .section-header .section-title { margin: 20px 0 20px 0; padding: 0; text-transform: uppercase; font-size: 16px; line-height: 24px; color: #457cb9; text-align: center; position: relative; }
+/* line 578, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #learn .section-header .section-title:after { display: block; content: ''; height: 1px; width: 240px; margin: 0 auto; padding: 0; background: #dcc6a8; }
+@media screen and (min-width: 768px) { /* line 567, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections #learn .section-header .section-title { font-size: 18px; line-height: 27px; } }
-@media screen and (min-width: 992px) { /* line 504, ../scss/partials/content/_template_start-nb.scss */
+@media screen and (min-width: 992px) { /* line 567, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections #learn .section-header .section-title { font-size: 22px; line-height: 33px; } }
-@media screen and (min-width: 1200px) { /* line 504, ../scss/partials/content/_template_start-nb.scss */
+@media screen and (min-width: 1200px) { /* line 567, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections #learn .section-header .section-title { font-size: 30px; line-height: 45px; } }
-/* line 528, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #learn .section-content .sub-title { margin: 0; padding: 0; text-transform: uppercase; font-size: 14px; line-height: 20px; }
-/* line 538, ../scss/partials/content/_template_start-nb.scss */
+/* line 602, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #learn .section-content .sub-title { margin: 0; padding: 0; text-transform: uppercase; font-family: "Quicksand", sans-serif; font-weight: 700; font-size: 14px; line-height: 20px; color: #457cb9; }
+/* line 613, ../scss/partials/content/_template_start-nb.scss */
 #start-nb-template .page-sections #learn .section-content ul li { padding: 1.25px 0; }
-/* line 540, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #learn .section-content ul li a { font-size: 13px; }
-/* line 546, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #learn .section-footer { margin-top: 6px; }
-@media screen and (min-width: 768px) { /* line 546, ../scss/partials/content/_template_start-nb.scss */
-  #start-nb-template .page-sections #learn .section-footer { margin-top: 12px; } }
-@media screen and (min-width: 992px) { /* line 546, ../scss/partials/content/_template_start-nb.scss */
-  #start-nb-template .page-sections #learn .section-footer { margin-top: 18px; } }
-@media screen and (min-width: 1200px) { /* line 546, ../scss/partials/content/_template_start-nb.scss */
-  #start-nb-template .page-sections #learn .section-footer { margin-top: 24px; } }
-/* line 557, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #learn .section-footer aside { max-width: 300px; margin-left: auto; margin-right: auto; text-align: center; }
-@media screen and (min-width: 768px) { /* line 557, ../scss/partials/content/_template_start-nb.scss */
-  #start-nb-template .page-sections #learn .section-footer aside { max-width: 400px; } }
-/* line 566, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #learn .section-footer aside header h4 { margin: 0; padding: 0; text-transform: uppercase; font-size: 14px; line-height: 20px; }
-/* line 577, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #learn .section-footer aside .entry p { text-align: justify; }
-/* line 584, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #faqs { padding-top: 20px; }
-@media screen and (min-width: 768px) { /* line 584, ../scss/partials/content/_template_start-nb.scss */
-  #start-nb-template .page-sections #faqs { padding-top: 30px; } }
-@media screen and (min-width: 992px) { /* line 584, ../scss/partials/content/_template_start-nb.scss */
-  #start-nb-template .page-sections #faqs { padding-top: 40px; } }
-/* line 593, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #faqs .section-header .section-title { margin: 20px 0 10px 0; padding: 0; text-transform: uppercase; font-size: 16px; line-height: 24px; color: #31935f; }
-@media screen and (min-width: 768px) { /* line 593, ../scss/partials/content/_template_start-nb.scss */
-  #start-nb-template .page-sections #faqs .section-header .section-title { font-size: 18px; line-height: 27px; } }
-@media screen and (min-width: 992px) { /* line 593, ../scss/partials/content/_template_start-nb.scss */
-  #start-nb-template .page-sections #faqs .section-header .section-title { font-size: 22px; line-height: 33px; } }
-@media screen and (min-width: 1200px) { /* line 593, ../scss/partials/content/_template_start-nb.scss */
-  #start-nb-template .page-sections #faqs .section-header .section-title { font-size: 30px; line-height: 45px; } }
 /* line 615, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #faqs #faq-accordion .panel { border-color: rgba(109, 183, 153, 0.1); -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
-/* line 619, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #faqs #faq-accordion .panel .panel-heading { padding-left: 5px; background: rgba(109, 183, 153, 0.1); }
-@media screen and (min-width: 992px) { /* line 619, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #learn .section-content ul li a { font-size: 13px; color: #00cbf2; -webkit-transition: color 0.2s ease-in-out; -moz-transition: color 0.2s ease-in-out; -o-transition: color 0.2s ease-in-out; transition: color 0.2s ease-in-out; }
+/* line 621, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #learn .section-content ul li a:hover, #start-nb-template .page-sections #learn .section-content ul li a:focus, #start-nb-template .page-sections #learn .section-content ul li a:active { color: #457cb9; }
+/* line 629, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #faqs { padding-top: 20px; }
+@media screen and (min-width: 768px) { /* line 629, ../scss/partials/content/_template_start-nb.scss */
+  #start-nb-template .page-sections #faqs { padding-top: 30px; } }
+@media screen and (min-width: 992px) { /* line 629, ../scss/partials/content/_template_start-nb.scss */
+  #start-nb-template .page-sections #faqs { padding-top: 40px; } }
+/* line 638, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #faqs .section-header .section-title { margin: 20px 0 20px 0; padding: 0; text-transform: uppercase; font-size: 16px; line-height: 24px; color: #457cb9; text-align: center; position: relative; }
+/* line 647, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #faqs .section-header .section-title:after { display: block; content: ''; height: 1px; width: 240px; margin: 0 auto; padding: 0; background: #dcc6a8; }
+@media screen and (min-width: 768px) { /* line 638, ../scss/partials/content/_template_start-nb.scss */
+  #start-nb-template .page-sections #faqs .section-header .section-title { font-size: 18px; line-height: 27px; } }
+@media screen and (min-width: 992px) { /* line 638, ../scss/partials/content/_template_start-nb.scss */
+  #start-nb-template .page-sections #faqs .section-header .section-title { font-size: 22px; line-height: 33px; } }
+@media screen and (min-width: 1200px) { /* line 638, ../scss/partials/content/_template_start-nb.scss */
+  #start-nb-template .page-sections #faqs .section-header .section-title { font-size: 30px; line-height: 45px; } }
+/* line 671, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #faqs #faq-accordion .panel { border-color: #d9e9f6; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+/* line 675, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #faqs #faq-accordion .panel .panel-heading { padding-left: 5px; background: #d9e9f6; }
+@media screen and (min-width: 992px) { /* line 675, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections #faqs #faq-accordion .panel .panel-heading { padding-left: 10px; } }
-/* line 625, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #faqs #faq-accordion .panel .panel-heading .panel-title { margin: 0; padding: 0; font-size: 12px; text-transform: uppercase; color: #31935f; }
-@media screen and (min-width: 992px) { /* line 625, ../scss/partials/content/_template_start-nb.scss */
+/* line 681, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #faqs #faq-accordion .panel .panel-heading .panel-title { margin: 0; padding: 0; font-size: 12px; text-transform: uppercase; color: #1559a5; font-weight: bold; font-family: "Lato", sans-serif; }
+@media screen and (min-width: 992px) { /* line 681, ../scss/partials/content/_template_start-nb.scss */
   #start-nb-template .page-sections #faqs #faq-accordion .panel .panel-heading .panel-title { font-size: 14px; } }
-/* line 634, ../scss/partials/content/_template_start-nb.scss */
+/* line 692, ../scss/partials/content/_template_start-nb.scss */
 #start-nb-template .page-sections #faqs #faq-accordion .panel .panel-heading .panel-title .icon-wrap { padding-right: 5px; }
-/* line 642, ../scss/partials/content/_template_start-nb.scss */
+/* line 700, ../scss/partials/content/_template_start-nb.scss */
 #start-nb-template .page-sections #faqs #faq-accordion .panel .panel-collapse .panel-body { border: 0; }
-/* line 649, ../scss/partials/content/_template_start-nb.scss */
-#start-nb-template .page-sections #pricing { padding-bottom: 10px; }
-@media screen and (min-width: 768px) { /* line 649, ../scss/partials/content/_template_start-nb.scss */
-  #start-nb-template .page-sections #pricing { padding-bottom: 20px; } }
 
 /* --- Full Width Page Template --- */
 /* line 4, ../scss/partials/content/_template_videos-page.scss */
