@@ -140,7 +140,7 @@ function my_theme_wrapper_start() { ?>
 		<div class="container">
 			<div class="row">
                 <header class="page-header">
-                    <h1 class="page-title"><?php global $post; echo get_the_title($post->ID); ?></h1>
+                    <h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
                 </header>
 				<div class="col-sm-8">
 					<div id="primary" class="content-area">
