@@ -59,19 +59,24 @@ jQuery( document ).ready( function($) {
     
     $(window).load(function() {
         if (matchMedia('only screen and (min-width: 768px)').matches && $('#secondary.widget-area').length) {
-            var main_height = 2000;
+            var main_height = 10000;
+            var sidebar_height = 0;
+            
             if ($('#primary.content-area').length)
                 main_height = $('#primary.content-area').height();
                 
             if ($('#custom-archive-template .posts-wrap').length)
                 main_height = $('#custom-archive-template .posts-wrap').height();
             
-            var sidebar_height = 0;
-            console.log(main_height);
             $('#secondary.widget-area .widget').each(function() {
                 sidebar_height += $(this).height();
                 
-                if (sidebar_height > main_height) $(this).hide();        
+                if (sidebar_height > main_height) $(this).hide();
+                
+                var next_widget = $('+ aside.widget', $(this));
+                
+                if (next_widget.length && ((sidebar_height + next_widget.height()) > main_height))
+                    sidebar_height += $(this).height() + $('+ aside.widget', $(this)).height();
             });
         }
     });
