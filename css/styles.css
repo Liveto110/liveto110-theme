@@ -2393,7 +2393,7 @@ tbody.collapse.in { display: table-row-group; }
 /* line 540, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-text { color: #999999; }
 /* line 545, ../scss/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-nav > li > a { color: white; }
+.navbar-inverse .navbar-nav > li > a { color: #BDBDC0; }
 /* line 549, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus { color: white; background-color: #571c41; }
 /* line 557, ../scss/bootstrap/_navbar.scss */
