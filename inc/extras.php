@@ -147,6 +147,9 @@ function my_theme_wrapper_start() { ?>
 	<div id="content" class="site-content">
 		<div class="container">
 			<div class="row">
+                <header class="page-header">
+                    <h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
+                </header>
 				<div class="col-sm-8">
 					<div id="primary" class="content-area">
 						<main id="main" class="site-main" role="main">
@@ -200,3 +203,15 @@ function custom_variation_price( $price, $product ) {
  
      return $price;
 }
+
+/* Will effect both of WooCommerce/Wordpress Archive pages
+function set_row_count_archive($query){
+    if ($query->is_archive) {
+        $query->set('posts_per_page', -1);
+    }
+    
+    return $query;
+}
+
+add_filter('pre_get_posts', 'set_row_count_archive');
+*/

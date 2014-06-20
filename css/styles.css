@@ -1,4 +1,4 @@
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/* normalize.css v3.0.1 | MIT License | git.io/normalize */
 /* line 9, ../scss/bootstrap/_normalize.scss */
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
@@ -2385,7 +2385,7 @@ tbody.collapse.in { display: table-row-group; }
 .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus, fieldset[disabled] .navbar-default .btn-link:hover, fieldset[disabled] .navbar-default .btn-link:focus { color: #cccccc; }
 
 /* line 527, ../scss/bootstrap/_navbar.scss */
-.navbar-inverse { background-color: #702454; border-color: #702454; }
+.navbar-inverse { background-color: #bdbdc0; border-color: #bdbdc0; }
 /* line 531, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-brand { color: #999999; }
 /* line 534, ../scss/bootstrap/_navbar.scss */
@@ -2393,11 +2393,11 @@ tbody.collapse.in { display: table-row-group; }
 /* line 540, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-text { color: #999999; }
 /* line 545, ../scss/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-nav > li > a { color: white; }
+.navbar-inverse .navbar-nav > li > a { color: #000; }
 /* line 549, ../scss/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus { color: white; background-color: #571c41; }
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus { color: white; background-color: #acacb0; }
 /* line 557, ../scss/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus { color: white; background-color: #571c41; }
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus { color: white; background-color: #acacb0; }
 /* line 565, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus { color: #444444; background-color: transparent; }
 /* line 573, ../scss/bootstrap/_navbar.scss */
@@ -2407,19 +2407,19 @@ tbody.collapse.in { display: table-row-group; }
 /* line 579, ../scss/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-toggle .icon-bar { background-color: white; }
 /* line 585, ../scss/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form { border-color: #551b40; }
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form { border-color: #ababaf; }
 /* line 594, ../scss/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus { background-color: #571c41; color: white; }
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus { background-color: #acacb0; color: white; }
 @media (max-width: 767px) { /* line 603, ../scss/bootstrap/_navbar.scss */
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header { border-color: #702454; }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header { border-color: #bdbdc0; }
   /* line 606, ../scss/bootstrap/_navbar.scss */
-  .navbar-inverse .navbar-nav .open .dropdown-menu .divider { background-color: #702454; }
+  .navbar-inverse .navbar-nav .open .dropdown-menu .divider { background-color: #bdbdc0; }
   /* line 609, ../scss/bootstrap/_navbar.scss */
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a { color: white; }
   /* line 612, ../scss/bootstrap/_navbar.scss */
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus { color: white; background-color: #571c41; }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus { color: white; background-color: #acacb0; }
   /* line 620, ../scss/bootstrap/_navbar.scss */
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus { color: white; background-color: #571c41; }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus { color: white; background-color: #acacb0; }
   /* line 628, ../scss/bootstrap/_navbar.scss */
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus { color: #444444; background-color: transparent; } }
 /* line 637, ../scss/bootstrap/_navbar.scss */
@@ -3356,9 +3356,9 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 .navbar-brand, .navbar-nav > li > a { text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25); }
 
 /* line 124, ../scss/bootstrap/_theme.scss */
-.navbar-inverse { background-image: -webkit-linear-gradient(top, #973071 0%, #702454 100%); background-image: -o-linear-gradient(top, #973071 0%, #702454 100%); background-image: linear-gradient(to bottom, #973071 0%, #702454 100%); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF973071', endColorstr='#FF702454', GradientType=0); filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); }
+.navbar-inverse { background-image: -webkit-linear-gradient(top, #d7d7d9 0%, #bdbdc0 100%); background-image: -o-linear-gradient(top, #d7d7d9 0%, #bdbdc0 100%); background-image: linear-gradient(to bottom, #d7d7d9 0%, #bdbdc0 100%); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD7D7D9', endColorstr='#FFBDBDC0', GradientType=0); filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); }
 /* line 128, ../scss/bootstrap/_theme.scss */
-.navbar-inverse .navbar-nav > .active > a { background-image: -webkit-linear-gradient(top, #702454 0%, #7a275b 100%); background-image: -o-linear-gradient(top, #702454 0%, #7a275b 100%); background-image: linear-gradient(to bottom, #702454 0%, #7a275b 100%); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF702454', endColorstr='#FF7A275B', GradientType=0); -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.25); box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.25); }
+.navbar-inverse .navbar-nav > .active > a { background-image: -webkit-linear-gradient(top, #bdbdc0 0%, #c4c4c6 100%); background-image: -o-linear-gradient(top, #bdbdc0 0%, #c4c4c6 100%); background-image: linear-gradient(to bottom, #bdbdc0 0%, #c4c4c6 100%); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFBDBDC0', endColorstr='#FFC4C4C6', GradientType=0); -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.25); box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.25); }
 /* line 134, ../scss/bootstrap/_theme.scss */
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a { text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
 
@@ -3512,7 +3512,7 @@ html[xmlns] .slides { display: block; }
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }
 
 /* line 84, ../scss/partials/vendor/_flexslider.scss */
-.flex-direction-nav .flex-disabled { opacity: 0 !important; filter: alpha(opacity=0); cursor: default; }
+.flex-direction-nav .flex-disabled { opacity: 0!important; filter: alpha(opacity=0); cursor: default; }
 
 /* line 85, ../scss/partials/vendor/_flexslider.scss */
 .flex-direction-nav a:before { font-family: "flexslider-icon"; font-size: 40px; display: inline-block; content: '\f001'; }
@@ -3726,11 +3726,11 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 1200px) { /* line 11, ../scss/partials/header/_secondary-navigation.scss */
   #secondary-navigation .secondary-links a { font-size: 14px; } }
 /* line 32, ../scss/partials/header/_secondary-navigation.scss */
-#secondary-navigation .secondary-links .current-menu-item > a, #secondary-navigation .secondary-links .current-menu-parent > a { color: white; background-color: #571c41; }
+#secondary-navigation .secondary-links .current-menu-item > a, #secondary-navigation .secondary-links .current-menu-parent > a { color: white; background-color: #acacb0; }
 /* line 38, ../scss/partials/header/_secondary-navigation.scss */
 #secondary-navigation .secondary-links-container { text-align: center; }
 /* line 40, ../scss/partials/header/_secondary-navigation.scss */
-#secondary-navigation .secondary-links-container .secondary-links { display: inline-block; float: none; }
+#secondary-navigation .secondary-links-container .secondary-links { display: inline-block; float: none; vertical-align: middle; }
 
 /* --- Content --- */
 /* line 2, ../scss/partials/content/_general.scss */
@@ -3835,6 +3835,9 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
   .page .page-header .page-title, .archive .page-header .page-title, .single .entry-header .entry-title { font-size: 24px; margin: 48px 0 12px 0; } }
 @media screen and (min-width: 992px) { /* line 44, ../scss/partials/content/_entry-header.scss */
   .page .page-header .page-title, .archive .page-header .page-title, .single .entry-header .entry-title { font-size: 36px; } }
+
+/* line 61, ../scss/partials/content/_entry-header.scss */
+.single .entry-header .entry-title { margin-top: 0; }
 
 /* --- Entry Meta --- */
 /* line 2, ../scss/partials/content/_entry-meta.scss */
@@ -4151,27 +4154,27 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 /* line 257, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .section-subtitle span { font-style: italic; color: #1C904A; }
 /* line 265, ../scss/partials/content/_template_homepage.scss */
-#about-liveto110 .blurbs-wrap .row > div:nth-of-type(1) .blurb-header { background: #008fc8; }
+#about-liveto110 .blurbs-wrap .row > div:nth-of-type(1) .blurb-header { background: #84BDA0; }
 /* line 266, ../scss/partials/content/_template_homepage.scss */
-#about-liveto110 .blurbs-wrap .row > div:nth-of-type(1) .blurb-footer .read-more-link { background: #008fc8; border: 1px solid #008fc8; }
+#about-liveto110 .blurbs-wrap .row > div:nth-of-type(1) .blurb-footer .read-more-link { background: #84BDA0; border: 1px solid #84BDA0; }
 /* line 269, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(1) .blurb-footer .read-more-link:hover { background: #fff; color: #008fc8; letter-spacing: 1px; }
 /* line 277, ../scss/partials/content/_template_homepage.scss */
-#about-liveto110 .blurbs-wrap .row > div:nth-of-type(2) .blurb-header { background: #ff2c40; }
+#about-liveto110 .blurbs-wrap .row > div:nth-of-type(2) .blurb-header { background: #BF76A4; }
 /* line 278, ../scss/partials/content/_template_homepage.scss */
-#about-liveto110 .blurbs-wrap .row > div:nth-of-type(2) .blurb-footer .read-more-link { background: #ff2c40; border: 1px solid #ff2c40; }
+#about-liveto110 .blurbs-wrap .row > div:nth-of-type(2) .blurb-footer .read-more-link { background: #BF76A4; border: 1px solid #BF76A4; }
 /* line 281, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(2) .blurb-footer .read-more-link:hover { background: #fff; color: #ff2c40; letter-spacing: 1px; }
 /* line 289, ../scss/partials/content/_template_homepage.scss */
-#about-liveto110 .blurbs-wrap .row > div:nth-of-type(3) .blurb-header { background: #7bc46f; }
+#about-liveto110 .blurbs-wrap .row > div:nth-of-type(3) .blurb-header { background: #BDBDC0; }
 /* line 290, ../scss/partials/content/_template_homepage.scss */
-#about-liveto110 .blurbs-wrap .row > div:nth-of-type(3) .blurb-footer .read-more-link { background: #7bc46f; border: 1px solid #7bc46f; }
+#about-liveto110 .blurbs-wrap .row > div:nth-of-type(3) .blurb-footer .read-more-link { background: #BDBDC0; border: 1px solid #BDBDC0; }
 /* line 293, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(3) .blurb-footer .read-more-link:hover { background: #fff; color: #7bc46f; letter-spacing: 1px; }
 /* line 301, ../scss/partials/content/_template_homepage.scss */
-#about-liveto110 .blurbs-wrap .row > div:nth-of-type(4) .blurb-header { background: #c873a0; }
+#about-liveto110 .blurbs-wrap .row > div:nth-of-type(4) .blurb-header { background: #8B4B73; }
 /* line 302, ../scss/partials/content/_template_homepage.scss */
-#about-liveto110 .blurbs-wrap .row > div:nth-of-type(4) .blurb-footer .read-more-link { background: #c873a0; border: 1px solid #c873a0; }
+#about-liveto110 .blurbs-wrap .row > div:nth-of-type(4) .blurb-footer .read-more-link { background: #8B4B73; border: 1px solid #8B4B73; }
 /* line 305, ../scss/partials/content/_template_homepage.scss */
 #about-liveto110 .blurbs-wrap .row > div:nth-of-type(4) .blurb-footer .read-more-link:hover { background: #fff; color: #c873a0; letter-spacing: 1px; }
 /* line 313, ../scss/partials/content/_template_homepage.scss */
@@ -4770,7 +4773,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 768px) { /* line 63, ../scss/partials/content/_template_healthcoaching-page.scss */
   #health-coaching-template .page .entry-footer .additional-content h2 { font-size: 18px; margin: 18px 0 6px 0; } }
 @media screen and (min-width: 992px) { /* line 63, ../scss/partials/content/_template_healthcoaching-page.scss */
-  #health-coaching-template .page .entry-footer .additional-content h2 { font-size: 22x; margin: 24px 0 6px 0; } }
+  #health-coaching-template .page .entry-footer .additional-content h2 { font-size: 22px; margin: 24px 0 6px 0; } }
 @media screen and (min-width: 992px) { /* line 63, ../scss/partials/content/_template_healthcoaching-page.scss */
   #health-coaching-template .page .entry-footer .additional-content h2 { font-size: 30px; } }
 /* line 80, ../scss/partials/content/_template_healthcoaching-page.scss */
@@ -5099,12 +5102,9 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 /* line 146, ../scss/partials/sidebar/_sidebar-default.scss */
 #left-sidebar-template #secondary { margin-top: 48px; }
 
-/* line 150, ../scss/partials/sidebar/_sidebar-default.scss */
-.woocommerce-page #secondary { margin-top: 48px; }
-
-/* line 154, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 153, ../scss/partials/sidebar/_sidebar-default.scss */
 .tptn_posts_widget li { border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 8px 0 9px; }
-/* line 157, ../scss/partials/sidebar/_sidebar-default.scss */
+/* line 156, ../scss/partials/sidebar/_sidebar-default.scss */
 .tptn_posts_widget li:first-child { border-top: 0; }
 
 /* --- Sidebar - Default --- */
@@ -5269,9 +5269,9 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 1200px) { /* line 19, ../scss/_plugins.scss */
   .accordion-title { font-size: 18px; line-height: 27px; } }
 /* line 38, ../scss/_plugins.scss */
-.accordion-title:hover { color: #702454; }
+.accordion-title:hover { color: #bdbdc0; }
 /* line 41, ../scss/_plugins.scss */
-.accordion-title.open { cursor: default; font-weight: bold; color: #702454; }
+.accordion-title.open { cursor: default; font-weight: bold; color: #bdbdc0; }
 
 /* line 47, ../scss/_plugins.scss */
 .accordion-content { padding-bottom: 5px; }

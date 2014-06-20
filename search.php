@@ -9,6 +9,9 @@ get_header(); ?>
 
 <div id="content" class="site-content">
 	<div class="container">
+        <header class="page-header">
+            <h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'liveto110' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+        </header>
 		<div class="row">
 			<div class="col-sm-8">
 				<section id="primary" class="content-area">
@@ -16,9 +19,9 @@ get_header(); ?>
 
 					<?php if ( have_posts() ) : ?>
 
-						<header class="page-header">
+						<!--<header class="page-header">
 							<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'liveto110' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-						</header><!-- .page-header -->
+						</header>--><!-- .page-header -->
 
 						<?php /* Start the Loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
