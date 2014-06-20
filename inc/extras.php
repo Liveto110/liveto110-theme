@@ -192,3 +192,13 @@ function custom_variation_price( $price, $product ) {
  
      return $price;
 }
+
+function set_row_count_archive($query){
+    if ($query->is_archive) {
+        $query->set('posts_per_page', -1);
+    }
+    
+    return $query;
+}
+
+add_filter('pre_get_posts', 'set_row_count_archive');
