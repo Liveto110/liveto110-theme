@@ -3836,6 +3836,9 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 992px) { /* line 44, ../scss/partials/content/_entry-header.scss */
   .page .page-header .page-title, .archive .page-header .page-title, .single .entry-header .entry-title { font-size: 36px; } }
 
+/* line 61, ../scss/partials/content/_entry-header.scss */
+.single .entry-header .entry-title { margin-top: 0; }
+
 /* --- Entry Meta --- */
 /* line 2, ../scss/partials/content/_entry-meta.scss */
 .entry-meta { color: rgba(51, 51, 51, 0.6); font-size: 12px; line-height: 18px; font-weight: 400; }
