@@ -543,7 +543,7 @@
 
   .navbar-nav {
     > li > a {
-      color: #BDBDC0;
+      color: $navbar-inverse-link-color;
 
       &:hover,
       &:focus {
