@@ -3730,7 +3730,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 /* line 38, ../scss/partials/header/_secondary-navigation.scss */
 #secondary-navigation .secondary-links-container { text-align: center; }
 /* line 40, ../scss/partials/header/_secondary-navigation.scss */
-#secondary-navigation .secondary-links-container .secondary-links { display: inline-block; float: none; vertial-align: middle; }
+#secondary-navigation .secondary-links-container .secondary-links { display: inline-block; float: none; vertical-align: middle; }
 
 /* --- Content --- */
 /* line 2, ../scss/partials/content/_general.scss */
