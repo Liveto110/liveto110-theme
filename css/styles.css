@@ -4770,7 +4770,7 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 768px) { /* line 63, ../scss/partials/content/_template_healthcoaching-page.scss */
   #health-coaching-template .page .entry-footer .additional-content h2 { font-size: 18px; margin: 18px 0 6px 0; } }
 @media screen and (min-width: 992px) { /* line 63, ../scss/partials/content/_template_healthcoaching-page.scss */
-  #health-coaching-template .page .entry-footer .additional-content h2 { font-size: 22x; margin: 24px 0 6px 0; } }
+  #health-coaching-template .page .entry-footer .additional-content h2 { font-size: 22px; margin: 24px 0 6px 0; } }
 @media screen and (min-width: 992px) { /* line 63, ../scss/partials/content/_template_healthcoaching-page.scss */
   #health-coaching-template .page .entry-footer .additional-content h2 { font-size: 30px; } }
 /* line 80, ../scss/partials/content/_template_healthcoaching-page.scss */
