@@ -72,11 +72,6 @@ jQuery( document ).ready( function($) {
                 sidebar_height += $(this).height();
                 
                 if (sidebar_height > main_height) $(this).hide();
-                
-                var next_widget = $('+ aside.widget', $(this));
-                
-                if (next_widget.length && ((sidebar_height + next_widget.height()) > main_height))
-                    sidebar_height += $(this).height() + $('+ aside.widget', $(this)).height();
             });
         }
     });
