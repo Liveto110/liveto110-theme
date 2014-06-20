@@ -14,6 +14,9 @@ get_header(); ?>
 
 <div id="content" class="site-content">
 	<div class="container">
+        <header class="page-header">
+            <h1 class="page-title"><?php the_title(); ?></h1>
+        </header>
 		<div class="row">
 			<div class="col-sm-8">
 				<div id="primary" class="content-area">
