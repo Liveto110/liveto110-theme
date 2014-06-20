@@ -26,11 +26,17 @@
 	#main {
 		.row {
 			background: $mp-bg-blue;
+			width: 900px;
+			margin-left: auto;
+			margin-right: auto;
 		}
 		.page-header {
 			margin-bottom: $padding-large-vertical;
 			padding-bottom: 0;
 			border: 0;
+			width: 900px;
+			margin-left: auto;
+			margin-right: auto;
 			@media screen and (min-width: $screen-tablet) {
 				margin-bottom: $padding-large-vertical * 2;
 			}
@@ -91,6 +97,9 @@
 		}
 	}
 	.page-sections {
+		width: 900px;
+		margin-left: auto;
+		margin-right: auto;
 		.section-anchors {
 			margin-top: $padding-large-vertical;
 			@media screen and (min-width: $screen-tablet) {
@@ -404,6 +413,21 @@
 			}
 			.section-footer {
 				@include clearfix;
+				position: relative;
+				&:before {
+					position: absolute;
+					left: 50%;
+					top: 0;
+					height: 150px;
+					width: 250px;
+					background-color: transparent;
+					background-image: url(../img/shiny-thing.png);
+					background-position: center top;
+					background-repeat: no-repeat;
+					display: block;
+					content: '';
+					margin-left: -125px;
+				}
 				.starter {
 					margin-top: $padding-large-vertical;
 					padding-top: $padding-large-vertical * 2;
@@ -415,7 +439,7 @@
 					.starter-header {
 						@include clearfix;
 						text-align: center;
-						margin-top: $padding-large-vertical * 2;
+						margin-top: 120px;
 						margin-bottom: $padding-large-vertical * 2;
 						padding-bottom: $padding-large-vertical * 2;
 						position: relative;
