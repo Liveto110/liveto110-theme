@@ -193,6 +193,7 @@ function custom_variation_price( $price, $product ) {
      return $price;
 }
 
+/* Will effect both of WooCommerce/Wordpress Archive pages
 function set_row_count_archive($query){
     if ($query->is_archive) {
         $query->set('posts_per_page', -1);
@@ -202,3 +203,4 @@ function set_row_count_archive($query){
 }
 
 add_filter('pre_get_posts', 'set_row_count_archive');
+*/
