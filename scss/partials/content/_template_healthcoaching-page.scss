@@ -58,4 +58,61 @@
 			}
 		}
 	}
+	.page .entry-footer {
+		.additional-content {
+			h2 {
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: 14px;
+				margin: 12px 0 3px 0;
+				@media screen and (min-width: $screen-tablet) {
+					font-size: 18px;
+					margin: 18px 0 6px 0;
+				}
+				@media screen and (min-width: $screen-desktop) {
+					font-size: 22x;
+					margin: 24px 0 6px 0;
+				}
+				@media screen and (min-width: $screen-desktop) {
+					font-size: 30px;
+				}
+			}
+			h3 {
+				text-transform: normal;
+				font-weight: bold;
+				font-size: 14px;
+				margin: 12px 0 3px 0;
+				@media screen and (min-width: $screen-tablet) {
+					font-size: 18px;
+					margin: 18px 0 6px 0;
+				}
+				@media screen and (min-width: $screen-desktop) {
+					font-size: 22x;
+					margin: 24px 0 6px 0;
+				}
+				@media screen and (min-width: $screen-desktop) {
+					font-size: 30px;
+				}
+			}
+			p,
+			ol,
+			ul,
+			table {
+				font-size: 14px;
+				line-height: 20px;
+				@media screen and (min-width: $screen-tablet) {
+					font-size: 15px;
+					line-height: 22px;
+				}
+				@media screen and (min-width: $screen-desktop) {
+					font-size: 16px;
+					line-height: 24px;
+				}
+				@media screen and (min-width: $screen-lg-desktop) {
+					font-size: 18px;
+					line-height: 27px;
+				}
+			}
+		}
+	}
 }

@@ -1,4 +1,4 @@
-/* normalize.css v3.0.1 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /* line 9, ../scss/bootstrap/_normalize.scss */
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
@@ -3512,7 +3512,7 @@ html[xmlns] .slides { display: block; }
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }
 
 /* line 84, ../scss/partials/vendor/_flexslider.scss */
-.flex-direction-nav .flex-disabled { opacity: 0!important; filter: alpha(opacity=0); cursor: default; }
+.flex-direction-nav .flex-disabled { opacity: 0 !important; filter: alpha(opacity=0); cursor: default; }
 
 /* line 85, ../scss/partials/vendor/_flexslider.scss */
 .flex-direction-nav a:before { font-family: "flexslider-icon"; font-size: 40px; display: inline-block; content: '\f001'; }
@@ -3826,6 +3826,15 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 
 /* line 38, ../scss/partials/content/_entry-header.scss */
 .single #primary .entry-header { margin-bottom: 16px; }
+
+/* line 44, ../scss/partials/content/_entry-header.scss */
+.page .page-header .page-title, .archive .page-header .page-title, .single .entry-header .entry-title { text-transform: capitalize; font-weight: bold; font-size: 16px; margin: 24px 0 6px 0; }
+@media screen and (min-width: 768px) { /* line 44, ../scss/partials/content/_entry-header.scss */
+  .page .page-header .page-title, .archive .page-header .page-title, .single .entry-header .entry-title { font-size: 20px; margin: 36px 0 12px 0; } }
+@media screen and (min-width: 992px) { /* line 44, ../scss/partials/content/_entry-header.scss */
+  .page .page-header .page-title, .archive .page-header .page-title, .single .entry-header .entry-title { font-size: 24px; margin: 48px 0 12px 0; } }
+@media screen and (min-width: 992px) { /* line 44, ../scss/partials/content/_entry-header.scss */
+  .page .page-header .page-title, .archive .page-header .page-title, .single .entry-header .entry-title { font-size: 36px; } }
 
 /* --- Entry Meta --- */
 /* line 2, ../scss/partials/content/_entry-meta.scss */
@@ -4274,8 +4283,10 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 /* line 576, ../scss/partials/content/_template_homepage.scss */
 #latest-articles .post .entry img { display: none; }
 /* line 580, ../scss/partials/content/_template_homepage.scss */
+#latest-articles .post .entry .powerpress_player, #latest-articles .post .entry .powerpress_links { display: none !important; }
+/* line 584, ../scss/partials/content/_template_homepage.scss */
 #latest-articles .post .post-footer { margin-top: 12px; padding-left: 16px; padding-right: 16px; position: absolute; bottom: 16px; left: 0; width: 100%; }
-/* line 588, ../scss/partials/content/_template_homepage.scss */
+/* line 592, ../scss/partials/content/_template_homepage.scss */
 #latest-articles .post .post-footer .btn { width: 100%; color: #781e52; background: #e2a2bc; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border: 0; text-align: right; font-size: 12px; line-height: 18px; text-transform: uppercase; }
 
 /* --- Singup Page --- */
@@ -4754,6 +4765,30 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #health-coaching-template .page .rates-wrap .pricing-table .table-content ul li { padding: 12px 0; }
 /* line 53, ../scss/partials/content/_template_healthcoaching-page.scss */
 #health-coaching-template .page .rates-wrap .pricing-table .table-footer .button-wrap .btn { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; font-family: "Quicksand", sans-serif; }
+/* line 63, ../scss/partials/content/_template_healthcoaching-page.scss */
+#health-coaching-template .page .entry-footer .additional-content h2 { text-transform: uppercase; font-weight: bold; font-size: 14px; margin: 12px 0 3px 0; }
+@media screen and (min-width: 768px) { /* line 63, ../scss/partials/content/_template_healthcoaching-page.scss */
+  #health-coaching-template .page .entry-footer .additional-content h2 { font-size: 18px; margin: 18px 0 6px 0; } }
+@media screen and (min-width: 992px) { /* line 63, ../scss/partials/content/_template_healthcoaching-page.scss */
+  #health-coaching-template .page .entry-footer .additional-content h2 { font-size: 22x; margin: 24px 0 6px 0; } }
+@media screen and (min-width: 992px) { /* line 63, ../scss/partials/content/_template_healthcoaching-page.scss */
+  #health-coaching-template .page .entry-footer .additional-content h2 { font-size: 30px; } }
+/* line 80, ../scss/partials/content/_template_healthcoaching-page.scss */
+#health-coaching-template .page .entry-footer .additional-content h3 { text-transform: normal; font-weight: bold; font-size: 14px; margin: 12px 0 3px 0; }
+@media screen and (min-width: 768px) { /* line 80, ../scss/partials/content/_template_healthcoaching-page.scss */
+  #health-coaching-template .page .entry-footer .additional-content h3 { font-size: 18px; margin: 18px 0 6px 0; } }
+@media screen and (min-width: 992px) { /* line 80, ../scss/partials/content/_template_healthcoaching-page.scss */
+  #health-coaching-template .page .entry-footer .additional-content h3 { font-size: 22x; margin: 24px 0 6px 0; } }
+@media screen and (min-width: 992px) { /* line 80, ../scss/partials/content/_template_healthcoaching-page.scss */
+  #health-coaching-template .page .entry-footer .additional-content h3 { font-size: 30px; } }
+/* line 100, ../scss/partials/content/_template_healthcoaching-page.scss */
+#health-coaching-template .page .entry-footer .additional-content p, #health-coaching-template .page .entry-footer .additional-content ol, #health-coaching-template .page .entry-footer .additional-content ul, #health-coaching-template .page .entry-footer .additional-content table { font-size: 14px; line-height: 20px; }
+@media screen and (min-width: 768px) { /* line 100, ../scss/partials/content/_template_healthcoaching-page.scss */
+  #health-coaching-template .page .entry-footer .additional-content p, #health-coaching-template .page .entry-footer .additional-content ol, #health-coaching-template .page .entry-footer .additional-content ul, #health-coaching-template .page .entry-footer .additional-content table { font-size: 15px; line-height: 22px; } }
+@media screen and (min-width: 992px) { /* line 100, ../scss/partials/content/_template_healthcoaching-page.scss */
+  #health-coaching-template .page .entry-footer .additional-content p, #health-coaching-template .page .entry-footer .additional-content ol, #health-coaching-template .page .entry-footer .additional-content ul, #health-coaching-template .page .entry-footer .additional-content table { font-size: 16px; line-height: 24px; } }
+@media screen and (min-width: 1200px) { /* line 100, ../scss/partials/content/_template_healthcoaching-page.scss */
+  #health-coaching-template .page .entry-footer .additional-content p, #health-coaching-template .page .entry-footer .additional-content ol, #health-coaching-template .page .entry-footer .additional-content ul, #health-coaching-template .page .entry-footer .additional-content table { font-size: 18px; line-height: 27px; } }
 
 /* --- Custom Blog --- */
 /* line 9, ../scss/partials/content/_template_custom-blog.scss */
