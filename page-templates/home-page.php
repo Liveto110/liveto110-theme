@@ -233,7 +233,8 @@ get_header(); ?>
 					$recipes_cat_id = get_cat_ID('recipes');
 
 					$article_args = array(
-						'category__not_in' => array($podcasts_cat_id, $recipes_cat_id),
+						// 'category__not_in' => array($podcasts_cat_id, $recipes_cat_id),
+						'category_name' => 'articles',
 						'post_type' => 'post',
 						'posts_per_page' => 1
 					);
