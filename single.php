@@ -59,10 +59,6 @@ get_header(); ?>
 								<?php if ( function_exists( 'echo_ald_crp' ) ) echo_ald_crp(); ?>
 							</section><!-- /.suggested-reading-wrapper -->
 
-							<div class="fb-comments-wrapper">
-								<?php echo do_shortcode('[fbcomments]'); ?>
-							</div><!-- /.fb-comments-wrapper -->
-
 							<?php
 								// If comments are open or we have at least one comment, load up the comment template
 								if ( comments_open() || '0' != get_comments_number() ) :
