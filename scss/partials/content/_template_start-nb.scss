@@ -665,7 +665,19 @@
 			}
 		}
 		#learn {
+			position: relative;
+			&:after {
+				position: absolute;
+				left: 0;
+				bottom: 100%;
+				content: '';
+				display: block;
+				height: 18px;
+				width: 100%;
+				background: #6dcff6;
+			}
 			.section-header {
+				padding-top: 40px;
 				.section-title {
 					margin: $padding-large-vertical * 2 0 $padding-large-vertical * 2 0;
 					padding: 0;
