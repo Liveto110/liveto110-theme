@@ -1,11 +1,6 @@
 jQuery( document ).ready( function($) {
 	// Local Scroll
-	$.localScroll({
-		// target: '#nb-page-sections'
-		offset: {
-			top: '50px'
-		}
-	});
+	$('#nb-section-anchors .nav li').localScroll();
 
 	// Searchform Drawer
 	var $drawer = $('#searchform-drawer');
