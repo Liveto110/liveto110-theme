@@ -47,7 +47,7 @@ get_header(); ?>
 							// loop through the rows of data
 							while ( have_rows('how_it_works') ) : the_row();
 								if( get_row_layout() == 'how_it_works_nav_link_text' ):
-									echo '<li class="active"><a href="#how-it-works">';
+									echo '<li><a href="#how-it-works">';
 										the_sub_field('how_it_works_link_text');
 									echo '</a></li>';
 								endif;
