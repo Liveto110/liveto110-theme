@@ -113,58 +113,66 @@
 			}
 		}
 	}
-	.page-sections {
+	.section-anchors {
+		margin-top: $padding-large-vertical;
 		@media screen and (min-width: $screen-lg-desktop) {
 			width: 900px;
 			margin-left: auto;
 			margin-right: auto;
 		}
-		.section-anchors {
-			margin-top: $padding-large-vertical;
-			@media screen and (min-width: $screen-tablet) {
-				margin-top: $padding-large-vertical * 2;
+		@media screen and (min-width: $screen-tablet) {
+			margin-top: $padding-large-vertical * 2;
+		}
+		.nav {
+			li {
+				a {
+					background: $mp-subnav-btn-bg; //rgba(#6d2850, .1);
+					color: #fff; //#6d2850;
+					@include transition(all .2s ease-in-out);
+					text-transform: uppercase;
+					font-family: $font-family-sans-serif;
+					font-weight: 700;
+					@media screen and (min-width: $screen-tablet) {
+						font-size: 12px;
+					}
+					@media screen and (min-width: $screen-desktop) {
+						font-size: 13px;
+					}
+					@media screen and (min-width: $screen-lg-desktop) {
+						font-size: 14px;
+						@include border-radius(0);
+					}
+				}
+				&.active a,
+				a:active,
+				a:focus,
+				a:hover {
+					background: $mp-subnav-btn-hover-bg; //#6d2850;
+					// color: #fff;
+				}
 			}
-			.nav {
+			@media screen and (min-width: $screen-tablet) {
 				li {
-					a {
-						background: $mp-subnav-btn-bg; //rgba(#6d2850, .1);
-						color: #fff; //#6d2850;
-						@include transition(all .2s ease-in-out);
-						text-transform: uppercase;
-						font-family: $font-family-sans-serif;
-						font-weight: 700;
-						@media screen and (min-width: $screen-tablet) {
-							font-size: 12px;
-						}
-						@media screen and (min-width: $screen-desktop) {
-							font-size: 13px;
-						}
-						@media screen and (min-width: $screen-lg-desktop) {
-							font-size: 14px;
-							@include border-radius(0);
-						}
-					}
-					&.active a,
-					a:active,
-					a:focus,
-					a:hover {
-						background: $mp-subnav-btn-hover-bg; //#6d2850;
-						// color: #fff;
-					}
+					padding-left: $padding-small-horizontal / 2;
+					padding-right: $padding-small-horizontal / 2;
 				}
-				@media screen and (min-width: $screen-tablet) {
-					li {
-						padding-left: $padding-small-horizontal / 2;
-						padding-right: $padding-small-horizontal / 2;
-					}
-					li:first-child { padding-left: 0; }
-					li:last-child { padding-right: 0; }
-				}
+				li:first-child { padding-left: 0; }
+				li:last-child { padding-right: 0; }
 			}
 		}
+	}
+	.page-sections {
+		@media screen and (min-width: $screen-lg-desktop) {
+			width: 900px;
+			margin-left: auto;
+			margin-right: auto;
+		}		
 		#how-it-works {
 			margin-top: $padding-large-vertical * 2;
 			.sections-intro {
+				@media screen and (min-width: $screen-lg-desktop) {
+					padding-top: 50px;
+				}
 				.intro-title {
 					margin: 0;
 					padding: 0;
@@ -418,6 +426,7 @@
 					@media screen and (min-width: $screen-lg-desktop) {
 						font-size: 20px;
 						line-height: 30px;
+						padding-top: 50px;
 					}
 				}
 			}

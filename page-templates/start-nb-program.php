@@ -39,61 +39,63 @@ get_header(); ?>
 				</main><!-- #main -->
 			</div><!-- #primary -->
 
-			<div class="page-sections">
-				<nav id="nb-section-anchors" class="section-anchors" role="navigation">
-					<ul class="nav nav-pills nav-justified">
-						<?php
-							// if 'how_it_works' flexible-content has rows of data
-							if ( have_rows('how_it_works') ) {
-								// loop through the rows of data
-								while ( have_rows('how_it_works') ) : the_row();
-									if( get_row_layout() == 'how_it_works_nav_link_text' ):
-										echo '<li class="active"><a href="#how-it-works">';
-											the_sub_field('how_it_works_link_text');
-										echo '</a></li>';
-									endif;
-								endwhile;
-							}
+			<nav id="nb-section-anchors" class="section-anchors" role="navigation">
+				<ul class="nav nav-pills nav-justified">
+					<?php
+						// if 'how_it_works' flexible-content has rows of data
+						if ( have_rows('how_it_works') ) {
+							// loop through the rows of data
+							while ( have_rows('how_it_works') ) : the_row();
+								if( get_row_layout() == 'how_it_works_nav_link_text' ):
+									echo '<li class="active"><a href="#how-it-works">';
+										the_sub_field('how_it_works_link_text');
+									echo '</a></li>';
+								endif;
+							endwhile;
+						}
 
-							// if 'core_components' flexible-content has rows of data
-							if ( have_rows('core_components') ) {
-								// loop through the rows of data
-								while ( have_rows('core_components') ) : the_row();
-									if( get_row_layout() == 'core_components_nav_link_text' ):
-										echo '<li><a href="#core-components">';
-											the_sub_field('core_components_link_text');
-										echo '</a></li>';
-									endif;
-								endwhile;
-							}
+						// if 'core_components' flexible-content has rows of data
+						if ( have_rows('core_components') ) {
+							// loop through the rows of data
+							while ( have_rows('core_components') ) : the_row();
+								if( get_row_layout() == 'core_components_nav_link_text' ):
+									echo '<li><a href="#core-components">';
+										the_sub_field('core_components_link_text');
+									echo '</a></li>';
+								endif;
+							endwhile;
+						}
 
-							// if 'learn' flexible-content has rows of data
-							if ( have_rows('learn') ) {
-								// loop through the rows of data
-								while ( have_rows('learn') ) : the_row();
-									if( get_row_layout() == 'learn_nav_link_text' ):
-										echo '<li><a href="#learn">';
-											the_sub_field('learn_link_text');
-										echo '</a></li>';
-									endif;
-								endwhile;
-							}
+						// if 'learn' flexible-content has rows of data
+						if ( have_rows('learn') ) {
+							// loop through the rows of data
+							while ( have_rows('learn') ) : the_row();
+								if( get_row_layout() == 'learn_nav_link_text' ):
+									echo '<li><a href="#learn">';
+										the_sub_field('learn_link_text');
+									echo '</a></li>';
+								endif;
+							endwhile;
+						}
 
-							// if 'faqs' flexible-content has rows of data
-							if ( have_rows('faqs') ) {
-								// loop through the rows of data
-								while ( have_rows('faqs') ) : the_row();
-									if( get_row_layout() == 'faqs_nav_link_text' ):
-										echo '<li><a href="#faqs">';
-											the_sub_field('faqs_link_text');
-										echo '</a></li>';
-									endif;
-								endwhile;
-							}
-						?>
-					</ul><!-- /.nav -->
-				</nav><!-- /#nb-section-anchors .section-anchors -->
-				
+						// if 'faqs' flexible-content has rows of data
+						if ( have_rows('faqs') ) {
+							// loop through the rows of data
+							while ( have_rows('faqs') ) : the_row();
+								if( get_row_layout() == 'faqs_nav_link_text' ):
+									echo '<li><a href="#faqs">';
+										the_sub_field('faqs_link_text');
+									echo '</a></li>';
+								endif;
+							endwhile;
+						}
+					?>
+
+					<li><a href="#pricing">Pricing</a></li>
+				</ul><!-- /.nav -->
+			</nav><!-- /#nb-section-anchors .section-anchors -->
+
+			<div id="nb-page-sections" class="page-sections">				
 				<?php if ( have_rows( 'how_it_works')) : ?>
 					<section id="how-it-works">
 						<?php while ( have_rows( 'how_it_works')) : the_row(); ?>
@@ -227,7 +229,7 @@ get_header(); ?>
 
 							<?php elseif ( get_row_layout() == 'core_components_section_footer' ) : ?>
 								<footer class="section-footer">
-									<article class="starter">
+									<article id="pricing" class="starter">
 										<header class="starter-header">
 											<h1 class="starter-title"><?php the_sub_field('core_components_section_footer_title_text'); ?></h1><!-- /.starter-title -->
 

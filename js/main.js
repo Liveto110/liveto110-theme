@@ -1,4 +1,12 @@
 jQuery( document ).ready( function($) {
+	// Local Scroll
+	$.localScroll({
+		// target: '#nb-page-sections'
+		offset: {
+			top: '50px'
+		}
+	});
+
 	// Searchform Drawer
 	var $drawer = $('#searchform-drawer');
 	var toggler1 = $('#primary-navigation a[title="search"]');
