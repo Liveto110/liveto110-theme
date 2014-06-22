@@ -1,0 +1,46 @@
+# Use PHP54 Single php.ini as default
+#AddHandler application/x-httpd-php54s .php
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+redirect 301 /author/wendyliveto110-com/ http://www.liveto110.com/about/
+redirect 301 /author/carol-harblin/ http://www.lifestylesinbalance.com/
+redirect 301 /author/gregashby/ http://www.coreessencehealth.com/
+redirect 301 /author/jim-dillon/ http://superfoodprofiles.com/
+redirect 301 /author/monica-bravo/ http://www.bravoforpaleo.com/
+redirect 301 /author/van-halsema/ http://vhpilates.com/
+redirect 301 /weight-loss-free-eguide/ /sign-up/
+redirect 301 /overview-of-a-nutritional-balancing-program/ /overview-of-a-mineral-power-program/
+redirect 301 /start-a-nutritional-balancing-program/ /mineral-power/
+redirect 301 /nutritional-balancing-new-client/ /new-client/
+redirect 301 /nutritional-balancing-retest-form/ /retest-form/
+redirect 301 /nutritional-balancing-with-hair-mineral-analysis/ /mineral-power-with-hair-mineral-analysis/
+redirect 301 /podcast-2/ http://www.liveto110.com/category/podcast/
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+
+# add a trailing slash to /wp-admin
+RewriteRule ^wp-admin$ wp-admin/ [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+RewriteRule ^(wp-(content|admin|includes).*) $1 [L]
+RewriteRule ^(.*\.php)$ $1 [L]
+RewriteRule . index.php [L]
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^liveto110.com
+RewriteRule (.*) http://www.liveto110.com/$1 [R=301,L]
