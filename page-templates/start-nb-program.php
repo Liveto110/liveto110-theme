@@ -123,7 +123,7 @@ get_header(); ?>
 								</div><!-- /.sections-intro -->
 							
 							<?php elseif ( get_row_layout() == 'how_it_works_intro_video' ) : ?>
-								<div class="media-wrap">
+								<div class="media-wrap hide">
 									<div class="video-wrapper">
 										<?php
 											$video_id = get_sub_field('how_it_works_intro_video_url_id');
