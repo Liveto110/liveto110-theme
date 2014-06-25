@@ -138,3 +138,9 @@ span + .edit-link:before,
 .widget_twentyfourteen_ephemera .entry-title:after {
 	content: "\0020\007c\0020";
 }
+
+/* --- Links --- */
+a {
+	font-weight: bold;
+	text-decoration: none;
+}
