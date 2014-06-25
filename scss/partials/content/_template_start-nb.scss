@@ -838,6 +838,9 @@
 					.panel-collapse {
 						.panel-body {
 							border: 0;
+							a {
+								color: $mp-bg-blue-text;
+							}
 						}
 					}
 				}

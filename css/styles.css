@@ -4762,6 +4762,8 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 #start-nb-template .page-sections #faqs #faq-accordion .panel .panel-heading .panel-title .icon-wrap { padding-right: 5px; }
 /* line 839, ../scss/partials/content/_template_start-nb.scss */
 #start-nb-template .page-sections #faqs #faq-accordion .panel .panel-collapse .panel-body { border: 0; }
+/* line 841, ../scss/partials/content/_template_start-nb.scss */
+#start-nb-template .page-sections #faqs #faq-accordion .panel .panel-collapse .panel-body a { color: #1559a5; }
 
 /* --- Full Width Page Template --- */
 /* line 4, ../scss/partials/content/_template_videos-page.scss */
