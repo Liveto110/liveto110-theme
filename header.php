@@ -17,13 +17,7 @@
 	<?php global $smof_data;  save_smof_option();?>
 
 	<!-- ==SEO== -->
-    <?php if (is_front_page()) {
-    	if ($smof_data['site_keywords']) { ?>
-    		<meta name="description" content="<?php echo $smof_data['site_keywords']; ?>">
-    	<?php } ?>
-    	<?php if ($smof_data['site_desc']) { ?>
-    		<meta name="description" content="<?php echo $smof_data['site_desc']; ?>">
-    	<?php } ?>
+    <?php if (is_front_page()) { ?>
     	<?php if ($smof_data['site_title']) { ?>
             <title><?php echo $smof_data['site_title']; ?></title>
         <?php } else { ?>
