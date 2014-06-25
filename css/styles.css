@@ -4885,13 +4885,13 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 @media screen and (min-width: 768px) { /* line 40, ../scss/partials/content/_template_custom-blog.scss */
   #custom-blog-template .posts-wrap .post .image-wrap { width: 30%; } }
 @media screen and (min-width: 1200px) { /* line 40, ../scss/partials/content/_template_custom-blog.scss */
-  #custom-blog-template .posts-wrap .post .image-wrap { width: 40%; } }
+  #custom-blog-template .posts-wrap .post .image-wrap { width: 50%; } }
 /* line 50, ../scss/partials/content/_template_custom-blog.scss */
 #custom-blog-template .posts-wrap .post .content-wrap { width: 80%; float: left; }
 @media screen and (min-width: 768px) { /* line 50, ../scss/partials/content/_template_custom-blog.scss */
   #custom-blog-template .posts-wrap .post .content-wrap { width: 70%; } }
 @media screen and (min-width: 1200px) { /* line 50, ../scss/partials/content/_template_custom-blog.scss */
-  #custom-blog-template .posts-wrap .post .content-wrap { width: 60%; } }
+  #custom-blog-template .posts-wrap .post .content-wrap { width: 50%; } }
 /* line 62, ../scss/partials/content/_template_custom-blog.scss */
 #custom-blog-template .posts-wrap .post .fullwidth-content-wrap .post-header .post-title { margin-left: 0; }
 /* line 66, ../scss/partials/content/_template_custom-blog.scss */
