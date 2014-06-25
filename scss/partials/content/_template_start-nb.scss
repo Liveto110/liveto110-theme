@@ -602,6 +602,9 @@
 							background-image: url(../img/pricing-table-bg-img.png);
 							background-position: center top;
 							@include background-size(cover);
+							@media screen and (min-width: $screen-lg-desktop) {
+								height: 125px;
+							}
 						}
 						@media screen and (min-width: $screen-desktop) {
 							max-width: 275px;
@@ -609,6 +612,7 @@
 						.table-header {
 							position: relative;
 							z-index: 2;
+							font-family: $quicksand;
 							.table-title {
 								text-transform: uppercase;
 								font-size: 15px;
@@ -622,15 +626,18 @@
 								padding-bottom: $padding-small-vertical;
 								color: #fff;
 								font-weight: bold;
+								font-family: $quicksand;
+								@media screen and (min-width: $screen-lg-desktop) {
+									padding-top: $padding-large-vertical;
+								}
 							}
 							.price-amount {
-								// background: lighten(#6d2850, 10);
-								// padding-top: $padding-large-vertical * 2;
 								padding-bottom: $padding-large-vertical * 2;
 								margin: 0;
 								color: #fff;
 								font-size: 22px; //30px;
 								line-height: 30px;
+								font-family: $quicksand;
 								i {}
 							}
 						}
@@ -638,21 +645,29 @@
 							padding-left: $padding-large-horizontal;
 							padding-right: $padding-large-horizontal;
 							color: $mp-bg-blue-text;
-							font-family: $lato;
+							font-family: $quicksand;
 							text-align: center;
 							font-size: 16px;
 							line-height: 27px;
+							@media screen and (min-width: $screen-lg-desktop) {
+								padding-top: $padding-large-vertical * 3;
+							}
 							ul {
 								li {
 									padding: $padding-base-horizontal 0;
+									font-family: $quicksand;
 								}
 							}
 						}
 						.table-footer {
+							@media screen and (min-width: $screen-lg-desktop) {
+								padding-top: $padding-large-vertical;
+							}
 							.button-wrap {
 								.btn {
 									@include border-radius(0);
-									font-family: $lato;
+									font-family: $quicksand;
+									font-weight: bold;
 									border: 0;
 									background: $mp-subnav-btn-hover-bg;
 									@include box-shadow(none);
