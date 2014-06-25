@@ -30,7 +30,7 @@ get_header(); ?>
 							<?php while( $wp_query->have_posts()) : $wp_query->the_post(); ?>
 								<a href="<?php the_permalink(); ?>" class="permalink">
 									<?php
-										$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full-width-slide' );
+										$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'single-post' );
 										$url = $thumb['0'];
 									?>
 									<?php if ('' != $url ) { ?>
@@ -52,7 +52,7 @@ get_header(); ?>
 						<?php while( $wp_query->have_posts()) : $wp_query->the_post(); ?>
 							<article <?php post_class(); ?>>
 								<?php
-									$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'square-thumbnail' );
+									$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'single-post' );
 									$url = $thumb['0'];
 								?>
 								<?php if ('' != $url ) { ?>
