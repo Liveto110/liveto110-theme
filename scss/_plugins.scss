@@ -63,6 +63,18 @@
             text-transform: uppercase;
             font-weight: bold;
             color: $brand-primary;
+            @media screen and (min-width: $screen-tablet) {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            @media screen and (min-width: $screen-desktop) {
+                font-size: 18px;
+                line-height: 27px;
+            }
+            @media screen and (min-width: $screen-lg-desktop) {
+                font-size: 22px;
+                line-height: 33px;
+            }
         }
         ul {
             margin: 0;

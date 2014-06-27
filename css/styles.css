@@ -5363,21 +5363,27 @@ a { font-weight: bold; text-decoration: none; }
 .suggested-reading-wrapper .crp_related { overflow: hidden; *zoom: 1; margin: 0; padding: 0; }
 /* line 58, ../scss/_plugins.scss */
 .suggested-reading-wrapper .crp_related .sr-title { margin: 0; padding: 0; font-size: 14px; line-height: 20px; text-transform: uppercase; font-weight: bold; color: #6db799; }
-/* line 67, ../scss/_plugins.scss */
+@media screen and (min-width: 768px) { /* line 58, ../scss/_plugins.scss */
+  .suggested-reading-wrapper .crp_related .sr-title { font-size: 16px; line-height: 24px; } }
+@media screen and (min-width: 992px) { /* line 58, ../scss/_plugins.scss */
+  .suggested-reading-wrapper .crp_related .sr-title { font-size: 18px; line-height: 27px; } }
+@media screen and (min-width: 1200px) { /* line 58, ../scss/_plugins.scss */
+  .suggested-reading-wrapper .crp_related .sr-title { font-size: 22px; line-height: 33px; } }
+/* line 79, ../scss/_plugins.scss */
 .suggested-reading-wrapper .crp_related ul { margin: 0; padding: 0; list-style: none; display: block; }
-/* line 72, ../scss/_plugins.scss */
+/* line 84, ../scss/_plugins.scss */
 .suggested-reading-wrapper .crp_related ul li { display: block; width: 50%; float: left; margin-bottom: 6px; }
-@media screen and (min-width: 992px) { /* line 72, ../scss/_plugins.scss */
+@media screen and (min-width: 992px) { /* line 84, ../scss/_plugins.scss */
   .suggested-reading-wrapper .crp_related ul li { margin-bottom: 10px; } }
-/* line 80, ../scss/_plugins.scss */
+/* line 92, ../scss/_plugins.scss */
 .suggested-reading-wrapper .crp_related ul li a { display: block; margin-right: 3px; -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px; -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px; box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
-/* line 87, ../scss/_plugins.scss */
+/* line 99, ../scss/_plugins.scss */
 .suggested-reading-wrapper .crp_related ul li a:hover, .suggested-reading-wrapper .crp_related ul li a:focus, .suggested-reading-wrapper .crp_related ul li a:active { -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 5px; -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 5px; box-shadow: rgba(0, 0, 0, 0.4) 0 1px 5px; }
-@media screen and (min-width: 992px) { /* line 80, ../scss/_plugins.scss */
+@media screen and (min-width: 992px) { /* line 92, ../scss/_plugins.scss */
   .suggested-reading-wrapper .crp_related ul li a { margin-right: 5px; } }
-/* line 93, ../scss/_plugins.scss */
+/* line 105, ../scss/_plugins.scss */
 .suggested-reading-wrapper .crp_related ul li a img { max-width: 100%; height: auto; }
-/* line 98, ../scss/_plugins.scss */
+/* line 110, ../scss/_plugins.scss */
 .suggested-reading-wrapper .crp_related ul li:nth-of-type(even) a { margin-left: 3px; margin-right: 0; }
-@media screen and (min-width: 992px) { /* line 98, ../scss/_plugins.scss */
+@media screen and (min-width: 992px) { /* line 110, ../scss/_plugins.scss */
   .suggested-reading-wrapper .crp_related ul li:nth-of-type(even) a { margin-left: 5px; } }
