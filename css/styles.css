@@ -3641,6 +3641,9 @@ blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter { margin-top: 7
 /* line 143, ../scss/_repeatable-patterns.scss */
 a { font-weight: bold; text-decoration: none; }
 
+/* line 147, ../scss/_repeatable-patterns.scss */
+.widget-area a { font-weight: normal; }
+
 /* --- Basic Structure --- */
 /* line 2, ../scss/_basic-structure.scss */
 .main-content { width: 100%; }
