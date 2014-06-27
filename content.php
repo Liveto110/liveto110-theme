@@ -12,7 +12,7 @@
 			<div class="col-xs-4">
 				<div class="image-wrap">
 					<?php
-						the_post_thumbnail('blog-index');
+						the_post_thumbnail('single-post');
 						$wrapper_class = 'col-xs-8';
 					?>
 				</div><!-- /.image-wrap -->

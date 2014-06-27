@@ -73,7 +73,7 @@ get_header(); ?>
 									<article class="featured-post">
 										<a href="<?php the_permalink(); ?>" class="permalink">
 											<?php
-												$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full-width-slide' );
+												$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'single-post' );
 												$url = $thumb['0'];
 											?>
 											<?php if ('' != $url ) { ?>
