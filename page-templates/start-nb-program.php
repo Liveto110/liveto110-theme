@@ -381,8 +381,6 @@ get_header(); ?>
 				<?php endif; ?>
 			</div><!-- /.page-sections -->
 		</div><!-- /.container -->
-
-		<div class="custom-bottom-bg"></div>
 	</div><!-- /#content -->	
 </div><!-- /#start-nb-template -->
 

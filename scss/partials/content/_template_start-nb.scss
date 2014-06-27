@@ -1,27 +1,6 @@
 /* --- Start A Nutritional Balancing Page Template --- */
 #start-nb-template {
-	#content {
-		.custom-bottom-bg {
-			@include clearfix;
-			display: block;
-			height: 150px;
-			width: 100%;
-			background-image: url(../img/mineral-power-bg.png);
-			background-color: transparent;;
-			background-position: center bottom;
-			background-repeat: no-repeat;
-			@include background-size(cover);
-			@media screen and (min-width: $screen-tablet) {
-				height: 180px;
-			}
-			@media screen and (min-width: $screen-desktop) {
-				height: 220px;
-			}
-			@media screen and (min-width: $screen-lg-desktop) {
-				height: 400px;
-			}
-		}
-	}
+	#content {}
 	#primary {}
 	#main {
 		.row {
