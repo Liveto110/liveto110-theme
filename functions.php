@@ -179,14 +179,8 @@ function liveto110_fonts_url() {
 function liveto110_scripts() {
 	// Add Quicksand and Lato fonts.
 	wp_enqueue_style( 'liveto110-fonts', liveto110_fonts_url(), array(), null );
-	// Add Adobe Garamond Pro Regular font.
-	wp_enqueue_style( 'garamond-regular', get_template_directory_uri() . '/fonts/garamond-pro/regular/styles.css', array(), '' );
-	// Add Adobe Garamond Pro Bold font.
-	wp_enqueue_style( 'garamond-bold', get_template_directory_uri() . '/fonts/garamond-pro/bold/styles.css', array(), '' );
-	// Add Adobe Garamond Pro Italic font.
-	wp_enqueue_style( 'garamond-italic', get_template_directory_uri() . '/fonts/garamond-pro/italic/styles.css', array(), '' );
-	// Add Adobe Garamond Pro BoldItalic font.
-	wp_enqueue_style( 'garamond-bolditalic', get_template_directory_uri() . '/fonts/garamond-pro/bolditalic/styles.css', array(), '' );
+	// Add Gill Sans Light
+	wp_enqueue_style( 'gill-sans-light', get_template_directory_uri() . '/fonts/gill-sans-light/styles.css', array(), '' );
 	// Add Coneria Script font.
 	wp_enqueue_style( 'coneria-script', get_template_directory_uri() . '/fonts/coneria-script/styles.css', array(), '' );	
 	// Add FontAwesome font.

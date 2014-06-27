@@ -3,10 +3,7 @@
 // Fonts
 $quicksand: 			'Quicksand', sans-serif;
 $lato: 					'Lato', sans-serif;
-$garamond_regular: 		'AGaramondPro-Regular', serif;
-$garamond_bold: 		'AGaramondPro-Bold', serif;
-$garamond_italic: 		'AGaramondPro-Italic', serif;
-$garamond_bolditalic: 	'AGaramondPro-BoldItalic', serif;
+$gill-sans-light: 		'GillSansLight', sans-serif;
 $coneria: 				'ConeriaScriptDemo', serif;
 
 // Override Bootstrap variables here
@@ -46,7 +43,7 @@ $link-hover-color:      darken($link-color, 15%);
 //## Font, line-height, and color for body text, headings, and more.
 
 $font-family-sans-serif:  $quicksand; // "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif:       $garamond_regular; //Georgia, "Times New Roman", Times, serif !default;
+$font-family-serif:       $gill-sans-light; //Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-serif; // !default;

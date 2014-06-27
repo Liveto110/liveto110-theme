@@ -770,7 +770,7 @@ td, th { padding: 0; }
 html { font-size: 62.5%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 /* line 27, ../scss/bootstrap/_scaffolding.scss */
-body { font-family: "AGaramondPro-Regular", serif; font-size: 14px; line-height: 1.42857; color: #333333; background-color: white; }
+body { font-family: "GillSansLight", sans-serif; font-size: 14px; line-height: 1.42857; color: #333333; background-color: white; }
 
 /* line 39, ../scss/bootstrap/_scaffolding.scss */
 input, button, select, textarea { font-family: inherit; font-size: inherit; line-height: inherit; }
@@ -4048,7 +4048,7 @@ a { font-weight: bold; text-decoration: none; }
 /* line 19, ../scss/partials/content/_author-info.scss */
 #main #author-info #author-bio { margin: 0; }
 /* line 22, ../scss/partials/content/_author-info.scss */
-#main #author-info .author-name { font-family: "AGaramondPro-Regular", serif; text-transform: uppercase; color: #6db799; text-shadow: rgba(255, 255, 255, 0.8) 0 1px 0; }
+#main #author-info .author-name { font-family: "GillSansLight", sans-serif; text-transform: uppercase; color: #6db799; text-shadow: rgba(255, 255, 255, 0.8) 0 1px 0; }
 /* line 28, ../scss/partials/content/_author-info.scss */
 #main #author-info .author-social-links { overflow: hidden; *zoom: 1; text-align: center; }
 /* line 31, ../scss/partials/content/_author-info.scss */
@@ -4214,7 +4214,7 @@ a { font-weight: bold; text-decoration: none; }
 @media screen and (min-width: 1200px) { /* line 369, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb-header .blurb-title { font-size: 24px; line-height: 30px; margin-top: 5px; } }
 /* line 395, ../scss/partials/content/_template_homepage.scss */
-#about-liveto110 .blurbs-wrap .blurb-entry { text-align: center; color: #828386; padding: 6px 10px; font-family: "AGaramondPro-Regular", serif; }
+#about-liveto110 .blurbs-wrap .blurb-entry { text-align: center; color: #828386; padding: 6px 10px; font-family: "GillSansLight", sans-serif; }
 @media screen and (min-width: 768px) { /* line 395, ../scss/partials/content/_template_homepage.scss */
   #about-liveto110 .blurbs-wrap .blurb-entry { padding: 10px 12px; } }
 @media screen and (min-width: 992px) { /* line 395, ../scss/partials/content/_template_homepage.scss */
@@ -4284,9 +4284,9 @@ a { font-weight: bold; text-decoration: none; }
 /* line 559, ../scss/partials/content/_template_homepage.scss */
 #latest-articles .post .entry { margin-top: 24px; padding-left: 16px; padding-right: 16px; color: #3c5c56; }
 /* line 564, ../scss/partials/content/_template_homepage.scss */
-#latest-articles .post .entry p { font-family: "AGaramondPro-Regular", serif; font-size: 16px; }
+#latest-articles .post .entry p { font-family: "GillSansLight", sans-serif; font-size: 16px; }
 /* line 568, ../scss/partials/content/_template_homepage.scss */
-#latest-articles .post .entry .read-more-link { display: inline; text-transform: uppercase; font-family: "AGaramondPro-Regular", serif; margin-left: 5px; font-size: smaller; color: #83bea0; }
+#latest-articles .post .entry .read-more-link { display: inline; text-transform: uppercase; font-family: "GillSansLight", sans-serif; margin-left: 5px; font-size: smaller; color: #83bea0; }
 /* line 576, ../scss/partials/content/_template_homepage.scss */
 #latest-articles .post .entry img { display: none; }
 /* line 580, ../scss/partials/content/_template_homepage.scss */
@@ -4412,7 +4412,7 @@ a { font-weight: bold; text-decoration: none; }
 /* line 287, ../scss/partials/content/_template_sign-me-up.scss */
 #signup-page-template #content #signmeup-secondary .widget { overflow: hidden; *zoom: 1; }
 /* line 290, ../scss/partials/content/_template_sign-me-up.scss */
-#signup-page-template #content #signmeup-secondary .widget .widget-header .widget-title { color: #fff; margin: 48px 0; padding: 0; text-align: center; font-size: 30px; line-height: 45px; font-family: "AGaramondPro-Regular", serif; }
+#signup-page-template #content #signmeup-secondary .widget .widget-header .widget-title { color: #fff; margin: 48px 0; padding: 0; text-align: center; font-size: 30px; line-height: 45px; font-family: "GillSansLight", sans-serif; }
 @media screen and (min-width: 992px) { /* line 290, ../scss/partials/content/_template_sign-me-up.scss */
   #signup-page-template #content #signmeup-secondary .widget .widget-header .widget-title { font-size: 40px; line-height: 60px; } }
 /* line 305, ../scss/partials/content/_template_sign-me-up.scss */
@@ -4424,15 +4424,15 @@ a { font-weight: bold; text-decoration: none; }
 /* line 320, ../scss/partials/content/_template_sign-me-up.scss */
 #signup-page-template #content #signmeup-secondary .widget .widget-content form .form-group .form-control { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; border: 0; background: transparent; color: #18433c; font-family: "Quicksand", sans-serif; }
 /* line 326, ../scss/partials/content/_template_sign-me-up.scss */
-#signup-page-template #content #signmeup-secondary .widget .widget-content form .form-group .form-control::-moz-placeholder { color: #999; opacity: 1; font-family: "AGaramondPro-Regular", serif; }
+#signup-page-template #content #signmeup-secondary .widget .widget-content form .form-group .form-control::-moz-placeholder { color: #999; opacity: 1; font-family: "GillSansLight", sans-serif; }
 /* line 327, ../scss/partials/content/_template_sign-me-up.scss */
-#signup-page-template #content #signmeup-secondary .widget .widget-content form .form-group .form-control:-ms-input-placeholder { color: #999; font-family: "AGaramondPro-Regular", serif; }
+#signup-page-template #content #signmeup-secondary .widget .widget-content form .form-group .form-control:-ms-input-placeholder { color: #999; font-family: "GillSansLight", sans-serif; }
 /* line 328, ../scss/partials/content/_template_sign-me-up.scss */
-#signup-page-template #content #signmeup-secondary .widget .widget-content form .form-group .form-control::-webkit-input-placeholder { color: #999; font-family: "AGaramondPro-Regular", serif; }
+#signup-page-template #content #signmeup-secondary .widget .widget-content form .form-group .form-control::-webkit-input-placeholder { color: #999; font-family: "GillSansLight", sans-serif; }
 /* line 330, ../scss/partials/content/_template_sign-me-up.scss */
 #signup-page-template #content #signmeup-secondary .widget .widget-content form .form-group label { padding-left: 16px; padding-top: 16px; color: #18433c; font-family: "Quicksand", sans-serif; }
 /* line 336, ../scss/partials/content/_template_sign-me-up.scss */
-#signup-page-template #content #signmeup-secondary .widget .widget-content form .form-group .radio-wrap label { padding-left: 20px; padding-top: 0; color: #18433c; font-family: "AGaramondPro-Regular", serif; }
+#signup-page-template #content #signmeup-secondary .widget .widget-content form .form-group .radio-wrap label { padding-left: 20px; padding-top: 0; color: #18433c; font-family: "GillSansLight", sans-serif; }
 /* line 342, ../scss/partials/content/_template_sign-me-up.scss */
 #signup-page-template #content #signmeup-secondary .widget .widget-content form .form-group .radio-wrap { margin-left: 40%; }
 /* line 353, ../scss/partials/content/_template_sign-me-up.scss */
@@ -4444,11 +4444,11 @@ a { font-weight: bold; text-decoration: none; }
 /* line 369, ../scss/partials/content/_template_sign-me-up.scss */
 #signup-page-template #content #signmeup-secondary .widget .widget-content form .captcha-wrap .form-control { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; border: 1px solid #84bda0; color: #18433c; font-family: "Quicksand", sans-serif; }
 /* line 375, ../scss/partials/content/_template_sign-me-up.scss */
-#signup-page-template #content #signmeup-secondary .widget .widget-content form .captcha-wrap .form-control::-moz-placeholder { color: #999; opacity: 1; font-family: "AGaramondPro-Regular", serif; }
+#signup-page-template #content #signmeup-secondary .widget .widget-content form .captcha-wrap .form-control::-moz-placeholder { color: #999; opacity: 1; font-family: "GillSansLight", sans-serif; }
 /* line 376, ../scss/partials/content/_template_sign-me-up.scss */
-#signup-page-template #content #signmeup-secondary .widget .widget-content form .captcha-wrap .form-control:-ms-input-placeholder { color: #999; font-family: "AGaramondPro-Regular", serif; }
+#signup-page-template #content #signmeup-secondary .widget .widget-content form .captcha-wrap .form-control:-ms-input-placeholder { color: #999; font-family: "GillSansLight", sans-serif; }
 /* line 377, ../scss/partials/content/_template_sign-me-up.scss */
-#signup-page-template #content #signmeup-secondary .widget .widget-content form .captcha-wrap .form-control::-webkit-input-placeholder { color: #999; font-family: "AGaramondPro-Regular", serif; }
+#signup-page-template #content #signmeup-secondary .widget .widget-content form .captcha-wrap .form-control::-webkit-input-placeholder { color: #999; font-family: "GillSansLight", sans-serif; }
 /* line 380, ../scss/partials/content/_template_sign-me-up.scss */
 #signup-page-template #content #signmeup-secondary .widget .widget-content form .button-wrap { background: #84bda0; padding-top: 32px; }
 /* line 384, ../scss/partials/content/_template_sign-me-up.scss */
