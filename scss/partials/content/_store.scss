@@ -100,3 +100,29 @@
         }
     }
 }
+.single-product.woocommerce-page {
+    #content {
+        .page-header {
+            margin: 0;
+            padding: 0 40px 0 0;
+            margin-bottom: $padding-large-horizontal;
+            .page-title {
+                text-transform: capitalize;
+                font-weight: bold;
+                font-size: 16px;
+                margin: 24px 0 6px 0;
+                @media screen and (min-width: $screen-tablet) {
+                    font-size: 20px;
+                    margin: 36px 0 12px 0;
+                }
+                @media screen and (min-width: $screen-desktop) {
+                    font-size: 24px;
+                    margin: 48px 0 12px 0;
+                }
+                @media screen and (min-width: $screen-desktop) {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}
