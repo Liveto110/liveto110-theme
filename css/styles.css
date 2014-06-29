@@ -5049,6 +5049,17 @@ a { font-weight: bold; text-decoration: none; }
 @media screen and (min-width: 768px) { /* line 97, ../scss/partials/content/_store.scss */
   .woocommerce .cart-collaterals .cart_totals p, .woocommerce-page .cart-collaterals .cart_totals p { clear: both; } }
 
+/* line 105, ../scss/partials/content/_store.scss */
+.single-product.woocommerce-page #content .page-header { margin: 0; padding: 0 40px 0 0; margin-bottom: 16px; }
+/* line 109, ../scss/partials/content/_store.scss */
+.single-product.woocommerce-page #content .page-header .page-title { text-transform: capitalize; font-weight: bold; font-size: 16px; margin: 24px 0 6px 0; }
+@media screen and (min-width: 768px) { /* line 109, ../scss/partials/content/_store.scss */
+  .single-product.woocommerce-page #content .page-header .page-title { font-size: 20px; margin: 36px 0 12px 0; } }
+@media screen and (min-width: 992px) { /* line 109, ../scss/partials/content/_store.scss */
+  .single-product.woocommerce-page #content .page-header .page-title { font-size: 24px; margin: 48px 0 12px 0; } }
+@media screen and (min-width: 992px) { /* line 109, ../scss/partials/content/_store.scss */
+  .single-product.woocommerce-page #content .page-header .page-title { font-size: 36px; } }
+
 /* --- Signup Section --- */
 /* line 2, ../scss/partials/footer/_signup-section.scss */
 #signup-section { background-position: center center; background-repeat: no-repeat; background-attachment: fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding-top: 48px; padding-bottom: 48px; }
