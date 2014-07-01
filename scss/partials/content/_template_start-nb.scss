@@ -156,8 +156,6 @@
 				.intro-title {
 					margin: 0;
 					padding: 0;
-					// font-family: $quicksand;
-					// font-weight: 700;
 					font-size: 16px;
 					line-height: 24px;
 					color: $mp-title-color; //#31935f;
@@ -170,6 +168,7 @@
 						margin: 0 auto;
 						padding: 0;
 						background: $mp-title-border;
+						margin-top: 15px;
 						@media screen and (min-width: $screen-lg-desktop) {
 							width: 640px;
 						}
@@ -177,6 +176,10 @@
 					span {
 						display: block;
 						text-transform: uppercase;
+						@media screen and (min-width: $screen-lg-desktop) {
+							font-size: 24px; //20px;
+							line-height: 30px;
+						}						
 					}
 					@media screen and (min-width: $screen-tablet) {
 						font-size: 18px;
@@ -191,17 +194,14 @@
 						font-size: 35px;
 						line-height: 42px;
 					}
-					span {
-						@media screen and (min-width: $screen-lg-desktop) {
-							font-size: 24px; //20px;
-							line-height: 30px;
-						}						
-					}
 				}
 				.intro-content {
 					margin-top: $padding-large-vertical;
 					@media screen and (min-width: $screen-tablet) {
 						margin-top: $padding-large-vertical * 2;
+					}
+					@media screen and (min-width: $screen-desktop) {
+						margin-top: $padding-large-vertical * 3;
 					}
 					.left-content {
 						p {
@@ -264,6 +264,7 @@
 						margin: 0 auto;
 						padding: 0;
 						background: $mp-title-border;
+						margin-top: 15px;
 						@media screen and (min-width: $screen-lg-desktop) {
 							width: 640px;
 						}
@@ -277,12 +278,13 @@
 						line-height: 33px;
 					}
 					@media screen and (min-width: $screen-lg-desktop) {
-						font-size: 24px; //20px;
-						line-height: 30px;
+						font-size: 35px;
+						line-height: 42px;
 					}
 				}
 			}
 			.section-content {
+				margin-top: 20px;
 				p {
 					strong {
 						color: $mp-subtitle-color; //#31935f;
@@ -392,6 +394,7 @@
 						margin: 0 auto;
 						padding: 0;
 						background: $mp-title-border;
+						margin-top: 15px;
 						@media screen and (min-width: $screen-lg-desktop) {
 							width: 640px;
 						}
@@ -405,13 +408,13 @@
 						line-height: 33px;
 					}
 					@media screen and (min-width: $screen-lg-desktop) {
-						font-size: 24px; //20px;
-						line-height: 30px;
-						padding-top: 50px;
+						font-size: 35px;
+						line-height: 42px;
 					}
 				}
 			}
 			.section-content {
+				margin-top: 20px;
 				.blurb {
 					margin-bottom: $padding-large-vertical;
 					@include clearfix;
@@ -520,7 +523,7 @@
 						@include clearfix;
 						text-align: center;
 						margin-top: 120px;
-						margin-bottom: $padding-large-vertical * 2;
+						margin-bottom: $padding-large-vertical * 3;
 						position: relative;
 						&:after {
 							position: absolute;
@@ -703,6 +706,7 @@
 						margin: 0 auto;
 						padding: 0;
 						background: $mp-title-border;
+						margin-top: 15px;
 						@media screen and (min-width: $screen-lg-desktop) {
 							width: 640px;
 						}
@@ -716,8 +720,8 @@
 						line-height: 33px;
 					}
 					@media screen and (min-width: $screen-lg-desktop) {
-						font-size: 24px; //20px;
-						line-height: 30px;
+						font-size: 35px;
+						line-height: 42px;
 					}
 				}
 			}
@@ -779,6 +783,7 @@
 						margin: 0 auto;
 						padding: 0;
 						background: $mp-title-border;
+						margin-top: 15px;
 						@media screen and (min-width: $screen-lg-desktop) {
 							width: 640px;
 						}
@@ -792,12 +797,13 @@
 						line-height: 33px;
 					}
 					@media screen and (min-width: $screen-lg-desktop) {
-						font-size: 24px; //20px;
-						line-height: 30px;
+						font-size: 35px;
+						line-height: 42px;
 					}
 				}
 			}
 			#faq-accordion {
+				margin-top: 20px;
 				.panel {
 					border-color: $mp-bg-blue; // rgba($brand-primary, .1);
 					@include border-radius(0);
