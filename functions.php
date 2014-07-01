@@ -128,8 +128,8 @@ function liveto110_widgets_init() {
 		'description' 	=> 'Add the YouTube Channel Gallery widget here.',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<header class="section-header"><h1 class="widget-title">',
-		'after_title'   => '</h1></header><div class="widget-content">',
+		'before_title'  => '<h1 class="widget-title sr-only">',
+		'after_title'   => '</h1><div class="widget-content">',
 	));
 }
 add_action( 'widgets_init', 'liveto110_widgets_init' );
